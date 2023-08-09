@@ -1,7 +1,7 @@
 # Site
-title: ULX Documentation
-description: Official documentation for the ULX admin mod for Garry's Mod.
-baseurl: /ulx-docs
+title: QuantumBenchmarkZoo
+description: Official documentation for quantum benchmarks
+baseurl: /
 permalink: /:title
 
 # Repository
