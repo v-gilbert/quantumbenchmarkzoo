@@ -1,18 +1,20 @@
 ---
 description: >
-  Official documentation for ULX, an admin mod for Garry’s Mod. ULX was first
-  released days after GM9 came out in 2005, and development on it has continued
-  since then.
+  Presentation of the QuantumBenchmarkZoo: main objective, features and 
+  other interesting resources.
 ---
-# Introduction
+# Presentation
 
-- [What is ULX?](#what-is-ulx)
+- [What is QuantumBenchmarkZoo](#what-is-ulx)
 - [Feature highlights](#feature-highlights)
 - [Official links](#official-links)
 
-## What is ULX?
+## What is QuantumBenchmarkZoo ?
+{% assign ak = site.nav.Zoo | where: "pageid", "acknowledgments" | first %}
 
-ULX is a free and open-source admin mod for Garry's Mod created by Team Ulysses. It was first released days after GM9 came out in 2005. Development on it has continued since then. ULX can be used to assist in administration & server management, deal with rulebreakers, alter gameplay and much, much more!
+
+The QuantumBenchmarkZoo aims to give an overview on the protocols and studies established to evaluate the performance of quantum computers. This is a living survey, feel free to <a>contribute</a>. Should you find any error or omission, please mail <a>contact@quantumbenchmarkzoo.org</a> or propose a pull request at <a>….</a>. \
+Any kind of help is welcomed and will be <a href="{{ ak.url | prepend: site.baseurl }}">acknowledged</a>.
 
 ## Feature highlights
 
@@ -28,7 +30,7 @@ ULX is a free and open-source admin mod for Garry's Mod created by Team Ulysses.
 - Support for third-party modules.
 - Supportive community of developers and ULX users.
 
-## Official links
+## Other ressources
 
 - [Ulyssesmod](https://ulyssesmod.net) - Team Ulysses website.
 - [Ulysses forum](https://forums.ulyssesmod.net) - A public forum to discuss Team Ulysses' projects (ULX, ULib, UTime, …), suggest features and ask for help.

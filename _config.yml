@@ -10,10 +10,16 @@ git:
 
 # Navigation
 nav:
-  Users:
-    - text: Introduction
+  Zoo:
+    - text: Presentation
+      page-id: presentation
       url: /
       available: true
+    - text: Acknowledgments
+      page-id: acknowledgments
+      url: /acknowedgments
+      available: true
+  Users:
     - text: Installation
       url: /installation
       available: true

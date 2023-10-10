@@ -1,7 +1,8 @@
 {% assign current_url = page.url | remove: 'index.html' %}
 
 {% comment %} Generate links to previous and next page. {% endcomment %}
-{% assign nav_items = site.nav.Users | concat: site.nav.Developers | concat: site.nav.Resources %}
+{% assign nav_items = site.nav.Zoo | concat:site.nav.Users | concat: site.nav.Developers | concat: site.nav.Resources %}
+{% assign cutoff_one = site.nav.Zoo.size %}
 {% assign cutoff_one = site.nav.Users.size %}
 {% assign cutoff_two = cutoff_one | plus: site.nav.Developers.size %}
 {% for link in nav_items %}
