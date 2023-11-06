@@ -4,5 +4,7 @@ source 'https://rubygems.org'
 # all dependencies to the versions used by GitHub Pages.
 # GitHub Pages Ruby Gem: https://github.com/github/pages-gem
 # Dependency versions: https://pages.github.com/versions/
-gem 'github-pages', group: :jekyll_plugins
+# gem 'github-pages', group: :jekyll_plugins
 gem "webrick", "~> 1.8"
+gem 'jekyll-scholar', group: :jekyll_plugins
+

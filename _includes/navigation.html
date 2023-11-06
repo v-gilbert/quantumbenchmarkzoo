@@ -14,9 +14,9 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="navigation__category">Users</div>
+    <div class="navigation__category">Metrics</div>
     <ul class="navigation__link-list">
-      {% for link in site.nav.Users %}
+      {% for link in site.nav.Metrics %}
         <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
           <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
             {{ link.text }}
@@ -24,9 +24,9 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="navigation__category">Developers</div>
+    <div class="navigation__category">Protocols</div>
     <ul class="navigation__link-list">
-      {% for link in site.nav.Developers %}
+      {% for link in site.nav.Protocols %}
         <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
           <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
             {{ link.text }}

@@ -19,6 +19,14 @@ nav:
       page-id: acknowledgments
       url: /acknowedgments
       available: true
+  Metrics:
+    - text: Trace distance
+      url: /content/metrics/trace-distance
+      available: true
+  Protocols:
+    - text: Q-Score
+      url: /content/protocols/q-score
+      available: true
   Users:
     - text: Installation
       url: /installation
@@ -84,3 +92,27 @@ kramdown:
     block:
       line_numbers: true
 exclude: ["README.md"]
+
+# Bibliography
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: ""
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
