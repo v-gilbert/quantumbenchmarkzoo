@@ -18,7 +18,7 @@ These build instructions will help you set up a local version of the site.
 
 This project uses Bundler to install and run Jekyll. Bundler manages Ruby gem dependencies, reduces Jekyll build errors, and prevents environment-related bugs. To install Bundler, you must install Ruby.
 
-- [Ruby](https://www.ruby-lang.org) (2.1.0 or higher)
+- [Ruby](https://www.ruby-lang.org) (3.0 or higher)
 - [Bundler](https://bundler.io)
 
 #### Installation
