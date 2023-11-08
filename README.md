@@ -1,14 +1,14 @@
-# ULX Documentation
+# Quantum benchmark Zoo
 
-The official documentation for the [ULX admin mod](https://github.com/TeamUlysses/ulx) for Garry’s Mod!
+The official documentation for quantum benchmark zoo (https://github.com/v-gilbert/quantumbenchmarkzoo)
 
 
 ## Contributing
 
 You can help improve the documentation!
 
-- [Open an issue](https://github.com/Timmy/ulx-docs/issues/new) to report an error or make a suggestion.
-- [Create a pull request](https://github.com/Timmy/ulx-docs/issues/new) to propose changes to the documentation.
+- [Open an issue](https://github.com/v-gilbert/quantumbenchmarkzoo/issues/new) to report an error or make a suggestion.
+- [Create a pull request](https://github.com/v-gilbert/quantumbenchmarkzoo/issues/new) to propose changes to the documentation.
 
 ## Building
 
@@ -23,8 +23,8 @@ This project uses Bundler to install and run Jekyll. Bundler manages Ruby gem de
 
 #### Installation
 
-1. `git clone https://github.com/Timmy/ulx-docs.git` - Download the repository to your computer.
-1. `cd ulx-docs` - Change the working directory to the project root.
+1. `git clone https://github.com/v-gilbert/quantumbenchmarkzoo.git` - Download the repository to your computer.
+1. `cd quantumbenchmarkzoo` - Change the working directory to the project root.
 1. `bundle install` - Install Jekyll and other dependencies.
 
 #### Run local site
