@@ -19,6 +19,10 @@ nav:
       page-id: acknowledgments
       url: /acknowedgments
       available: true
+    - text: Taxonomy
+      page-id: taxonomy
+      url: /taxonomy
+      available: true
   Metrics:
     - text: Trace distance
       url: /content/metrics/trace-distance
