@@ -2,38 +2,75 @@
 description: >
   Q-score protocol.
 ---
-# Q-score
 
-This is explained in this document {% cite ruby %}
+# Q-score benchmarks
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor pharetra vehicula. Aliquam erat volutpat. Phasellus a nulla auctor, volutpat libero quis, scelerisque diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vel efficitur enim, at molestie diam. Quisque vel elit mi. Cras porttitor justo in dictum consequat. Quisque quam dui, commodo vitae luctus vitae, auctor eu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 
-Cras id est pretium, ullamcorper diam vel, semper odio. Donec a mi congue, facilisis orci quis, venenatis felis. Donec lacus nunc, euismod quis rhoncus quis, congue quis lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent egestas sem sed enim interdum, ac tincidunt augue vulputate. Vestibulum vehicula finibus mi vel condimentum. Proin tempor quis leo nec tincidunt. Integer luctus risus sed diam commodo viverra. Vestibulum tempus fermentum erat id vestibulum. Aliquam suscipit sollicitudin ante eu laoreet. Phasellus rutrum, diam vel placerat bibendum, ipsum arcu sodales felis, sed dignissim velit magna scelerisque ipsum. Vestibulum consectetur egestas ligula, quis porta magna feugiat id. Vivamus gravida sapien in posuere convallis. Integer nec dui leo. Nam eu nulla aliquet, luctus augue vel, lacinia mauris.
+# Q-score protocol
 
-Quisque dolor orci, tristique quis tortor eu, ornare scelerisque ligula. Nullam ac consectetur erat. Nunc ut massa iaculis, dictum ex fringilla, lobortis urna. Nulla pellentesque est neque, sed laoreet elit malesuada sed. Maecenas vel enim dapibus, faucibus leo id, dignissim tortor. Donec facilisis sit amet tellus in dignissim. In porttitor, urna nec pulvinar semper, dolor felis rutrum sapien, quis feugiat ipsum leo eu neque. Etiam quis nulla vitae felis lacinia imperdiet eget eget felis. Donec in mollis urna. Curabitur in luctus lectus. Sed tristique, velit quis ultrices vulputate, lectus sapien posuere leo, eget malesuada dui turpis sit amet dolor. Nullam sed egestas massa.
+The Q-score protocol, introduced in {% cite martiel2021benchmarking %}, measures the maximum size of Maxcut instances that can be solved effectively on a quantum computer. The main idea is to pick a class of random graphs (e.g., Erdös-Renyi graphs with $$n$$ nodes and a specific edge probability) and to analytically derive the maximum cut size $$ C_{max}(n) $$ and average random cut size $$ C^R(n) $$ for this class. The average expectation value obtained from the sampling of the quantum computer $$ C^Q(n) $$ is used to compute the ratio $$\beta(n)$$:
 
-Aenean volutpat condimentum quam eu volutpat. Donec maximus luctus ligula, dapibus sollicitudin nisi volutpat sodales. Etiam lacinia augue non nisl imperdiet, eget placerat augue facilisis. Aenean nec rutrum nunc. Quisque sodales non elit in fermentum. Vivamus sed urna vel nisi congue imperdiet. Curabitur id odio ut mi venenatis rutrum.
+$$\beta(n) = \frac{C^Q(n) - C^R(n)}{C_{max}(n) - C^R(n)}$$
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin condimentum, odio nec pulvinar gravida, enim ligula venenatis sapien, eget volutpat enim sapien a libero. Nam ex ipsum, ullamcorper at imperdiet in, gravida quis enim. Suspendisse potenti. Maecenas congue, urna id sodales suscipit, tortor ex pellentesque velit, nec tempus erat diam nec elit. Vestibulum efficitur porta turpis vitae elementum. Quisque eget eros massa. 
+The quantum computer passes the Q-score for instances of size $$n$$ if $$\beta(n) > \beta^*$$ ($$\beta^* \in ]0,1[ $$), where $$\beta^*$$ represents the level of difficulty of the test. The formula used to compute the ratio depends on the class of studied graphs. For their experiments, the authors arbitrarily set $$\beta^*=0.2$$.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor pharetra vehicula. Aliquam erat volutpat. Phasellus a nulla auctor, volutpat libero quis, scelerisque diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vel efficitur enim, at molestie diam. Quisque vel elit mi. Cras porttitor justo in dictum consequat. Quisque quam dui, commodo vitae luctus vitae, auctor eu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+The final value of the score is defined by:
 
-Cras id est pretium, ullamcorper diam vel, semper odio. Donec a mi congue, facilisis orci quis, venenatis felis. Donec lacus nunc, euismod quis rhoncus quis, congue quis lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent egestas sem sed enim interdum, ac tincidunt augue vulputate. Vestibulum vehicula finibus mi vel condimentum. Proin tempor quis leo nec tincidunt. Integer luctus risus sed diam commodo viverra. Vestibulum tempus fermentum erat id vestibulum. Aliquam suscipit sollicitudin ante eu laoreet. Phasellus rutrum, diam vel placerat bibendum, ipsum arcu sodales felis, sed dignissim velit magna scelerisque ipsum. Vestibulum consectetur egestas ligula, quis porta magna feugiat id. Vivamus gravida sapien in posuere convallis. Integer nec dui leo. Nam eu nulla aliquet, luctus augue vel, lacinia mauris.
+$$n^* = \max \{ n \in \mathbb{N}, \beta(n) > \beta^* \}$$
 
-Quisque dolor orci, tristique quis tortor eu, ornare scelerisque ligula. Nullam ac consectetur erat. Nunc ut massa iaculis, dictum ex fringilla, lobortis urna. Nulla pellentesque est neque, sed laoreet elit malesuada sed. Maecenas vel enim dapibus, faucibus leo id, dignissim tortor. Donec facilisis sit amet tellus in dignissim. In porttitor, urna nec pulvinar semper, dolor felis rutrum sapien, quis feugiat ipsum leo eu neque. Etiam quis nulla vitae felis lacinia imperdiet eget eget felis. Donec in mollis urna. Curabitur in luctus lectus. Sed tristique, velit quis ultrices vulputate, lectus sapien posuere leo, eget malesuada dui turpis sit amet dolor. Nullam sed egestas massa.
+This score car be extended to other problems, it only depends on the ability of finding derivation of the values $$ C_{max}(n) $$ and $$ C^R(n) $$.
 
-Aenean volutpat condimentum quam eu volutpat. Donec maximus luctus ligula, dapibus sollicitudin nisi volutpat sodales. Etiam lacinia augue non nisl imperdiet, eget placerat augue facilisis. Aenean nec rutrum nunc. Quisque sodales non elit in fermentum. Vivamus sed urna vel nisi congue imperdiet. Curabitur id odio ut mi venenatis rutrum.
+## Some $$C^R(n)$$ and $$C_{max}(n)$$ based on specific graph classes for Max-Cut 
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin condimentum, odio nec pulvinar gravida, enim ligula venenatis sapien, eget volutpat enim sapien a libero. Nam ex ipsum, ullamcorper at imperdiet in, gravida quis enim. Suspendisse potenti. Maecenas congue, urna id sodales suscipit, tortor ex pellentesque velit, nec tempus erat diam nec elit. Vestibulum efficitur porta turpis vitae elementum. Quisque eget eros massa. 
+$$C^R(n)$$ and $$C_{max}(n)$$ for **Erdös-Renyi graphs $$G(n, p)$$**:  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor pharetra vehicula. Aliquam erat volutpat. Phasellus a nulla auctor, volutpat libero quis, scelerisque diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vel efficitur enim, at molestie diam. Quisque vel elit mi. Cras porttitor justo in dictum consequat. Quisque quam dui, commodo vitae luctus vitae, auctor eu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+$$C^R(n) = \frac{pn^2}{4}$$
 
-Cras id est pretium, ullamcorper diam vel, semper odio. Donec a mi congue, facilisis orci quis, venenatis felis. Donec lacus nunc, euismod quis rhoncus quis, congue quis lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent egestas sem sed enim interdum, ac tincidunt augue vulputate. Vestibulum vehicula finibus mi vel condimentum. Proin tempor quis leo nec tincidunt. Integer luctus risus sed diam commodo viverra. Vestibulum tempus fermentum erat id vestibulum. Aliquam suscipit sollicitudin ante eu laoreet. Phasellus rutrum, diam vel placerat bibendum, ipsum arcu sodales felis, sed dignissim velit magna scelerisque ipsum. Vestibulum consectetur egestas ligula, quis porta magna feugiat id. Vivamus gravida sapien in posuere convallis. Integer nec dui leo. Nam eu nulla aliquet, luctus augue vel, lacinia mauris.
+$$C_{max}(n) = \frac{pn^2}{4} + \lambda_p n^{3/2}$$
 
-Quisque dolor orci, tristique quis tortor eu, ornare scelerisque ligula. Nullam ac consectetur erat. Nunc ut massa iaculis, dictum ex fringilla, lobortis urna. Nulla pellentesque est neque, sed laoreet elit malesuada sed. Maecenas vel enim dapibus, faucibus leo id, dignissim tortor. Donec facilisis sit amet tellus in dignissim. In porttitor, urna nec pulvinar semper, dolor felis rutrum sapien, quis feugiat ipsum leo eu neque. Etiam quis nulla vitae felis lacinia imperdiet eget eget felis. Donec in mollis urna. Curabitur in luctus lectus. Sed tristique, velit quis ultrices vulputate, lectus sapien posuere leo, eget malesuada dui turpis sit amet dolor. Nullam sed egestas massa.
+Ratio for **$$k$$-regular graphs**:  
 
-Aenean volutpat condimentum quam eu volutpat. Donec maximus luctus ligula, dapibus sollicitudin nisi volutpat sodales. Etiam lacinia augue non nisl imperdiet, eget placerat augue facilisis. Aenean nec rutrum nunc. Quisque sodales non elit in fermentum. Vivamus sed urna vel nisi congue imperdiet. Curabitur id odio ut mi venenatis rutrum.
+$$C^R(n) = \frac{nk}{4}$$
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin condimentum, odio nec pulvinar gravida, enim ligula venenatis sapien, eget volutpat enim sapien a libero. Nam ex ipsum, ullamcorper at imperdiet in, gravida quis enim. Suspendisse potenti. Maecenas congue, urna id sodales suscipit, tortor ex pellentesque velit, nec tempus erat diam nec elit. Vestibulum efficitur porta turpis vitae elementum. Quisque eget eros massa. 
+$$C_{max}(n) = \frac{nk}{4} + \lambda_k n$$
 
+For these formulations, $$\lambda_p$$ and $$\lambda_k$$ values define the scaling factor of the optimal cut compared to a random average cut. These variables are defined analytically (see III.D of {% cite martiel2021benchmarking %})
+
+## Assumptions
+
+* The Q-score does not have runtime limit. Subsequent studies has propose a 60s runtime limit for each instance (see {% cite van2023q%}).
+* no assumptions on compilation processing
+* no assumptions on error mitigation technique
+
+## Configuration of experiments
+
+* Size of instance set recommended: 100
+* Number of shots recommended: 2048
+* Default level of difficulty: $$\beta^* = 0.2$$
+
+## Extensions to the Q-score
+
+### Max-clique extension
+In {% cite van2023q %}, the authors extend the Q-Score to the Max-clique problem. For **Erdös-Renyi graphs $$G(n, p)$$**.  
+The average random cost $$C^R(n)$$ is set to (proof in {% cite van2023q %}):  
+
+$$ C^R(n) = \sum_{i=1}^n i \times (1-p^i)p^{i(i-1)/2} $$
+
+For this kind of problem, $$C_{max}$$ is set to (proof in {% cite matula1976largest %}):  
+
+$$ C_{max}(n) = 2 \log_2(n) - 2 \log_2(\log_2(n)) + 2 \log_2\left(\frac{e}{2}\right) +1 $$  
+
+### Empirical optimal and random average cost
+
+In {% cite coelho2022efficient %}, the authors propose to define $$C_{max}(n)$$ from arbitrary problems by using exact methods. This method broadens the set of problems that can be evaluated of the Q-score at the expense of limiting the scalability of the method.
+
+
+## Max-cut Q-score benchmark
+
+
+
+## Max-clique Q-score benchmark
+
+
+## References
 {% bibliography --cited %}
