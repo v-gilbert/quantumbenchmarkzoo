@@ -24,7 +24,7 @@ The classical **fidelity** computes the distance between 2 classical probability
 
 $$F(p_x, q_x) = \sum_x \sqrt{p_x q_x}$$
 
-The fidelity is not a metric, $$F(p_x, q_x) = 1$$ when $$\{p_x\}$$ and $$\{q_x\}$$ are identical. 
+The fidelity is not a metric, $$F(p_x, q_x) = 1$$ when $$\{p_x\}$$ and $$\{q_x\}$$ are identical. The fidelity and its square are both referenced as fidelity in the litterature.
 
 For further details, one may consult {% cite nielsen2010quantum %} Part III. Chapter 9.
 
