@@ -16,7 +16,7 @@ The quantum generalization of this metric is the quantum trace distance, which m
 
 $$D(\rho, \sigma) = \frac{1}{2} Tr |\rho - \sigma|$$
 
-For further details, one may consult {% cite nielsen2010quantum %} Part III. Chapter 9.
+For further details, one may refer to {% cite nielsen2010quantum %} Part III. Chapter 9.
 
 ## Fidelity
 
@@ -24,9 +24,15 @@ The classical **fidelity** computes the distance between 2 classical probability
 
 $$F(p_x, q_x) = \sum_x \sqrt{p_x q_x}$$
 
-The fidelity is not a metric, $$F(p_x, q_x) = 1$$ when $$\{p_x\}$$ and $$\{q_x\}$$ are identical. The fidelity and its square are both referenced as fidelity in the litterature.
+The fidelity is not a metric, $$F(p_x, q_x) = 1$$ when $$\{p_x\}$$ and $$\{q_x\}$$ are identical. 
 
-For further details, one may consult {% cite nielsen2010quantum %} Part III. Chapter 9.
+The quantum fidelity between 2 quantum states $$\rho$$ and $$\sigma$$ is defined by:  
+
+$$F(\rho, \sigma) = Tr \left( \sqrt{\sqrt{\rho} \sigma \sqrt{\rho}} \right)$$ 
+
+The fidelity and its square are both referenced as fidelity in the litterature.
+
+For further details, one may refer to {% cite nielsen2010quantum %} Part III. Chapter 9.
 
 # References
 {% bibliography --cited %}
