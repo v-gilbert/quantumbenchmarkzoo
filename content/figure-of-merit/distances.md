@@ -1,8 +1,8 @@
 ---
 description: >
-  Trace distance.
+  Distances
 ---
-# Distance measure
+# Distance measures
 
 Distance measurements are employed to measure the distance that quantitatively separate two quantum states. 
 

@@ -38,7 +38,7 @@ For these formulations, $$\lambda_p$$ and $$\lambda_k$$ values define the scalin
 
 ## Assumptions
 
-* The Q-score does not have runtime limit. Subsequent studies has propose a 60s runtime limit for each instance (see {% cite van2023q%}).
+* The Q-score does not have runtime limit, but considers that the classical algorithm implementation runs in polynomial time. Subsequent studies has proposed a 60s runtime limit for each instance (see {% cite van2023q%}).
 * no assumptions on compilation processing
 * no assumptions on error mitigation technique
 

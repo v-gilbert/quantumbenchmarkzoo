@@ -1,6 +1,6 @@
 # Site
 title: QuantumBenchmarkZoo
-description: Official documentation for quantum benchmarks
+description: Documentation for quantum benchmarks
 baseurl: /
 permalink: /:title
 
@@ -17,19 +17,30 @@ nav:
       available: true
     - text: Acknowledgments
       page-id: acknowledgments
-      url: /acknowedgments
+      url: /content/the-zoo/acknowedgments
       available: true
     - text: Taxonomy
       page-id: taxonomy
-      url: /taxonomy
+      url: /content/the-zoo/taxonomy
       available: true
-  Metrics:
-    - text: Trace distance
-      url: /content/metrics/trace-distance
+  FOM:
+    - text: Distance
+      page-id: distance-measure
+      url: /content/figure-of-merit/distances
+      available: true
+    - text: Application FOM
+      page-id: application-fom
+      url: /content/figure-of-merit/application-fom
       available: true
   Protocols:
-    - text: Q-Score
-      url: /content/protocols/q-score
+    - text: Randomized Benchmarking
+      url: /content/protocols/randomized/index
+      available: true
+    - text: Application Benchmarking
+      url: /content/protocols/application/index
+      available: true
+    - text: Quantum Supremacy
+      url: /content/protocols/supremacy/index
       available: true
   Users:
     - text: Installation
@@ -80,6 +91,18 @@ nav:
     - text: ULX commands
       url: /ulx-commands
       available: true
+  Pricing:
+    - text: Hardware Access
+      url: /content/pricing/index
+      available: true
+
+
+# application protocols
+application-protocols:
+  - text: Q-Score protocol
+    page-id: q-score-protocol
+    url: /content/protocols/application/q-score
+
 
 # Defaults
 defaults:

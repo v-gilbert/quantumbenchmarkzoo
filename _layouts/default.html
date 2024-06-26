@@ -32,6 +32,13 @@
     <title>{{ current_page.text }} - {{ site.title }}</title>
     <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <!-- Data table css -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Data table javascript -->
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
     <script defer src="{{ "/js/docsearch-2.6.3.min.js" | prepend: site.baseurl }}"></script>
     <script defer src="{{ "/js/docsearch-config.js" | prepend: site.baseurl }}"></script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
@@ -42,7 +49,8 @@
       <div class="header__container">
         <label class="header__menu-toggle" for="menu"><span class="hamburger"><span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span></span></label>
         <div class="header__logo">
-            <a class="header__logo-link" href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>
+            <!--<a class="header__logo-link" href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>-->
+            <a class="header__logo-link" href="{{ "/" | prepend: site.baseurl }}"><img src="/img/logo_QBZ.svg" alt="Quantum Benchmark Zoo"></a>
         </div>
         <div class="header__search">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
