@@ -6,7 +6,7 @@ permalink: /:title
 
 # Repository
 git:
-  repository_url: https://github.com/Timmy/ulx-docs
+  repository_url: https://github.com/v-gilbert/quantumbenchmarkzoo
 
 # Navigation
 nav:
