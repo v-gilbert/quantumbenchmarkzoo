@@ -17,7 +17,7 @@ nav:
       available: true
     - text: Acknowledgments
       page-id: acknowledgments
-      url: /content/the-zoo/acknowedgments
+      url: /content/the-zoo/acknowledgments
       available: true
     - text: Taxonomy
       page-id: taxonomy
@@ -33,71 +33,35 @@ nav:
       url: /content/figure-of-merit/application-fom
       available: true
   Protocols:
-    - text: Randomized Benchmarking
+    - text: Randomized Benchmarks
+      page-id: randomized-benchmarks
       url: /content/protocols/randomized/index
       available: true
-    - text: Application Benchmarking
-      url: /content/protocols/application/index
+    - text: Application Benchmarks
+      page-id: application-benchmarks
+      url: /content/protocols/application/index   
       available: true
     - text: Quantum Supremacy
+      page-id: supremacy-benchmarks
       url: /content/protocols/supremacy/index
-      available: true
-  Users:
-    - text: Installation
-      url: /installation
-      available: true
-    - text: Getting started
-      url: /start
-      available: true
-    - text: User management
-      url: /user-management
-      available: true
-    - text: Configuration
-      url: /configuration
-      available: true
-    - text: Targeting players
-      url: /targeting
-      available: true
-    - text: Backup and restore
-      url: /backup-and-restore
-      available: true
-    - text: Reset to defaults
-      url: /reset
-      available: true
-    - text: Tips and tricks
-      url: /tips-and-tricks
-      available: true
-    - text: Third-party modules
-      url: /third-party-modules
-      available: true
-  Developers:
-    - text: SVN version
-      url: /svn-version
-      available: true
-    - text: ULX module
-      url: /ulx-module
-      available: true
-    - text: Hooks and functions
-      url: /hooks-and-functions
-    - text: Custom module
-      url: /custom-module
-    - text: Custom command
-      url: /custom-command
-    - text: Custom keyword
-      url: /custom-keyword
-    - text: Custom XGUI tab
-      url: /custom-xgui-tab
-  Resources:
-    - text: ULX commands
-      url: /ulx-commands
       available: true
   Pricing:
     - text: Hardware Access
       url: /content/pricing/index
       available: true
 
+# Randomized protocols
+randomized-protocols:
+  sampling-problems:
+    - text: HOG problem
+      page-id: hog-problem
+      url: /content/protocols/randomized/hog-problem
+  volume-benchmarks:
+    - text: Quantum Volume
+      page-id: quantum-volume
+      url: /content/protocols/randomized/quantum-volume
 
-# application protocols
+# Application protocols
 application-protocols:
   - text: Q-Score protocol
     page-id: q-score-protocol
@@ -122,7 +86,7 @@ exclude: ["README.md"]
 
 # Bibliography
 scholar:
-  style: apa
+  style: ieee-with-url
   locale: en
 
   sort_by: none

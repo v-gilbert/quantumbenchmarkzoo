@@ -1,7 +1,7 @@
 {% assign current_url = page.url | remove: 'index.html' %}
 
 {% comment %} Generate links to previous and next page. {% endcomment %}
-{% assign nav_items = site.nav.Zoo | concat:site.nav.Users | concat: site.nav.Developers | concat: site.nav.Resources %}
+{% assign nav_items = site.nav.Zoo | concat:site.nav.FOM | concat: site.nav.Protocols | concat: site.nav.Pricing %}
 {% assign cutoff_one = site.nav.Zoo.size %}
 {% assign cutoff_one = site.nav.Users.size %}
 {% assign cutoff_two = cutoff_one | plus: site.nav.Developers.size %}
@@ -30,7 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% if page.description %}<meta name="description" content="{{ page.description | strip_newlines }}">{% endif %}
     <title>{{ current_page.text }} - {{ site.title }}</title>
-    <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="icon" href="{{ "/img/icon.ico" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
     <!-- Data table css -->
@@ -63,16 +63,20 @@
       <main class="content">
         {{ content }}
       </main>
-      <div class="content__nav">
+
+      <!-- Return to previous / next section -->
+      <!-- <div class="content__nav">
         {% if previous_page %}<a class="content__nav-link content__nav-link--prev" href="{{ previous_page.url | prepend: site.baseurl }}">{{ previous_page.text }}</a>{% endif %}
         {% if next_page %}<a class="content__nav-link content__nav-link--next" href="{{ next_page.url | prepend: site.baseurl }}">{{ next_page.text }}</a>{% endif %}
-      </div>
-      <div class="content__meta">
-        <p>
-          Want to improve the documentation on this page?
-          <a href="{{ site.git.repository_url }}/issues/new">Report an error</a> or
-          <a href="{{ site.git.repository_url }}/edit/master/{{ page.path }}">suggest changes</a>.
-        </p>
+      </div> -->
+      <div class="content__nav">
+        <div class="content__meta">
+          <p>
+            Want to improve the documentation on this page?
+            <a href="{{ site.git.repository_url }}/issues/new">Report an error</a> or
+            <a href="{{ site.git.repository_url }}/edit/master/{{ page.path }}">suggest changes</a>.
+          </p>
+        </div>
       </div>
     </div>
     {% include footer.html %}

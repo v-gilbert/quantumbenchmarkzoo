@@ -13,16 +13,16 @@ For all $$x, y, z \in \mathbb{R}$$, a metric must satisfy:
 - Symmetry: $$D(x, y) = D(y, x)$$
 - Triangle inequality: $$D(x, z) \leq D(x, y) + D(y, z)$$
 
-## Quantum simulation
+## Quantum Emulation
 
-Execution of a quantum program on a real quantum computer.
+Combination of **classical** software and hardware used to run or execute a quantum evolution (such as running a quantum circuit, solving the Shrödinger equation etc. ). The classical software and hardware use bits as basic units of information and classical logic gate as fundamental operations. Further details on the difference between quantum emulation and quantum simulation can be found at {% cite ezratty2023emulation %}
 
-## Quantum emulation
+## Quantum Simulation
 
-Emulation of a quantum computer with a classical method. Several classical methods are used to emulate a quantum computer:
-- Classically solving the Shrödinger equation
-- Matrix diagonalization
-- others ?
+A simulation gives insights about a mathematical function, which can be interpreted as some part of a physical model (either quantum or classical). When this physical model relies on quantum mechanic, this process is called a quantum simulation. Analog quantum systems are usually reffered as quantum simulations as their associated Hamiltonian can be interpreted as a part or a real quantum physical model. Further details can be found at {% cite johnson2014pioneer %}.
+
 
 ## Random Special Unitary Group
 
+# References
+{% bibliography --cited %}

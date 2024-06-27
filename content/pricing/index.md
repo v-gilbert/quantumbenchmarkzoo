@@ -1784,6 +1784,7 @@ Contains 170 000$ eHQC</td>
     </tr>
   </tbody>
 </table>
+
 <script type="text/javascript">
   $(document).ready(function() {
   $('#my_table').DataTable(

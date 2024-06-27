@@ -24,7 +24,7 @@ The classical **fidelity** computes the distance between 2 classical probability
 
 $$F(p_x, q_x) = \sum_x \sqrt{p_x q_x}$$
 
-The fidelity is not a metric, $$F(p_x, q_x) = 1$$ when $$\{p_x\}$$ and $$\{q_x\}$$ are identical. 
+The fidelity is not a metric: $$F(p_x, q_x) = 1$$ when $$\{p_x\}$$ and $$\{q_x\}$$ are identical. 
 
 The quantum fidelity between 2 quantum states $$\rho$$ and $$\sigma$$ is defined by:  
 
