@@ -12,22 +12,21 @@ CE: Constructor Evaluation (checked if the evaluation is done by the chip manufa
 SP: Scientific paper (checked if a scientific paper explain the results)  
 
 For clarity the Quantum Volum is expressed in a logarithmic basis.
-
 <table id="my_table" class="display">
   <thead>
     <tr>
-      <th>Source</th>
+      <th>Ref</th>
       <th>Company</th>
       <th>Year</th>
       <th>CE</th>
       <th>SP</th>
-      <th>#Circuits</th>
+      <th>#Circ</th>
       <th>Shots</th>
       <th>CPU / QPU</th>
       <th>Technology</th>
-      <th>#QUBITS</th>
+      <th>Chip qubits</th>
       <th>QV</th>
-      <th>Remark</th>
+      <th>Comment</th>
     </tr>
   </thead>
   <tbody>
@@ -37,8 +36,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2023/02</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>Pine System</td>
       <td>Superconducting</td>
       <td>24</td>
@@ -51,8 +50,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2020/07</td>
       <td>x</td>
       <td>x</td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>Johannesburg</td>
       <td>Superconducting</td>
       <td>20</td>
@@ -65,8 +64,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2020/09</td>
       <td>x</td>
       <td>x</td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>Montreal</td>
       <td>Superconducting</td>
       <td>27</td>
@@ -79,8 +78,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>sherbrooke (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -93,8 +92,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>sherbrooke (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -107,8 +106,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>brisbane (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -121,8 +120,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>brisbane (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -135,8 +134,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>osaka (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -149,8 +148,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>osaka (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -163,8 +162,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>kyoto (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -177,8 +176,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>kyoto (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -191,8 +190,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>Quebec (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -205,8 +204,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>kawasaki (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -219,8 +218,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>rensselaer (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -233,8 +232,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>kyiv (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -247,8 +246,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>cleveland (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -261,8 +260,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>nazca (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -275,8 +274,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2022/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>cusco (Eagle r3)</td>
       <td>Superconducting</td>
       <td>127</td>
@@ -289,8 +288,8 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2023/12</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>torino (Heron r1)</td>
       <td>Superconducting</td>
       <td>133</td>
@@ -322,7 +321,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>Lucy</td>
       <td>Superconducting</td>
       <td>8</td>
-      <td><1</td>
+      <td>0</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
     <tr>
@@ -377,7 +376,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>100</td>
       <td>H0</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>6</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
@@ -387,11 +386,11 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2020/09</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>7</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
@@ -401,11 +400,11 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2021/03</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>9</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
@@ -415,11 +414,11 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>2021/07</td>
       <td>x</td>
       <td></td>
-      <td>NA</td>
-      <td>NA</td>
+      <td></td>
+      <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>10</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
@@ -433,7 +432,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>5</td>
       <td>H1-2</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>11</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
@@ -447,7 +446,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>100</td>
       <td>H1-2</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>12</td>
       <td>initial protocol {% cite cross2019validating %}</td>
     </tr>
@@ -461,7 +460,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>90</td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>13</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -475,7 +474,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>14</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -489,7 +488,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>200</td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>15</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -503,7 +502,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H2-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>15</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -517,7 +516,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td>100</td>
       <td>H2-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>16</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -531,7 +530,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>16</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -545,7 +544,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>17</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -559,7 +558,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>18</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -573,7 +572,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>19</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -587,7 +586,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-2</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>15</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -601,7 +600,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H1-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>20</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>
@@ -615,7 +614,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
       <td></td>
       <td>H2-1</td>
       <td>Trapped-ions</td>
-      <td>/</td>
+      <td></td>
       <td>18</td>
       <td>protocol {% cite baldwin2022re %}</td>
     </tr>

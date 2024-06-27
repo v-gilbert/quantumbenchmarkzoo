@@ -7,22 +7,23 @@ description: >
 # Q-score benchmark
 
 ### List of acronyms
-CE: Constructor Evaluation (checked if the evaluation is done by the chip manufacturer)
-SP: Scientific paper (checked if a scientific paper explain the results)
-SA : Simulated Annealing  
-TS : Tabu Search  
+AC : Advanced Compilation method  
+CE: Constructor Evaluation (checked if the evaluation is done by the chip manufacturer)  
+EM : Error mitigation  
 ER : Erdös-Renyi  
+HS : Hybrid Solver  
+QA : Quantum Annealer  
 QC : Quantum Circuit  
 QCE : Quantm Computer Emulation  
-QA : Quantum Annealer  
-HS : Hybrid Solver  
+SA : Simulated Annealing  
+SP: Scientific paper (checked if a scientific paper explain the results)  
+TS : Tabu Search  
 UD : Unit Disk  
-AC : Advanced Compilation method  
-EM : Error mitigation  
+
 <table id="my_table" class="display">
   <thead>
     <tr>
-      <th>Source</th>
+      <th>Ref</th>
       <th>Year</th>
       <th>CE</th>
       <th>SP</th>
@@ -34,13 +35,13 @@ EM : Error mitigation
       <th>Method</th>
       <th>CPU / QPU</th>
       <th>Score</th>
-      <th>Remark</th>
+      <th>Comment</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>{% cite martiel2021benchmarking %}</td>
-      <td>02/2021</td>
+      <td>2021/02</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
@@ -58,7 +59,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite martiel2021benchmarking %}</td>
-      <td>02/2021</td>
+      <td>2021/02</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
@@ -76,13 +77,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2022evaluating %}</td>
-      <td>08/2022</td>
+      <td>2022/08</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>TS</td>
       <td>i7-7600u</td>
@@ -91,13 +92,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2022evaluating %}</td>
-      <td>08/2022</td>
+      <td>2022/08</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>SA</td>
       <td>i7-7600u</td>
@@ -106,13 +107,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2022evaluating %}</td>
-      <td>08/2022</td>
+      <td>2022/08</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QA</td>
       <td>D-Wave 2000Q</td>
@@ -121,13 +122,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2022evaluating %}</td>
-      <td>08/2022</td>
+      <td>2022/08</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QA</td>
       <td>D-Wave Advantage </td>
@@ -136,13 +137,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2022evaluating %}</td>
-      <td>08/2022</td>
+      <td>2022/08</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QA</td>
       <td>D-Wave hybrid solver</td>
@@ -151,7 +152,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite coelho2022efficient %}</td>
-      <td>07/2022</td>
+      <td>2022/07</td>
       <td></td>
       <td>x</td>
       <td>Max-Cut</td>
@@ -167,7 +168,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite coelho2022efficient %}</td>
-      <td>07/2022</td>
+      <td>2022/07</td>
       <td></td>
       <td>x</td>
       <td>MIS</td>
@@ -183,13 +184,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>TS</td>
       <td>i7-7600u</td>
@@ -198,13 +199,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>SA</td>
       <td>i7-7600u</td>
@@ -213,13 +214,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QA</td>
       <td>D-Wave 2000Q</td>
@@ -228,13 +229,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QA</td>
       <td>D-Wave Advantage </td>
@@ -243,13 +244,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>HS</td>
       <td>D-Wave hybrid solver</td>
@@ -258,13 +259,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QC</td>
       <td>QuTech Starmon-5</td>
@@ -273,13 +274,13 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite van2023q %}</td>
-      <td>02/2023</td>
+      <td>2023/02</td>
       <td></td>
       <td>x</td>
       <td>Max-clique</td>
       <td>ER G(n, p=1/2)</td>
       <td>100</td>
-      <td>/</td>
+      <td></td>
       <td>60s</td>
       <td>QC</td>
       <td>IBM Gadalupe</td>
@@ -288,7 +289,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite iqm2023qscore %}</td>
-      <td>10/2023</td>
+      <td>2023/10</td>
       <td>x</td>
       <td></td>
       <td>Max-Cut</td>
@@ -303,7 +304,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite ronkko2024premises %}</td>
-      <td>02/2024</td>
+      <td>2024/02</td>
       <td>x</td>
       <td>x</td>
       <td>Max-Cut</td>
@@ -318,7 +319,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
     <tr>
       <td>{% cite iqm2024qscore %}</td>
-      <td>02/2024</td>
+      <td>2024/02</td>
       <td>x</td>
       <td></td>
       <td>Max-Cut</td>
@@ -338,8 +339,8 @@ $$\epsilon_2=2 %$$</td>
       <td></td>
       <td>Max-Cut</td>
       <td>/</td>
-      <td>/</td>
-      <td>/</td>
+      <td></td>
+      <td></td>
       <td>/</td>
       <td>QC</td>
       <td>Quandela Altaïr</td>
@@ -348,6 +349,7 @@ $$\epsilon_2=2 %$$</td>
     </tr>
   </tbody>
 </table>
+
 
 <script type="text/javascript">
   $(document).ready(function() {

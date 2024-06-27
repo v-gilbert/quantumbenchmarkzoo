@@ -7,9 +7,11 @@ description: >
 # Hardware pricing and access
 
 List of acronyms:
-* sqgs: single qubit gate shot
-* dqgs: souble qubit gate shot
 * em: error mitigation
+* CIM: Coherent Ising Machine
+* dqgs: souble qubit gate shot
+* sqgs: single qubit gate shot
+
 
 <table id="my_table" class="display">
   <thead>
