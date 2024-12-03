@@ -633,7 +633,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
 
 # Quantum Volume protocol
 
-The Quantum Volume (QV) {% cite bishop2017quantum cross2019validating %} is a benchmarking protocol used to measure the ability of circuit-based quantum computers to simulate quantum circuits. This protocol gathers in a single metric number, the maximum width and depth that a quantum computer can successfully implement. A quantum computer has to sucessfully solve the <a href="{{ hog.url | prepend: site.baseurl }}" target="_blank">Heavy Output Generation (HOG) problem  {% cite aaronson2016complexity %} of size $$n$$ to validate a quantum volume of size $$2^n$$.  
+The Quantum Volume (QV) {% cite bishop2017quantum cross2019validating %} is a benchmarking protocol used to measure the ability of circuit-based quantum computers to simulate quantum circuits. This protocol gathers in a single metric number, the maximum width and depth that a quantum computer can successfully implement. A quantum computer has to sucessfully solve the <a href="{{ hog.url | prepend: site.baseurl }}" target="_blank">Heavy Output Generation (HOG) problem  {% cite aaronson2016complexity %} of size $$n$$ to validate a quantum volume of size $$2^n$$. This is done by obtaining an average heavy ouput frequency greater than $$2/3$$ with a 2-sigma confidence.
 
 Receipe for a Quantum Volume Experiment:
 - Choose a number $$n$$ as the width of the circuit (i.e., number of qubits in the circuit).
@@ -655,7 +655,15 @@ This circuit is then used as input for the sampling task associated to the Heavy
 * Efficiency of the transpilation method
 
 ## Protocol complexity
-The complexity of the HOG problem is exponential either in time or space for a classical computer. For further details on the complexity the reader may refer to {% cite aaronson2016complexity %}.
+The complexity of the HOG problem is exponential either in time or space for a classical computer. For further details on the complexity the reader may refer to {% cite aaronson2016complexity %}. In {% cite baldwin2022re %}, the authors show that the compilation has a strong impact on small quantum volumes ($$< 10$$) as it can reduce the number of 2-qubit gate.
+
+## Protocol variations
+
+In {% cite baldwin2022re %}, the authors argue that the confidence interval built in the intial test {% cite cross2019validating %} is much higher that required to respect the 2-sigma confidence. They also provide a new compilation method to improve the
+
+## Comments on the Quantum Volume
+
+Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
 
 ## References
 {% bibliography --cited %}

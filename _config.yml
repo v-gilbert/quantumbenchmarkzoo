@@ -60,6 +60,9 @@ randomized-protocols:
     - text: Quantum Volume
       page-id: quantum-volume
       url: /content/protocols/randomized/quantum-volume
+    - text: CLOPS
+      page-id: clops
+      url: /content/protocols/randomized/clops
 
 # Application protocols
 application-protocols:
