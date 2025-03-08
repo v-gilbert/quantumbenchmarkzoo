@@ -80,5 +80,13 @@
       </div>
     </div>
     {% include footer.html %}
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('.my_table').DataTable(
+        {
+          "pageLength": 100
+        } 
+      );});
+    </script>
   </body>
 </html>
