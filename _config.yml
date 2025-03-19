@@ -70,7 +70,18 @@ application-protocols:
     page-id: q-score-protocol
     url: /content/protocols/application/q-score
 
-
+# Supremacy protocols
+supremacy-protocols:
+  - text: Random circuit sampling
+    page-id: random-circuit-sampling
+    url: /content/protocols/supremacy/random-circuit-sampling
+  - text: Boson sampling 
+    page-id: boson-sampling
+    url: /content/protocols/supremacy/boson-sampling
+  - text: Quantum simulation
+    page-id: quantum-simulation
+    url: /content/protocols/supremacy/quantum-simulation
+  
 # Defaults
 defaults:
   - scope:
