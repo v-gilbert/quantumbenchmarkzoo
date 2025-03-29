@@ -42,6 +42,7 @@
     <script defer src="{{ "/js/docsearch-2.6.3.min.js" | prepend: site.baseurl }}"></script>
     <script defer src="{{ "/js/docsearch-config.js" | prepend: site.baseurl }}"></script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" type="text/javascript"></script>-->
   </head>
   <body class="page">
 
@@ -82,13 +83,5 @@
       </div>
     </div>
     {% include footer.html %}
-    <script type="text/javascript">
-      $(document).ready(function() {
-      $('.my_table').DataTable(
-        {
-          "pageLength": 100
-        } 
-      );});
-    </script>
   </body>
 </html>

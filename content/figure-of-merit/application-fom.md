@@ -16,7 +16,7 @@ These three basic FOMs can be combined and there exist possible trade-offs betwe
 
 ## Success probability 
 
-The success probability also called optimal solution probability, is the probability of finding the ground state of an Hamiltonian.
+The \\(x \leq 5\\) success probability also called optimal solution probability, is the probability of finding the ground state of an Hamiltonian.
 
 $$ s = P(X = E_\mathrm{gs}) $$
 

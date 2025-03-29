@@ -24,9 +24,9 @@ nav:
       url: /content/the-zoo/taxonomy
       available: true
   FOM:
-    - text: Distance
-      page-id: distance-measure
-      url: /content/figure-of-merit/distances
+    - text: Fidelities and errors
+      page-id: fidelities-errors
+      url: /content/figure-of-merit/fidelities-errors
       available: true
     - text: Application FOM
       page-id: application-fom
@@ -35,19 +35,19 @@ nav:
   Protocols:
     - text: Randomized Benchmarks
       page-id: randomized-benchmarks
-      url: /content/protocols/randomized/index
+      url: /content/protocols/randomized/protocols
       available: true
     - text: Application Benchmarks
       page-id: application-benchmarks
-      url: /content/protocols/application/index   
+      url: /content/protocols/application/protocols  
       available: true
     - text: Quantum Supremacy
       page-id: supremacy-benchmarks
-      url: /content/protocols/supremacy/index
+      url: /content/protocols/supremacy/protocols
       available: true
   Pricing:
     - text: Hardware Access
-      url: /content/pricing/index
+      url: /content/pricing/hardware-access
       available: true
 
 # Randomized protocols

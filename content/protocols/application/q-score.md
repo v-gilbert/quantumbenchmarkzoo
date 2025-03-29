@@ -20,7 +20,16 @@ SP: Scientific paper (checked if a scientific paper explain the results)
 TS : Tabu Search  
 UD : Unit Disk  
 
-{% include tables/q-score_bench_table.html %}
+{% include tables/q-score-table.html %}
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.q-score-table').DataTable(
+        {
+          "pageLength": 100
+        } 
+      );
+    });
+</script>
 
 # Q-score protocol
 

@@ -1,3 +1,19 @@
 .hidden{
     display: none;
 }
+
+.nutshell-div{
+    border-radius: 50px;
+    background-color: rgb(185, 185, 185);
+}
+
+.center{
+    text-align: center;
+}
+
+@media (min-width: 769px){
+    .img_content{
+        width: 70%;
+    }
+}
+    
