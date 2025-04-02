@@ -34,7 +34,7 @@ nav:
       available: true
   Protocols:
     - text: Randomized Benchmarks
-      page-id: randomized-benchmarks
+      page-id: randomized-benchmarksThis is recommended for a site that is hosted on a subpath of a domain.
       url: /content/protocols/randomized/protocols
       available: true
     - text: Application Benchmarks
@@ -69,7 +69,13 @@ application-protocols:
   - text: Q-Score protocol
     page-id: q-score-protocol
     url: /content/protocols/application/q-score
-
+  - text: Volumetric-benchmark
+    page-id: volumetric-benchmark
+    url: /content/protocols/application/volumetric-benchmark
+  - text: qbas
+    page-id: qbas
+    url: /content/protocols/application/qbas
+    
 # Supremacy protocols
 supremacy-protocols:
   - text: Random circuit sampling
