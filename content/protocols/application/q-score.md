@@ -31,7 +31,7 @@ UD : Unit Disk
     });
 </script>
 
-# Q-score protocol
+## Q-score protocol
 
 The Q-score protocol, introduced in {% cite martiel2021benchmarking %}, measures the maximum size of Maxcut instances that can be solved effectively on a quantum computer. The main idea is to pick a class of random graphs (e.g., Erdös-Renyi graphs with $$n$$ nodes and a specific edge probability) and to analytically derive the maximum cut size $$ C_{max}(n) $$ and average random cut size $$ C^R(n) $$ for this class. The average expectation value obtained from the sampling of the quantum computer $$ C^Q(n) $$ is used to compute the ratio $$\beta(n)$$:
 
@@ -45,7 +45,7 @@ $$n^* = \max \{ n \in \mathbb{N}, \beta(n) > \beta^* \}$$
 
 This score car be extended to other problems, it only depends on the ability of finding derivation of the values $$ C_{max}(n) $$ and $$ C^R(n) $$.
 
-## Some $$C^R(n)$$ and $$C_{max}(n)$$ based on specific graph classes for Max-Cut 
+Some $$C^R(n)$$ and $$C_{max}(n)$$ based on specific graph classes for Max-Cut 
 
 $$C^R(n)$$ and $$C_{max}(n)$$ for **Erdös-Renyi graphs $$G(n, p)$$**:  
 

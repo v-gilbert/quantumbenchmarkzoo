@@ -45,6 +45,12 @@ nav:
       page-id: supremacy-benchmarks
       url: /content/protocols/supremacy/protocols
       available: true
+  Ftqc:
+    - text: FTQC benchmark
+      page-id: ftqc
+      url: /content/ftqc/qecc
+      available: true
+  
   Pricing:
     - text: Hardware Access
       url: /content/pricing/hardware-access
@@ -72,6 +78,9 @@ application-protocols:
   - text: Volumetric-benchmark
     page-id: volumetric-benchmark
     url: /content/protocols/application/volumetric-benchmark
+  - text: algorithmic-qubit
+    page-id: algorithmic-qubit
+    url: /content/protocols/application/algorithmic-qubit
   - text: qbas
     page-id: qbas
     url: /content/protocols/application/qbas
@@ -88,6 +97,12 @@ supremacy-protocols:
     page-id: quantum-simulation
     url: /content/protocols/supremacy/quantum-simulation
   
+# Fault-tolerant error correcting codes implementations
+# Fault-tolerant Implementation:
+#  - text: Correction codes
+#    page-id: qecc
+#    url: /content/ftqc/qecc
+
 # Defaults
 defaults:
   - scope:

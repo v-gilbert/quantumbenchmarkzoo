@@ -24,5 +24,16 @@ A simulation gives insights about a mathematical function, which can be interpre
 
 ## Random Special Unitary Group
 
+## Speedups
+
+<!-- Reprendre les différents types de speedup de Ronnow et al. -->
+
+## Megaquop
+
+<!-- Reprendre def de Preskill -->
+
+
+
+
 # References
 {% bibliography --cited %}
