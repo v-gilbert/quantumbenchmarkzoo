@@ -30,6 +30,13 @@ $$ A p^m + B + C(m-1)(q-p^2)p^{m-2} $$
 
 where $$A$$, $$B$$ and $$C$$ absorb the SPAM errors and $$(q-p^2)$$ measure the degree of gate-dependence in the error.
 
+# Simultaneous Randomized Benchmarking (Extensions to RB protocol)
+
+
+
+The general idea of the protocol is to run a sequence of Clifford gate on a single qubit, leaving the other qubits idle and repeating this process on all the qubits. The average error rate is also measured for 
+
+
 # Protocol Assumptions
 
 - Quantum noise can be represented by a quantum operation that do not depend on the choice of the unitary.

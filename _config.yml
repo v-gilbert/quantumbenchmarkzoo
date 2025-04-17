@@ -58,10 +58,6 @@ nav:
 
 # Randomized protocols
 randomized-protocols:
-  sampling-problems:
-    - text: HOG problem
-      page-id: hog-problem
-      url: /content/protocols/randomized/hog-problem
   volume-benchmarks:
     - text: Quantum Volume
       page-id: quantum-volume
