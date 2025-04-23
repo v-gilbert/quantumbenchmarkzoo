@@ -1,13 +1,13 @@
 # Quantum benchmark Zoo
 
 The official documentation for quantum benchmark zoo: 
-[ Access the website](https://quantumbenchmarkzoo.org)
+<a href="https://quantumbenchmarkzoo.org" target='_blank'>Access the website</a>
 
 ## Contributing
 
 You can help improve the documentation!
 
-- [Open an issue](https://github.com/v-gilbert/quantumbenchmarkzoo/issues/new){:target="_blank"} to report an error or make a suggestion.
+- [Open an issue](https://github.com/v-gilbert/quantumbenchmarkzoo/issues/new) to report an error or make a suggestion.
 - [Create a pull request](https://github.com/v-gilbert/quantumbenchmarkzoo/issues/new){:target="_blank"} to propose changes to the documentation.
 
 ## Building
