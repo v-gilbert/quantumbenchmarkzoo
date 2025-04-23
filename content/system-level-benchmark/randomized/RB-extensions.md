@@ -15,7 +15,7 @@ To illustrate the protocol, consider the case of single-qubit Clifford group sim
 In the second step, single-qubit RB is run simultaneously on both qubits, enabling the extraction of three decay parameters: $$\alpha_{1|2}$$, $$\alpha_{2|1}$$ and $$\alpha_{12}$$ (see Fig. 2). The parameters $$\alpha_{1|2}$$ and $$\alpha_{2|1}$$ are obtained from measurements of the first and second qubit. The joint decay parameter $$\alpha_{12}$$ is retrieved from the measurements of qubit 1 and 2.
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-simultaneous.png" class="img_content" alt="Qauntum circuit associated to the simultaneous randomized benchmarking protocol"/>
+  <img src="/img/protocols/randomized/RB-simultaneous.png" class="img-medium" alt="Qauntum circuit associated to the simultaneous randomized benchmarking protocol"/>
 </div>
 
 

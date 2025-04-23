@@ -23,7 +23,7 @@ Following the classification done by J. Helsen et al. {% cite PRXQuantum.3.02035
 A generic quantum circuit can be drawn from these specifications with the initial gate $$\rho_0$$ followed by the $$l$$ sequences of gates and the POVM:
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-general-protocol.png" class="img_content" alt="General quantum circuit associated to the randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-general-protocol.png" class="img-medium" alt="General quantum circuit associated to the randomized benchmarking protocol"/>
 </div>
 
 The fitting of the exponential function is based on the assumption that:
@@ -49,7 +49,7 @@ Protocol:
 - The success metric is the probability of observing the final determinist state.
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-clifford-single-qubit.png" class="img_content" alt="Quantum circuit associated to the single-qubit clifford randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-clifford-single-qubit.png" class="img-medium" alt="Quantum circuit associated to the single-qubit clifford randomized benchmarking protocol"/>
 </div>
 
 Litterature: {% cite knill2008randomized %}
@@ -65,7 +65,7 @@ Protocol:
 - The success metric is the probability of observing the Identity.
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-clifford-multi-qubit.png" class="img_content" alt="Quantum circuit associated to the multi-qubits clifford randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-clifford-multi-qubit.png" class="img-medium" alt="Quantum circuit associated to the multi-qubits clifford randomized benchmarking protocol"/>
 </div>
 
 Limits:
@@ -90,7 +90,7 @@ Protocol:
 - The success metric is the probability of observing the final bitstring $$b$$.
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-DRB.png" class="img_content" alt="Quantum circuit associated to the direct randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-DRB.png" class="img-medium" alt="Quantum circuit associated to the direct randomized benchmarking protocol"/>
 </div>
 
 Limits: 
@@ -114,7 +114,7 @@ Protocol:
 
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-BiRB.png" class="img_content" alt="Quantum circuit associated to the Binary randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-BiRB.png" class="img-medium" alt="Quantum circuit associated to the Binary randomized benchmarking protocol"/>
 </div>
 
 Limits: 
@@ -135,7 +135,7 @@ Protocol:
 - The figure of merit for success is computed from the hamming distance between the sampled and success bitstring.
 
 <div class="center">
-  <img src="/img/protocols/randomized/RB-mirror.png" class="img_large" alt="Quantum circuit associated to the Mirror randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-mirror.png" class="img_large" alt="Quantum circuit associated to the Mirror randomized benchmarking protocol"/>
 </div>
 
 

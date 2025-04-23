@@ -14,7 +14,7 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="navigation__category">Figure of Merit</div>
+    <div class="navigation__category">Figure of Merit (FOM)</div>
     <ul class="navigation__link-list">
       {% for link in site.nav.FOM %}
         <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
@@ -24,9 +24,29 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="navigation__category">Protocols</div>
+    <div class="navigation__category">Component-level benchmark</div>
     <ul class="navigation__link-list">
-      {% for link in site.nav.Protocols %}
+      {% for link in site.nav.Component-level %}
+        <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
+          <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
+            {{ link.text }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="navigation__category">System-level benchmark</div>
+    <ul class="navigation__link-list">
+      {% for link in site.nav.System-level %}
+        <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
+          <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
+            {{ link.text }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="navigation__category">Application-level benchmark</div>
+    <ul class="navigation__link-list">
+      {% for link in site.nav.Application-level %}
         <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
           <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
             {{ link.text }}
@@ -45,9 +65,9 @@
       {% endfor %}
     </ul>
 
-    <div class="navigation__category">Pricing</div>
+    <div class="navigation__category">Business informations</div>
     <ul class="navigation__link-list">
-      {% for link in site.nav.Pricing %}
+      {% for link in site.nav.Business-informations %}
         <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
           <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
             {{ link.text }}

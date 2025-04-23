@@ -23,7 +23,7 @@ The following table summarizes experimental implementations of QECC conducted on
     $(document).ready(function() {
       $('.qecc-table').DataTable(
         {
-          "pageLength": 100
+          "pageLength": 10
         } 
       );
     });

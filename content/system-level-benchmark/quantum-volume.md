@@ -1,6 +1,6 @@
 ---
 description: >
-  Quantum Volume
+  Quantum Volume Detailed
 ---
 
 # Quantum Volume Benchmark
@@ -17,7 +17,7 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
     $(document).ready(function() {
       $('.QV-table').DataTable(
         {
-          "pageLength": 100
+          "pageLength": 10
         } 
       );
     });
@@ -34,12 +34,11 @@ The HOG problem is a sampling problem {% cite aaronson2016complexity %} consider
 The problem is stated as:  
 Let $$Q$$ be a random circuit drawn from a suitable ensemble acting on $$n$$ qubits. Each possible output state $$x \in \{0, 1\}^n$$ is measured with probability $$|\left<x|\psi\right>|$$.
 The set of output states with a probability greater than the median constitutes the *heavy* set of outputs associated with the quantum circuit $$Q$$.
-The HOG problem consists of generating $$k$$ output strings $$x_1, x_2, ..., x_k$$ such that at least a $$2/3$$ fraction of these strings are part of the *heavy* set.  
-Assuming the Quantum Threshold assumption, no polynomial-time algorithm can solve the HOG problem with a probability of at least 0.99.
-
-This problem is considered hard for classical computers. The average heavy output probability for ideal machines is $$\approx 0.847$$. Readers may refer to {% cite aaronson2016complexity %} for further calculation details and proofs.
-
-## Quantum Volum recipe
+The HOG problem consi
+The following steps define how to generate quantum volume circuits:
+- Choose a number $$n$$ as the width of the circuit (i.e., the number of qubits in the circuit).
+- Set $$n=d$$ with $$d$$ the number of layers of the quantum circuit.
+- Generate a model circuit composed of $$d$$ layers. Each layer comprises a random permutation (random relabelling) of qubits $$\pi$$ and a random unitary sampled from $$SU(4)$$. The permutation step is challenging for quantum chips with limited interconnections because it requires many swapping gates. The $$SU(4)$$ gates can be decomposed into three CNOT gates and seven single-qubit rotation gates {% cite vatan2004optimal %}.
 
 The following steps define how to generate quantum volume circuits:
 - Choose a number $$n$$ as the width of the circuit (i.e., the number of qubits in the circuit).
@@ -47,7 +46,7 @@ The following steps define how to generate quantum volume circuits:
 - Generate a model circuit composed of $$d$$ layers. Each layer comprises a random permutation (random relabelling) of qubits $$\pi$$ and a random unitary sampled from $$SU(4)$$. The permutation step is challenging for quantum chips with limited interconnections because it requires many swapping gates. The $$SU(4)$$ gates can be decomposed into three CNOT gates and seven single-qubit rotation gates {% cite vatan2004optimal %}.
 
 <div class="center">
-  <img src="/img/protocols/randomized/QV.jpg" class="img_content" alt="Quantum circuit for the quantum volume test"/>
+  <img src="/img/system-level-benchmark/quantum-volume/QV.jpg" class="img-medium" alt="Quantum circuit for the quantum volume test"/>
 </div>
 
 This circuit is then used as input for the sampling task associated with the Heavy Output Generation (HOG) problem. If the quantum computer samples the right distribution (simulated classically), it validates the corresponding quantum volume score of $$2^n$$. The confidence interval for this evaluation is set to two-sigma ($$97.73 \%$$).
@@ -65,6 +64,16 @@ In {% cite bistron2025benchmarking %}, the authors extend the quantum volume pro
 ## Comments on the Quantum Volume
 
 Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
+
+# Circuit Layer Operations Per Second (CLOPS) benchmark
+
+## CLOPS protocol
+The Circuit Layer Operations Per Second (CLOPS) {% cite wack2021qualityspeedscalekey %} is introduced by the IBM company in 2021. This metric is motivated by having a single metric measuring the quality, speed and size of a quantum circuit that can be reliably run on a gate-based quantum computer. This metric permits to measure the number of Quantum Volume (QV) circuits {% cite cross2019validating %} that can be run on a quantum computer per unit of time.
+
+<div class="center">
+  <img src="/img/system-level-benchmark/quantum-volume/clops.png" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>
+</div>
+
 
 ## References
 {% bibliography --cited %}

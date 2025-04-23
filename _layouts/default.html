@@ -1,7 +1,7 @@
 {% assign current_url = page.url | remove: 'index.html' %}
 
 {% comment %} Generate links to previous and next page. {% endcomment %}
-{% assign nav_items = site.nav.Zoo | concat:site.nav.FOM | concat: site.nav.Protocols | concat: site.nav.Pricing %}
+{% assign nav_items = site.nav.Zoo | concat:site.nav.FOM | concat: site.nav.Component-level | concat: site.nav.System-level | concat: site.nav.Application-level | concat: site.nav.Ftqc | concat: site.nav.Business-informations %}
 {% assign cutoff_one = site.nav.Zoo.size %}
 {% assign cutoff_one = site.nav.Users.size %}
 {% assign cutoff_two = cutoff_one | plus: site.nav.Developers.size %}

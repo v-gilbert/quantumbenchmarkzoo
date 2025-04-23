@@ -16,14 +16,14 @@ Bars and Stripes is a set of images of $$n \times m$$ pixels. For a fixed value 
 
 <!-- Bars and Stripes-->
 <div class="center">
-  <img src="/img/protocols/applications/qBAS-1.png" class="img_content" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>
+  <img src="/img/application-level-benchmark/qBAS-1.png" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>
 </div>
 
 The protocols aims to evaluate the capabilities of quantum computers to uniformely sample bitstring corresponding to each image of this set. Each pixel has a binary color (blue or white) and is associated to a qubit, which states $$\ket{0}$$ and $$\ket{1}$$ encode the colors. Each image should be sampled with probability $$1/N_{BAS(n, m)}$$. The quantum circuit used for the evaluation is a variational circuit composed of $$p$$ layers. The implementation of the layer $$U(\theta_i)$$ is free but must be parametrized by a single angle $$\theta_i$$. Importantly, the number of layers $$p$$ and parameters $$\theta_i$$ is **fixed** and do not scale with the size of input instances (we note the list of angles to optimize $$\vec{\theta} = (\theta_1, \theta_2, ..., \theta_p)$$). The gate layout of each layer can be individually optimized to create a circuit template but an overall compilation process optimizing the whole circuit is not authorized. 
 
 <!-- Quantum circuit -->
 <div class="center">
-  <img src="/img/protocols/applications/qBAS-2.png" class="img_content" alt="Quantum circuit corresponding to the qBAS score."/>
+  <img src="/img/application-level-benchmark/qBAS-2.png" class="img-medium" alt="Quantum circuit corresponding to the qBAS score."/>
 </div>
 
 The first step consists in learning the probability distribution of the BAS data set. A sampling composed of $$n_{shots}$$ is used to build the empirical probability of observing each bitstring constituting a BAS patterns $$x_i$$. The cost function used to optimize the values of the angles $$\vec{\theta}$$ is:

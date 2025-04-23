@@ -12,11 +12,15 @@
 }
 
 @media (min-width: 769px){
-    .img_content{
+    .img-small{
+        width: 50%;
+    }
+
+    .img-medium{
         width: 70%;
     }
 
-    .img_large{
+    .img-large{
         width: 90%;
     }
 }

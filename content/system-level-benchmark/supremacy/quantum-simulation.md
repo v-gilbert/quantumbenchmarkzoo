@@ -15,7 +15,7 @@ $$H = -J \sum_{(i, j) \in E} \sigma_i^z\sigma_j^z + h \sum_{i \in V} \sigma_i^x
 The aim of the experiment is to sample the output distribution of the trotterized evolution of the above Hamiltonian. The weight $$J$$ is judiciously chosen so that each $$\sigma^z\sigma^z$$ can be implemented with only a single CNOT gate (hence minimizing the noise induced by these gates). The weight $$h$$ is related to the parameter $$\theta_h$$ which parametrizes the rotation-x gates of the quantum circuit. For a fixed number of Trotter step $$T$$, a corresponding circuit is built and the average value of pre-defined observables are measured with different values for the $$\theta_h$$ parameter. As the circuit is built over the heavy hexagonal topology (which is a graph with maximum degree 3), a single trotter step can be done with 3 CNOT depths (see Fig. 1 and 2).
 
 <div class="center">
-  <img src="/img/protocols/supremacy/Ibm-supremacy.jpg" class="img_content" alt="Quantum circuit generated for IBM quantum supremacy experiment"/>
+  <img src="/img/system-level-benchmark/supremacy/Ibm-supremacy.jpg" class="img-medium" alt="Quantum circuit generated for IBM quantum supremacy experiment"/>
 </div>
 
 
@@ -50,7 +50,7 @@ In {% cite liao2023simulation %}, H-J Liao et al. reproduce the results of the i
 In {% cite king2024computational %}, A. D. King et al. establish a protocol to assess the computational supremacy of D-Wave systems. These systems are analog based quantum computer (a paradigm a bit different compared to gate-based quantum computers). An example of the qubit layout is shown in Fig. 1. where each qubit is represented by a node and each programmable coupler is represented by an edge. 
 
 <div class="center">
-  <img src="/img/protocols/supremacy/quantum_sim_dwave.png" class="img_content" alt="D-Wave QPU working graph and annealing schedule"/>
+  <img src="/img/system-level-benchmark/supremacy/quantum_sim_dwave.png" class="img-medium" alt="D-Wave QPU working graph and annealing schedule"/>
 </div>
 
  The evolution of such system can be described with a Hamiltonian operator linearly interpolating two Hamiltonians: an initial Hamiltonian $$H_\mathrm{I}$$ that dominates the evolution at the beginning ($$A(0) \gg B(0)$$) and a final Hamiltonian $$H_\mathrm{F}$$ that dominate the end of the evolution $$H_\mathrm{F}$$ ($$B(1) \gg A(1)$$). The annealing fraction $$s = t/t_\mathrm{a}$$ is expressed according to the current and total annealing time $$t$$ and $$t_\mathrm{a}$$ :

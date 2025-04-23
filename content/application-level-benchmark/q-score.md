@@ -25,7 +25,7 @@ UD : Unit Disk
     $(document).ready(function() {
       $('.q-score-table').DataTable(
         {
-          "pageLength": 100
+          "pageLength": 10
         } 
       );
     });

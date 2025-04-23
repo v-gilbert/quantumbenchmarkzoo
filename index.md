@@ -4,18 +4,18 @@ description: >
   other interesting resources.
 ---
 
-## Welcome to Quantum Benchmark Zoo !
+# Welcome to Quantum Benchmark Zoo !
 {% assign ak = site.nav.Zoo | where: "page-id", "acknowledgments" | first %}
 
 Quantum Benchmark Zoo aims to give an overview on the protocols and studies established to evaluate the **performance** of **quantum computers**. This is a living survey, so feel free to <a>contribute</a>.  
 Should you find any error or omission, either propose a pull request on our <a>github</a> or contact the maintainer with a <a href="mailto:contact@quantumbenchmarkzoo.org">mail</a>.  
 Any kind of help is welcomed and will be <a href="{{ ak.url | prepend: site.baseurl }}">acknowledged</a>.
 
-## Our concerns
+# Our concerns
 
 At the time of writing, quantum benchmarking protocols and experiments are flourishing, with several scientific papers published each day. This website aims to objectively describe each protocol to build a trustworthy catalog of benchmarking approaches. The second aim is to carefully report benchmark results using these protocols, verifying that the experiment complies with the protocol definition and reporting any variation in the protocol.
 
-## Website in construction
+# Website in construction
 
 This website is still under construction. Any kind of help is welcomed !
 

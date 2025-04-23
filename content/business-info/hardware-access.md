@@ -18,7 +18,7 @@ List of acronyms:
     $(document).ready(function() {
       $('.pricing-table').DataTable(
         {
-          "pageLength": 100
+          "pageLength": 10
         } 
       );
     });

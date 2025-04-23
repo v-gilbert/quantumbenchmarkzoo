@@ -32,8 +32,7 @@ The next table summarizes the different FOMs that can be evaluated with classica
     });
 </script>
 
-Minor comments on the table:
-- Sometimes the fidelity can be reported as the square root of the quantities reported here. We prefer this representation as it can be deirectly linked to the success probability of a quantum computation {% cite Gilchrist2005 %}.
+*Sometimes the fidelity can be reported as the square root of the quantities reported here. We prefer this representation as it can be deirectly linked to the success probability of a quantum computation {% cite Gilchrist2005 %}.
 
 ## FOM for quantum states
 
@@ -55,9 +54,7 @@ In the following table, the trace operator $$\Tr$$ on a matrix $$A$$ is defined 
       );
     });
 </script>
-
-Minor comments on the table:
-- Sometimes the fidelity can be reported as the square root of the quantities reported here. We prefer this representation as it can be deirectly linked to the success probability of a quantum computation {% cite Gilchrist2005 %}.
+*Sometimes the fidelity can be reported as the square root of the quantities reported here. We prefer this representation as it can be deirectly linked to the success probability of a quantum computation {% cite Gilchrist2005 %}.
 
 ## FOM for quantum processes
 
@@ -68,7 +65,7 @@ Quantum processes (gates) define operations that transform the quantum state to 
 The evolution of the quantum state can be seen as a joint evolution of the state of interest and its environment (see. figure a). This evolution can be described by a single unitary $$U$$ acting over both systems. At the end of the evolution, the quantum state $$\rho$$ is measured using a projective measurement. This projective measurement also act over the environment as a joint measurement.
 
 <div class="center">
-  <img src="/img/protocols/supremacy/quantum_process_joint_evolution.png" class="img_content" alt="Quantum process joint evolution with an environment"/>
+  <img src="/img/system-level-benchmark/supremacy/quantum_process_joint_evolution.png" class="img-small" alt="Quantum process joint evolution with an environment"/>
 </div>
 
 The map $$\rho \rightarrow M(\rho)$$ represents a quantum operation if it is a Complete Positive Trace Preserving (CPTP) map. CP means that $$M(\rho)$$ must be positive semi-definite (i.e., no event with a negative output probability distribution). TP means that each measurement outcome probability adds up to 1.
@@ -87,7 +84,7 @@ Benchmarking quantum processing involves comparing ideal implementations of the 
       );
     });
 </script>
-
+*The average gate infidelity is often called the average gate error rate. However, in some cases, a distinction is done between these two quantities, as in quantum error correction for rigorously linking the error correction threshold to the average gate infidelity {% cite Sanders2015 %}.
 
 ## Extra references
 

@@ -24,74 +24,102 @@ nav:
       url: /content/the-zoo/taxonomy
       available: true
   FOM:
+    - text: Component-level FOM
+      page-id: fidelities-errors
+      url: /content/figure-of-merit/component-level-fom
+      available: false
     - text: Fidelities and errors
       page-id: fidelities-errors
       url: /content/figure-of-merit/fidelities-errors
       available: true
-    - text: Application FOM
+    - text: Application-level FOM
       page-id: application-fom
       url: /content/figure-of-merit/application-fom
+      available: false
+  Component-level:
+    - text: Qubit coherence
+      page-id: qubit-coherence
+      url: /content/component-level-benchmark/qubit-coherence
+      available: false
+  System-level:
+    - text: Randomized benchmarking
+      page-id: randomized-benchmarks
+      url: /content/system-level-benchmark/randomized/protocols
       available: true
-  Protocols:
-    - text: Randomized Benchmarks
-      page-id: randomized-benchmarksThis is recommended for a site that is hosted on a subpath of a domain.
-      url: /content/protocols/randomized/protocols
-      available: true
-    - text: Application Benchmarks
-      page-id: application-benchmarks
-      url: /content/protocols/application/protocols  
-      available: true
-    - text: Quantum Supremacy
+    - text: Supremacy experiments
       page-id: supremacy-benchmarks
-      url: /content/protocols/supremacy/protocols
+      url: /content/system-level-benchmark/supremacy/protocols
       available: true
+    - text: Quantum volume
+      page-id: quantum-volume
+      url: /content/system-level-benchmark/quantum-volume
+      available: true
+  Application-level:
+    - text: Protocols
+      page-id: application-benchmarks
+      url: /content/application-level-benchmark/protocols  
+      available: true
+    - text: Frameworks
+      page-id: application-benchmarks
+      url: /content/application-level-benchmark/frameworks  
+      available: false
+    - text: Datasets
+      page-id: application-benchmarks
+      url: /content/application-level-benchmark/datasets  
+      available: false
   Ftqc:
     - text: FTQC benchmark
       page-id: ftqc
       url: /content/ftqc/qecc
       available: true
-  
-  Pricing:
-    - text: Hardware Access
-      url: /content/pricing/hardware-access
+    - text: FTQC Resource Estimation
+      page-id: ftqc-resource-estimation
+      url: /content/ftqc/resource-estimation
+      available: false
+  Business-informations:
+    - text: Hardware Access Pricing
+      url: /content/business-info/hardware-access
       available: true
+    - text: Roadmaps
+      url: /content/business-info/roadmaps
+      available: false
 
 # Randomized protocols
 randomized-protocols:
   volume-benchmarks:
     - text: Quantum Volume
       page-id: quantum-volume
-      url: /content/protocols/randomized/quantum-volume
+      url: /content/system-level-benchmark/quantum-volume
     - text: CLOPS
       page-id: clops
-      url: /content/protocols/randomized/clops
+      url: /content/system-level-benchmark/clops
 
 # Application protocols
 application-protocols:
   - text: Q-Score protocol
     page-id: q-score-protocol
-    url: /content/protocols/application/q-score
+    url: /content/application-level-benchmark/q-score
   - text: Volumetric-benchmark
     page-id: volumetric-benchmark
-    url: /content/protocols/application/volumetric-benchmark
+    url: /content/application-level-benchmark/volumetric-benchmark
   - text: algorithmic-qubit
     page-id: algorithmic-qubit
-    url: /content/protocols/application/algorithmic-qubit
+    url: /content/application-level-benchmark/algorithmic-qubit
   - text: qbas
     page-id: qbas
-    url: /content/protocols/application/qbas
+    url: /content/application-level-benchmark/qbas
     
 # Supremacy protocols
 supremacy-protocols:
   - text: Random circuit sampling
     page-id: random-circuit-sampling
-    url: /content/protocols/supremacy/random-circuit-sampling
+    url: /content/system-level-benchmark/supremacy/random-circuit-sampling
   - text: Boson sampling 
     page-id: boson-sampling
-    url: /content/protocols/supremacy/boson-sampling
+    url: /content/system-level-benchmark/supremacy/boson-sampling
   - text: Quantum simulation
     page-id: quantum-simulation
-    url: /content/protocols/supremacy/quantum-simulation
+    url: /content/system-level-benchmark/supremacy/quantum-simulation
   
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:

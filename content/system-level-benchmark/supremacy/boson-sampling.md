@@ -17,7 +17,7 @@ The evolution of the quantum circuit is described with a random unitary matrix $
 We present the initial formulation of the boson sampling protocol followed by a discussion on the variations of this protocol introduced by scattershot boson sampling (SBS) protocol and gaussian boson sampling (GBS) protocol.
 
 <div class="center">
-  <img src="/img/protocols/supremacy/galton_board_bs_circuit.jpeg" class="img_content" alt="Galton's board experiment and Boson sampling circuit"/>
+  <img src="/img/system-level-benchmark/supremacy/galton_board_bs_circuit.jpeg" class="img-medium" alt="Galton's board experiment and Boson sampling circuit"/>
 </div>
 
 ## Boson Sampling Protocol
