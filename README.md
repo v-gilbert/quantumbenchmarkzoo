@@ -1,7 +1,7 @@
 # Quantum benchmark Zoo
 
 The official documentation for quantum benchmark zoo: 
-[ Access the website](https://quantumbenchmarkzoo.org){:target="_blank"}
+[ Access the website](https://quantumbenchmarkzoo.org)
 
 ## Contributing
 
