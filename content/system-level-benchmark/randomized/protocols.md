@@ -3,7 +3,7 @@ description: >
   Protocols used for randomized benchmarking
 ---
 
-# 1. Randomized Benchmarking Protocols
+# Randomized Benchmarking Protocols
 
 Randomized Benchmarking (RB) protocols evaluate the ability of the quantum computer to reliably perform quantum operations. The global idea is to use varied-length random quantum circuit based on a specific gate set to quantify the average error rate of the gate set. The length is denoted $$l$$ and varied with different values $$l \in \{l_1, l_2, ..., l_k\}$$. The random circuits are built in a way that the measurement of the qubit yield a deterministic output bitstring. If the bitstring is measured, the computation is considered a success, otherwise, a failure. The average probability of sucess is extracted for each circuit length $$l$$ and is used to fit an exponential decay function of the sucess probability: 
 
@@ -35,9 +35,9 @@ The reader can refer to the references {% cite Hashim2024 %}, {% cite PRXQuantum
 The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalable %} and was based on the unitary group. The probability distribution related to this protocol is dictated by the Haar measure. However, the implementation of unitaries generated from the random Haar measure remained challenging (as it requires an exponential number of gates in function of the number of qubits). An approximation of the Haar measure for a subset of unitaries called unitary t-design was proposed by C. Dankert et al. {% cite dankert2009exact %}. The idea is to simulate the Haar measure with a polynomial function that will mimic the Haar measure up to degree $$t$$. Using this method, they are able to create quantum circuits with $$O(n^2)$$ gates for $$t=2$$. 
 -->
 
-# 2. Clifford Randomized Benchmarking
+# Clifford Randomized Benchmarking
 
-## 2.1 Single-qubit Clifford Randomized Benchmarking
+## Single-qubit Clifford Randomized Benchmarking
 
 Motivations: 
 - Create a protocol that is resistant to state preparation and measurement (SPAM) errors.
@@ -54,7 +54,7 @@ Protocol:
 
 Litterature: {% cite knill2008randomized %}
 
-## 2.2 Multi-qubit Clifford Randomized Benchmarking (CRB)
+## Multi-qubit Clifford Randomized Benchmarking (CRB)
 
 Motivations:
 - Extend the single-qubit RB to multi-qubit clifford group $$C_n$$
@@ -75,9 +75,9 @@ Limits:
 Litterature: {% cite magesan2011scalable %}
 
 
-# 3. Other gate set Randomized Benchmarking
+# Other gate set Randomized Benchmarking
 
-## 3.1 Direct Randomized Benchmarking (DRB)
+## Direct Randomized Benchmarking (DRB)
 
 Motivations: 
 - A single gate of a Clifford group $$\mathbb{C}_n$$ requires $$O(n^2 / \log(n))$$ one and two-qubit gate, which leads to scaliability limits.
@@ -101,7 +101,7 @@ Litterature: {% cite proctor2019direct %}, {% cite polloreno2023theory %}
 
 Implementations: 
 
-## 3.2 Binary Randomized Benchmarking (BRB)
+## Binary Randomized Benchmarking (BRB)
 
 Motivations:
 - Finding a protocol that is more scalable than CRB and DRB (removing starting and ending large circuits as in the DRB protocol).
@@ -123,7 +123,7 @@ Limits:
 
 Litterature: {% cite Hines2024 %}
 
-## 3.3 Mirror Randomized Benchmarking (MRB)
+## Mirror Randomized Benchmarking (MRB)
 
 Motivations:
 - Finding a scalable protocol which do not require heavy classical processing to evaluate the output of the quantum circuit

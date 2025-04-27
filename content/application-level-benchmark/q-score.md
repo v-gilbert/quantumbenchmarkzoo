@@ -6,26 +6,29 @@ description: >
 
 # Q-score benchmark
 
-### List of acronyms
-AC : Advanced Compilation method  
-CE: Constructor Evaluation (checked if the evaluation is done by the chip manufacturer)  
-EM : Error mitigation  
-ER : Erdös-Renyi  
-HS : Hybrid Solver  
-QA : Quantum Annealer  
-QC : Quantum Circuit  
-QCE : Quantm Computer Emulation  
-SA : Simulated Annealing  
-SP: Scientific paper (checked if a scientific paper explain the results)  
-TS : Tabu Search  
-UD : Unit Disk  
+**List of acronyms:**  
+**AC**: Advanced Compilation method  
+**CE**: Constructor Evaluation (checked if the evaluation is done by the chip manufacturer)  
+**EM**: Error mitigation  
+**ER**: Erdös-Renyi  
+**HS**: Hybrid Solver  
+**QA**: Quantum Annealer  
+**QC**: Quantum Circuit  
+**QCE**: Quantm Computer Emulation  
+**SA**: Simulated Annealing  
+**SP**: Scientific paper (checked if a scientific paper explain the results)  
+**TS**: Tabu Search  
+**UD**: Unit Disk  
 
 {% include tables/q-score-table.html %}
 <script type="text/javascript">
     $(document).ready(function() {
       $('.q-score-table').DataTable(
         {
-          "pageLength": 10
+          "pageLength": 10,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
         } 
       );
     });

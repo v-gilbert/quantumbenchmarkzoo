@@ -26,7 +26,10 @@ The next table summarizes the different FOMs that can be evaluated with classica
         {
           "pageLength": 100,
           "ordering": false,
-          columnDefs: [{ width: '20%', targets: 0 }]
+          columnDefs: [{ width: '20%', targets: 0 }],
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
         } 
       );
     });
@@ -49,7 +52,10 @@ In the following table, the trace operator $$\Tr$$ on a matrix $$A$$ is defined 
         {
           "pageLength": 100,
           "ordering": false,
-          columnDefs: [{ width: '20%', targets: 0 }]
+          columnDefs: [{ width: '20%', targets: 0 }],
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
         } 
       );
     });
@@ -79,7 +85,10 @@ Benchmarking quantum processing involves comparing ideal implementations of the 
         {
           "pageLength": 100,
           "ordering": false,
-          columnDefs: [{ width: '20%', targets: 0 }]
+          columnDefs: [{ width: '20%', targets: 0 }],
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
         } 
       );
     });

@@ -3,6 +3,45 @@ description: >
   Application FOM
 ---
 
+# Application Figure of Merit
+
+This section introduces the different figure of merit employed depending on the application context.
+
+## Optimization
+
+### Time to Solution ($$TTS$$)
+
+The Time To Solution (TSS) was introduced in {% cite ronnow2014defining %} to evaluate the performance scaling of Quantum Annealers. It quantifies the minimum number of runs $$R$$ required to sample the optimal solution at least once within the $$R$$ runs with probability $$p$$:
+
+$$ R = \left\lceil \frac{\log(1-p)}{\log(1-s)} \right\rceil $$
+
+$$ TTS = t_a \times R $$
+
+where $$s$$ is the empirical success probability (i.e., probability of finding the ground state in a single run). The time to solution is then defined as the total time required to perform the $$R$$ runs. In its original formulation, TTS accounts solely for the annealing time per run $$t_a$$ and does not include additional overheads such as system calibration, initialization, measurement, delays between runs, etc...
+
+### Time to Epsilon ($$ TT\epsilon $$)
+
+The TTS can be extended to the Time to $$\epsilon$$-close solution {% cite MunozBauza2025 %} which is the time required to find a state that is $$\epsilon$$-close to the ground state at least once within the $$R$$ runs with probability $$p_{c \leq c^* + \epsilon \lvert c^* \rvert}$$. The optimal cost is denoted $$c^*$$ (we consider here a minimization problem). 
+
+
+$$ R_\epsilon = \left\lceil \frac{\log(1-p_{c \leq c* + \epsilon \lvert c* \rvert})}{\log(1-s)} \right\rceil $$
+
+$$ TT \epsilon = t_a \times R_\epsilon $$
+
+<!-- Ajouter les déclinaisons des différents TTS avec calculs ou non annealing run. -->
+
+## Speedup ratio
+
+The authors of {% cite ronnow2014defining %} introduce a speedup ratio. $$C(N)$$ (resp. $$Q(N)$$) is the time used by a classical (resp. quantum) device to find the optimal or approximate solution to a problem of size $$N$$. The speedup ratio can be defined as:
+
+$$ S(N) = \frac{C(N)}{Q(N)} $$
+
+$$C(N)$$ (resp. $$Q(N)$$) can be estimated using $$TTS$$ or $$TT\epsilon$$ figure of merit.
+
+
+
+<!--
+
 Three basic and independent Figure Of Merits (FOMs) are usually sufficient to compare computers ability to solve a problem:
 - Quality
 - Speed
@@ -32,26 +71,7 @@ where $$E$$ is the energy obtained by the quantum simulation of an instance-rela
 
 # Time measures
 
-## Time To Solution
-
-The Time To Solution (TSS) was introduced in {% cite ronnow2014defining %} for Quantum Annealing and evaluates the minimum number of runs of a quantum simulation required to find the ground state at least once with probability $$p$$:
-
-$$ R = \left\lceil \frac{\log(1-p)}{\log(1-s)} \right\rceil$$
-
-where $$R$$ is the number of runs and $$s$$ is the empirical success probability.
-
-This metric can be extended to the Time to $$\epsilon$$-close solution which is the time required to find a state that is $$\epsilon$$-close to the ground state at least once with probability $$p$$. We note it $$R_\epsilon$$.
-
-<!-- Ajouter les déclinaisons des différents TTS avec calculs ou non annealing run. -->
-
-## Speedup ratio
-
-The authors of {% cite ronnow2014defining %} introduce a speedup ratio. $$C(N)$$ resp. $$Q(N)$$ is the time used by a classical resp. quantum device to solve a problem of size $$N$$. The speedup ratio can be defined as:
-
-$$ S(N) = \frac{C(N)}{Q(N)}$$
-
-$$C(N)$$ resp. $$Q(N)$$ can be estimated with the TTS.
-
+-->
 
 # References
 {% bibliography --cited %}

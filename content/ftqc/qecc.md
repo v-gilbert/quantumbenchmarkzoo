@@ -23,7 +23,10 @@ The following table summarizes experimental implementations of QECC conducted on
     $(document).ready(function() {
       $('.qecc-table').DataTable(
         {
-          "pageLength": 10
+          "pageLength": 10,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
         } 
       );
     });

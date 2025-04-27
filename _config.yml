@@ -35,7 +35,7 @@ nav:
     - text: Application-level FOM
       page-id: application-fom
       url: /content/figure-of-merit/application-fom
-      available: false
+      available: true
   Component-level:
     - text: Qubit coherence
       page-id: qubit-coherence

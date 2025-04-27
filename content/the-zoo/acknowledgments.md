@@ -5,5 +5,10 @@ description: >
 # Acknowledgments
 
 We thank the following people for their contributions:  
-Antoine Croisille (logo design)  
+- Antoine Croisille  
+- Lucas Phab  
+- Julien Rodriguez  
 
+
+Zookeeper:  
+- Valentin Gilbert

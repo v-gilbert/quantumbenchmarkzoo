@@ -6,7 +6,11 @@ description: >
 
 # Quantum simulation
 
-## 1. Quantum simulation with digital quantum computer (IBM)
+## Quantum simulation with digital quantum computer (IBM)
+
+### Protocol
+
+First of all, it is important to notice that IBM did not claim quantum supremacy on this experiment (we classify it as a supremacy experiment due to its closeness to the experiment done by D-Wave company). It also helps to introduce challenging methods that are used commonly to refute supremacy claims.
 
 In {% cite kim2023evidence %}, Y. Kim et al. assess the potential of IBM quantum computers at solving quantum simulation problem with a digitial implementation of a continuous-time hamiltonian evolution. Let the IBM hardware graph (heavy hexagonal topology) defined as a set of vertices and edges$$G = (V, E)$$. The Hamiltonian of interest is defined from the heavy hexagonal topology:
 
@@ -24,6 +28,26 @@ The observables are defined as weight-x observable where the x correspond to the
 The first benchmark consits in evaluating the behavior of quantum circuits on verifiable instances (using only Clifford circuits by setting $$\theta_h = \frac{\pi}{2})$$. The second benchmark involves non-clifford circuits but choosing observables that are exactyl verifiables classically. The thrid experiment uses non-clifford circuits beyond the verifiable regime, with weight-17 observables and 5 Trotter steps in a first case, and single qubit magnetization with 20 Trotter steps in the seconde case.
 
 The performance comparison is done with Matrix Product States methods and Isometric Tensor network states which appear to have large prohibitive costs for large instances. For the third experiment, results were obtained with the quantum computer in 8h for each individual data point $$\theta_h$$ for the specified weight-17 observable. The weight-1 average magnetization was measured in 4h for each inidividual data point $$\theta_h$$. The authors mention that the global processing time could be reduced to 5 minutes (by drastically reducing the classical processing time).
+
+### Challenges and refutations
+
+The following table summarize the challenges and refutations done concerning this experiment.
+
+{% include tables/ibm_supremacy_refutation-table.html %}
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.ibm_supremacy_refutation-table').DataTable(
+        {
+          "pageLength": 100,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
+        } 
+      );
+    });
+</script>
+
+<!--
 
 ### 1.1 Belief propagation tensor network method (Refutation 1)
 
@@ -45,7 +69,12 @@ The same authors provided an additional work using Projected Entangled Pair Oper
 
 In {% cite liao2023simulation %}, H-J Liao et al. reproduce the results of the initial experiment using Projective Entangled Pair Operator in 3 seconds.
 
-## 2. Quantum simulation with quantum annealing (D-Wave)
+-->
+
+
+## Quantum simulation with quantum annealing (D-Wave)
+
+### Protocol
 
 In {% cite king2024computational %}, A. D. King et al. establish a protocol to assess the computational supremacy of D-Wave systems. These systems are analog based quantum computer (a paradigm a bit different compared to gate-based quantum computers). An example of the qubit layout is shown in Fig. 1. where each qubit is represented by a node and each programmable coupler is represented by an edge. 
 
@@ -76,7 +105,19 @@ The classical methods used for comparison are:
 
 The list of instances evaluated is presented in the following table:
 
-<!-- Insert the table -->
+{% include tables/D-Wave-supremacy-table.html %}
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.D-Wave-supremacy-table').DataTable(
+        {
+          "pageLength": 100,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
+        } 
+      );
+    });
+</script>
 
 Concerning the study of the runtime of classical computers, A. D. King et al. evaluate the time and comptutational space required by Matrix Product State method to match their results. They conclude that such method would take millions of years using Frontier supercomputer. They do not extensively benchmark the PEPS method using the argument that this method does not reach a sufficiently suitable correlation threshold with a descent scaling.
 

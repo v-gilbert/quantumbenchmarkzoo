@@ -17,7 +17,10 @@ For clarity the Quantum Volum is expressed in a logarithmic basis.
     $(document).ready(function() {
       $('.QV-table').DataTable(
         {
-          "pageLength": 10
+          "pageLength": 10,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
         } 
       );
     });

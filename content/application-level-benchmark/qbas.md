@@ -6,8 +6,6 @@ description: >
 
 # qBAS benchmark
 
-
-
 ## qBAS protocol
 
 The qBAS protocol was introduced by M. Benedetti et al. in {% cite Benedetti2019 %} in 2018. The whitepaper describes the framework **Data-Driven Quantum Circuit Learning** (DDQCL) which evaluates the performance of quantum computers at learning probabilistic generative models. The data set model to learn for assessing the qBAS score is the **Bars and Stripes** (BAS) data set. This data set is easy to generate and verify for systems sizes up to hundred of qubits. 
