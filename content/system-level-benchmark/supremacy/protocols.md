@@ -10,21 +10,21 @@ The comparison between quantum and classical computers can be based on various c
 
 ## Experiments
 
-This summary is an adaptation of the table provided by R. Larose in {% cite larose2024brief %} (Table 1.). We follow the terminology exposed by R. Larose to define experiments that have been challenged, weakly refuted and strongly refuted:
-- **Challenged**: Any work that present a significant improvement in the classical simulation time.
-- **Weak refutation**: Any work that present an improved classical simulation which reasonably demonstrates that the quantum computing claim could be classically simulated in the near future.
-- **Strong refutation**: Any work that present a classical simulation of the quantum supremacy experiment faster than the quantum computer.
+This summary is an adaptation of the table provided by R. Larose in Table 1 of {% cite larose2024brief %}. We follow the terminology exposed by R. Larose to define experiments that have been challenged, weakly refuted, and strongly refuted:
+- **Challenged**: Any work significantly improving the classical emulation time.
+- **Weak refutation**: Any work significantly improving the classical emulation and reasonably demonstrates that the quantum computing claim could be classically simulated in the near future.
+- **Strong refutation**: Any work emulating the quantum supremacy experiment faster than the quantum computer.  
 
 
-List of acronyms:\
-**RCS**: Random Circuit Sampling.\
-**GBS**: Gaussian Boson Sampling.\
-**Qsim**: Quantum simulation.\
-**n**: Number of qubits involved in the experiment.\
-**m**: Number of layers for the RCS experiments, Number of modes for GBS experiments.\
-**Challenged**: Litterature that either improve the classical simulation or question some parts of the claim.\
-**Weakly refuted**: Litterature improving classical simulation with new algorithms suggesting classical computers powerfull enough could break the claim.\
-**Refuted**: Litterature providing classical experiments that surpasses the supremacy claim.
+**List of acronyms**:  
+**RCS**: Random Circuit Sampling.  
+**GBS**: Gaussian Boson Sampling.  
+**Qsim**: Quantum simulation.  
+**n**: Number of qubits involved in the experiment.  
+**m**: Number of layers for the RCS experiments, Number of modes for GBS experiments.  
+**Challenged**: Litterature that either improve the classical simulation or question some parts of the claim.  
+**Weakly refuted**: Litterature improving classical simulation with new algorithms suggesting classical computers powerfull enough could break the claim.  
+**Refuted**: Litterature providing classical experiments that surpasses the supremacy claim.  
 
 {% include tables/supremacy-table.html %}
 
@@ -53,7 +53,7 @@ In a nutshell, boson sampling is a protocol used to benchmark the performance of
 
 {% assign qsim = site.supremacy-protocols | where: "page-id", "quantum-simulation" | first %}
 - <a href="{{ qsim.url | prepend: site.baseurl }}">Quantum simulation (Qsim)</a>  
-In a nutshell, quantum simualtion tasks attempt to simulate a continuous time quantum system evolution. It can be done either using an analog machine that simulates the whole process or using a digital quantum computer implementing unitaries that are built from an approximation (Trotterization) of the initial quantum evolution. In this frame, the performance test consits in sampling the probability distribution corresponding to the quantum evolution with a quantum computer faster than a classical emulation of this evolution.
+In a nutshell, quantum simulation tasks attempt to simulate a continuous-time quantum system evolution. It can be done using an analog machine that simulates the whole process or using a digital quantum computer implementing unitaries built from an approximation (trotterization) of the initial quantum evolution. In this frame, the performance test consists of sampling the output probability distribution corresponding to the quantum evolution faster with a quantum computer than with a classical emulation of this evolution.  
 
 ## References
 {% bibliography --cited %}

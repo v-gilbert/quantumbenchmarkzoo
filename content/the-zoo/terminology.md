@@ -1,8 +1,8 @@
 ---
 description: >
-  Taxonomy
+  Terminology
 ---
-# Taxonomy
+# Terminology
 
 This sectioncompiles definitions of terms that are frequently used in the zoo.
 

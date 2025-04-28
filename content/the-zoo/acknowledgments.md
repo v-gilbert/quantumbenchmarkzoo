@@ -4,11 +4,14 @@ description: >
 ---
 # Acknowledgments
 
-We thank the following people for their contributions:  
+## Zookeeper
+
+- Valentin Gilbert
+
+## Contributors
+
+We thank the following people for their contributions (chronological order):  
 - Antoine Croisille  
 - Lucas Phab  
 - Julien Rodriguez  
-
-
-Zookeeper:  
-- Valentin Gilbert
+- Daniel Vert  

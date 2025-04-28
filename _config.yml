@@ -19,9 +19,9 @@ nav:
       page-id: acknowledgments
       url: /content/the-zoo/acknowledgments
       available: true
-    - text: Taxonomy
-      page-id: taxonomy
-      url: /content/the-zoo/taxonomy
+    - text: Terminology
+      page-id: terminology
+      url: /content/the-zoo/terminology
       available: true
   FOM:
     - text: Component-level FOM

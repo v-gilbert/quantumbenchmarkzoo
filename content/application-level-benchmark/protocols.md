@@ -13,7 +13,7 @@ description: >
 {% assign aq = site.application-protocols | where: "page-id", "algorithmic-qubit" | first %}
 - <a href="{{ aq.url | prepend: site.baseurl }}">Algorithmic qubit</a> (2020)
 
-In a nutshell, the number of algorithmic qubit evaluates the ability of quantum computers to reliably implement quantum circuits. This protocol is quite close to the volumetric benchmark protocol. We advise the reader to carefully read the controversy part of the article before jumping to the results of the benchmark.
+In a nutshell, the number of algorithmic qubits evaluates the ability of quantum computers to run a quantum circuit reliably. This protocol is quite close to the volumetric benchmark protocol. We advise the reader to carefully read the controversial part of the article before jumping to the results of the benchmark.
 
 ## Protocols based on optimization problems
 {% assign qscore = site.application-protocols | where: "page-id", "q-score-protocol" | first %}
