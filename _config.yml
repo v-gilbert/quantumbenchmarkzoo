@@ -166,3 +166,7 @@ scholar:
   details_dir:    bibliography
   details_layout: bibtex.html
   details_link:   Details
+
+# last modified
+#last-modified-at:
+#  date-format: '%d-%b-%y'

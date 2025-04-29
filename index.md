@@ -7,8 +7,8 @@ description: >
 # Welcome to Quantum Benchmark Zoo !
 {% assign ak = site.nav.Zoo | where: "page-id", "acknowledgments" | first %}
 
-Quantum Benchmark Zoo aims to give an overview on the protocols and studies established to evaluate the **performance** of **quantum computers**. This is a living survey, so feel free to <a>contribute</a>.  
-Should you find any error or omission, either propose a pull request on our <a>github</a> or contact the maintainer with a <a href="mailto:contact@quantumbenchmarkzoo.org">mail</a>.  
+Quantum Benchmark Zoo aims to give an overview on the protocols and studies established to evaluate the **performance** of **quantum computers**. This is a living survey, so feel free to <a href="{{ site.git.repository_url }}/blob/master/README.md" target="_blank">contribute</a>.  
+Should you find any error or omission, either propose a pull request on our <a href="{{ site.git.repository_url }}" target="_blank">github</a> or contact the maintainer with a <a href="mailto:contact@quantumbenchmarkzoo.org">mail</a>.  
 Any kind of help is welcomed and will be <a href="{{ ak.url | prepend: site.baseurl }}">acknowledged</a>.
 
 # Our concerns

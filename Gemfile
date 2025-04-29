@@ -8,3 +8,6 @@ source 'https://rubygems.org'
 gem "webrick", "~> 1.8"
 gem 'jekyll-scholar', group: :jekyll_plugins
 
+group :jekyll_plugins do
+    gem "jekyll-last-modified-at"
+  end
