@@ -28,3 +28,7 @@
 p {
     text-align: justify;
 }
+
+.my_table {
+    max-width: 100%;
+}
