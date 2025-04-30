@@ -50,13 +50,9 @@ nav:
       page-id: supremacy-benchmarks
       url: /content/system-level-benchmark/supremacy/protocols
       available: true
-    - text: Quantum volume
-      page-id: quantum-volume
-      url: /content/system-level-benchmark/quantum-volume
-      available: true
-    - text: QUES
-      page-id: ques
-      url: /content/system-level-benchmark/ques
+    - text: Others
+      page-id: others
+      url: /content/system-level-benchmark/others/protocols
       available: true
   Application-level:
     - text: Protocols
@@ -72,9 +68,9 @@ nav:
       url: /content/application-level-benchmark/datasets  
       available: false
   Ftqc:
-    - text: FTQC benchmark
+    - text: FTQC Experiments
       page-id: ftqc
-      url: /content/ftqc/qecc
+      url: /content/ftqc/experiments
       available: true
     - text: FTQC Resource Estimation
       page-id: ftqc-resource-estimation
@@ -125,6 +121,20 @@ supremacy-protocols:
     page-id: quantum-simulation
     url: /content/system-level-benchmark/supremacy/quantum-simulation
   
+# Other system level protocols
+other-system-level-protocols:
+  - text: Quantum volume
+    page-id: quantum-volume
+    url: /content/system-level-benchmark/others/quantum-volume
+  - text: clops
+    page-id: clops
+    url: /content/system-level-benchmark/others/clops
+  - text: ques
+    page-id: ques
+    url: /content/system-level-benchmark/others/ques
+
+
+
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
 #  - text: Correction codes

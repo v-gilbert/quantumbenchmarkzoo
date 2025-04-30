@@ -3,17 +3,11 @@ description: >
   Quantum Hamitlonian simulation benchmark
 ---
 
-<!-- nutshell -->
-<!--
-  QUES score (2021)
-  In a nutshell, the QUES score evaluates the ability of a quantum computer to reliably execute a minimal implementation of the Quantum Singular Value Transformation (QSVT) algorithm. This protocol involves $$n$$ plus one ancilla qubit where $$n$$ is set by the user. Notably, the scheme is scalable, as it requires measurement of only a single qubit, and it provides an estimate of the fidelity of the overall quantum operation.
--->
-
-# Quantum Hamiltonian simulation benchmark (QUES score)
+# Quantum Unitary Evolution Score (QUES)
 
 ## Motivation
 
-Y. Dong et al. introduced the QUES score protocol in {% cite Dong2022 %}. Their main motivation is to provide a method to benchmark the performance of gate-based quantum computers to run a time-independent Hamiltonian simulation. It is done by implementing a minimalist version of the Quantum Singular Value Transformation (QSVT) algorithm. This approach is scalable, and the score can be calculated beyond the classical verifiable regime.
+Y. Dong et al. introduced the QUES protocol in {% cite Dong2022 %}. Their main motivation is to provide a method to benchmark the performance of gate-based quantum computers to run a time-independent Hamiltonian simulation. It is done by implementing a minimalist version of the Quantum Singular Value Transformation (QSVT) algorithm. This approach is scalable, and the score can be calculated beyond the classical verifiable regime.
 
 ## Protocol detail
 

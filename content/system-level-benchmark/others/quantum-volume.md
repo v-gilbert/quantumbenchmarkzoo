@@ -5,7 +5,8 @@ description: >
 
 # Quantum Volume Benchmark
 
-In a nutshell, the Quantum Volume (QV) evaluates the ability of a quantum computer to reliably run a square circuit. A quantum computer with a Quantum Volume (QV) of size $$n$$ is able to reliably execute a quantum circuit with at most $$n$$ qubits with maximum gate depth $$n$$ {% cite cross2019validating %}.
+The Quantum Volume (QV) evaluates the ability of a quantum computer to reliably run a square circuit. A quantum computer with a Quantum Volume (QV) of size $$n$$ is able to reliably execute a quantum circuit with at most $$n$$ qubits with maximum gate depth $$n$$ {% cite cross2019validating %}.
+
 
 **List of acronyms**  
 **CE**: Constructor Evaluation (checked if the evaluation is done by the chip manufacturer)  
@@ -66,16 +67,6 @@ In {% cite bistron2025benchmarking %}, the authors extend the quantum volume pro
 ## Comments on the Quantum Volume
 
 Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
-
-# Circuit Layer Operations Per Second (CLOPS) benchmark
-
-## CLOPS protocol
-The Circuit Layer Operations Per Second (CLOPS) {% cite wack2021qualityspeedscalekey %} is introduced by the IBM company in 2021. This metric is motivated by having a single metric measuring the quality, speed and size of a quantum circuit that can be reliably run on a gate-based quantum computer. This metric permits to measure the number of Quantum Volume (QV) circuits {% cite cross2019validating %} that can be run on a quantum computer per unit of time.
-
-<div class="center">
-  <img src="/img/system-level-benchmark/quantum-volume/clops.jpg" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>
-</div>
-
 
 # References
 {% bibliography --cited %}
