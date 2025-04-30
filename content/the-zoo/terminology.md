@@ -6,6 +6,15 @@ description: >
 
 This sectioncompiles definitions of terms that are frequently used in the zoo.
 
+## DiVincenzo criteria
+
+In {% cite divincenzo2000physical %}, D. P. DiVincenzo establishes criteria for building a universal quantum computer based on quantum circuits. He also gives several technical recommendations for building this type of quantum computer. This list is composed of five main criteria:
+- **Well characterized qubits**: A deep knowledge of the physical properties of the qubits is required to manipulate their states. It should be possible to make qubits interact with each other.
+- **Qubit initialization**: Setting the qubits to their initial states should be easy.
+- **Long decoherence time**: The decoherence time of the qubit should be several orders of magnitude longer than initialization time, gate processing time, and measurement time.
+- **Universal set of gates**: The gate set should be universal, meaning that any unitary can be implemented with arbitrary precision $$\epsilon$$.
+- **Qubit individual measurement**: Requirement necessary for quantum error correction.
+
 ## Emulation
 
 A combination of classical software and hardware used to run or execute a quantum evolution. For instance, it can consist of classically solving the Shrödinger equation. The classical software and hardware use bits as basic units of information and classical logic gates as fundamental operations. Further details on the difference between quantum emulation and quantum simulation can be found at {% cite ezratty2023emulation %}
