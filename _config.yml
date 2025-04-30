@@ -54,6 +54,10 @@ nav:
       page-id: quantum-volume
       url: /content/system-level-benchmark/quantum-volume
       available: true
+    - text: QUES
+      page-id: ques
+      url: /content/system-level-benchmark/ques
+      available: true
   Application-level:
     - text: Protocols
       page-id: application-benchmarks
