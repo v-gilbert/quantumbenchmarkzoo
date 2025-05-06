@@ -49,7 +49,7 @@ The following steps define how to generate quantum volume circuits:
 - Generate a model circuit composed of $$n$$ layers. Each layer comprises a random permutation (random relabelling) of qubits $$\pi$$ and a random unitary sampled from $$SU(4)$$. The permutation step is challenging for quantum chips with limited interconnections because it requires many swapping gates. The $$SU(4)$$ gates can be decomposed into three CNOT gates and seven single-qubit rotation gates {% cite vatan2004optimal %}.
 
 <div class="center">
-  <img src="/img/system-level-benchmark/quantum-volume/QV.jpg" class="img-medium" alt="Quantum circuit for the quantum volume test"/>
+  <img src="/img/system-level-benchmark/others/QV.jpg" class="img-medium" alt="Quantum circuit for the quantum volume test"/>
 </div>
 
 This circuit is then used as input for the sampling task associated with the Heavy Output Generation (HOG) problem. If the quantum computer samples the right distribution (simulated classically), it validates the corresponding quantum volume score of $$2^n$$. The confidence interval for this evaluation is set to two-sigma ($$97.73 \%$$).

@@ -129,6 +129,9 @@ other-system-level-protocols:
   - text: clops
     page-id: clops
     url: /content/system-level-benchmark/others/clops
+  - text: Quantum linpack
+    page-id: quantum-linpack
+    url: /content/system-level-benchmark/others/quantum-linpack
   - text: ques
     page-id: ques
     url: /content/system-level-benchmark/others/ques
