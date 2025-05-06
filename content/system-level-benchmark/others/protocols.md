@@ -13,7 +13,7 @@ In a nutshell, the Quantum Volume (QV) evaluates the ability of a quantum comput
 
 {% assign clops = site.other-system-level-protocols | where: "page-id", "clops" | first %}
 - <a href="{{ clops.url | prepend: site.baseurl }}">Circuit Layer Operation per Second (CLOPS)</a> (2021) {% cite wack2021qualityspeedscalekey %}  
-In a nutshell.
+In a nutshell, the CLOPS protocol evaluates the number of layers of gates that can be successfully realized on a quantum computer in a single second. This protocol is based on the Quantum Volume protocol.  
 
 
 ## Protocols for useful algorithms' minimal tasks
