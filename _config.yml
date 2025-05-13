@@ -1,8 +1,9 @@
 # Site
 title: QuantumBenchmarkZoo
 description: Documentation for quantum benchmarks
-baseurl: /
 permalink: /:title
+url: https://quantumbenchmarkzoo.org
+baseurl: ""
 
 # Repository
 git:
@@ -66,6 +67,15 @@ nav:
     - text: Datasets
       page-id: application-benchmarks
       url: /content/application-level-benchmark/datasets  
+      available: false
+  benchmarking-datasets:
+    - text: Problem libraries
+      page-id: problem-libraries
+      url: /content/benchmarking-datasets/problem-libraries
+      available: true
+    - text: Quantum datasets
+      page-id: quantum-datasets
+      url: /content/benchmarking-datasets/quantum-datasets
       available: false
   Ftqc:
     - text: FTQC Experiments
@@ -136,8 +146,6 @@ other-system-level-protocols:
     page-id: ques
     url: /content/system-level-benchmark/others/ques
 
-
-
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
 #  - text: Correction codes
@@ -183,6 +191,9 @@ scholar:
   details_dir:    bibliography
   details_layout: bibtex.html
   details_link:   Details
+
+plugins:
+  - jekyll-sitemap
 
 # last modified
 #last-modified-at:
