@@ -3,6 +3,7 @@ datatable: true
 description: >
   Hardware Access
 ---
+{% assign modified = page.path | max_last_modified: "tables/pricing-table.html" %}
 
 # Hardware pricing and access
 

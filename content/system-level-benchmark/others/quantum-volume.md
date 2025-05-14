@@ -3,6 +3,8 @@ description: >
   Quantum Volume Detailed
 ---
 
+{% assign modified = page.path | max_last_modified: "tables/QV-table.html" %}
+
 # Quantum Volume Benchmark
 
 The Quantum Volume (QV) evaluates the ability of a quantum computer to reliably run a square circuit. A quantum computer with a Quantum Volume (QV) of size $$n$$ is able to reliably execute a quantum circuit with at most $$n$$ qubits with maximum gate depth $$n$$ {% cite cross2019validating %}.

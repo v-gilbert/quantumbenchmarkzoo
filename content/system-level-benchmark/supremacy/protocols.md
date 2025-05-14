@@ -3,6 +3,7 @@ datatable: true
 description: >
   Protocols used for quantum supremacy experiments
 ---
+{% assign modified = page.path | max_last_modified: "tables/supremacy-table.html" %}
 
 # Quantum supremacy
 

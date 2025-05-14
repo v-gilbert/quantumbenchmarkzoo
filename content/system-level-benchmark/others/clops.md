@@ -2,6 +2,7 @@
 description: >
   Circuit Layer Operation per Second (CLOPS)
 ---
+{% assign modified = page.path | max_last_modified: "tables/clops-table.html" %}
 
 # Circuit Layer Operations Per Second (CLOPS) benchmark
 

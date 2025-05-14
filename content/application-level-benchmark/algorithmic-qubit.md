@@ -3,6 +3,7 @@ datatable: true
 description: >
   Algorithmic qubit protocol.
 ---
+{% assign modified = page.path | max_last_modified: "tables/aq-table.html" %}
 
 # Algorithmic Qubit benchmark
 

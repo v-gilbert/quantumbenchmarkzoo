@@ -3,7 +3,7 @@ datatable: true
 description: >
   Fault-tolerant Quantum Computing Experiments
 ---
-
+{% assign modified = page.path | max_last_modified: "tables/qecc-table.html" %}
 # Fault-tolerant Quantum Computing Experiments
 
 Quantum error correction is expected to be essential for achieving a quantum advantage over classical methods. Each quantum error correction code (QECC) is described by three parameters $$[[ n, k, d ]]$$, where $$k$$ logical qubits are encoded into $$n$$ physical qubits. The distance of the code is specified by the parameter $$d$$,  which determines the code’s ability to detect and correct errors. Classical error correction codes are defined by the same parameters but only with single brackets $$[ n, k, d ]$$. In quantum computing, repetition codes are considered classical, as they can detect either bit-flip or phase-flip errors but not arbitrary combinations of both.

@@ -74,10 +74,19 @@
       </div> -->
       <div class="content__nav">
         <div class="content__meta">
+          {% unless modified %}
+            {% assign modified = page.path | max_last_modified %}
+          {% endunless %}
+          <p>
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Last Modification: {{ modified | date: '%Y-%m-%d %H:%M' }}
+            {{ page.title }}
+          </p>
+          <!-- Previous method for the modification date with only current page
           <p>
             <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Last Modification: {{ page.last_modified_at | date: '%Y-%m-%d %H:%M' }}
             {{ page.title }}
           </p>
+          -->
           <p>
             Want to improve the documentation on this page?
             <a href="{{ site.git.repository_url }}/issues/new">Report an error</a> or

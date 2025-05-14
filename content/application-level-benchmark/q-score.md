@@ -3,6 +3,7 @@ datatable: true
 description: >
   Q-score protocol.
 ---
+{% assign modified = page.path | max_last_modified: "tables/q-score-table.html" %}
 
 # Q-score benchmark
 

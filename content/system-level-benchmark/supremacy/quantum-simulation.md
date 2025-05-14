@@ -3,6 +3,7 @@ datatable: true
 description: >
   Quantum simulation
 ---
+{% assign modified = page.path | max_last_modified: "tables/ibm_supremacy_refutation-table.html,tables/D-Wave-supremacy-table.html" %}
 
 # Quantum simulation (Supremacy)
 

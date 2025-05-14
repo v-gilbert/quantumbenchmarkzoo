@@ -3,6 +3,7 @@ datatable: true
 description: >
   qBAS protocol.
 ---
+{% assign modified = page.path | max_last_modified: "tables/qbas-instance-table.html" %}
 
 # qBAS benchmark
 

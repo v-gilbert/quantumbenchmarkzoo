@@ -2,6 +2,7 @@
 description: >
   Fidelities and errors
 ---
+{% assign modified = page.path | max_last_modified: "tables/classical-probability-distribution-table.html,tables/quantum-states-fidelity-table.html,tables/quantum-processes-table.html" %}
 
 # Fidelities and errors
 

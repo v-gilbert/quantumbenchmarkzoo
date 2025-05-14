@@ -5,23 +5,56 @@ description: >
 
 # Problem libraries
 
-Libraries of problems commonly used in benchmarking studies are listed here.
+Commonly used reference datasets are listed here. These references compile several datasets for each domain of application.
 
-# Optimization problems
+## Optimization benchmark instances
 
-The list of optimization problems mainly comes from {% cite optProblemLib2021 %}, {% cite optProblemLib2021 %} but has been completed with new libraries. Links have been checked and updated.
-<!-- Sources -->
-<!-- https://github.com/ekhoda/optimization_problem_libraries -->
-<!-- https://people.brunel.ac.uk/~mastjjb/jeb/info.html -->
-<!-- https://site.unibo.it/operations-research/en/research/library-of-codes-and-instances-1 -->
-<!-- http://mistic.heig-vd.ch/taillard/problemes.dir/problemes.html -->
+- <a href="https://www.brunel.ac.uk/~mastjjb/jeb/info.html" target="_blank">OR library</a>
+- <a href="http://mistic.heig-vd.ch/taillard/problemes.dir/problemes.html" target="_blank">List of optimization instances by E. Taillard</a>
+- <a href="https://github.com/ekhoda/optimization_problem_libraries" target="_blank">List of optimization instances by ekhoda</a>
+- <a href="https://site.unibo.it/operations-research/en/research/library-of-codes-and-instances-1 " target="_blank">List of optimization instances by the University of Bologna</a>
+
+## Chemistry benchmark instances
+
+- <a href="https://github.com/Arif-PhyChem/datasets_and_databases_4_MLPs?tab=readme-ov-file" target="_blank">Molecular Quantum Chemical Data Sets and Databases</a> {% cite Ullah2024 %}
+- <a href="https://github.com/kjappelbaum/awesome-chemistry-datasets" target="_blank">Awesome chemistry datasets</a>
+
+
+
+## Machine learning benchmark instances
+
+- <a href="https://moleculenet.org/" target="_blank">MoleculeNet</a>
+- <a href="https://www.image-net.org/" target="_blank">ImageNet</a>
+- <a href="https://github.com/materialsproject/matbench" target="_blank">Matbench (a benchmark for material science properties)</a>
+
+
+<!--
+## Machine learning datasets
+
+- <a href="https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research" target="_blank">List of datasets for machine learning research</a>
+
+## Chemical datasets
+
+- <a href="https://github.com/Arif-PhyChem/datasets_and_databases_4_MLPs?tab=readme-ov-file" target="_blank">Molecular Quantum Chemical Data Sets and Databases</a> {% cite Ullah2024 %}
+- <a href="https://github.com/kjappelbaum/awesome-chemistry-datasets" target="_blank">Awesome chemistry datasets</a>
+
+## Material science datasets
+
+- <a href="https://github.com/sedaoturak/data-resources-for-materials-science" target="_blank">Collection of database and dataset in Material Science</a>
+
+## Healthcare
+
+- <a href="https://github.com/openmedlab/Awesome-Medical-Dataset">Awesome medical dataset</a>
+- <a href="https://github.com/LeeJunHyun/Database-Resources-for-Drug-Discovery" target="_blank">Database resources for drug discovery</a>
+
+
 
 ## Travelling Salesman Problems
 
-- <a href="http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/" target="_blank">TSPLIB</a>
+- <a href="http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/" target="_blank">TSPLIB</a> {% cite reinelt1991tsplib %} {% cite reinhelt2014tsplib %}
 - <a href="https://people.sc.fsu.edu/~jburkardt/datasets/tsp/tsp.html" target="_blank">TSP</a>
-- <a href="https://www.math.uwaterloo.ca/tsp/world/countries.html" target="_blank">National TSP</a>
-- <a href="https://www.math.uwaterloo.ca/tsp/vlsi/index.html" target="_blank">VLSI TSP</a>
+- <a href="https://www.math.uwaterloo.ca/tsp/data/index.html" target="_blank">Waterloo University TSP instances</a>
+- <a href="https://lopez-ibanez.eu/tsptw-instances" target="_blank">Travelling salesman with time window (TSPTW)</a> {% cite LpezIbez2010 %} {% cite LpezIbez2013 %}
 
 ## Vehicule Routing Problems
 
@@ -92,4 +125,12 @@ The list of optimization problems mainly comes from {% cite optProblemLib2021 %}
 - <a href="https://github.com/MCDMSociety/MOrepo" target="_blank">MOrepo</a> 
 - <a href="https://github.com/HandingWang/DDMOP/tree/master/DDMOP_Exp" target="_blank">DDMOP</a> {% cite He2019 %}
 
+## Graph problems
 
+- <a href="https://chriswalshaw.co.uk/" target="_blank">Graph partitioning</a>
+- <a href="https://mat.tepper.cmu.edu/COLOR/instances.html" target="_blank">Graph coloring</a> 
+- <a href="https://people.brunel.ac.uk/~mastjjb/jeb/orlib/colourinfo.html" target="_blank">Graph coloring (OR library)</a> 
+
+
+# Material science problems
+-->
