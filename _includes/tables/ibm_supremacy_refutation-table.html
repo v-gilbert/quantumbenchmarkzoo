@@ -1,0 +1,66 @@
+<table class="display my_table ibm_supremacy_refutation-table">
+   <thead>
+       <tr>
+          <th>Date & Ref</th>
+          <th>Challenge type</th>
+          <th>Instance</th>
+          <th>Method</th>
+          <th>Classical hardware</th>
+          <th>emulation time</th>
+          <th>Better accuracy ?</th>
+          <th>Data or source code</th>
+       </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>2023 & {% cite tindall2024efficient %}</td>
+      <td>Refutation</td>
+      <td>Weight-17 observables<br/>Weight-1 magnetization</td>
+      <td>Belief propagation tensor network</td>
+      <td>Single CPU Core</td>
+      <td></td>
+      <td>Yes</td>
+      <td>{% cite tindall2024data %}, {% cite tensorNetworkJulia %} </td>
+    </tr>
+    <tr>
+      <td>2023 & {% cite kechedzhi2024effective %}</td>
+      <td>Spoofing</td>
+      <td>Weight-17 observables<br/>Weight-1 magnetization</td>
+      <td>Emulate smaller instances (30 qubits)</td>
+      <td>Single GPU</td>
+      <td>< 1 sec / point</td>
+      <td></td>
+      <td>{% cite kechedzhi2024effectivecode1 %}, {% cite kechedzhi2024effectivecode1 %}</td>
+    </tr>
+    <tr>
+      <td>2023 & {% cite beguvsic2023fast %}</td>
+      <td>Refutation</td>
+      <td>Weight-17 observables<br/>Weight-1 magnetization</td>
+      <td>Sparse Pauli dynamics</td>
+      <td>Single CPU Core</td>
+      <td>1-2 mins / point</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2024 & {% cite beguvsic2024fast %}</td>
+      <td>Refutation</td>
+      <td>Weight-17 observables<br/>Weight-1 magnetization</td>
+      <td>Sparse Pauli Dynamics (SPD)<br/>PEPS<br/>PEPO<br/>Mix PEPS, PEPO</td>
+      <td>Single CPU Core</td>
+      <td>10s for SPD</td>
+      <td>Yes</td>
+      <td>{% cite beguvsic2024fastdata %}, {% cite beguvsic2024fastcode1 %}, {% cite beguvsic2024fastcode2 %}</td>
+    </tr>
+    <tr>
+      <td>2023 & {% cite liao2023simulation %}</td>
+      <td>Refutation</td>
+      <td>Weight-17 observables<br/>Weight-1 magnetization</td>
+      <td>PEPO</td>
+      <td>Single CPU Core</td>
+      <td>< 3 sec / point for weight-17</td>
+      <td></td>
+      <td>{% cite liao2023simulationcode1 %}</td>
+    </tr>
+  </tbody>
+</table>

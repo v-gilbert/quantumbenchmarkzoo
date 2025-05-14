@@ -1,0 +1,78 @@
+<table class="display my_table quantum-states-fidelity-table">
+   <thead>
+       <tr>
+          <th>Name</th>
+          <th>Formula</th>
+          <th>Value if \(\mathbf{\rho = \widetilde{\rho}}\)</th>
+          <th>Bounds</th>
+          <th>Is a metric ?</th>
+          <th>Operational interpretation</th>
+       </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>Trace distance {% cite nielsen2010quantum %}<mark>Trace distance</mark></td>
+      <td>$$d_{tr} \left(\rho, \widetilde{\rho} \right) = \frac{1}{2} \left\lVert \rho - \widetilde{\rho} \right\rVert_1$$$$= \frac{1}{2} \Tr \left|\rho - \widetilde{\rho} \right|$$</td>
+      <td>0</td>
+      <td>$$[0, 1]$$</td>
+      <td>yes</td>
+      <td>inherits properties from classical total variation distance</td>
+    </tr>
+    <tr>
+      <td>State fidelity {% cite nielsen2010quantum %}<br/>(two pure states)<mark>State fidelity</mark></td>
+      <td>$$\rho =\ket{\psi}\bra{\psi}, \widetilde{\rho} =\ket{\phi}\bra{\phi}$$$$F\left(\rho, \widetilde{\rho}\right) = |\braket{\psi | \phi}|^2$$</td>
+      <td>1</td>
+      <td>$$[0, 1]$$</td>
+      <td>no</td>
+      <td>Proxy to success probability of a quantum computation</td>
+    </tr>
+    <tr>
+      <td>State fidelity {% cite nielsen2010quantum %}<br/>(target is pure)<br/>(the other is mixed)</td>
+      <td>$$\rho = \sum_i p_i \ket{\psi_i} \bra{\psi_i}, \widetilde{\rho} =\ket{\phi}\bra{\phi}$$$$F\left(\rho, \widetilde{\rho}\right) = \braket{\phi | \rho | \phi} = \Tr \left(\rho \ket{\phi}\bra{\phi} \right)$$</td>
+      <td>1</td>
+      <td>$$[0, 1]$$</td>
+      <td>no</td>
+      <td>Proxy to success probability of a quantum computation</td>
+    </tr>
+    <tr>
+      <td>State fidelity* {% cite nielsen2010quantum %}<br/>(with two mixed states)</td>
+      <td>$$F \left(\rho, \widetilde{\rho} \right) = \left( \Tr \sqrt{\sqrt{\rho} \widetilde{\rho} \sqrt{\rho}} \right)^2$$</td>
+      <td>1</td>
+      <td>$$[0, 1]$$</td>
+      <td>no</td>
+      <td>Proxy to success probability of a quantum computation</td>
+    </tr>
+    <tr>
+      <td>Bures distance {% cite Gilchrist2005 %}<br/>(finite version of Bures metric)<mark>Bures distance</mark></td>
+      <td>$$B \left( \rho, \widetilde{\rho} \right) = \sqrt{2-2\sqrt{F \left( \rho, \widetilde{\rho} \right)}}$$</td>
+      <td>0</td>
+      <td>$$[0, \sqrt{2}]$$</td>
+      <td>yes</td>
+      <td>Turn the fidelity to a euclidean distance between two pure states</td>
+    </tr>
+    <tr>
+      <td>Bures angle {% cite Gilchrist2005 %}<br/>aka. quantum angle <mark>Bures angle</mark></td>
+      <td>$$A \left(  \rho, \widetilde{\rho} \right) = \arccos \sqrt{F \left( \rho, \widetilde{\rho} \right)}$$</td>
+      <td>0</td>
+      <td>$$[0, 2\pi]$$</td>
+      <td>yes</td>
+      <td>Turn the fidelity to an angle between two pure states</td>
+    </tr>
+    <tr>
+      <td>State infidelity<mark>State infidelity</mark></td>
+      <td>$$\epsilon_{inf} = 1-F$$</td>
+      <td>0</td>
+      <td>$$[0, 1]$$</td>
+      <td>yes</td>
+      <td>Proxy to failure probability of a quantum computation</td>
+    </tr>
+    <tr>
+      <td>Quantum relative entropy {% cite nielsen2010quantum %}<mark>Quantum relative entropy</mark></td>
+      <td>$$S \left(\rho || \widetilde{\rho}\right) = \Tr \left( \rho \log(\rho) \right) - \Tr \left( \rho \log \left(\widetilde{\rho}\right) \right)$$</td>
+      <td>0</td>
+      <td>$$[0, \infty]$$</td>
+      <td>no, do not satisfy triangle inequality</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

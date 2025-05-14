@@ -1,0 +1,664 @@
+<table class="display my_table qecc-table">
+   <thead>
+       <tr>
+          <th>Date & Ref</th>
+          <th>Affiliation</th>
+          <th>Hardware</th>
+          <th>Code</th>
+          <th>Code \(n, k, d\)</th>
+          <th># Ancillas<br/>Per log</th>
+          <th>#logical qubits</th>
+          <th>Max #cycles <br/>Feedback loop</th>
+          <th>Transversal<br/>Logic gate</th>
+          <th>Non-transversal<br/>Logic gates</th>
+          <th>Magic state<br/>Preparation</th>
+          <th>Magic state<br/>Distillation</th>
+       </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>1998 {% cite cory1998experimental %}</td>
+      <td>MIT, LANL,<br/>Hardvard</td>
+      <td>NMR</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2001 {% cite Knill2001 %}</td>
+      <td>LANL</td>
+      <td>NMR</td>
+      <td>Perfect {% cite Laflamme1996 %}</td>
+      <td>\([[5, 1, 3]]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2004 {% cite Chiaverini2004 %}</td>
+      <td>NIST</td>
+      <td>Trapped-ions</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2011 {% cite Schindler2011 %}</td>
+      <td>Innsbruck Univ<br/>et al.</td>
+      <td>Trapped-ions</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td></td>
+      <td>1</td>
+      <td>3</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2011 {% cite moussa2011demonstration %}</td>
+      <td>Waterloo Univ</td>
+      <td>NMR</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2012 {% cite zhang2012experimental %}</td>
+      <td>Dortmund Univ<br/>Waterloo Univ</td>
+      <td>NMR</td>
+      <td>Perfect {% cite Laflamme1996 %}</td>
+      <td>\([[5, 1, 3]]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2012 {% cite reed2012realization %}</td>
+      <td>Yale Univ<br/>Delft Univ</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2013 {% cite pudenz2014error %}</td>
+      <td>S California Univ</td>
+      <td>Superconducting<br/>(annealing)</td>
+      <td>QAC {% cite pudenz2014error %}<br/>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td>1</td>
+      <td>86</td>
+      <td>NM</td>
+      <td>NM</td>
+      <td>NM</td>
+      <td>NM</td>
+      <td>NM</td>
+    </tr>
+    <tr>
+      <td>2014 {% cite bell2014experimental %}</td>
+      <td>Britsol Univ<br/>et al.</td>
+      <td>Photonic</td>
+      <td>Graph state</td>
+      <td>\([[4, 1, 2]]\)</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2014 {% cite kelly2015state %}</td>
+      <td>Google<br/>et al.</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([5, 1, 5]\)</td>
+      <td>4</td>
+      <td>1</td>
+      <td>8</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2014 {% cite nigg2014quantum %}</td>
+      <td>Innsbruck Univ<br/>et al.</td>
+      <td>Trapped-ions</td>
+      <td>Steane {% cite Steane1996 %}</td>
+      <td>\([[7, 1, 3]]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2014 {% cite waldherr2014quantum %}</td>
+      <td>Stuttgart Univ<br/>et al.</td>
+      <td>NV center</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2015 {% cite riste2015detecting %}</td>
+      <td>QuTech</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td>2</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2015 {% cite Crcoles2015 %}</td>
+      <td>IBM</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([2, 0, 2]\)</td>
+      <td>2</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2015 {% cite cramer2016repeated %}</td>
+      <td>QuTech<br/>et al.</td>
+      <td>NV center</td>
+      <td>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2017 {% cite Takita2017 %}</td>
+      <td>IBM</td>
+      <td>Superconducting</td>
+      <td>Detection code {% cite gottesman2016quantum %}</td>
+      <td>\([[4, 2, 2]]\)</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2017 {% cite Linke2017 %}</td>
+      <td>Maryland Univ<br/>IonQ<br/>et al.</td>
+      <td>Trapped-ions</td>
+      <td>Detection code {% cite gottesman2016quantum %}</td>
+      <td>\([[4, 2, 2]]\)</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2018 {% cite Wootton2018 %}</td>
+      <td>Basel Univ</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([8, 1, 8]\)</td>
+      <td>7</td>
+      <td>1</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2019 {% cite gong2022experimental %}</td>
+      <td>Hefei Univ<br/>et al.</td>
+      <td>Superconducting</td>
+      <td>Perfect {% cite Laflamme1996 %}</td>
+      <td>\([[5, 1, 3]]\)</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2019 {% cite Harper2019 %}</td>
+      <td>Sydney Univ</td>
+      <td>Superconducting</td>
+      <td>Detection code {% cite gottesman2016quantum %}</td>
+      <td>\([[4, 2, 2]]\)</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2020 {% cite wootton2020benchmarking %}</td>
+      <td>IBM</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([22, 1, 22]\)</td>
+      <td>21</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2020 {% cite andersen2020repeated %}</td>
+      <td>ETH Zurich</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([[4, 1, 2]]\)</td>
+      <td>3</td>
+      <td>1</td>
+      <td>10</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2020 {% cite Egan2021 %}</td>
+      <td>Maryland Univ<br/>et al.</td>
+      <td>Trapped-ions</td>
+      <td>Bacon-Shor</td>
+      <td>\([[9, 1, 3]]\)</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2020 {% cite luo2021quantum %}</td>
+      <td>Hefei Univ<br/>et al.</td>
+      <td>Photonic</td>
+      <td>Bacon-Shor</td>
+      <td>\([[9, 1, 3]]\)</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2021 {% cite Chen2021Exponential %}</td>
+      <td>Google</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([11, 1, 11]\)</td>
+      <td>10</td>
+      <td>1</td>
+      <td>50</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2021 {% cite Chen2021Exponential %}</td>
+      <td>Google</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([[4, 1, 2]]\)</td>
+      <td>3</td>
+      <td>1</td>
+      <td>15</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2021 {% cite ryan2021realization %}</td>
+      <td>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>Steane {% cite Steane1996 %}</td>
+      <td>\([[7, 1, 3]]\)</td>
+      <td>3</td>
+      <td>1</td>
+      <td>6</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2022 {% cite ryan2022implementing %}</td>
+      <td>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>Perfect {% cite Laflamme1996 %}</td>
+      <td>\([[5, 1, 3]]\)</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2022 {% cite ryan2022implementing %}</td>
+      <td>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>Steane {% cite Steane1996 %}</td>
+      <td>\([[7, 1, 3]]\)</td>
+      <td>1</td>
+      <td>2</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2022 {% cite zhao2022realization %}</td>
+      <td>Shanghai Univ<br/>et al.</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([[9, 1, 3]]\)</td>
+      <td>8</td>
+      <td>1</td>
+      <td>11</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2022 {% cite krinner2022realizing %}</td>
+      <td>ETH Zurich<br/>et al.</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([[9, 1, 3]]\)</td>
+      <td>8</td>
+      <td>1</td>
+      <td>16</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2022 {% cite abobeih2022fault %}</td>
+      <td>QuTech<br/> et al.</td>
+      <td>NV center</td>
+      <td>Perfect {% cite Laflamme1996 %}</td>
+      <td>\([[5, 1, 3]]\)</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2023 {% cite Acharya2023Suppressing %}</td>
+      <td>Google</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([25, 1, 25]\)</td>
+      <td>24</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2023 {% cite Acharya2023Suppressing %}</td>
+      <td>Google</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([20, 1, 5]]\)</td>
+      <td>24</td>
+      <td>1</td>
+      <td>25</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2023 {% cite honciuc2024implementing %}</td>
+      <td>Toronto Univ<br/>et al.</td>
+      <td>Superconducting<br/>ibmq_mumbaï</td>
+      <td>CSS </td>
+      <td>\([[8, 3, 2]]\)</td>
+      <td>0</td>
+      <td>3</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2023 {% cite honciuc2024implementing %}</td>
+      <td>Toronto Univ<br/>et al.</td>
+      <td>Trapped-ions<br/>ionq-11q</td>
+      <td>CSS </td>
+      <td>\([[8, 3, 2]]\)</td>
+      <td>0</td>
+      <td>3</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2023 {% cite wang2024fault %}</td>
+      <td>QuTech<br/>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>CSS </td>
+      <td>\([[8, 3, 2]]\)</td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite paetznick2024demonstration %}</td>
+      <td>Microsoft<br/>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>Steane {% cite Steane1996 %}</td>
+      <td>\([[7, 1, 3]]\)</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite paetznick2024demonstration %}</td>
+      <td>Microsoft<br/>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>Concatenated {% cite paetznick2024demonstration %}</td>
+      <td>\([[12, 2, 4]]\)<br/>\([[4, 2, 2]]\) & \([[6, 2, 2]]\)</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite Bluvstein2023 %}</td>
+      <td>Harvard<br/>QuERA<br/>Et al.</td>
+      <td>Neutral atoms</td>
+      <td>Surface</td>
+      <td>\([[49, 1, 7]]\)</td>
+      <td>20</td>
+      <td>2</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite Bluvstein2023 %}</td>
+      <td>Harvard<br/>QuERA<br/>Et al.</td>
+      <td>Neutral atoms</td>
+      <td>Code block</td>
+      <td>\([[8, 3, 2]]\)</td>
+      <td>0</td>
+      <td>48</td>
+      <td></td>
+      <td>yes</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite Acharya2024Quantum %}</td>
+      <td>Google<br/> et al.</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([[49, 1, 7]]\)</td>
+      <td>48</td>
+      <td>1</td>
+      <td>250</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite Acharya2024Quantum %}</td>
+      <td>Google<br/> et al.</td>
+      <td>Superconducting</td>
+      <td>Repetition</td>
+      <td>\([29, 1, 29]\)</td>
+      <td>28</td>
+      <td>1</td>
+      <td></td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite Acharya2024Quantum %}</td>
+      <td>Google<br/> et al.</td>
+      <td>Superconducting</td>
+      <td>Surface</td>
+      <td>\([20, 1, 5]]\)</td>
+      <td>24</td>
+      <td>1</td>
+      <td>5000000</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2024 {% cite dasu2025order %}</td>
+      <td>Quantinuum</td>
+      <td>Trapped-ions</td>
+      <td>Concatenated</td>
+      <td>\([[10, 1, 4]]\)<br/>\([[2, 1, 1]]\) & \([[5, 1, 3]]\)</td>
+      <td></td>
+      <td>1</td>
+      <td>10</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>2025 {% cite MunozBauza2025 %}</td>
+      <td>QuAIL<br/>S California Univ</td>
+      <td>Superconducting<br/>(annealing)</td>
+      <td>QAC {% cite pudenz2014error %}<br/>Repetition</td>
+      <td>\([3, 1, 3]\)</td>
+      <td>1</td>
+      <td>1322</td>
+      <td>NM</td>
+      <td>NM</td>
+      <td>NM</td>
+      <td>NM</td>
+      <td>NM</td>
+    </tr>
+  </tbody>
+</table>
