@@ -27,5 +27,11 @@ In a nutshell, the quantum LINPACK proposal aims to evaluate the capability of a
 - <a href="{{ ques.url | prepend: site.baseurl }}">Quantum Unitary Evolution Score (QUES)</a> (2021) {% cite Dong2022 %}   
 In a nutshell, the QUES score evaluates the ability of a quantum computer to reliably execute a minimal implementation of the Quantum Singular Value Transformation (QSVT) algorithm. This protocol involves $$n$$ plus one ancilla qubit where $$n$$ is set by the user. Notably, the scheme is scalable, as it requires measurement of only a single qubit, and it provides an estimate of the fidelity of the overall quantum operation.
 
+## Others
+
+{% assign rqops = site.other-system-level-protocols | where: "page-id", "rqops" | first %}
+- <a href="{{ rqops.url | prepend: site.baseurl }}">Reliable Quantum Operations Per Second (rQOPS)</a> (2023) {% cite rQOPS2023 %}  
+In a nutshell, the rQOPS score measures the number of logical operations that a large-scale fault-tolerant quantum computer can realize per second.
+
 # References
 {% bibliography --cited %}

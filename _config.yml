@@ -76,7 +76,7 @@ nav:
     - text: Quantum datasets
       page-id: quantum-datasets
       url: /content/benchmarking-datasets/quantum-datasets
-      available: false
+      available: true
   Ftqc:
     - text: FTQC Experiments
       page-id: ftqc
@@ -145,6 +145,9 @@ other-system-level-protocols:
   - text: ques
     page-id: ques
     url: /content/system-level-benchmark/others/ques
+  - text: rQOPS
+    page-id: rqops
+    url: /content/system-level-benchmark/others/rqops
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
