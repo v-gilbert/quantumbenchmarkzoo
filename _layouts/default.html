@@ -78,7 +78,7 @@
             {% assign modified = page.path | max_last_modified %}
           {% endunless %}
           <p>
-            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Last Modification: {{ modified | date: '%Y-%m-%d %H:%M' }}
+            <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Page last modification: {{ modified | date: '%Y-%m-%d %H:%M' }}
             {{ page.title }}
           </p>
           <!-- Previous method for the modification date with only current page
