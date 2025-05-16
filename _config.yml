@@ -78,8 +78,8 @@ nav:
       url: /content/benchmarking-datasets/quantum-datasets
       available: true
   Ftqc:
-    - text: FTQC Experiments
-      page-id: ftqc
+    - text: QECC Experiments
+      page-id: qecc
       url: /content/ftqc/experiments
       available: true
     - text: FTQC Resource Estimation
