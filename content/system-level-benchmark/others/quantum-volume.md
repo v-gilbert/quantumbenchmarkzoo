@@ -60,15 +60,15 @@ This circuit is then used as input for the sampling task associated with the Hea
 * The circuit compiler may use all the possible tricks to improve the mapping of the quantum circuit, which can lead to possibly high extra-processing time. In {% cite baldwin2022re %}, the authors show that the compilation has a strong impact on small quantum volumes ($$< 10$$) as it can reduce the number of 2-qubit gates.
 * The quantum computer should honestly attempt to solve the HOG problem and not choose an implementation far from the initial model of the circuit (i.e., the approximation error should be limited).
 
+## Limitations
+- Quantum volume assesses only a limited subset of best-quality qubits within a quantum processor and does not provide a comprehensive measure of the overall fidelity or performance of quantum operations across the entire chip.
+- Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
+
 ## Protocol Variations
 
 In {% cite baldwin2022re %}, the authors argue that the confidence interval built in the initial test {% cite cross2019validating %} is more restrictive than necessary. They propose a new tighter confidence interval that still covers the initial requirement of $$97.73\%$$ (using bootstrapping).
 
 In {% cite bistron2025benchmarking %}, the authors extend the quantum volume protocol to verify the output sampling distribution for large experiments. This method uses parity tests to determine the heavy output probability distribution efficiently.
-
-## Comments on the Quantum Volume
-
-Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
 
 # References
 {% bibliography --cited %}

@@ -41,59 +41,62 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 
 Motivations: 
 - Create a protocol that is resistant to state preparation and measurement (SPAM) errors.
-- Obtain a better scalability compared to process tomography
+- Obtain a better scalability compared to process tomography.
 
 Protocol:
-- Each gate $$G_i$$ consist of a rotation pulse of the Clifford group combined with a rotation pulse $$P_i$$ that depolarize the noise.
+- Each gate $$G_i$$ consist of a rotation pulse of the Clifford group combined with a rotation pulse $$P_i$$ that depolarize the noise (under markovian assumption).
 - The invertion gate $$R$$ is efficiently computed from the sequence {% cite gottesman1997stabilizer %} to get an eigenstate of the measurement basis.
-- The success metric is the probability of observing the final determinist state.
+- The success metric is the probability of observing the final determinist state. It is estimated for different lengths $$l$$ and used to fit the exponential decay function.
 
 <div class="center">
   <img src="/img/system-level-benchmark/randomized/RB-clifford-single-qubit.png" class="img-medium" alt="Quantum circuit associated to the single-qubit clifford randomized benchmarking protocol"/>
 </div>
+
+Limitations:
+- This protocol can only benchmark a single qubit.
+- This protocol is only using gates from the Clifford group.
 
 Litterature: {% cite knill2008randomized %}
 
 ## Multi-qubit Clifford Randomized Benchmarking (CRB)
 
 Motivations:
-- Extend the single-qubit RB to multi-qubit clifford group $$C_n$$
+- Extend the single-qubit RB to multi-qubit clifford group $$C_n$$.
 
 Protocol:
-- For each sequence length, Clifford gates are uniformely and efficiently sampled from $$C_n$$ {% cite Koenig2014 %}.
+- For each sequence length, Clifford gates are uniformely and efficiently sampled from $$C_n$$ {% cite Koenig2014 %}. The depth of the quantum circuit associated to each $$C_n$$ grows as $$O(n^2 / \log(n))$$.
 - The invertion unitary $$R$$ is efficiently computed from the sequence {% cite gottesman1997stabilizer %}. The final unitary $$P$$ is a uniformely random Pauli gate.
-- The success metric is the probability of observing the Identity.
+- The success metric is the probability of observing the Identity. It is estimated for different lengths $$l$$ and used to fit the exponential decay function.
 
 <div class="center">
   <img src="/img/system-level-benchmark/randomized/RB-clifford-multi-qubit.png" class="img-medium" alt="Quantum circuit associated to the multi-qubits clifford randomized benchmarking protocol"/>
 </div>
 
-Limits:
+Limitations:
 - Each gate of the Clifford group $$C_n$$ has an implementation cost of $$O(n^2 / \log(n))$$ single and two qubit gates
 - Strongly dependent on the compilation step
 
 Litterature: {% cite magesan2011scalable %}
-
 
 # Other gate set Randomized Benchmarking
 
 ## Direct Randomized Benchmarking (DRB)
 
 Motivations: 
-- A single gate of a Clifford group $$\mathbb{C}_n$$ requires $$O(n^2 / \log(n))$$ one and two-qubit gate, which leads to scaliability limits.
-- Provide the ability to benchmark custom gate sets (e.g. the native gate set of a quantum computer)
+- A single gate of a Clifford group $$\mathbb{C}_n$$ requires $$O(n^2 / \log(n))$$ one and two-qubit gates, which leads to relatively deep circuits for a large number of qubits. Hence, CRB cannot be evaluated on a large number of qubits as the fidelity becomes vanishingly small.
+- Provide the ability to benchmark custom gate sets other than the clifford group (e.g. the native gate set of a quantum computer).
 
 Protocol:
 - A random n-qubit stabilizer state is created to form $$\rho_0$$.
 - Each gate is build from the user's probability distribution $$\mu$$ (e.g. each layer $$g_i$$ having $$1/4$$ probability of having a single CNOT, with the rest composed of random single-qubit rotations). The group should be able to generate gates of the $$\mathbb{C}_n$$ Clifford group.
 - The ending gate project the state of a random computational basis state.
-- The success metric is the probability of observing the final bitstring $$b$$.
+- The success metric is the probability of observing the final bitstring $$b$$. The success probability strongly depends on the distribution $$\mu$$ and on the compiler. All these informations should be reported together.
 
 <div class="center">
   <img src="/img/system-level-benchmark/randomized/RB-DRB.png" class="img-medium" alt="Quantum circuit associated to the direct randomized benchmarking protocol"/>
 </div>
 
-Limits: 
+Limitations: 
 - Stabilizer initialization and measurement implementations still require $$O(n^2 / \log(n))$$ gates.
 - The protocol is not scalable as it requires to emulate the output of the quantum circuit to define the bitstring $$b$$.
 
@@ -117,7 +120,7 @@ Protocol:
   <img src="/img/system-level-benchmark/randomized/RB-BiRB.png" class="img-medium" alt="Quantum circuit associated to the Binary randomized benchmarking protocol"/>
 </div>
 
-Limits: 
+Limitations: 
 - There is still scaling issues for large circuits as the final layer is computed from 
 <!-- Voir si possibilité d'extraire les limites, est-ce que ça scale ? -->
 
@@ -139,29 +142,48 @@ Protocol:
 </div>
 
 
-Limits:
+Limitations:
 - If the errors of $$\mu$$-distributed gates and their inverse are correlated, MRB slightly underestimates the error rate of the gate set.
 
 
-## 4. Randomized Benchmarking for cross talk errors
+#  Randomized Benchmarking for cross talk errors
 
-### 4.1 Simultaneous Randomized Benchmarking
+## Simultaneous Randomized Benchmarking
+
+Motivations:  
+- Definition of a protocol that quantifies the rate of cross-talk errors arising during the parallel execution of quantum gates.
 
 
+Protocol:  
+We illustrate the protocol for the case of single-qubit Clifford group simultaneous RB on a two-qubit chip.
+- The protocol begins with the standard RB protocol performed for each qubit (see Step 1): A single-qubit Clifford RB is executed on one qubit while others are kept idle. The decay parameters $$\alpha_1$$ and $$\alpha_2$$ are then extracted respectively for qubit 1 and qubit 2. 
+- In a second step, a single-qubit RB is run simultaneously on both qubits, enabling the extraction of three decay parameters (see Step 2): $$\alpha_{1 \vert 2}$$, $$\alpha_{2 \vert 1}$$ and $$\alpha_{12}$$. The parameters $$\alpha_{1 \vert 2}$$ and $$\alpha_{2 \vert 1}$$ are obtained from measurements of the first and second qubit. The joint decay parameter $$\alpha_{12}$$ is retrieved from the measurements of qubit 1 and 2.
+- The values $$\alpha_{1}$$ and $$\alpha_{1 \vert 2}$$ (resp. $$\alpha_{2}$$ and $$\alpha_{2 \vert 1}$$) can be used to measure the errors added on qubit 1 (resp. 2) due to simultaneous quantum gates operations on qubit 2 (resp. 1). 
+- Potential correlations in the errors are obtained with the value $$\alpha_{12} -\alpha_{1 \vert 2} \alpha_{2 \vert 1}$$.
 
-### 4.2 Correlated Randomized Benchmarking
+<div class="center">
+  <img src="/img/system-level-benchmark/randomized/RB-simultaneous.png" class="img-medium" alt="Quantum circuit associated to the simultaneous randomized benchmarking protocol"/>
+</div>
+
+Limitations:
+<!-- Add something on the limitations -->
+
+<!-- 
+### Protocol Assumptions
+
+- Quantum noise can be represented by a quantum operation that do not depend on the choice of the unitary.
+- Quantum noise has low variations in error-rate over the gate set.
+- The correlation time of the environment is much longer than the time of a single operation.
+- Randomization depolarize the noise (Clifford gates have the property of depolarizing the noise). It avoids to use the self-inversion.
+- The depolarization probability of $$\frac{\pi}{2}$$ pulses does not depend on the previous pulse in the calculation.
+-->
+
+Litterature: {% cite Gambetta2012 %}, {% cite McKay2019 %}, {% cite mckay2023benchmarking %}
+
+
+## Correlated Randomized Benchmarking
 <!-- D. C. McKay, A. W. Cross, C. J. Wood, and J. M. Gambetta, arXive e-print quant-ph/2003.02354 -->
 
-
-
-
-## Quantum volume protocols
-
-{% assign qv = site.randomized-protocols.volume-benchmarks | where: "page-id", "quantum-volume" | first %}
-- <a href="{{ qv.url | prepend: site.baseurl }}">Quantum Volume</a>
-
-{% assign clops = site.randomized-protocols.volume-benchmarks | where: "page-id", "clops" | first %}
-- <a href="{{ clops.url | prepend: site.baseurl }}">Circuit Layer Operation Per Second (CLOPS)</a>
 
 # References
 
