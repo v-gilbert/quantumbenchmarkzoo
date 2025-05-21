@@ -45,7 +45,7 @@ nav:
   System-level:
     - text: Randomized benchmarking
       page-id: randomized-benchmarks
-      url: /content/system-level-benchmark/randomized/protocols
+      url: /content/system-level-benchmark/randomized-benchmarking/protocols
       available: true
     - text: Supremacy experiments
       page-id: supremacy-benchmarks
@@ -93,16 +93,37 @@ nav:
     - text: Roadmaps
       url: /content/business-info/roadmaps
       available: true
+    - text: Benchmark initiatives
+      url: /content/business-info/other-benchmarking-initiative
+      available: true
 
 # Randomized protocols
-randomized-protocols:
-  volume-benchmarks:
-    - text: Quantum Volume
-      page-id: quantum-volume
-      url: /content/system-level-benchmark/quantum-volume
-    - text: CLOPS
-      page-id: clops
-      url: /content/system-level-benchmark/clops
+randomized-benchmarking-protocols:
+  - text: Single-qubit Clifford Randomized Benchmarking
+    page-id: single-qubit-CRB
+    url: /content/system-level-benchmark/randomized-benchmarking/single-qubit-CRB
+  - text: Multi-qubit Clifford Randomized Benchmarking
+    page-id: multi-qubit-CRB
+    url: /content/system-level-benchmark/randomized-benchmarking/multi-qubit-CRB
+  - text: Direct Randomized Benchmarking
+    page-id: DRB
+    url: /content/system-level-benchmark/randomized-benchmarking/DRB
+  - text: Binary Randomized Benchmarking
+    page-id: BRB
+    url: /content/system-level-benchmark/randomized-benchmarking/BRB
+  - text: Mirror Randomized Benchmarking
+    page-id: MRB
+    url: /content/system-level-benchmark/randomized-benchmarking/MRB
+  - text: Simultaneous Randomized Benchmarking
+    page-id: SRB
+    url: /content/system-level-benchmark/randomized-benchmarking/SRB
+  - text: Correlated Randomized Benchmarking
+    page-id: correlated-RB
+    url: /content/system-level-benchmark/randomized-benchmarking/correlated-RB
+  - text: Error per layered gate
+    page-id: eplg
+    url: /content/system-level-benchmark/randomized-benchmarking/eplg
+
 
 # Application protocols
 application-protocols:
