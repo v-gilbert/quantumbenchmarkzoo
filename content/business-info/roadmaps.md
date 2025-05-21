@@ -45,7 +45,6 @@ The following table present the roadmap publicly published of each manufacturer 
 - Milestone 6: Engineering large scale quantum platform ($$n_{phys}=10^6$$, $$n_{log} \ge 2$$, $$\epsilon_{log}=10^{-13}$$)  
 Reference: <a href="https://quantumai.google/roadmap" target="_blank">https://quantumai.google/roadmap</a>
 
-
 ### Alice & Bob roadmap (2024/12)
 
 - Milestone 1: Develop a single cat qubit (validated in 2024)
@@ -54,3 +53,13 @@ Reference: <a href="https://quantumai.google/roadmap" target="_blank">https://qu
 - Milestone 4: Implement universal gate set with magic states ($$n_{phys}=250$$, $$n_{log} = 5$$, $$\epsilon_{log}=10^{-4}$$)
 - Milestone 5: Engineering scaleup ($$n_{phys}=2000$$, $$n_{log} = 100$$, $$\epsilon_{log}=10^{-6}$$) (expected in 2030)  
 Reference: <a href="https://alice-bob.com/roadmap/" target="_blank">https://alice-bob.com/roadmap/</a>
+
+### Microsoft roadmap (2023)
+
+- Milestone 1: Create and control a majorana qubit (validated in 2023)
+- Milestone 2: Digital control of a majorana qubit (validated in 2025 but still in controversy)
+- Milestone 3: Manipulation of more than a single qubit (demonstration of entanglement)
+- Milestone 4: Multi-qubit quantum chip
+- Milestone 5: Create logical qubits from physical qubits (demonstrating high-quality threshold)
+- Milestone 6: Design a large-scale quantum computer
+Reference: <a href="https://quantum.microsoft.com/en-us/vision/quantum-roadmap" target="_blank">https://quantum.microsoft.com/en-us/vision/quantum-roadmap</a>
