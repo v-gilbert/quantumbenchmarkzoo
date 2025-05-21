@@ -61,5 +61,5 @@ Reference: <a href="https://alice-bob.com/roadmap/" target="_blank">https://alic
 - Milestone 3: Manipulation of more than a single qubit (demonstration of entanglement)
 - Milestone 4: Multi-qubit quantum chip
 - Milestone 5: Create logical qubits from physical qubits (demonstrating high-quality threshold)
-- Milestone 6: Design a large-scale quantum computer
+- Milestone 6: Design a large-scale quantum computer  
 Reference: <a href="https://quantum.microsoft.com/en-us/vision/quantum-roadmap" target="_blank">https://quantum.microsoft.com/en-us/vision/quantum-roadmap</a>
