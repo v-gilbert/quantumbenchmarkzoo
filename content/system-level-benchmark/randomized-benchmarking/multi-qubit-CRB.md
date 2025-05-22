@@ -7,20 +7,22 @@ description: >
 
 ## Motivations
 
-- Extend the single-qubit RB to multi-qubit clifford group $$C_n$$.
+{% assign single-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "single-qubit-CRB" | first %}
+<!-- TODO: ref to single qubit RB -->
+The primary motivation behind the development of multi-qubit Clifford Randomized Benchmarking was to generalize the <a href="{{ single-qubit-CRB.url | prepend: site.baseurl }}" target="_blank">single-qubit randomized benchmarking (RB)</a> protocol to systems comprising multiple qubits. This extended protocol was introduced in 2010 by E. Magesan et al. {% cite magesan2011scalable %}.
 
-## Protocol
+## Protocol
 
-- For each sequence length, Clifford gates are uniformely and efficiently sampled from $$C_n$$ {% cite Koenig2014 %}. The depth of the quantum circuit associated to each $$C_n$$ grows as $$O(n^2 / \log(n))$$.
-- The invertion unitary $$R$$ is efficiently computed from the sequence {% cite gottesman1997stabilizer %}. The final unitary $$P$$ is a uniformely random Pauli gate.
-- The success metric is the probability of observing the Identity. It is estimated for different lengths $$l$$ and used to fit the exponential decay function.
+The protocol utilizes the multi-qubit Clifford group $$C_n$$. For each sequence length $$l$$, Clifford gates are uniformly and efficiently sampled from $$C_n$$ {% cite Koenig2014 %}. The single and two-qubit gates depth of the resulting quantum circuit associated with each element in $$C_n$$ grows as $$O(n^2 / \log(n))$$. The inverse unitary $$R$$ is efficiently computed from the sequence {% cite gottesman1997stabilizer %}, and a final unitary $$P$$ consists of a uniformly random Pauli gate. The success metric is the probability of observing the Identity. It is estimated for the different lengths $$l$$ and used to fit the exponential decay function.
 
 <div class="center">
   <img src="/img/system-level-benchmark/randomized/RB-clifford-multi-qubit.png" class="img-medium" alt="Quantum circuit associated to the multi-qubits clifford randomized benchmarking protocol"/>
 </div>
 
 ## Limitations
-- Each gate of the Clifford group $$C_n$$ has an implementation cost of $$O(n^2 / \log(n))$$ single and two qubit gates
-- Strongly dependent on the compilation step
 
-Litterature: {% cite magesan2011scalable %}
+One limitation identified by the community concerns the depth scaling associated with implementing each gate in the Clifford group $$C_n$$. As the number of qubits increases, the implementation becomes increasingly challenging, and circuit fidelity tends to degrade rapidly in the presence of noise.
+The output fidelity of the quantum circuit also strongly depends on the compilation process used to map each Clifford gate to the gate set natively used by the quantum computer. Inefficiencies or suboptimal strategies in this step can significantly impact the benchmarking results.
+
+# References
+{% bibliography --cited %}
