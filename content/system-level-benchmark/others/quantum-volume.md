@@ -7,8 +7,7 @@ description: >
 
 # Quantum Volume Benchmark
 
-The Quantum Volume (QV) evaluates the ability of a quantum computer to reliably run a square circuit. A quantum computer with a Quantum Volume (QV) of size $$n$$ is able to reliably execute a quantum circuit with at most $$n$$ qubits with maximum gate depth $$n$$ {% cite cross2019validating %}.
-
+## Benchmarking results
 
 **List of acronyms**  
 **CE**: Constructor Evaluation (checked if the evaluation is done by the chip manufacturer)  
@@ -31,7 +30,11 @@ For clarity the Quantum Volume is expressed in a logarithmic basis.
     });
 </script>
 
-## Quantum Volume protocol
+## Motivation
+
+The main motivation for the Quantum Volume (QV) is to define a pragmatic way to evaluate and compare progress for near-term quantum computing. The QV is a single number figure of merit used to evaluate universal gate-based quantum computers. A quantum computer with a Quantum Volume (QV) of size $$n$$ is able to reliably execute a quantum circuit with at most $$n$$ qubits with maximum gate depth $$n$$ {% cite cross2019validating %}.
+
+## Protocol
 
 The Quantum Volume (QV) {% cite bishop2017quantum %} {% cite cross2019validating %} is a benchmarking protocol evaluating the ability of gate-based quantum computers to run quantum circuits reliably. This protocol gathers the maximum circuit width and depth that a quantum computer can successfully implement in a single metric number. A quantum computer has to successfully solve the Heavy Output Generation (HOG) problem  {% cite aaronson2016complexity %} of size $$n$$ to validate a quantum volume of size $$2^n$$. Many criteria may impact the value of the quantum volume: gate fidelity, coherence time, chip topology, and the efficiency of the transpilation method.
 

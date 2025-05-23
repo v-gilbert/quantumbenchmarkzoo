@@ -5,7 +5,9 @@ description: >
 ---
 {% assign modified = page.path | max_last_modified: "tables/aq-table.html" %}
 
-# Algorithmic Qubit benchmark
+# Algorithmic qubit benchmark
+
+## Benchmarking results
 
 **List of acronyms:**  
 **AC**: Advanced Compilation method  
@@ -28,9 +30,13 @@ description: >
     });
 </script>
 
+## Motivation
 
-## Algorithmic Qubit protocol
-The Algorithmic Qubit (AQ) benchmark, introduced by IonQ in 2020 {% cite algorithmicQubits %} is derived from the Volumetric benchmarking protocol {% cite lubinski2023application %}. A detailed description of the AQ protocol is available in an associated GitHub repository {% cite algorithmicQubitsProtocol %}. The protocol consists of sampling the output distribution of a quantum circuit and comparing this output to the ideal output distribution by computing the classical fidelity.
+The Algorithmic Qubit (AQ) benchmark, introduced by IonQ in 2020 {% cite algorithmicQubits %} is derived from the Volumetric benchmarking protocol {% cite lubinski2023application %}. The main motivation presented by the authors is to define a single number figure of merit to evaluate the performance of quantum computers for solving a representative set of quantum algorithms.
+
+## Protocol
+
+A detailed description of the AQ protocol is available in an associated GitHub repository {% cite algorithmicQubitsProtocol %}. The protocol consists of sampling the output distribution of a quantum circuit and comparing this output to the ideal output distribution by computing the classical fidelity.
 
 For validating a $$n$$ AQ, several algorithms are used to generate the following quantum circuits using $$n$$ qubits:
 - 3 circuits based on the Quantum Fourier Transform
@@ -51,7 +57,7 @@ The number of algorithmic qubits associated with a quantum computer is defined a
 
 <!-- Ajouter des plots concernant l'algorithmic qubit-->
 
-## Controversy on the algorithmic qubit
+## Controversy and limitations
 
 This protocol has been criticized for several reasons discussed in {% cite debunkingAlgorithmicQubit %}. The authors highlight the problematic role of error mitigation techniques, which can artificially enhance the apparent performance of quantum computers and reduce the observed performance gap between different devices. They demonstrate that certain error mitigation methods, particularly those not expected to scale favorably with system size, can lead to misleading results. Additionally, they point out concerns regarding the use of Qiskit compiler version 0.34.2 for calculating the number of CX gates and hence, depth of the circuit. As this compilation method is used to compute the values used in the heatmaps $$w_d$$ and $$w_c$$, a suboptimal compilation could artificially inflate a device's reported performance. In particular, the authors show that alternative compilers can significantly reduce the overall number of gates (especially for the largest circuits).  
 
