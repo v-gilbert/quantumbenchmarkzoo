@@ -114,6 +114,9 @@ randomized-benchmarking-protocols:
   - text: Mirror Randomized Benchmarking
     page-id: MRB
     url: /content/system-level-benchmark/randomized-benchmarking/MRB
+  - text: Dihedral Randomized Benchmarking
+    page-id: dihedral-RB
+    url: /content/system-level-benchmark/randomized-benchmarking/dihedral-RB
   - text: Simultaneous Randomized Benchmarking
     page-id: SRB
     url: /content/system-level-benchmark/randomized-benchmarking/SRB

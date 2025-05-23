@@ -8,7 +8,9 @@ description: >
 ## Protocols using volumetric representations
 
 {% assign vb = site.application-protocols | where: "page-id", "volumetric-benchmark" | first %}
+<!--
 - <a href="{{ vb.url | prepend: site.baseurl }}">Volumetric benchmark</a>
+-->
 
 {% assign aq = site.application-protocols | where: "page-id", "algorithmic-qubit" | first %}
 - <a href="{{ aq.url | prepend: site.baseurl }}">Algorithmic qubit</a> (2020)

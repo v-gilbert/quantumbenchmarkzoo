@@ -7,7 +7,7 @@ description: >
 
 ## Classification of RB protocols
 
-Randomized Benchmarking (RB) protocols evaluate the ability of the quantum computer to reliably perform quantum operations. The global idea is to use varied-length random quantum circuit based on a specific gate set to quantify the average error rate of the gate set. The length is denoted $$l$$ and varied with different values $$l \in \{l_1, l_2, ..., l_k\}$$. The random circuits are built in a way that the measurement of the qubit yield a deterministic output bitstring. If the bitstring is measured, the computation is considered a success, otherwise, a failure. The average probability of sucess is extracted for each circuit length $$l$$ and is used to fit an exponential decay function of the sucess probability: 
+Randomized Benchmarking (RB) protocols evaluate the ability of the quantum computer to reliably perform quantum operations. This tool is used to provide bounds on the error rate of quantum gates. The global idea is to use varied-length random quantum circuit based on a specific gate set to quantify the average error rate of the gate set. The length is denoted $$l$$ and varied with different values $$l \in \{l_1, l_2, ..., l_k\}$$. The random circuits are built in a way that the measurement of the qubit yield a deterministic output bitstring. If the bitstring is measured, the computation is considered a success, otherwise, a failure. The average probability of sucess is extracted for each circuit length $$l$$ and is used to fit an exponential decay function of the sucess probability: 
 
 $$ p_\mathrm{success}(l) = A \alpha^l + B $$
 
@@ -44,6 +44,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 {% assign DRB = site.randomized-benchmarking-protocols | where: "page-id", "DRB" | first %}
 {% assign BRB = site.randomized-benchmarking-protocols | where: "page-id", "BRB" | first %}
 {% assign MRB = site.randomized-benchmarking-protocols | where: "page-id", "MRB" | first %}
+{% assign dihedral-RB = site.randomized-benchmarking-protocols | where: "page-id", "dihedral-RB" | first %}
 {% assign SRB = site.randomized-benchmarking-protocols | where: "page-id", "SRB" | first %}
 {% assign correlated-RB = site.randomized-benchmarking-protocols | where: "page-id", "correlated-RB" | first %}
 {% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}
@@ -55,6 +56,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
   - <a href="{{ DRB.url | prepend: site.baseurl }}" target="_blank">Direct Randomized Benchmarking (DRB)</a>
   - <a href="{{ BRB.url | prepend: site.baseurl }}" target="_blank">Binary Randomized Benchmarking (BRB)</a>
   - <a href="{{ MRB.url | prepend: site.baseurl }}" target="_blank">Mirror Randomized Benchmarking (MRB)</a>
+  - <a href="{{ dihedral-RB.url | prepend: site.baseurl }}" target="_blank">Dihedral Randomized Benchmarking</a>
 - Randomized Benchmarking for cross talk errors
   - <a href="{{ SRB.url | prepend: site.baseurl }}" target="_blank">Simultaneous Randomized Benchmarking</a>
   - <a href="{{ correlated-RB.url | prepend: site.baseurl }}" target="_blank">Correlated Randomized Benchmarking</a>

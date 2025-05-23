@@ -7,7 +7,7 @@ description: >
 
 ## Motivations
 
-Single qubit randomized benchmarking was first proposed by E. Knill et al. {% cite knill2008randomized %} in 2007. At the time, the most commonnly used method to benchmark quantum gates was process tomography. However, this method does not scale when the system size grows and becomes challenging for identifying low error rates.  The second motivation was to create a protocol resistant to State preparation and Measurement (SPAM) errors.
+Single qubit randomized benchmarking was first proposed by E. Knill et al. {% cite knill2008randomized %} in 2007. At the time, process tomography was the most commonly used method to benchmark quantum gates. However, this method does not scale when the system size grows, and it becomes challenging to identify low error rates. A second issue associated with process tomography is that the error related to state preparation and measurements cannot be distinguished from the quantum gate error. RB method has been designed to be resistant to State preparation and Measurement (SPAM) errors.
 
 ## Protocol
 
