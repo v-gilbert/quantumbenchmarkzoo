@@ -60,13 +60,13 @@ nav:
       page-id: application-benchmarks
       url: /content/application-level-benchmark/protocols  
       available: true
+    - text: Aggregated scores
+      page-id: aggregated-scores
+      url: /content/application-level-benchmark/aggregated-scores
+      available: true
     - text: Frameworks
       page-id: application-benchmarks
       url: /content/application-level-benchmark/frameworks  
-      available: false
-    - text: Datasets
-      page-id: application-benchmarks
-      url: /content/application-level-benchmark/datasets  
       available: false
   benchmarking-datasets:
     - text: Problem libraries
