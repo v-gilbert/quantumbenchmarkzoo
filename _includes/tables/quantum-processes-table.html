@@ -11,7 +11,7 @@
    </thead>
    <tbody>
     <tr>
-      <td>Diamond distance {% cite Kitaev1997 %} {% cite aharonov1998quantum %} <mark>Diamond distance</mark></td>
+      <td><div id="diamond-distance"></div>Diamond distance {% cite Kitaev1997 %} {% cite aharonov1998quantum %} <mark>Diamond distance</mark></td>
       <td>$$d_\mathrm{\diamond} \left(M, \widetilde{M} \right) = \frac{1}{2} \left\lVert M-\widetilde{M} \right\rVert_\mathrm{\diamond} $$$$ = max_\rho \left\lVert (M \otimes I)\rho - \left(\widetilde{M} \otimes I \right) \rho \right\rVert_1$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -19,7 +19,7 @@
       <td>Achievable upper bound on the probability of distinguishing \(M\) from \(\widetilde{M}\)</td>
     </tr>
     <tr>
-      <td>Jamiołkowski trace distance {% cite Jamiokowski1972 %} {% cite Gilchrist2005 %}<mark>Jamiołkowski trace distance</mark></td>
+      <td><div id="jamiolkowski-trace-distance"></div>Jamiołkowski trace distance {% cite Jamiokowski1972 %} {% cite Gilchrist2005 %}<mark>Jamiołkowski trace distance</mark></td>
       <td>$$d_\mathrm{tr\_J}\left(M, \widetilde{M}\right) = \frac{1}{2} \left\lVert \left(M_A \otimes I_B - \widetilde{M}_A \otimes I_B \right) \ket{\psi_{AB}} \bra{\psi_{AB}} \right\lVert_1$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -27,7 +27,7 @@
       <td>Provide a lower bound on \(d_\mathrm{\diamond}\)</td>
     </tr>
     <tr>
-      <td>Average gate fidelity {% cite nielsen2010quantum %}<mark>Average gate fidelity</mark></td>
+      <td><div id="average-gate-fidelity"></div>Average gate fidelity {% cite nielsen2010quantum %}<mark>Average gate fidelity</mark></td>
       <td>$$F_\mathrm{AVG} \left (M, \widetilde{M} \right) = \int F \left( M( \ket{\psi} \bra{\psi}), \widetilde{M}(\ket{\psi} \bra{\psi}) \right) d\psi$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -43,7 +43,7 @@
       <td>error rate</td>
     </tr>
     <tr>
-      <td>Entanglement fidelity {% cite schumacher1996sending %}<mark>Entanglement fidelity</mark></td>
+      <td><div id="entanglement-fidelity"></div>Entanglement fidelity {% cite schumacher1996sending %}<mark>Entanglement fidelity</mark></td>
       <td>$$F_e \left(M, \widetilde{M} \right) = F \left( (M \otimes I) ( \ket{\psi} \bra{\psi}), \left( \widetilde{M} \otimes I \right)(\ket{\psi} \bra{\psi}) \right)$$ </td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -59,7 +59,7 @@
       <td>error rate</td>
     </tr>
     <tr>
-      <td>Stabilized minimum fidelity {% cite Gilchrist2005 %}<mark>Stabilized minimum fidelity</mark></td>
+      <td><div id="stabilized-minimum-fidelity"></div>Stabilized minimum fidelity {% cite Gilchrist2005 %}<mark>Stabilized minimum fidelity</mark></td>
       <td>$$F_\mathrm{stab} \left( M, \widetilde{M} \right) = \min_{\psi_{AB}} F \left( \left( M_A \otimes I_B \right) (\ket{\psi} \bra{\psi}, \left( \widetilde{M_A} \otimes I_B \right)(\ket{\psi} \bra{\psi}) \right)$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>

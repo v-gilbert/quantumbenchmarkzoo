@@ -11,7 +11,7 @@
    </thead>
    <tbody>
     <tr>
-      <td>\(L_1\) distance<br/><mark> L1 distance </mark>aka. Manhattan distance<mark> manhattan distance </mark></td>
+      <td><div id="l1-distance"></div>\(L_1\) distance<br/><mark> L1 distance </mark>aka. Manhattan distance<mark> manhattan distance </mark></td>
       <td>$$L_1 \left( \mathbf{p}, \mathbf{\widetilde{p}} \right) = \left\lVert \mathbf{p} - \mathbf{\widetilde{p}} \right\rVert_1$$$$ = \sum_{x \in \{0,1\}^n} \left| \mathbf{p}(x) - \mathbf{\widetilde{p}}(x) \right|$$</td>
       <td>0</td>
       <td>$$[0, 2]$$</td>
@@ -19,7 +19,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>Total variation distance<br/><mark> Total variation distance (tvd)</mark>aka. Kolmogorov distance<br/><mark>Kolmogorov distance</mark>aka. Normalized \(L_1\) distance<br/><mark> Normalized L1 distance</mark>aka. Trace distance<mark>Trace distance</mark></td>
+      <td><div id="total-variation-distance"></div>Total variation distance<br/><mark> Total variation distance (tvd)</mark>aka. Kolmogorov distance<br/><mark>Kolmogorov distance</mark>aka. Normalized \(L_1\) distance<br/><mark> Normalized L1 distance</mark>aka. Trace distance<mark>Trace distance</mark></td>
       <td>$$d_\mathrm{TV}\left(\mathbf{p}, \mathbf{\widetilde{p}}\right) = \frac{1}{2} L_1 \left( \mathbf{p}, \mathbf{\widetilde{p}} \right)$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -35,7 +35,7 @@
       <td>Overlap measure between two distributions</td>
     </tr>
     <tr>
-      <td>Hellinger fidelity*<br/><mark>Hellinger fidelity</mark>aka. Classical fidelity<mark>Classical fidelity</mark></td>
+      <td><div id="hellinger-fidelity"></div>Hellinger fidelity*<br/><mark>Hellinger fidelity</mark>aka. Classical fidelity<mark>Classical fidelity</mark></td>
       <td>$$F \left(\mathbf{p}, \mathbf{\widetilde{p}} \right) = \left( \sum_{x \in \{0,1\}^n} \sqrt{\mathbf{p}(x) \mathbf{\widetilde{p}}(x)} \right)^2$$</td>
       <td>1</td>
       <td>$$[0, 1]$$</td>
@@ -43,7 +43,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>Hellinger distance {% cite Hellinger1909 %}<mark>Hellinger distance</mark></td>
+      <td><div id="hellinger-distance"></div>Hellinger distance {% cite Hellinger1909 %}<mark>Hellinger distance</mark></td>
       <td>$$d_\mathrm{H}\left(\mathbf{p}, \mathbf{\widetilde{p}} \right) = \sqrt{1-\sqrt{F\left(\mathbf{p}, \mathbf{\widetilde{p}}\right)}}$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -51,7 +51,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>Bhattacharya distance<mark>Bhattacharya distance</mark></td>
+      <td><div id="bhattacharya-distance"></div>Bhattacharya distance<mark>Bhattacharya distance</mark></td>
       <td>$$d_\mathrm{B}\left(\mathbf{p}, \mathbf{\widetilde{p}} \right) = \frac{1}{2} \ln \left(BC \left(\mathbf{p}, \mathbf{\widetilde{p}} \right) \right)$$</td>
       <td>0</td>
       <td>$$[0, \infty]$$</td>
@@ -59,7 +59,7 @@
       <td>Metric measuring the overlap between two distributions</td>
     </tr>
     <tr>
-      <td>Kullback-Leibler deviation {% cite Kullback1951 %}<br/><mark>Kullback-Leibler deviation</mark>aka. Relative entropy <mark>Relative entropy</mark></td>
+      <td><div id="kullback-leibler"></div>Kullback-Leibler deviation {% cite Kullback1951 %}<br/><mark>Kullback-Leibler deviation</mark>aka. Relative entropy <mark>Relative entropy</mark></td>
       <td>$$d_\mathrm{KL}\left(\mathbf{p} || \mathbf{\widetilde{p}} \right) = \sum_{x \in \{0,1\}^n} \mathbf{p}(x) \log \left( \frac{\mathbf{p}(x)}{\mathbf{\widetilde{p}}(x)} \right)$$</td>
       <td>0</td>
       <td>$$[0, \infty]$$</td>
@@ -75,7 +75,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>Cross-entropy<mark>Cross-entropy</mark></td>
+      <td><div id="cross-entropy"></div>Cross-entropy<mark>Cross-entropy</mark></td>
       <td>$$H(\mathbf{p}, \mathbf{\widetilde{p}}) = H\left(\mathbf{\widetilde{p}}\right) + d_{KL}\left(\mathbf{p} || \mathbf{\widetilde{p}}\right)$$ $$= -\sum_{x \in \{0,1\}^n} \mathbf{p}(x) \log \left(\mathbf{\widetilde{p}}(x) \right)$$</td>
       <td>Min val of \(H(\mathbf{p}, \mathbf{\widetilde{p}})\)</td>
       <td>$$[0, \infty]$$</td>
@@ -83,7 +83,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>Linear Cross-entropy<mark>linear cross-entropy</mark></td>
+      <td><div id="linear-cross-entropy"></div>Linear Cross-entropy<mark>linear cross-entropy</mark></td>
       <td>$$H_\mathrm{lin}\left(\mathbf{p},\mathbf{\widetilde{p}}\right) = 2^n \left(\sum_{x \in \{0,1\}^n} \mathbf{p}(x) \mathbf{\widetilde{p}}(x)\right) – 1$$</td>
       <td>1</td>
       <td>$$[0, 1]$$</td>

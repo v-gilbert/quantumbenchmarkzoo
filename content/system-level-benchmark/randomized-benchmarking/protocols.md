@@ -39,15 +39,15 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 
 ## List of RB protocols
 
-{% assign single-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "single-qubit-CRB" | first %}
-{% assign multi-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "multi-qubit-CRB" | first %}
-{% assign DRB = site.randomized-benchmarking-protocols | where: "page-id", "DRB" | first %}
-{% assign BRB = site.randomized-benchmarking-protocols | where: "page-id", "BRB" | first %}
-{% assign MRB = site.randomized-benchmarking-protocols | where: "page-id", "MRB" | first %}
-{% assign dihedral-RB = site.randomized-benchmarking-protocols | where: "page-id", "dihedral-RB" | first %}
-{% assign SRB = site.randomized-benchmarking-protocols | where: "page-id", "SRB" | first %}
-{% assign correlated-RB = site.randomized-benchmarking-protocols | where: "page-id", "correlated-RB" | first %}
-{% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}
+{% assign single-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "single-qubit-CRB" | first %}
+{% assign multi-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "multi-qubit-CRB" | first %}
+{% assign DRB = site.randomized-benchmarking-protocols | where: "page-id", "DRB" | first %}
+{% assign BRB = site.randomized-benchmarking-protocols | where: "page-id", "BRB" | first %}
+{% assign MRB = site.randomized-benchmarking-protocols | where: "page-id", "MRB" | first %}
+{% assign dihedral-RB = site.randomized-benchmarking-protocols | where: "page-id", "dihedral-RB" | first %}
+{% assign SRB = site.randomized-benchmarking-protocols | where: "page-id", "SRB" | first %}
+{% assign correlated-RB = site.randomized-benchmarking-protocols | where: "page-id", "correlated-RB" | first %}
+{% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}
 
 - Clifford Randomized Benchmarking
   - <a href="{{ single-qubit-CRB.url | prepend: site.baseurl }}" target="_blank">Single-qubit Clifford Randomized Benchmarking</a>

@@ -7,7 +7,7 @@ description: >
 
 ## Motivations
 
-{% assign single-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "single-qubit-CRB" | first %}
+{% assign single-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "single-qubit-CRB" | first %}
 <!-- TODO: ref to single qubit RB -->
 The primary motivation behind the development of multi-qubit Clifford Randomized Benchmarking was to generalize the <a href="{{ single-qubit-CRB.url | prepend: site.baseurl }}" target="_blank">single-qubit randomized benchmarking (RB)</a> protocol to systems comprising multiple qubits. This extended protocol was introduced in 2010 by E. Magesan et al. {% cite magesan2011scalable %}.
 

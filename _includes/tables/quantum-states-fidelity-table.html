@@ -11,7 +11,7 @@
    </thead>
    <tbody>
     <tr>
-      <td>Trace distance {% cite nielsen2010quantum %}<mark>Trace distance</mark></td>
+      <td><div id="trace-distance"></div>Trace distance {% cite nielsen2010quantum %}<mark>Trace distance</mark></td>
       <td>$$d_{tr} \left(\rho, \widetilde{\rho} \right) = \frac{1}{2} \left\lVert \rho - \widetilde{\rho} \right\rVert_1$$$$= \frac{1}{2} \Tr \left|\rho - \widetilde{\rho} \right|$$</td>
       <td>0</td>
       <td>$$[0, 1]$$</td>
@@ -19,7 +19,7 @@
       <td>inherits properties from classical total variation distance</td>
     </tr>
     <tr>
-      <td>State fidelity {% cite nielsen2010quantum %}<br/>(two pure states)<mark>State fidelity</mark></td>
+      <td><div id="state-fidelity"></div>State fidelity {% cite nielsen2010quantum %}<br/>(two pure states)<mark>State fidelity</mark></td>
       <td>$$\rho =\ket{\psi}\bra{\psi}, \widetilde{\rho} =\ket{\phi}\bra{\phi}$$$$F\left(\rho, \widetilde{\rho}\right) = |\braket{\psi | \phi}|^2$$</td>
       <td>1</td>
       <td>$$[0, 1]$$</td>
@@ -43,7 +43,7 @@
       <td>Proxy to success probability of a quantum computation</td>
     </tr>
     <tr>
-      <td>Bures distance {% cite Gilchrist2005 %}<br/>(finite version of Bures metric)<mark>Bures distance</mark></td>
+      <td><div id="bures-distance"></div>Bures distance {% cite Gilchrist2005 %}<br/>(finite version of Bures metric)<mark>Bures distance</mark></td>
       <td>$$B \left( \rho, \widetilde{\rho} \right) = \sqrt{2-2\sqrt{F \left( \rho, \widetilde{\rho} \right)}}$$</td>
       <td>0</td>
       <td>$$[0, \sqrt{2}]$$</td>
@@ -51,7 +51,7 @@
       <td>Turn the fidelity to a euclidean distance between two pure states</td>
     </tr>
     <tr>
-      <td>Bures angle {% cite Gilchrist2005 %}<br/>aka. quantum angle <mark>Bures angle</mark></td>
+      <td><div id="bures-angle"></div>Bures angle {% cite Gilchrist2005 %}<br/>aka. quantum angle <mark>Bures angle</mark></td>
       <td>$$A \left(  \rho, \widetilde{\rho} \right) = \arccos \sqrt{F \left( \rho, \widetilde{\rho} \right)}$$</td>
       <td>0</td>
       <td>$$[0, 2\pi]$$</td>
@@ -67,7 +67,7 @@
       <td>Proxy to failure probability of a quantum computation</td>
     </tr>
     <tr>
-      <td>Quantum relative entropy {% cite nielsen2010quantum %}<mark>Quantum relative entropy</mark></td>
+      <td><div id="quantum-relative-entropy"></div>Quantum relative entropy {% cite nielsen2010quantum %}<mark>Quantum relative entropy</mark></td>
       <td>$$S \left(\rho || \widetilde{\rho}\right) = \Tr \left( \rho \log(\rho) \right) - \Tr \left( \rho \log \left(\widetilde{\rho}\right) \right)$$</td>
       <td>0</td>
       <td>$$[0, \infty]$$</td>

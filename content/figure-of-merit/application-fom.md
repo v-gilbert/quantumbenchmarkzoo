@@ -9,6 +9,7 @@ This section introduces the different figure of merit employed depending on the 
 
 ## Optimization
 
+<div id="time-to-solution"></div>
 ### Time to Solution ($$TTS$$)
 
 The Time To Solution (TSS) was introduced in {% cite ronnow2014defining %} to evaluate the performance scaling of Quantum Annealers. It quantifies the minimum number of runs $$R$$ required to sample the optimal solution at least once within the $$R$$ runs with probability $$p$$:
@@ -19,6 +20,7 @@ $$ TTS = t_a \times R $$
 
 where $$s$$ is the empirical success probability (i.e., probability of finding the ground state in a single run). The time to solution is then defined as the total time required to perform the $$R$$ runs. In its original formulation, TTS accounts solely for the annealing time per run $$t_a$$ and does not include additional overheads such as system calibration, initialization, measurement, delays between runs, etc...
 
+<div id="time-to-epsilon"></div>
 ### Time to Epsilon ($$ TT\epsilon $$)
 
 The TTS can be extended to the Time to $$\epsilon$$-close solution {% cite MunozBauza2025 %} which is the time required to find a state that is $$\epsilon$$-close to the ground state at least once within the $$R$$ runs with probability $$p_{c \leq c^* + \epsilon \lvert c^* \rvert}$$. The optimal cost is denoted $$c^*$$ (we consider here a minimization problem). 
@@ -30,6 +32,7 @@ $$ TT \epsilon = t_a \times R_\epsilon $$
 
 <!-- Ajouter les déclinaisons des différents TTS avec calculs ou non annealing run. -->
 
+<div id="speedup-ratio"></div>
 ## Speedup ratio
 
 The authors of {% cite ronnow2014defining %} introduce a speedup ratio. $$C(N)$$ (resp. $$Q(N)$$) is the time used by a classical (resp. quantum) device to find the optimal or approximate solution to a problem of size $$N$$. The speedup ratio can be defined as:

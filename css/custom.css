@@ -36,3 +36,12 @@ p {
 mark{
     display: none;
 }
+
+.my-mind-map{
+    max-width: 100%;
+}
+
+#mindmap {
+  width: 100%;
+  height: 100vh;
+}

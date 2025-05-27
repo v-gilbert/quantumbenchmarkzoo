@@ -44,15 +44,15 @@ This summary is an adaptation of the table provided by R. Larose in Table 1 of {
 
 ## Protocols
 
-{% assign rcs = site.supremacy-protocols | where: "page-id", "random-circuit-sampling" | first %}
+{% assign rcs = site.supremacy-protocols | where: "page-id", "random-circuit-sampling" | first %}
 - <a href="{{ rcs.url | prepend: site.baseurl }}">Random Circuit Sampling (RCS)</a>  
 In a nutshell, Random Circuit Sampling consists of sampling the bitstring output distribution from a randomly generated quantum circuit. The distribution is usually supposed to have some more probable bitstring than others. The distribution used to create the quantum circuit is chosen to make the sampling task difficult for classical computers (computational time scales exponentially with the number of qubits). Importantly, the objective of RCS is not to reconstruct the entire output distribution. Instead, the protocol evaluates the likelihood of the quantum device correctly sampling from the intended distribution.
 
-{% assign bs = site.supremacy-protocols | where: "page-id", "boson-sampling" | first %}
+{% assign bs = site.supremacy-protocols | where: "page-id", "boson-sampling" | first %}
 - <a href="{{ bs.url | prepend: site.baseurl }}">Boson Sampling (BS)</a>  
 In a nutshell, boson sampling is a protocol used to benchmark the performance of Boson-based QPUs (photons in this case). The task consists of running a randomly generated quantum circuit of optical elements (beam splitters and phase shifters) with a specific initial state several times. It is then possible to build an output distribution from these samples, representing the experimental probability output associated with each quantum state. This sampling task is hard for classical computers: it requires exponential resources to get approximately the same output distribution as the quantum computer. Resources required by classical systems to emulate the quantum computer are usually interpolated for large experiments. For these experiments, quantum systems are expected to work correctly (there is, unfortunately, no direct means to check that the QPU is doing everything right).
 
-{% assign qsim = site.supremacy-protocols | where: "page-id", "quantum-simulation" | first %}
+{% assign qsim = site.supremacy-protocols | where: "page-id", "quantum-simulation" | first %}
 - <a href="{{ qsim.url | prepend: site.baseurl }}">Quantum simulation (Qsim)</a>  
 In a nutshell, quantum simulation tasks attempt to simulate a continuous-time quantum system evolution. It can be done using an analog machine that simulates the whole process or using a digital quantum computer implementing unitaries built from an approximation (trotterization) of the initial quantum evolution. In this frame, the performance test consists of sampling the output probability distribution corresponding to the quantum evolution faster with a quantum computer than with a classical emulation of this evolution.  
 

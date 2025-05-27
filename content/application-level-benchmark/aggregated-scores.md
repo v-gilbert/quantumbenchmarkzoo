@@ -5,6 +5,8 @@ description: >
 
 # Aggregated scores
 
+<div id="myriad-Q"></div>
+
 ## MYRIAD-Q aggregated figure of merit (2024)
 
 In {% cite barbaresco2024bacq %}, F. Barbaresco et al. present a methodology to aggregate benchmarking scores to a single final score according to decision-maker preferences.
@@ -28,6 +30,8 @@ The second step aggregates the normalized utility values using the two-additive 
 ### Limitations
 
 As mentionned by the authors, the MYRIAD-Q score strongly depends on the decision maker subjective point of view, this figure of merit cannot be compared unless the exact same detailed protocol is replicated. 
+
+<div id="quas"></div>
 
 ## Quantum Application Score (QuAS) (2024)
 
