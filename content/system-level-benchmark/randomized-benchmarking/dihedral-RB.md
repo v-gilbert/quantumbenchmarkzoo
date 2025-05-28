@@ -1,4 +1,5 @@
 ---
+title: Dihedral Randomized Benchmarking
 description: >
   Dihedral Randomized Benchmarking
 ---

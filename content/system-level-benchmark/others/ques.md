@@ -1,4 +1,5 @@
 ---
+title: QUES
 description: >
   Quantum Hamitlonian simulation benchmark
 ---

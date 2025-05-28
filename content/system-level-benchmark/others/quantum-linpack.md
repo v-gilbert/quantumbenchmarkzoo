@@ -1,4 +1,5 @@
 ---
+title: Quantum Linpack
 description: >
   Quantum linpack: Random circuit Block-encoded matrix and a proposal of quantum LINPACK benchmark
 ---

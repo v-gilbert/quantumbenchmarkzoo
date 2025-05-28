@@ -1,4 +1,5 @@
 ---
+title: Quantum Simulation Supremacy
 datatable: true
 description: >
   Quantum simulation

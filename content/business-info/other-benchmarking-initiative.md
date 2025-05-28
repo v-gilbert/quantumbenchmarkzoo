@@ -1,9 +1,10 @@
 ---
+title: Benchmarking Initiatives
 description: >
-  Other Benchmarking Initiatives
+  Benchmarking Initiatives
 ---
 
-# Other Benchmarking Initiatives
+# Benchmarking Initiatives
 
 ## International initiatives
 

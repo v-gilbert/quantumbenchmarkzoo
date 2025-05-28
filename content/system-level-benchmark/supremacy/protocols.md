@@ -1,4 +1,5 @@
 ---
+title: Quantum Supremacy Protocols
 datatable: true
 description: >
   Protocols used for quantum supremacy experiments

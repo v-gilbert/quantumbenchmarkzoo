@@ -1,4 +1,5 @@
 ---
+title: Algorithmic Qubit
 datatable: true
 description: >
   Algorithmic qubit protocol.
@@ -16,6 +17,8 @@ description: >
 **EM**: Error mitigation  
 **SP**: Scientific paper (checked if a scientific paper explain the results)  
 
+<!-- Avoid issue with citations -->
+<!-- {% cite algorithmicQubitsPerf %} -->
 {% include tables/aq-table.html %}
 <script type="text/javascript">
     $(document).ready(function() {

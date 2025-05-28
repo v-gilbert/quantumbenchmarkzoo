@@ -1,4 +1,5 @@
 ---
+title: Simultaneous Randomized Benchmarking
 description: >
   Simultaneous Randomized Benchmarking
 ---
@@ -36,3 +37,7 @@ We illustrate the protocol for the case of single-qubit Clifford group simultane
 
 
 Litterature: {% cite Gambetta2012 %}, {% cite McKay2019 %}, {% cite mckay2023benchmarking %}
+
+# References
+
+{% bibliography --cited %}

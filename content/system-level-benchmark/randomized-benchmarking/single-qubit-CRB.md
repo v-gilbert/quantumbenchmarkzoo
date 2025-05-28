@@ -1,4 +1,5 @@
 ---
+title: Single-qubit Clifford Randomized Benchmarking
 description: >
   Single-qubit Clifford Randomized Benchmarking
 ---

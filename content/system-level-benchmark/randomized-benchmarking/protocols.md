@@ -1,4 +1,5 @@
 ---
+title: Randomized Benchmarking Protocols
 description: >
   Protocols used for randomized benchmarking
 ---

@@ -1,4 +1,5 @@
 ---
+title: Fidelities and Errors
 description: >
   Fidelities and errors
 ---

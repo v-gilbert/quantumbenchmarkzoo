@@ -1,4 +1,5 @@
 ---
+title: Mirror Randomized Benchmarking
 description: >
   Mirror Randomized Benchmarking
 ---
@@ -21,3 +22,6 @@ description: >
 ## Limitations
 - If the errors of $$\mu$$-distributed gates and their inverse are correlated, MRB slightly underestimates the error rate of the gate set.
 
+# References
+
+{% bibliography --cited %}

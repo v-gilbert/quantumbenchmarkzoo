@@ -1,4 +1,5 @@
 ---
+title: Aggregated Scores
 description: >
   Aggregated Scores
 ---

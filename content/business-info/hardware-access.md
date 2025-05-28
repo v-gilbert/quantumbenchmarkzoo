@@ -1,4 +1,5 @@
 ---
+title: Hardware Access
 datatable: true
 description: >
   Hardware Access

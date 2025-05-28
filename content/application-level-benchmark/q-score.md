@@ -1,9 +1,11 @@
 ---
+title: Q-score
 datatable: true
 description: >
   Q-score protocol.
 ---
 {% assign modified = page.path | max_last_modified: "tables/q-score-table.html" %}
+
 
 # Q-score benchmark
 
@@ -23,6 +25,8 @@ description: >
 **TS**: Tabu Search  
 **UD**: Unit Disk  
 
+<!-- Avoid issue with citations -->
+<!-- {% cite martiel2021benchmarking %} -->
 {% include tables/q-score-table.html %}
 <script type="text/javascript">
     $(document).ready(function() {

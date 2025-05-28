@@ -1,4 +1,5 @@
 ---
+title: Random Circuit Sampling Supremacy
 datatable: true
 description: >
   Random circuit sampling

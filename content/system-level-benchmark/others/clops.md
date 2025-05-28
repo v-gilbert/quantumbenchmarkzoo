@@ -1,4 +1,5 @@
 ---
+title: CLOPS
 description: >
   Circuit Layer Operation per Second (CLOPS)
 ---

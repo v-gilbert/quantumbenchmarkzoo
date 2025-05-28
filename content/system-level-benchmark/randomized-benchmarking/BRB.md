@@ -1,4 +1,5 @@
 ---
+title: Binary Randomized Benchmarking
 description: >
   Direct Randomized Benchmarking
 ---
@@ -24,3 +25,7 @@ description: >
 <!-- Voir si possibilité d'extraire les limites, est-ce que ça scale ? -->
 
 Litterature: {% cite Hines2024 %}
+
+# References
+
+{% bibliography --cited %}

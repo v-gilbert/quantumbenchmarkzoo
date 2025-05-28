@@ -1,4 +1,5 @@
 ---
+title: QECC Experiments
 datatable: true
 description: >
   Quantum Error Correction Code Experiments

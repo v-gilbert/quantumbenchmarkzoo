@@ -1,4 +1,5 @@
 ---
+title: Quantum Volume
 description: >
   Quantum Volume Detailed
 ---
@@ -16,6 +17,8 @@ description: >
 
 For clarity the Quantum Volume is expressed in a logarithmic basis.
 
+<!-- Avoid issue with citations -->
+<!-- {% cite cross2019validating %} -->
 {% include tables/QV-table.html %}
 <script type="text/javascript">
     $(document).ready(function() {

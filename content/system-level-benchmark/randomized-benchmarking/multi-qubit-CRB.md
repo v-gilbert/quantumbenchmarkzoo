@@ -1,4 +1,5 @@
 ---
+title: Multi-qubit Clifford Randomized Benchmarking
 description: >
   Multi-qubit Clifford Randomized Benchmarking
 ---

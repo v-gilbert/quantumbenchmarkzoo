@@ -1,4 +1,5 @@
 ---
+title: Frameworks
 description: >
   Application benchmarking frameworks
 ---

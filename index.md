@@ -1,4 +1,5 @@
 ---
+title: Presentation
 description: >
   Presentation of the QuantumBenchmarkZoo: main objective, features and 
   other interesting resources.
@@ -26,39 +27,3 @@ At the time of writing, quantum benchmarking protocols and experiments are flour
 # Website in construction
 
 This website is still under construction. Any kind of help is welcomed !
-
-
-<!--
-## Zoo map
-
-Put an image with the map of the website (2 colors: created and on creation)
--->
-
-<!--
-- Figures of merit
-- Protocols
-- Benchmarks
-- Frameworks
-- Datasets
-- Ressource estimation
-- Pricing
-
- The section **Figure of merit** introduces common measures used to evaluate the performance of quantum computers. The second section **Protocols** introduces a classification and details each protocol. The compilation of results obtained with each protocol is in section **Benchmarks**. Section **Frameworks** gathers software library initiatives developed to benchmark quantum computers. Section **Datasets** groups existing applications instance sets. Section **Ressource estimation** introduces tools to perform upstream estimation of quantum resources requirements. This is especially relevant for Fault-Tolerant Quantum Computing (FTQC). Section **Pricing** summarizes the cost plans of each company commercializing access to quantum computers.
-
-
-
-## Other ressources
-
-For an introduction to classical computing benchmark, we recommend:
-- survey 1
-- survey 2
-- ...
-
-For an introduction to quantum computing benchmark, we recommend:
-- survey 1
-- survey 2
-- ...
-
-# References
-{% bibliography --cited %}
--->

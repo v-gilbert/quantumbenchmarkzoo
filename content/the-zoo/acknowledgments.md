@@ -1,4 +1,5 @@
 ---
+title: Acknowledgments
 description: >
   List of the acknowledgments.
 ---

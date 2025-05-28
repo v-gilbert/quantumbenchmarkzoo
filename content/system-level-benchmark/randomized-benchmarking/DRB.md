@@ -1,4 +1,5 @@
 ---
+title: Direct Randomized Benchmarking
 description: >
   Direct Randomized Benchmarking
 ---
@@ -26,3 +27,7 @@ description: >
 Litterature: {% cite proctor2019direct %}, {% cite polloreno2023theory %}
 
 Implementations: 
+
+# References
+
+{% bibliography --cited %}

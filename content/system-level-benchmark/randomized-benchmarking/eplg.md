@@ -1,4 +1,5 @@
 ---
+title: EPLG
 description: >
   Error Per Layered Gate
 ---

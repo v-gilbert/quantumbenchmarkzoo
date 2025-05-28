@@ -1,4 +1,5 @@
 ---
+title: Terminology
 description: >
   Terminology
 ---

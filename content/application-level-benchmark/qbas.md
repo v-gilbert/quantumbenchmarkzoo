@@ -1,4 +1,5 @@
 ---
+title: qBAS
 datatable: true
 description: >
   qBAS protocol.

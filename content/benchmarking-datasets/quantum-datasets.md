@@ -1,4 +1,5 @@
 ---
+title: Quantum Datasets
 description: >
   Quantum datasets
 ---

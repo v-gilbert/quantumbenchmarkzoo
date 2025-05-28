@@ -1,4 +1,5 @@
 ---
+title: Boson Sampling
 datatable: true
 description: >
   Boson Sampling
