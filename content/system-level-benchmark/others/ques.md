@@ -22,7 +22,7 @@ For a quantum circuit composed of $$n+1$$ qubits and $$l$$ layers, the QUES scor
 
 ## Assumptions
 - The complexity of the sampling the $$QUES(n,l)$$ score relies on the XQUATH assumption {% cite aaronson2019classical %}.
-- There is a post-selection for the $$n$$-qubit bitstring $$\{0\}^n$$.
+- There is a post-selection for the $$n$$-qubit bitstring $$\{0\}^{\otimes n}$$.
 - The noise model is assumed to be depolarized (as for many randomized benchmarking protocols).
 - The choice of the compilation is free but should be reported.
 - The choice of error mitigation method is free but should be reported.
