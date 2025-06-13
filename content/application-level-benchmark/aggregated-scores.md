@@ -36,16 +36,16 @@ As mentionned by the authors, the MYRIAD-Q score strongly depends on the decisio
 
 ## Quantum Application Score (QuAS) (2024)
 
-The Quantum Application Score (QuAS) {% cite mesman2024quas %} was introduced by K. J. Mesman et al. in 2024 and aims to define a framework to compute a single score from Key Performance Indicators (KIPs) chosen by the user.
+The Quantum Application Score (QuAS) {% cite mesman2024quas %} was introduced by K. J. Mesman et al. in 2024 and aims to define a framework to compute a single score from different Key Performance Indicators (KPIs) chosen by the user when solving an optimization problem.
 
 ### Motivation
 
-The motivation for the definition of this framework is to define a protocol with several degrees of freedom concerning the problem instances being benchmarked and the figures of merit being measured. The authors wish to integrate an equitable analysis between the different KPIs being benchmarked using this method.
+The motivation for this framework is to establish a protocol that accommodates multiple degrees of freedom with respect to the problem instances being benchmarked and the performance metrics evaluated. The authors aim to facilitate an equitable analysis across the different KPIs being benchmarked using this method.
 
 ### Protocol
 
 The initial stage of the protocol is dedicated to identifying the set of KPIs relevant to the benchmark study. The authors illustrate this with an example involving three primary KPIs: the problem size, the solution quality, and the runtime of the quantum device. In their example, the quality of the solution obtained with the quantum computer is expressed concerning a reference solution found classically.  
-For a fixed-size problem, data points are collected using different problem instances and varying runtimes. Each axis is normalized to a $$[0, 1]$$ range, enabling data visualization in a two-dimensional plane. The Pareto front between the quality of the solution and the runtime can be approximated using lamé curves (see Figure). The area under each curve is computed, with the integral of the blue curve exceeding that of the red curve in the given example. These integrals are summed across all problem sizes, giving the final QuAS score. The quantum computer yielding the highest QuAS score is identified as the most effective method for solving the target problem.
+For a fixed problem size, data points are collected using different problem instances and varying runtimes. These data points are then plotted in a two-dimensional plane, where one axis represents solution quality and the other runtime. Both axes are normalized to the $$[0, 1]$$ range. The Pareto front between solution quality and runtime is approximated using Lamé curves (see Figure). Data points of the same color correspond to problem instances of the same size. The area under each curve is computed, with larger integrals indicating better performance. These integrals are summed across all problem sizes (blue and red), giving the final QuAS score. The quantum computer achieving the highest QuAS score is identified as the most effective computer for solving the target problem.
 
 <div class="center">
   <img src="/img/application-level-benchmark/QuAS.png" class="img-small" alt="Curves associated with the protocol QuAS"/>
@@ -56,7 +56,7 @@ Each KPI can be weighted according to the user's choice, and offsets can be adde
 ### Limitations
 
 As mentioned by the authors, the QuAS score defines a methodology and not a precise setting of KPIs and weights associated with each KPI. Hence, comparing two QuAS scores from different studies cannot be done.  
-The QuAS framework is only adapted to assess the performance of quantum computers on problems in which solutions can be expressed with a single number, such as single-objective optimization problems. Still, it is not suited for some other problems, such as multi-objective optimization problems.
+The QuAS framework is only adapted to assess the performance of quantum computers on problems in which solutions can be expressed with a single number. This method is not adapted to multi-objective optimization problems.
 
 # References
 {% bibliography --cited %}
