@@ -39,7 +39,7 @@ Noisy-Intermediate Scale Quantum (NISQ) is an abbreviation defined by J. Preskil
 
 ## QUATH
 
-The QUAntum THreshold assumption was introduced by S. Aaronson and L. Chen in {% cite aaronson2016complexity %}. It defines an assumption that, if true, validates the hardness of some sampling experiments, such as the Heavy Output Generation (HOG) problem used in the quantum volume. This assumption says that it is impossible for a polynomial-time classical algorithm taking as input the description of a quantum circuit to guess whether a specific output bitstring issued from this circuit has greater than the median probability of being observed with a success probability of at least $$\frac{1}{2} + \Omega \left( \frac{1}{2^n} \right)$$ (in complexity theory, $$\omega$$ defines a lower bound).
+The QUAntum THreshold assumption was introduced by S. Aaronson and L. Chen in {% cite aaronson2016complexity %}. It defines an assumption that, if true, validates the hardness of some sampling experiments, such as the Heavy Output Generation (HOG) problem used in the quantum volume. This assumption says that it is impossible for a polynomial-time classical algorithm taking as input the description of a quantum circuit to guess whether a specific output bitstring issued from this circuit has greater than the median probability of being observed with a success probability of at least $$\frac{1}{2} + \Omega \left( \frac{1}{2^n} \right)$$ (in complexity theory, $$\Omega$$ defines a lower bound).
 <!-- TODO: Ajouter un lien vers Heavy output problem -->
 
 ## Simulation
