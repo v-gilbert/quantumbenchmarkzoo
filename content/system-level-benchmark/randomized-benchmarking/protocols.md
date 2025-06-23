@@ -58,7 +58,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 {% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}
 
 - Clifford Randomized Benchmarking
-  - <a href="{{ single-qubit-CRB.url | prepend: site.baseurl }}" target="_blank">Single-qubit Clifford Randomized Benchmarking</a>
+  - <a href="{{ single-qubit-CRB.url | prepend: site.baseurl }}" target="_blank">Single-qubit Clifford Randomized Benchmarking (CRB)</a>
   - <a href="{{ multi-qubit-CRB.url | prepend: site.baseurl }}" target="_blank">Multi-qubit Clifford Randomized Benchmarking (CRB)</a>
 - Other gate set Randomized Benchmarking
   - <a href="{{ DRB.url | prepend: site.baseurl }}" target="_blank">Direct Randomized Benchmarking (DRB)</a>
