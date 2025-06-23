@@ -41,6 +41,7 @@ The main motivation for the Quantum Volume (QV) is to define a pragmatic way to 
 
 The Quantum Volume (QV) {% cite bishop2017quantum %} {% cite cross2019validating %} is a benchmarking protocol evaluating the ability of gate-based quantum computers to run quantum circuits reliably. This protocol gathers the maximum circuit width and depth that a quantum computer can successfully implement in a single metric number. A quantum computer has to successfully solve the Heavy Output Generation (HOG) problem  {% cite aaronson2016complexity %} of size $$n$$ to validate a quantum volume of size $$2^n$$. Many criteria may impact the value of the quantum volume: gate fidelity, coherence time, chip topology, and the efficiency of the transpilation method.
 
+<div id="heavy-output-generation-problem"></div>
 ### Heavy Output Generation problem
 
 The HOG problem is a sampling problem {% cite aaronson2016complexity %} considered hard for classical computers and constitutes a pass/fail test for quantum computers.
