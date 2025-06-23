@@ -6,7 +6,7 @@ description: >
 
 # Application Figure of Merit
 
-This section introduces the different figure of merit employed depending on the application context.
+This section introduces the different figures of merit employed depending on the application context.
 
 ## Optimization
 
@@ -19,12 +19,12 @@ $$ R = \left\lceil \frac{\log(1-p)}{\log(1-s)} \right\rceil $$
 
 $$ TTS = t_a \times R $$
 
-where $$s$$ is the empirical success probability (i.e., probability of finding the ground state in a single run). The time to solution is then defined as the total time required to perform the $$R$$ runs. In its original formulation, TTS accounts solely for the annealing time per run $$t_a$$ and does not include additional overheads such as system calibration, initialization, measurement, delays between runs, etc...
+where $$s$$ is the empirical success probability (i.e., probability of finding the ground state in a single annealing run). The TTS is then defined as the total time required to perform the $$R$$ runs. In its original formulation, TTS accounts solely for the annealing time per run $$t_a$$ and does not include additional overheads such as system calibration, initialization, measurement, delays between runs, etc...
 
 <div id="time-to-epsilon"></div>
-### Time to Epsilon ($$ TT\epsilon $$)
+### Time To Epsilon ($$ TT\epsilon $$)
 
-The TTS can be extended to the Time to $$\epsilon$$-close solution {% cite MunozBauza2025 %} which is the time required to find a state that is $$\epsilon$$-close to the ground state at least once within the $$R$$ runs with probability $$p_{c \leq c^* + \epsilon \lvert c^* \rvert}$$. The optimal cost is denoted $$c^*$$ (we consider here a minimization problem). 
+The Time To Solution can be extended to the Time To $$\epsilon$$-close solution {% cite MunozBauza2025 %} which is the time required to find a state (with associated cost $$c$$) that is $$\epsilon$$-close to the ground state (with associated cost $$c^*$$) at least once within the $$R$$ runs with probability $$p_{c \leq c^* + \epsilon \lvert c^* \rvert}$$. The optimal cost is denoted $$c^*$$ (we consider here a minimization problem). 
 
 
 $$ R_\epsilon = \left\lceil \frac{\log(1-p_{c \leq c* + \epsilon \lvert c* \rvert})}{\log(1-s)} \right\rceil $$
@@ -36,7 +36,7 @@ $$ TT \epsilon = t_a \times R_\epsilon $$
 <div id="speedup-ratio"></div>
 ## Speedup ratio
 
-The authors of {% cite ronnow2014defining %} introduce a speedup ratio. $$C(N)$$ (resp. $$Q(N)$$) is the time used by a classical (resp. quantum) device to find the optimal or approximate solution to a problem of size $$N$$. The speedup ratio can be defined as:
+The authors of {% cite ronnow2014defining %} introduce the notion of speedup ratio. Let $$C(N)$$ (resp. $$Q(N)$$) be the time used by a classical (resp. quantum) device to find the optimal or approximate solution to a problem of size $$N$$. The speedup ratio is defined as:
 
 $$ S(N) = \frac{C(N)}{Q(N)} $$
 
