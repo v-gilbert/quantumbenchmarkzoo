@@ -46,4 +46,6 @@ mark{
   height: 100vh;
 }
 
-
+.fa-icon-color {
+    color: rgba(0, 0, 0, 0.84);
+}
