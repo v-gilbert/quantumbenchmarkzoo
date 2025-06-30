@@ -61,19 +61,21 @@ Latex expression are surrounded by `$$`:
 To add a datatable (example here with the Q-score datatable) that is automatically generated.
 The javascript permits to format the table content as latex and to set the default number of items per page.
 
-`{% include tables/q-score-table.html %}`  
-`<script type="text/javascript">`  
-    `$(document).ready(function() {`  
-      `$('.q-score-table').DataTable(`  
-        `{`  
-          `"pageLength": 10,`  
-          `"drawCallback": function(settings){ `  
-           `MathJax.Hub.Queue(["Typeset", MathJax.Hub]); `  
-          `}`  
-        `} `  
-      `);`  
-    `});`  
-`</script>`  
+```
+{% include tables/q-score-table.html %}  
+<script type="text/javascript"> 
+    $(document).ready(function() {
+      $('.q-score-table').DataTable(
+        {
+          "pageLength": 10,
+          "drawCallback": function(settings){
+           MathJax.Hub.Queue(["Typeset", MathJax.Hub]);ss
+          }  
+        }  
+      );  
+    });  
+</script>
+```
 
 ## Images
 
@@ -81,7 +83,8 @@ To add an image, simply use the img tag within a div that centers the content.
 The classes img-small (50% width), img-medium (70% width), img-large (90% width) are only used for devices with more than 769px width.  
 Alt expression is really important to improve the indexation of the content.  
 
-`<div class="center">`  
-  `<img src="/img/application-level-benchmark/qBAS-1.png" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>`  
-`</div>`  
-
+```
+<div class="center">
+  <img src="/img/application-level-benchmark/qBAS-1.png" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/> 
+</div>
+```
