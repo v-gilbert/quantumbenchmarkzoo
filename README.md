@@ -12,8 +12,8 @@ You can help improve the documentation!
 
 Template examples are available in the doc directory:
 
-- Open the protocol template with a file editor to see its content
-- Open the table file with libre office calc or Excel to see its content
+- [Open the protocol template](https://github.com/v-gilbert/quantumbenchmarkzoo/blob/master/doc/protocol-template.md) with a file editor to see its content
+- [Open the table file]((https://github.com/v-gilbert/quantumbenchmarkzoo/blob/master/doc/) with libre office calc or Excel to see its content
 
 ## Building
 
