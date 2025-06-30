@@ -66,7 +66,7 @@ The javascript permits to format the table content as latex and to set the defau
         `{`  
           `"pageLength": 10,`  
           `"drawCallback": function(settings){ `  
-            `MathJax.Hub.Queue(["Typeset", MathJax.Hub]); `  
+           `MathJax.Hub.Queue(["Typeset", MathJax.Hub]); `  
           `}`  
         `} `  
       `);`  
