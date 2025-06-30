@@ -1,11 +1,10 @@
----
-title: my title # Title for the tab in the web browser. The final title will be "{title} - Quantum Benchmark Zoo"
-datatable: true # Set to true if there is at least a datatable in the page
-description: > # Description of the page. Used to set the content of the meta tag used by SEO. Should be one or two sentences with well chosen keywords.
-  Presentation of the awesome protocol blablabla... 
----
+`---`  
+`title: my title # Title for the tab in the web browser. The final title will be "{title} - Quantum Benchmark Zoo"`  
+`datatable: true # Set to true if there is at least a datatable in the page`  
+`description: > # Description of the page. Used to set the content of the meta tag used by SEO. Should be one or two sentences with well chosen keywords.`  
+  `Presentation of the awesome protocol blablabla... `  
+`---`  
 
-Biggest header of the page - name your protocol/metric/framework there
 # Protocol name
 
 ## Motivation
@@ -60,19 +59,19 @@ Latex expression are surrounded by `$$`:
 To add a datatable (example here with the Q-score datatable) that is automatically generated.
 The javascript permits to format the table content as latex and to set the default number of items per page.
 
-`{% include tables/q-score-table.html %}`
-`<script type="text/javascript">`
-    `$(document).ready(function() {`
-      `$('.q-score-table').DataTable(`
-        `{`
-          `"pageLength": 10,`
-          `"drawCallback": function(settings){ `
-            `MathJax.Hub.Queue(["Typeset", MathJax.Hub]); `
-          `}`
-        `} `
-      `);`
-    `});`
-`</script>`
+`{% include tables/q-score-table.html %}`  
+`<script type="text/javascript">`  
+    `$(document).ready(function() {`  
+      `$('.q-score-table').DataTable(`  
+        `{`  
+          `"pageLength": 10,`  
+          `"drawCallback": function(settings){ `  
+            `MathJax.Hub.Queue(["Typeset", MathJax.Hub]); `  
+          `}`  
+        `} `  
+      `);`  
+    `});`  
+`</script>`  
 
 ## Images
 
@@ -80,7 +79,7 @@ To add an image, simply use the img tag within a div that centers the content.
 The classes img-small (50% width), img-medium (70% width), img-large (90% width) are only used for devices with more than 769px width.  
 Alt expression is really important to improve the indexation of the content.  
 
-`<div class="center">`
-  `<img src="/img/application-level-benchmark/qBAS-1.png" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>`
-`</div>`
+`<div class="center">`  
+  `<img src="/img/application-level-benchmark/qBAS-1.png" class="img-medium" alt="Bars and Stripes data set with segmentation of images that are in/outside the set."/>`  
+`</div>`  
 
