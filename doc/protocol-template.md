@@ -1,9 +1,11 @@
-`---`  
-`title: my title # Title for the tab in the web browser. The final title will be "{title} - Quantum Benchmark Zoo"`  
-`datatable: true # Set to true if there is at least a datatable in the page`  
-`description: > # Description of the page. Used to set the content of the meta tag used by SEO. Should be one or two sentences with well chosen keywords.`  
-  `Presentation of the awesome protocol blablabla... `  
-`---`  
+```
+---  
+title: my title # Title for the tab in the web browser. The final title will be "{title} - Quantum Benchmark Zoo"  
+datatable: true # Set to true if there is at least a datatable in the page  
+description: > # Description of the page. Used to set the content of the meta tag used by SEO. Should be one or two sentences with well chosen keywords.  
+  Presentation of the awesome protocol blablabla...   
+---
+```
 
 # Protocol name
 
