@@ -58,7 +58,7 @@ Latex expression are surrounded by `$$`:
 `$$ C_{rand}(n) = \sum_{i=1}^n i \times (1-p^i)p^{i(i-1)/2} $$`
 
 ## Datatables
-To add a datatable (example here with the Q-score datatable) that is automatically generated.
+To add a datatable (example here with the Q-score datatable) that is automatically generated.  
 The javascript permits to format the table content as latex and to set the default number of items per page.
 
 ```
