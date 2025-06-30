@@ -1,10 +1,8 @@
 ---
 # Title for the tab in the web browser. The final title will be "{title} - Quantum Benchmark Zoo"
 title: my title
-
 # Set to true if there is at least a datatable in the page
 datatable: true
-
 # Description of the page. Used to set the content of the meta tag used by SEO
 # Should be one or two sentences with well chosen keywords.
 description: >
