@@ -64,6 +64,10 @@ nav:
       page-id: aggregated-scores
       url: /content/application-level-benchmark/aggregated-scores
       available: true
+    - text: Applications
+      page-id: Applications
+      url: /content/application-level-benchmark/applications
+      available: true
     - text: Frameworks
       page-id: application-benchmarks
       url: /content/application-level-benchmark/frameworks  
@@ -172,6 +176,13 @@ other-system-level-protocols:
   - text: rQOPS
     page-id: rqops
     url: /content/system-level-benchmark/others/rqops
+
+# Benchmark of applications and case studies
+applications-benchmarks:
+  - text: Factorization Application
+    page-id: factorization
+    url: /content/application-level-benchmark/applications/factorization
+
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
