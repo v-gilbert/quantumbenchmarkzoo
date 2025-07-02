@@ -5,3 +5,24 @@ description: >
 ---
 
 # Factorization
+
+Modern cryptography is mainly based on hard computational problem. For instance, the security of the widely used RSA cryptosystem {% cite rivest1978method %} relies on the difficulty of factorizing big numbers.
+
+## RSA
+
+The encryption/decryption process of RSA is described in the following picture:
+<div class="center">
+  <img src="/img/application-level-benchmark/RSA_cryptosystem.jpg" class="img-medium" alt="Test."/> 
+</div>
+where $$p$$ and $$q$$ are big prime numbers, $$e$$ can be choosen arbitrarily (often, $$e = 65537 = 2^{16} + 1$$) as long as $$e$$ is coprime to $$(p-1)(q-1)$$. There are other important criterions to choose $$p$$, $$q$$ and $$e$$ for RSA security, but it is not the main subjet here.
+The secret key $$d$$ is computed such that:
+
+$$ ed \equiv 1 \mod (p-1)(q-1) $$
+
+which is easy when $$p$$ and $$q$$ are known. Therefore, RSA security is based on the two following assumptions : 
+- Deciphering the message $$m$$ from $$c$$ knowing the public key ($$n$$, $$e$$) is hard.
+- Factoring the modulus $$n$$ to recover its prime factors is hard.
+
+## References
+
+{% bibliography --cited %}
