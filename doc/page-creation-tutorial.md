@@ -14,7 +14,7 @@ The menu title 'The Zoo' is not clickable. The three sub-menus 'Presentations', 
 
 This step is only required if you want your page to appear in the website's navigation bar. If you want your page to appear directly in the navigation bar (facultative), you have to modify the config.yml file accordingly. The navigation is organized as follows: 
 
-![Navigation configuration in _config.yml](./img/navigation.png)
+![Navigation configuration in _config.yml](./img/page-reference-config.png)
 
 Zoo is a sub-item of the navigation bar with three children: 'Presentation', 'Acknowledgments', and 'Terminology'. Each item has 4 properties: 
 - **text**: text content that appears in the navigation bar on the website
