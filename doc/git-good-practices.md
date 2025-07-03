@@ -21,7 +21,7 @@ Push your branch on the git:
 git push -u origin mybranch
 ```
 
-The merging flow is the following 
+The merging flow is the following:
 
 ![Merging flow](./img/merging-flow.png)
 
