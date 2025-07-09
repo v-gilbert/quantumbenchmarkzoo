@@ -24,6 +24,11 @@ In a nutshell, the number of algorithmic qubits evaluates the ability of quantum
 
 In a nutshell, the Q-score protocol assesses the ability of quantum computers to solve specific optimization problems. It begins by selecting a representative optimization problem, such as MaxCut, along with a well-defined subset of instances (e.g., graphs with an average edge density of $$0.5$$). Within this subset, two theoretical values are derived: the optimal solution cost (the best achievable objective function value) and the expected cost of a randomly generated solution. A threshold is then defined from these two values. The Q-score defines the maximum instance size for which the quantum or classical algorithm returns better solution costs than the threshold.
 
+{% assign lr-qaoa = site.application-protocols | where: "page-id", "lr-qaoa-protocol" | first %}
+- <a href="{{ lr-qaoa.url | prepend: site.baseurl }}">Linear ramp QAOA</a> (2025)
+
+<!-- Add some "in a nutshell info" -->
+
 ## Protocols based on learning sampling tasks
 
 {% assign qbas = site.application-protocols | where: "page-id", "qbas" | first %}

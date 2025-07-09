@@ -133,6 +133,9 @@ application-protocols:
   - text: Q-Score protocol
     page-id: q-score-protocol
     url: /content/application-level-benchmark/q-score
+  - text: LR-QAOA protocol
+    page-id: lr-qaoa-protocol
+    url: /content/application-level-benchmark/lr-qaoa
   - text: Volumetric-benchmark
     page-id: volumetric-benchmark
     url: /content/application-level-benchmark/volumetric-benchmark
