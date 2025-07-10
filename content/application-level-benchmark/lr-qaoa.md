@@ -25,7 +25,7 @@ The parameters used in these unitaries follow a linear ramp schedule, as shown i
 The red region corresponds to algorithm-dominated performance, and the green region to noise-dominated behavior.
 As devices improve, it is expected the crossover between these regions to occur at larger $p$.
 
-It has been used to benchmark 24 QPU from 6 vendors in {% cite montanezbarrera2024 %} by solving instances of the weighted maxcut problem using LR-QAOA. The key performance metric is the approximation ratio $r$, which increases with depth and saturates at 1 in the absence of noise, degrading as coherence is lost. LR-QAOA quantifies a QPU’s ability to preserve a coherent signal as circuit depth increases, identifying when performance becomes statistically indistinguishable from random sampling.  
+It has been used to benchmark 24 QPU from 6 vendors in {% cite montanezbarrera2025 %} by solving instances of the weighted maxcut problem using LR-QAOA. The key performance metric is the approximation ratio $r$, which increases with depth and saturates at 1 in the absence of noise, degrading as coherence is lost. LR-QAOA quantifies a QPU’s ability to preserve a coherent signal as circuit depth increases, identifying when performance becomes statistically indistinguishable from random sampling.  
 
 
 ## Assumptions 
