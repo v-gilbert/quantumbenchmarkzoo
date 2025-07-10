@@ -1,0 +1,50 @@
+<table class="display my_table factorization-table">
+   <thead>
+       <tr>
+          <th>Date & Ref</th>
+          <th>Factorized number</th>
+          <th>#variables before preprocessing</th>
+          <th>Preprocessing</th>
+          <th>#qubits after preprocessing </th>
+          <th>QPU</th>
+          <th>Method</th>
+          <th>Success rate</th>
+          <th>Remarks</th>
+       </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>2021/11 {% cite hegade2021digitized %}</td>
+      <td>217 = 7 x 31</td>
+      <td>6</td>
+      <td></td>
+      <td>6</td>
+      <td>ibmq_casablanca</td>
+      <td>Direct</td>
+      <td>~80%</td>
+      <td>Adding counterdiabatic hamiltonian + Trotter</td>
+    </tr>
+    <tr>
+      <td>2021/11 {% cite hegade2021digitized %}</td>
+      <td>235 = 5 x 47</td>
+      <td>6</td>
+      <td>FER</td>
+      <td>4</td>
+      <td>ibmq_casablanca</td>
+      <td>Binary table</td>
+      <td>~35%</td>
+      <td>Adding counterdiabatic hamiltonian + Trotter</td>
+    </tr>
+    <tr>
+      <td>2024/02 {% cite ding2024effective %}</td>
+      <td>8 219 999 = 251 x 32 749 </td>
+      <td>23 = 8+15 (NE)</td>
+      <td>Multiplier encoding (can be done once for all)</td>
+      <td>1320 = 11x8x15 (NE)</td>
+      <td>D-Wave Advantage 4.1 (Pegasus)</td>
+      <td>Binary table + Adder</td>
+      <td>~33%</td>
+      <td>Hardware specific and using Iterated reverse annealing, pause</td>
+    </tr>
+  </tbody>
+</table>

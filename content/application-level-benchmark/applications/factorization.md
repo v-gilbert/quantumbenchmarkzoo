@@ -14,7 +14,7 @@ The encryption/decryption process of RSA is described in the following picture:
 <div class="center">
   <img src="/img/application-level-benchmark/RSA_cryptosystem.jpg" class="img-medium" alt="Test."/> 
 </div>
-where $$p$$ and $$q$$ are big prime numbers, $$e$$ can be choosen arbitrarily (often, $$e = 65537 = 2^{16} + 1$$) as long as $$e$$ is coprime to $$(p-1)(q-1)$$. There are other important criterions to choose $$p$$, $$q$$ and $$e$$ for RSA security, but it is not the main subjet here.
+where $$p$$ and $$q$$ are big prime numbers, $$e$$ can be choosen arbitrarily (often, $$e = 65537 = 2^{16} + 1$$) as long as $$e$$ is coprime to $$(p-1)(q-1)$$. There are other important criterions to choose $$p$$, $$q$$ and $$e$$ for RSA security {% cite chen2023dss %}, but it is not the main subjet here.
 The secret key $$d$$ is computed such that:
 
 $$ ed \equiv 1 \mod (p-1)(q-1) $$
@@ -22,6 +22,28 @@ $$ ed \equiv 1 \mod (p-1)(q-1) $$
 which is easy when $$p$$ and $$q$$ are known. Therefore, RSA security is based on the two following assumptions : 
 - Deciphering the message $$m$$ from $$c$$ knowing the public key ($$n$$, $$e$$) is hard.
 - Factoring the modulus $$n$$ to recover its prime factors is hard.
+
+## Factorization results
+
+**List of acronyms:**  
+**FER**: Factorization Equation Reduction  
+**NE**: Not Explicited (so it is deduced by the contributor)  
+
+{% include tables/factorization-table.html %}
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.factorization-table').DataTable(
+        {
+          "pageLength": 10,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
+        } 
+      );
+    });
+</script>
+
+
 
 ## References
 
