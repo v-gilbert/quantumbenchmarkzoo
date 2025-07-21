@@ -12,7 +12,7 @@ Modern cryptography is mainly based on hard computational problem. For instance,
 
 The encryption/decryption process of RSA is described in the following picture:
 <div class="center">
-  <img src="/img/application-level-benchmark/RSA_cryptosystem.jpg" class="img-medium" alt="Test."/> 
+  <img src="/img/application-level-benchmark/RSA_cryptosystem.png" class="img-large" alt="Scheme describing the RSA cryptosystem. Alice generates the public and private keys. Bob uses Alice's public key to cipher the message. The ciphered message is sent to Alice, who is able to decipher it with her private key."/> 
 </div>
 where $$p$$ and $$q$$ are big prime numbers, $$e$$ can be choosen arbitrarily (often, $$e = 65537 = 2^{16} + 1$$) as long as $$e$$ is coprime to $$(p-1)(q-1)$$. There are other important criterions to choose $$p$$, $$q$$ and $$e$$ for RSA security {% cite chen2023dss %}, but it is not the main subjet here.
 The secret key $$d$$ is computed such that:
