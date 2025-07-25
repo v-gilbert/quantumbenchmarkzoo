@@ -32,7 +32,7 @@ The red region corresponds to algorithm-dominated performance, and the green reg
 The protocol is based on well-conditioned ramp schedules with observable signal growth in noise-free settings. For 1D-chain and native layout problems, a fixed ramp value of $$\Delta_{\gamma,\beta} = 1$$ is used. For fully connected problems, the value of $$\Delta_{\gamma,\beta}$$ depends on the problem size. Experiments done with the same fixed qubit layout and number of qubits share the same parameter $$\Delta_{\gamma,\beta}$$ across all tested QPUs (values can be consulted in Table III of {% cite montanezbarrera2025 %}).  
 Rather than setting the optimal values for $$\Delta_{\gamma,\beta}$$, this method deterministically fixes these parameters, facilitating replication, scalability, and comparison across different platforms.
 
-Extra pre- and post-processings, such as advanced compilation methods, error mitigation, or local search algorithms, are not used in this protocol, as the objective is to capture the raw performance of the QPU.
+Extra pre- and post-processings, such as advanced compilation methods (for fully connected instances, the SWAP strategy employed is detailed in Appendix 7 of {% cite montanezbarrera2025 %}), error mitigation, or local search algorithms, are not used in this protocol, as the objective is to capture the raw performance of the QPU.
 
 ### Limitations
 
