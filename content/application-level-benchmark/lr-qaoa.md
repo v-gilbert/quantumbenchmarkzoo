@@ -17,9 +17,7 @@ As quantum processing units (QPUs) surpass the exact classical simulation limit,
 
 The **LR-QAOA** protocol {% cite montanezbarrera2024 %} {% cite montanezbarrera2025 %} is based on the Quantum Approximate Optimization Algorithm (QAOA), a heuristic designed to find approximate solutions to optimization problems. This protocol uses instances of the Weighted Max Cut (WMC) problem as input. The quality of the solutions found by the quantum computer is assessed using the approximation ratio $$r$$, which compares the value of the quantum solution to the optimal (solution of best quality). The QPU is said to pass the test if the sampled solutions' approximation ratio exceeds that of a random sampler, with a confidence level of $$99.73\%$$ ($$\pm 3 \sigma$$). This approach assesses Quantum Processing Units (QPUs) performance at different widths (number of qubits), depths (number of 2-qubit gates), and instance topologies (WMC graph layout).  
 
-The key performance metric is the approximation ratio $$r$$, which increases with depth and saturates at 1 in the absence of noise, degrading as coherence is lost. LR-QAOA quantifies a QPU’s ability to preserve a coherent signal as circuit depth increases, identifying when performance becomes statistically indistinguishable from random sampling. 
-
-<!-- Ajout de référence vers approximation ratio -->
+The key performance metric is the approximation ratio $$r$$, which increases with depth and saturates at 1 in the absence of noise, degrading as coherence is lost. LR-QAOA quantifies a QPU’s ability to preserve a coherent signal as circuit depth increases, identifying when performance becomes statistically indistinguishable from random sampling. Currently, the optimal solution is used as the reference for calculating the approximation ratio and is found using the CPLEX solver. To keep the scalability of this protocol, the authors advise using the best-known classical solution if the optimal solution cannot be reached with a classical computer in a reasonable time.
 
 <div class="center">
   <img src="/img/application-level-benchmark/LR-QAOA.png" class="img-large" alt="Scheme of the Quantum Processing Units (QPUs) benchmarking."/> 
@@ -35,6 +33,12 @@ The protocol is based on well-conditioned ramp schedules with observable signal 
 Rather than setting the optimal values for $$\Delta_{\gamma,\beta}$$, this method deterministically fixes these parameters, facilitating replication, scalability, and comparison across different platforms.
 
 Extra pre- and post-processings, such as advanced compilation methods, error mitigation, or local search algorithms, are not used in this protocol, as the objective is to capture the raw performance of the QPU.
+
+### Limitations
+
+Two limitations have been identified by the authors of {% cite montanezbarrera2025 %}:
+- The results obtained in the native layout setting must be considered with caution. Indeed, the results obtained from one experiment cannot be directly compared to another if they use a different number of qubits or a different quantum chip topology.
+- Another limitation is the difficulty of extrapolating results obtained with this protocol to predict the performance of quantum computers on other applications.
 
 ### Implementations
 
