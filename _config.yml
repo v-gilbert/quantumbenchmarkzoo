@@ -49,20 +49,20 @@ nav:
   System-level:
     - text: Randomized benchmarking
       page-id: randomized-benchmarks
-      url: /content/system-level-benchmark/randomized-benchmarking/protocols
+      url: /content/system-level-benchmark/randomized-benchmarking/
       available: true
     - text: Supremacy experiments
       page-id: supremacy-benchmarks
-      url: /content/system-level-benchmark/supremacy/protocols
+      url: /content/system-level-benchmark/supremacy/
       available: true
     - text: Others
       page-id: others
-      url: /content/system-level-benchmark/others/protocols
+      url: /content/system-level-benchmark/others/
       available: true
   Application-level:
     - text: Protocols
       page-id: application-benchmarks
-      url: /content/application-level-benchmark/protocols  
+      url: /content/application-level-benchmark/protocols/
       available: true
     - text: Aggregated scores
       page-id: aggregated-scores
@@ -136,19 +136,19 @@ randomized-benchmarking-protocols:
 application-protocols:
   - text: Q-Score protocol
     page-id: q-score-protocol
-    url: /content/application-level-benchmark/q-score
+    url: /content/application-level-benchmark/protocols/q-score
   - text: LR-QAOA protocol
     page-id: lr-qaoa-protocol
-    url: /content/application-level-benchmark/lr-qaoa
+    url: /content/application-level-benchmark/protocols/lr-qaoa
   - text: Volumetric-benchmark
     page-id: volumetric-benchmark
-    url: /content/application-level-benchmark/volumetric-benchmark
+    url: /content/application-level-benchmark/protocols/volumetric-benchmark
   - text: algorithmic-qubit
     page-id: algorithmic-qubit
-    url: /content/application-level-benchmark/algorithmic-qubit
+    url: /content/application-level-benchmark/protocols/algorithmic-qubit
   - text: qbas
     page-id: qbas
-    url: /content/application-level-benchmark/qbas
+    url: /content/application-level-benchmark/protocols/qbas
     
 # Supremacy protocols
 supremacy-protocols:
