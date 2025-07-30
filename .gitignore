@@ -8,4 +8,9 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
+#vs code
+.vscode/
+
+# tables
 tables/*.ods
+
