@@ -49,3 +49,12 @@ mark{
 .fa-icon-color {
     color: rgba(0, 0, 0, 0.84);
 }
+
+.contact-button{
+   padding: 12px 25px;
+   margin-bottom: 12px;
+}
+
+textarea{
+    height: 250px;
+}

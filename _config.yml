@@ -20,6 +20,10 @@ nav:
       page-id: acknowledgments
       url: /content/the-zoo/acknowledgments
       available: true
+    - text: Contact us
+      page-id: contact
+      url: /content/the-zoo/contact
+      available: true
     - text: Terminology
       page-id: terminology
       url: /content/the-zoo/terminology
