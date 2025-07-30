@@ -67,8 +67,9 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
   - <a href="{{ dihedral-RB.url | prepend: site.baseurl }}" target="_blank">Dihedral Randomized Benchmarking</a>
 - Randomized Benchmarking for cross talk errors
   - <a href="{{ SRB.url | prepend: site.baseurl }}" target="_blank">Simultaneous Randomized Benchmarking</a>
-  - <a href="{{ correlated-RB.url | prepend: site.baseurl }}" target="_blank">Correlated Randomized Benchmarking</a>
 - <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">Error Per Layered Gate (EPLG)</a>
+
+<!-- To add in a next version: <a href="{{ correlated-RB.url | prepend: site.baseurl }}" target="_blank">Correlated Randomized Benchmarking</a>-->
 
 ## Extra references
 
