@@ -4,6 +4,8 @@ description: >
   Randomized Benchmarking protocols
 ---
 
+{% assign fidelities = site.FOM | where: "page-id", "fidelities-errors" | first %}
+
 # Randomized Benchmarking (RB) Protocols
 
 ## Classification of RB protocols
@@ -12,13 +14,13 @@ Randomized Benchmarking (RB) protocols evaluate the ability of the quantum compu
 
 $$ p_\mathrm{success}(l) = A \alpha^l + B, $$
 
-where $$A$$, $$B$$ and $$\alpha$$ are the fit parameters. The State Preparation And Measurement (SPAM) errors are absorbed in the coefficients $$A$$ and $$B$$. For a $$n$$-qubit state, the value of $$\alpha$$ is related to the average gate infidelity:
+where $$A$$, $$B$$ and $$\alpha$$ are the fit parameters. The State Preparation And Measurement (SPAM) errors are absorbed in the coefficients $$A$$ and $$B$$. For a $$n$$-qubit state, the value of $$\alpha$$ is related to the <a href="{{ fidelities.url | prepend: site.baseurl }}#average-error-rate" target="_blank">average gate infidelity</a>:
 
-$$ r = \frac{d-1}{d} (1- \alpha), $$
+$$ \epsilon_\mathrm{r} = \frac{d-1}{d} (1- \alpha), $$
  
-and the average process infidelity:
+which is linked to the <a href="{{ fidelities.url | prepend: site.baseurl }}#average-gate-fidelity" target="_blank">average gate fidelity</a> $$F_{avg}$$ by the relation $$\epsilon_\mathrm{r} = 1- F_{avg}$$. The value of $$\alpha$$ is also linked to the <a href="{{ fidelities.url | prepend: site.baseurl }}#entanglement-infidelity" target="_blank">average process infidelity</a> (entanglement infidelity):
 
-$$ r_\mathrm{proc} = \frac{d^2-1}{d^2} (1- \alpha), $$
+$$ \epsilon_\mathrm{r} = \frac{d^2-1}{d^2} (1- \alpha), $$
 
 where $$d = 2^n$$ is the size of the Hilbert space. In benchmarking studies, it is important to identify which type of infidelity is being used (see. VIII.B {% cite Hashim2024 %} for detailed discussion)
 
