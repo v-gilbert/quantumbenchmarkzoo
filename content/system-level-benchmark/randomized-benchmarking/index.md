@@ -73,7 +73,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 - Randomized Benchmarking for individual gate error rate assessment
   - <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">Interleaved Randomized Benchmarking (IRB)</a>
 - Other protocols based on Randomized Benchmarking
-- <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">Error Per Layered Gate (EPLG)</a>
+  - <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">Error Per Layered Gate (EPLG)</a>
 
 <!-- To add in a next version: <a href="{{ correlated-RB.url | prepend: site.baseurl }}" target="_blank">Correlated Randomized Benchmarking</a>-->
 
