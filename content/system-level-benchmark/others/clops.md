@@ -4,6 +4,7 @@ description: >
   Circuit Layer Operation per Second (CLOPS)
 ---
 {% assign modified = page.path | max_last_modified: "tables/clops-table.html" %}
+{% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}
 
 # Circuit Layer Operations Per Second (CLOPS) benchmark
 
@@ -63,12 +64,12 @@ where $$M$$ is the number of templates, $$K$$ is the number of simulations done 
 
 ## Update of the CLOPS protocol
 
-An update concerning the measurement of CLOPS values has been proposed in {% cite ClopsUpdate %} with a new protocol measuring $$\mathrm{CLOPS_h}$$ ($$\mathrm{h}$$ for hardware). This new protocol changes how layers are considered. In the initial protocol, a layer was defined by a random permutation of all the qubits followed by two-qubit gates ($$SU(4)$$) across all the pairs of qubits. This initial protocol was practical for fully connected topologies that could easily implement the random permutation. The new protocol $$\mathrm{CLOPS_h}$$ splits in sublayers all sequences of gates that cannot be run in parallel (artificially inflating the overall number of layers). This new protocol now relies on the <a>EPLG protocol</a> instead of the quantum volume. It has the effect of inflating the CLOPS score for quantum computers that are sparsely connected.
+An update concerning the measurement of CLOPS values has been proposed in {% cite ClopsUpdate %} with a new protocol measuring $$\mathrm{CLOPS_h}$$ ($$\mathrm{h}$$ for hardware). This new protocol changes how layers are considered. In the initial protocol, a layer was defined by a random permutation of all the qubits followed by two-qubit gates ($$SU(4)$$) across all the pairs of qubits. This initial protocol was practical for fully connected topologies that could easily implement the random permutation. The new protocol $$\mathrm{CLOPS_h}$$ splits in sublayers all sequences of gates that cannot be run in parallel (artificially inflating the overall number of layers). This new protocol now relies on the <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">EPLG protocol</a> instead of the quantum volume. It has the effect of inflating the CLOPS score for quantum computers that are sparsely connected.
 
 ## Implementations
 
 An implementation of the $$CLOPS_v$$ based on the quantum volume developed by IQM is available <a href="https://github.com/iqm-finland/iqm-benchmarks/tree/main" target="_blank">here</a>.  
-The $$CLOPS_h$$ metric relies on the EPLG protocol, which has been implemented <a href="https://github.com/qiskit-community/qiskit-device-benchmarking/blob/main/notebooks/layer_fidelity.ipynb" target="_blank">here</a>. At the time of writing, an implementation of the complete $$CLOPS_h$$ protocol was not found.
+The $$CLOPS_h$$ metric relies on the EPLG protocol. At the time of writing, an implementation of the complete $$CLOPS_h$$ protocol was not found.
 
 # References
 {% bibliography --cited %}
