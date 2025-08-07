@@ -71,6 +71,13 @@ This score can be extended to other problems, it only depends on the ability of 
 * Number of shots recommended: 2048
 * Default level of difficulty: $$\beta^* = 0.2$$
 
+## Implementations
+
+Several implementations of the Q-Score are available on GitHub:
+* The <a href="https://github.com/myQLM/qscore" target="_blank">initial implementation</a> created by the authors
+* A <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">tutorial implementation</a> from the QCMet software repository {% cite lall2025review %}
+* <a href="https://github.com/iqm-finland/iqm-benchmarks/tree/main" target="_blank">IQM Benchmarks</a>
+
 ## Extensions to the Q-score
 
 ### Max-clique extension
@@ -81,6 +88,8 @@ $$ C_{rand}(n) = \sum_{i=1}^n i \times (1-p^i)p^{i(i-1)/2} $$
 For this kind of problem, $$C_{max}$$ is set to (proof in {% cite matula1976largest %}):  
 
 $$ C_{max}(n) = 2 \log_2(n) - 2 \log_2(\log_2(n)) + 2 \log_2\left(\frac{e}{2}\right) +1 $$  
+
+An implementation of the Q-score Max-clique is available <a href="https://github.com/TNO-Quantum/qscore" target="_blank">here</a>.
 
 ### Empirical optimal and random average cost
 
