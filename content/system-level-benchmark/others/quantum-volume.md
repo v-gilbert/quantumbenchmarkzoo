@@ -77,5 +77,12 @@ In {% cite baldwin2022re %}, the authors argue that the confidence interval buil
 
 In {% cite bistron2025benchmarking %}, the authors extend the quantum volume protocol to verify the output sampling distribution for large experiments. This method uses parity tests to determine the heavy output probability distribution efficiently.
 
+## Implementations
+
+Several implementations of the Quantum Volume are available on GitHub:
+* The implementation of IBM using Qiskit is available <a href="https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.QuantumVolume" target="_blank">here</a>.
+* A tutorial implementation from the QCMet software repository {% cite lall2025review %} is available <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">here</a>.
+* Another tutorial implementation from Pennylane is available <a href="https://pennylane.ai/qml/demos/quantum_volume" target="_blank">here</a>.
+
 # References
 {% bibliography --cited %}
