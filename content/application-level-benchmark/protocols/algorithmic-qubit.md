@@ -60,11 +60,15 @@ The number of algorithmic qubits associated with a quantum computer is defined a
 
 <!-- Ajouter des plots concernant l'algorithmic qubit-->
 
-## Controversy and limitations
+## Limitations
 
 This protocol has been criticized for several reasons discussed in {% cite debunkingAlgorithmicQubit %}. The authors highlight the problematic role of error mitigation techniques, which can artificially enhance the apparent performance of quantum computers and reduce the observed performance gap between different devices. They demonstrate that certain error mitigation methods, particularly those not expected to scale favorably with system size, can lead to misleading results. Additionally, they point out concerns regarding the use of Qiskit compiler version 0.34.2 for calculating the number of CX gates and hence, depth of the circuit. As this compilation method is used to compute the values used in the heatmaps $$w_d$$ and $$w_c$$, a suboptimal compilation could artificially inflate a device's reported performance. In particular, the authors show that alternative compilers can significantly reduce the overall number of gates (especially for the largest circuits).  
 
 Another limitation of the protocol is the restricted number of different circuits used during the benchmark which could affect the robustness of the results.
+
+## Implementation
+
+The implementation of the Algorithmic Qubit benchmark is hosted by ionQ on GitHub and can be consulted <a href="https://github.com/ionq/QC-App-Oriented-Benchmarks" target="_blank">here</a>.
 
 ## References
 
