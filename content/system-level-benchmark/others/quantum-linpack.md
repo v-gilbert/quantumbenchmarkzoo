@@ -16,7 +16,7 @@ which is equivalent to $$A \vec{x} = \vec{b}$$.
 
 The primary motivation of Y. Dong et al. is to establish a protocol for assessing the performance of quantum computers in solving Quantum Linear System Problems (QLSPs), similar to the Linpack protocol. The proposed protocol evaluates the quantum device's capability to prepare a block-encoded matrix, a fundamental subroutine employed by various quantum algorithms designed to address QLSPs.
 
-## Protocol details
+## Protocol
 
 The protocol is based on the problem of solving a Quantum Linear System Problem (QLSP). Given a matrix $$A \in C^{2^n \times 2^n}$$ and a state $$\ket{b} \in C^{2^n}$$, the goal is to determine a state $$\ket{x}$$ such that $$x \propto A^{-1} \ket{b}$$. The solution is encoded in the amplitudes of the state $$\ket{x}$$, which can subsequently be used for downstream quantum computation. A significant challenge is the efficient loading of the matrix $$A$$ into the quantum computer's memory, which is often computationally expensive (e.g., using the Linear Combination of Unitary (LCU) method). Instead, the authors of {% cite dong2021random %} propose a model called the RAndom Circuit Block-Encoded Matrix (RACBEM) that efficiently generates a random circuit $$U_A$$ and identifies the corresponding matrix $$A$$. The model is extended to Hermitian matrices with the H-RACBEM method. 
 
@@ -43,7 +43,7 @@ $$ \epsilon = \frac{|p_{meas}- p_{exact}|}{p_{exact}} $$
 
 ## Implementation
 
-- Source code for the generation of the RACBEM: {% cite racbem2020 %}
+The source code for the generation of RACBEM is available <a href="https://github.com/qsppack/RACBEM" target="_blank">here</a>.
 
 # References
 
