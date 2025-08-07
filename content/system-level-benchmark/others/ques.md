@@ -31,6 +31,10 @@ For a quantum circuit composed of $$n+1$$ qubits and $$l$$ layers, the QUES scor
 - Directly inferring fidelity from $$QUES(n, l)$$ values lead to a slightly over-estimated fidelity. 
 - Limits related to the XQUATH assumption also apply to this method and can make the protocol spoofed {% cite gao2024limitations %}.
 
+## Implementation
+
+The implementation of this protocol is not publicly available. However, data and code are available upon request to the authors of {% cite Dong2022 %}.
+
 # References
 
 {% bibliography --cited %}
