@@ -26,6 +26,10 @@ While the rQOPS metric provides a useful high-level indicator of performance, it
 - The protocols used to measure the logical error rate and the logical clock frequency are not specified.
 - The number of logical qubits $$n$$ is not fixed. As a result, the $$rQOPS$$ value may not accurately reflect performance at scale. For instance, the rQOPS derived from a small subset of logical qubits may not extrapolate to the full system, especially if clock frequency degrades with increasing system size due to routing or control overheads.
 
+## Implementation
+
+There is currently no referenced implementation of this protocol.
+
 # References 
 {% bibliography --cited %}
 
