@@ -74,9 +74,9 @@ This score can be extended to other problems, it only depends on the ability of 
 ## Implementations
 
 Several implementations of the Q-Score are available on GitHub:
-* The <a href="https://github.com/myQLM/qscore" target="_blank">initial implementation</a> created by the authors
-* A <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">tutorial implementation</a> from the QCMet software repository {% cite lall2025review %}
-* <a href="https://github.com/iqm-finland/iqm-benchmarks/tree/main" target="_blank">IQM Benchmarks</a>
+* The initial implementation created by the authors of the Q-score is available <a href="https://github.com/myQLM/qscore" target="_blank">here</a>.
+* A tutorial implementation from the QCMet software repository {% cite lall2025review %} is available <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">here</a>.
+* An implementation from the IQM Benchmarks suite is available <a href="https://github.com/iqm-finland/iqm-benchmarks/tree/main" target="_blank">here</a>.
 
 ## Extensions to the Q-score
 
