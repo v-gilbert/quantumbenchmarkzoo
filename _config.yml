@@ -72,6 +72,11 @@ nav:
       page-id: application-benchmarks
       url: /content/application-level-benchmark/frameworks  
       available: false
+  Multi-level:
+    - text: Methodologies
+      page-id: multi-level-methodologies
+      url: /content/multi-level-benchmark/methodology/
+      available: true
   benchmarking-datasets:
     - text: Problem libraries
       page-id: problem-libraries
@@ -92,12 +97,15 @@ nav:
       available: false
   Business-informations:
     - text: Hardware Access Pricing
+      page-id: hardware-access
       url: /content/business-info/hardware-access
       available: true
     - text: Roadmaps
+      page-id: roadmaps
       url: /content/business-info/roadmaps
       available: true
     - text: Benchmarking initiatives
+      page-id: benchmarking-initiatives
       url: /content/business-info/other-benchmarking-initiative
       available: true
 
@@ -124,6 +132,9 @@ randomized-benchmarking-protocols:
   - text: Simultaneous Randomized Benchmarking
     page-id: SRB
     url: /content/system-level-benchmark/randomized-benchmarking/SRB
+  - text: Interleaved Randomized Benchmarking
+    page-id: IRB
+    url: /content/system-level-benchmark/randomized-benchmarking/IRB
   - text: Correlated Randomized Benchmarking
     page-id: correlated-RB
     url: /content/system-level-benchmark/randomized-benchmarking/correlated-RB
@@ -179,6 +190,11 @@ other-system-level-protocols:
   - text: rQOPS
     page-id: rqops
     url: /content/system-level-benchmark/others/rqops
+
+multi-level-methodologies:
+  - text: MNR
+    page-id: MNR
+    url: /content/multi-level-benchmark/methodology/MNR
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:

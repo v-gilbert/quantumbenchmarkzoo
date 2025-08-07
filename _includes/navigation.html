@@ -57,6 +57,16 @@
         </li>
       {% endfor %}
     </ul>
+    <div class="navigation__category">Multi-level benchmark</div>
+    <ul class="navigation__link-list">
+      {% for link in site.nav.Multi-level %}
+        <li class="navigation__link-list-item{% if current_url == link.url %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
+          <a class="navigation__link-list-link{% if current_url == link.url %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
+            {{ link.text }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
     <div class="navigation__category">Benchmarking datasets</div>
     <ul class="navigation__link-list">
       {% for link in site.nav.benchmarking-datasets %}
