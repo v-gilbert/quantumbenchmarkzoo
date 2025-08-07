@@ -14,15 +14,16 @@ The primary motivation behind the development of multi-qubit Clifford Randomized
 
 ## Protocol
 
-The protocol utilizes the multi-qubit Clifford group $$C_n$$ to benchmark a quantum system with $$n$$ qubits. For each sequence length $$l$$, Clifford gates are uniformly and efficiently sampled from $$C_n$$ {% cite Koenig2014 %}. Each gate of the Clifford group is efficiently decomposed in a sequence of single and two-qubit gates, with depth scaling as $$O(n^2 / \log(n))$$. The inverse unitary $$R$$ is efficiently computed from the sequence $$g_lg_{l-1}...g_1$$ {% cite gottesman1997stabilizer %}, and a final unitary $$P$$ consists of a uniformly random Pauli gate $$P$$. The success metric is the probability of observing the Identity up to the random Pauli gate. It is estimated for the different lengths $$l$$ and used to fit the exponential decay function.
+The protocol utilizes the multi-qubit Clifford group $$C_n$$ to benchmark a quantum system with $$n$$ qubits. For each sequence length $$l$$, Clifford gates are uniformly and efficiently sampled from $$C_n$$ {% cite Koenig2014 %}. Each gate of the Clifford group is efficiently decomposed in a sequence of single and two-qubit gates, with depth scaling as $$O(n^2 / \log(n))$$. The inverse unitary $$R$$ is efficiently computed from the sequence $$g_lg_{l-1}...g_1$$ {% cite gottesman1997stabilizer %}, and a final unitary $$P$$ is randomly and uniformly chosen to produce an eigenstate of the observable $$\sigma^z$$ (The unitary $$P$$ was not used in the initial protocol but is considered to be a best practise). The success metric is the probability of observing the Identity up to the random Pauli gate $$P$$. It is estimated for the different lengths $$l$$ and used to fit the exponential decay function.
 
 <div class="center">
-  <img src="/img/system-level-benchmark/randomized/RB-clifford-multi-qubit.png" class="img-medium" alt="Quantum circuit associated to the multi-qubits clifford randomized benchmarking protocol"/>
+  <img src="/img/system-level-benchmark/randomized/RB-clifford-multi-qubit.png" class="img-medium" alt="Quantum circuit associated to the multi-qubit clifford randomized benchmarking protocol"/>
 </div>
 
 ## Assumptions
 
 - This protocol assumes that the noise model is Markovian.
+- The average error of all the Clifford gates should be depolarizing (assumption that is for all Clifford based benchmarks).
 
 ## Limitations
 
