@@ -53,5 +53,9 @@ As the number of qubits grows, the number of possible implementations for a sele
 - The performance of the final computation strongly depends on the heuristic used to find good patterns that produce high EPLG.
 - As shown in subsequent literature {% cite montanezbarrera2025 %}, the EPLG score does not always align with the algorithm's performance, especially for large-scale systems.
 
+## Implementation
+
+An implementation of the EPLG protocol is made available by the qiskit benchmark community <a href="https://github.com/qiskit-community/qiskit-device-benchmarking/blob/main/notebooks/layer_fidelity.ipynb" target="_blank">here</a>.
+
 # References
 {% bibliography --cited %}
