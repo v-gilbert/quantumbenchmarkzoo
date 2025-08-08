@@ -10,8 +10,8 @@ description: >
 {% assign contact = site.nav.Zoo | where: "page-id", "contact" | first %}
 
 Quantum Benchmark Zoo aims to give an overview of the protocols and studies established to evaluate the **performance** of **quantum computers**. This is a living survey, so feel free to <a href="{{ site.git.repository_url }}/blob/master/README.md" target="_blank">contribute</a>.  
-Should you find any error or omission, either propose a pull request on our <a href="{{ site.git.repository_url }}" target="_blank">github</a> or <a href="{{ contact.url | prepend: site.baseurl }}" target="_blank">contact us</a>.  
-Any kind of help is welcomed and will be <a href="{{ ak.url | prepend: site.baseurl }}" target="_blank">acknowledged</a>.
+Should you find any error or omission, either propose a pull request on our <a href="{{ site.git.repository_url }}" target="_blank">GitHub</a> or <a href="{{ contact.url | prepend: site.baseurl }}" target="_blank">contact us</a>.  
+Any kind of help is welcome and will be <a href="{{ ak.url | prepend: site.baseurl }}" target="_blank">acknowledged</a>.
 
 # Our concerns
 
