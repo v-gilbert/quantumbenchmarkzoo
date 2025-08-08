@@ -4,13 +4,13 @@ description: >
   Metric noise resources benchmarking method.
 ---
 
-{% assign benchmarking-initiatives = site.nav.Business-informations | where: "page-id", "benchmarking-initiatives" | first %}
+{% assign bi = site.nav.Business-informations | where: "page-id", "benchmarking-initiatives" | first %}  
 
 # Metric Noise Resource (MNR)
 
 ## Motivation
 
-The Metric-Noise-Resource (MNR) methodology was introduced in 2022 by M. Fellous-Asiani et al. {% cite FellousAsiani2023 %} in the context of the <a href="{{ benchmarking-initiatives }}#quantum-energy-initiative-qei-2022" target="_blank">Quantum Energy Initiative</a> {% cite Auffves2022 %}. The authors motivate the creation of this methodology by the need for a multi-level approach to understand and optimize the resource consumption of quantum computers. As explained by the authors, such an approach requires a strong knowledge of quantum processors at a physical level (e.g., quantum control) and at a software level (e.g., quantum error correction and quantum algorithms). This methodology aims to obtain a clear view of how resources will scale with the size of the computational task.
+The Metric-Noise-Resource (MNR) methodology was introduced in 2022 by M. Fellous-Asiani et al. {% cite FellousAsiani2023 %} in the context of the <a href="{{ bi.url | prepend: site.baseurl }}#quantum-energy-initiative-qei-2022" target="_blank">Quantum Energy Initiative</a> {% cite Auffves2022 %}. The authors motivate the creation of this methodology by the need for a multi-level approach to understand and optimize the resource consumption of quantum computers. As explained by the authors, such an approach requires a strong knowledge of quantum processors at a physical level (e.g., quantum control) and at a software level (e.g., quantum error correction and quantum algorithms). This methodology aims to obtain a clear view of how resources will scale with the size of the computational task.
 
 ## Methodology
 
@@ -72,7 +72,7 @@ The following parameters are considered:
 
 ### Fault-tolerant factorization
 
-Section V  of{% cite FellousAsiani2023 %} studies the potential advantage of a quantum computer implementing Shor's algorithm using the Steane code (a fault-tolerant quantum error correction code). It highlights the trade-offs between:
+Section V  of {% cite FellousAsiani2023 %} studies the potential advantage of a quantum computer implementing Shor's algorithm using the Steane code (a fault-tolerant quantum error correction code). It highlights the trade-offs between:
 - The number of concatenation layers in the code (the fidelity of the quantum circuit increases with the number of layers).
 - The power required to execute the fault-tolerant quantum circuit and the execution duration. The power consumption and duration of the algorithm increase with the number of layers.
 

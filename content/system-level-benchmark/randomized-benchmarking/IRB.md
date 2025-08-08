@@ -44,7 +44,7 @@ This method also permits to extract bounds on the true error rate of $$G$$ $$\ep
 
 ## Extensions
 
-The IRB protocol has been extended to other gates that are not from the Clifford group.
+The IRB protocol has been extended to other gates that are not from the Clifford group {% cite harper2017estimating %} {% cite Garion2021 %}.
 
 # References
 {% bibliography --cited %}

@@ -151,9 +151,6 @@ application-protocols:
   - text: LR-QAOA protocol
     page-id: lr-qaoa-protocol
     url: /content/application-level-benchmark/protocols/lr-qaoa
-  - text: Volumetric-benchmark
-    page-id: volumetric-benchmark
-    url: /content/application-level-benchmark/protocols/volumetric-benchmark
   - text: algorithmic-qubit
     page-id: algorithmic-qubit
     url: /content/application-level-benchmark/protocols/algorithmic-qubit
