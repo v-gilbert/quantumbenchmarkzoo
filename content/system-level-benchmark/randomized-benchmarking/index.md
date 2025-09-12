@@ -4,7 +4,7 @@ description: >
   Randomized Benchmarking protocols
 ---
 
-{% assign fidelities = site.FOM | where: "page-id", "fidelities-errors" | first %}
+{% assign fidelities = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
 
 # Randomized Benchmarking (RB) Protocols
 
@@ -81,7 +81,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 
 The reader can refer to the references {% cite Hashim2024 %}, {% cite PRXQuantum.3.020357 %} for a high-level overview over the different RB protocols. The reader may also refer to a gentle introduction on RB in {% cite silva2024hands %}.
 
-# References
+## References
 
 {% bibliography --cited %}
 
