@@ -45,7 +45,7 @@ As the number of qubits grows, the number of possible implementations for a sele
 ## Assumptions
 - The equation that computes the disjoint layer fidelity $$LF_m$$ is only valid if there are no cross-talk errors. 
 - The expression defining $$LF$$ represents a lower bound on the error rate and is only a good approximation if the error is low (see Appendix D of {% cite mckay2023benchmarking %}). 
-- This protocol uses the same assumptions as the simultaneous RB protocol (for instance, it considers a Markovian noise).
+- This protocol uses the same assumptions as the <a>simultaneous RB protocol</a> (for instance, it considers a Markovian noise).
 
 ## Limitations
 - This protocol relies on simultaneous RB and possesses the same limitations. 
@@ -57,5 +57,5 @@ As the number of qubits grows, the number of possible implementations for a sele
 
 An implementation of the EPLG protocol is made available by the qiskit benchmark community <a href="https://github.com/qiskit-community/qiskit-device-benchmarking/blob/main/notebooks/layer_fidelity.ipynb" target="_blank">here</a>.
 
-# References
+## References
 {% bibliography --cited %}
