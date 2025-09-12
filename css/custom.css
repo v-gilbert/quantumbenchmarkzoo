@@ -29,6 +29,10 @@ p {
     text-align: justify;
 }
 
+li {
+    text-align: justify;
+}
+
 .my_table {
     max-width: 100%;
 }
