@@ -1,7 +1,7 @@
 ---
 title: Acknowledgments
 description: >
-  List of the acknowledgments.
+  Acknowledgments: Meet the contributors & collaborators behind QuantumBenchmarkZoo, including the Zookeeper and team members who drive its development.
 ---
 # Acknowledgments
 

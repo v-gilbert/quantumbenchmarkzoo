@@ -1,7 +1,7 @@
 ---
 title: Terminology
 description: >
-  Terminology
+  QuantumBenchmarkZoo Terminology: clear definitions of commonly used quantum computing terms.
 ---
 # Terminology
 
@@ -61,5 +61,5 @@ The term 'quantum supremacy' was introduced by J. Preskill in {% cite preskill20
 
 <!-- Add definition on Random Special Unitary Group -->
 
-# References
+## References
 {% bibliography --cited %}

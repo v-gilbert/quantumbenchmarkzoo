@@ -1,7 +1,7 @@
 ---
 title: Application FOM
 description: >
-  Application FOM
+ Catalogue of application-level metrics for benchmarking quantum computers: time and ratio metrics.
 ---
 
 # Application Figure of Merit

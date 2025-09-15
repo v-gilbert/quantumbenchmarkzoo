@@ -1,8 +1,7 @@
 ---
 title: Presentation
 description: >
-  Presentation of the QuantumBenchmarkZoo: main objective, features and 
-  other interesting resources.
+  QuantumBenchmarkZoo catalogues metrics, datasets, benchmark protocols, and guidelines to assess quantum computer performance.
 ---
 
 # Welcome to Quantum Benchmark Zoo !

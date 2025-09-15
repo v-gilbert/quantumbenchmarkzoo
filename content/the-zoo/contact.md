@@ -1,7 +1,7 @@
 ---
 title: Contact us
 description: >
-  Contact page.
+  Contact Quantum Benchmark Zoo: send a message or email us to explore collaborations, feedback, or inquiries at contact@quantumbenchmarkzoo.org. 
 ---
 
 # Contact us   
