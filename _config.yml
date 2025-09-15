@@ -135,9 +135,12 @@ randomized-benchmarking-protocols:
   - text: Interleaved Randomized Benchmarking
     page-id: IRB
     url: /content/system-level-benchmark/randomized-benchmarking/IRB
+  - text: Cycle Benchmarking
+    page-id: CB
+    url: /content/system-level-benchmark/randomized-benchmarking/cycle-RB
   - text: Correlated Randomized Benchmarking
     page-id: correlated-RB
-    url: /content/system-level-benchmark/randomized-benchmarking/correlated-RB
+    url: /content/system-level-benchmark/randomized-benchmarking/correlated-RB   
   - text: Error per layered gate
     page-id: eplg
     url: /content/system-level-benchmark/randomized-benchmarking/eplg

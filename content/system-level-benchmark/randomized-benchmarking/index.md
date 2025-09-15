@@ -57,6 +57,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
 {% assign dihedral-RB = site.randomized-benchmarking-protocols | where: "page-id", "dihedral-RB" | first %}
 {% assign SRB = site.randomized-benchmarking-protocols | where: "page-id", "SRB" | first %}
 {% assign IRB = site.randomized-benchmarking-protocols | where: "page-id", "IRB" | first %}
+{% assign CB = site.randomized-benchmarking-protocols | where: "page-id", "CB" | first %}
 {% assign correlated-RB = site.randomized-benchmarking-protocols | where: "page-id", "correlated-RB" | first %}
 {% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}
 
@@ -72,6 +73,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
   - <a href="{{ SRB.url | prepend: site.baseurl }}" target="_blank">Simultaneous Randomized Benchmarking</a>
 - Randomized Benchmarking for individual gate error rate assessment
   - <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">Interleaved Randomized Benchmarking (IRB)</a>
+  - <a href="{{ CB.url | prepend: site.baseurl }}" target="_blank">Cycle Benchmarking (CB)</a>
 - Other protocols based on Randomized Benchmarking
   - <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">Error Per Layered Gate (EPLG)</a>
 
