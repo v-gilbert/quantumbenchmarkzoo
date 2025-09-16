@@ -2,7 +2,7 @@
 title: Algorithmic Qubit
 datatable: true
 description: >
-  Algorithmic qubit protocol.
+  The algorithmic qubit benchmark from IonQ evaluates quantum computer performance across algorithms like QFT, QPE, and VQE using classical fidelity metrics.
 ---
 {% assign modified = page.path | max_last_modified: "tables/aq-table.html" %}
 

@@ -1,7 +1,7 @@
 ---
 title: Dihedral Randomized Benchmarking
 description: >
-  Dihedral Randomized Benchmarking
+  Dihedral Randomized Benchmarking: a protocol to benchmark the fidelity of non-Clifford single-qubit gates, such as the T-gate, that generate dihedral groups.
 ---
 
 # Dihedral Randomized Benchmarking

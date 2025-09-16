@@ -1,7 +1,8 @@
 ---  
 title: LR-QAOA
 datatable: true
-description: LR-QAOA is a scalable benchmark that measures quantum processor performance by tracking signal decay with circuit depth.>
+description: >
+  Linear Ramp Quantum Approximate Optimization Algorithm (LR-QAOA) evaluates quantum processors by measuring approximation ratios on Weighted Max Cut problems.
 ---
 {% assign modified = page.path | max_last_modified: "tables/lr-qaoa-table.html" %}
 {% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}

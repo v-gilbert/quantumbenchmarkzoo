@@ -2,7 +2,7 @@
 title: Quantum Simulation Supremacy
 datatable: true
 description: >
-  Quantum simulation
+  A supremacy protocol based on quantum simulation, either using a digital quantum computer with Trotter expansion or quantum annealers like D-Wave systems.
 ---
 {% assign modified = page.path | max_last_modified: "tables/ibm_supremacy_refutation-table.html,tables/D-Wave-supremacy-table.html" %}
 

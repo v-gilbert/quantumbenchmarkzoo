@@ -1,7 +1,7 @@
 ---
 title: Quantum Volume
 description: >
-  Quantum Volume Detailed
+  Quantum Volume: IBM's benchmark assessing the performance of quantum computers with square circuits based on the heavy output generation problem.
 ---
 
 {% assign modified = page.path | max_last_modified: "tables/QV-table.html" %}

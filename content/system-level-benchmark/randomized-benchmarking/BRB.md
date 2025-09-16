@@ -1,7 +1,7 @@
 ---
 title: Binary Randomized Benchmarking
 description: >
-  Direct Randomized Benchmarking
+  Binary Randomized Benchmarking: a quantum benchmarking method using Pauli eigenstates and random gate sequences, without motion reversal.
 ---
 
 #  Binary Randomized Benchmarking (BRB)
@@ -30,7 +30,7 @@ Interestingly, the authors of BRB explain that this protocol may be better suite
 
 ## Limitations 
 
-- This protocol only scales for the benchmarking of Clifford gate sets.
+- This protocol can benchmark any set of gates able to generate the Clifford group, but it only scales well for the benchmarking of Clifford gate sets.
 
 ## Extension
 

@@ -1,7 +1,7 @@
 ---
 title: Aggregated Scores
 description: >
-  Aggregated Scores
+  MYRIAD-Q (BACQ) and QuAS (Quantum Application Score): methodologies for aggregating quantum benchmarking scores into a single performance metric.
 ---
 
 # Aggregated scores
@@ -58,5 +58,5 @@ Each KPI can be weighted according to the user's choice, and offsets can be adde
 As mentioned by the authors, the QuAS score defines a methodology and not a precise setting of KPIs and weights associated with each KPI. Hence, comparing two QuAS scores from different studies cannot be done.  
 The QuAS framework is only adapted to assess the performance of quantum computers on problems in which solutions can be expressed with a single number. This method is not adapted to multi-objective optimization problems.
 
-# References
+## References
 {% bibliography --cited %}

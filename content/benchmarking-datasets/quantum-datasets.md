@@ -1,7 +1,7 @@
 ---
 title: Quantum Datasets
 description: >
-  Quantum datasets
+  Datasets for benchmarking quantum computer performance across various abstraction levels from the application level to the pulse level.
 ---
 
 {% assign modified = page.path | max_last_modified: "tables/QV-table.html" %}
@@ -82,6 +82,6 @@ The RevLib was introduced in 2008 by R. Wille et al. {% cite Wille2008 %} and co
 The reader may refer to other maintained datasets references:  
 - <a href="https://pennylane.ai/datasets/" target="_blank">Pennylane datasets</a>
 
-# References
+## References
 
 {% bibliography --cited %}

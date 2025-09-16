@@ -1,7 +1,7 @@
 ---
 title: Benchmarking Initiatives
 description: >
-  Benchmarking Initiatives
+  Explore global quantum benchmarking initiatives like DARPA’s QBI, QEI, QED-C, BenchQC, BACQ & others advancing utility-scale quantum computing.
 ---
 
 # Benchmarking Initiatives
@@ -70,5 +70,5 @@ This project is part of the <a href="https://eurohpc-ju.europa.eu/index_en" targ
 <!-- Qsolid ? -> A voir  https://www.q-solid.de/ -->
 <!-- https://sagroups.ieee.org/7131/ -->
 
-# References
+## References
 {% bibliography --cited %}

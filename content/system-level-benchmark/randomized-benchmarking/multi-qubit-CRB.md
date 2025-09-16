@@ -1,7 +1,7 @@
 ---
 title: Multi-qubit Clifford Randomized Benchmarking
 description: >
-  Multi-qubit Clifford Randomized Benchmarking (CRB), also called Standard Clifford Randomized Benchmarking
+  Multi-qubit Clifford Randomized Benchmarking (Standard Clifford Randomized Benchmarking): Assess system fidelity via n-qubit Clifford group sequences.
 ---
 
 # Multi-qubit Clifford Randomized Benchmarking (CRB)

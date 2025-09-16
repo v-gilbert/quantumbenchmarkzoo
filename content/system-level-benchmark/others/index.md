@@ -34,5 +34,5 @@ In a nutshell, the QUES score evaluates the ability of a quantum computer to rel
 - <a href="{{ rqops.url | prepend: site.baseurl }}">Reliable Quantum Operations Per Second (rQOPS)</a> (2023) {% cite rQOPS2023 %}  
 In a nutshell, the rQOPS score measures the number of logical operations that a large-scale fault-tolerant quantum computer can realize per second.
 
-# References
+## References
 {% bibliography --cited %}

@@ -1,18 +1,16 @@
 ---
 title: rQOPS
 description: >
-  rQOPS
+  Reliable Quantum Operations Per Second (rQOPS): Microsoft's benchmark for measuring the logical clock rate of fault-tolerant quantum computers.
 ---
 
 # Reliable Quantum Operations Per Second (rQOPS)
 
-This protocol was introduced by Microsoft in 2023 by C. Nayak {% cite rQOPS2023 %}. 
-
 ## Motivation
 
-Microsoft introduced the reliable Quantum Operations Per Second (rQOPS) figure of merit to evaluate the performance of large-scale, fault-tolerant quantum computers. The principal motivation behind this figure of merit is quantifying the number of reliable logical operations a quantum computer can perform per second.
+This protocol was introduced in 2023 by C. Nayak {% cite rQOPS2023 %} from Microsoft. The reliable Quantum Operations Per Second (rQOPS) figure of merit is used to evaluate the performance of large-scale, fault-tolerant quantum computers. The principal motivation behind this figure of merit is quantifying the number of reliable logical operations a quantum computer can perform per second.
 
-## Protocol details
+## Protocol
 
 The number of rQOPS is defined by the product of the number of logical qubits $$n$$ and the logical clock frequency $$f$$:
 

@@ -2,7 +2,7 @@
 title: Q-score
 datatable: true
 description: >
-  Q-score protocol.
+  Q-score benchmarks quantum computers with the Max-Cut problems, measuring performance via approximation ratios against random and derived optimal solutions.
 ---
 {% assign modified = page.path | max_last_modified: "tables/q-score-table.html" %}
 

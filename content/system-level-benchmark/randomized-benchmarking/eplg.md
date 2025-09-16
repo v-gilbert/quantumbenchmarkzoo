@@ -1,14 +1,14 @@
 ---
 title: EPLG
 description: >
-  Error Per Layered Gate
+  Error Per Layered Gate (EPLG): IBM's benchmarking protocol to assess the error rate per disjoint layers of two-qubit gates in multi-qubit quantum computers.
 ---
 
 {% assign DRB = site.randomized-benchmarking-protocols | where: "page-id", "DRB" | first %}
 {% assign SRB = site.randomized-benchmarking-protocols | where: "page-id", "SRB" | first %}
 {% assign fidelities = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
 
-# Error Per Layered Gate Protocol (EPLG)
+# Error Per Layered Gate (EPLG)
 
 ## Motivation
 This protocol was proposed by IBM in 2023 as a supplement to the quantum volume protocol {% cite mckay2023benchmarking %}. Contrary to the quantum volume that focuses on the best-performing subset of qubits on the quantum chip, the Error Per Layered Gate (EPLG) protocol aims to evaluate the performance of a whole quantum computer chip. It also permits the extraction of lower bounds on 2-qubit error rates.

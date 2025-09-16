@@ -1,7 +1,7 @@
 ---
 title: Quantum Linpack
 description: >
-  Quantum linpack: Random circuit Block-encoded matrix and a proposal of quantum LINPACK benchmark
+  Quantum linpack: a quantum computer benchmark based on solving Quantum Linear System Problems (QLSP) with Random Circuit Block-Encoded Matrices (RACBEM).
 ---
 
 # Quantum LINPACK benchmark

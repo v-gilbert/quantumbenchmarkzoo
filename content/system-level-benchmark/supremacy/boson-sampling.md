@@ -2,7 +2,7 @@
 title: Boson Sampling
 datatable: true
 description: >
-  Boson Sampling
+  Boson Sampling: a protocol for demonstrating quantum supremacy with photonic systems sampling from hard-to-simulate interference patterns.
 ---
 
 # Boson Sampling

@@ -1,7 +1,7 @@
 ---
 title: Simultaneous Randomized Benchmarking
 description: >
-  Simultaneous Randomized Benchmarking
+  Simultaneous Randomized Benchmarking: A quantum protocol assessing cross-talk errors by evaluating simultaneous gate operations on multi-qubit systems.
 ---
 
 # Simultaneous Randomized Benchmarking

@@ -1,7 +1,7 @@
 ---
 title: Cycle Benchmarking
 description: >
-  Cycle benchmarking
+  Cycle benchmarking: a scalable randomized benchmarking protocol based on randomized Pauli cycles (randomized compiling) to assess multi-qubit gate fidelity.
 ---
 
 # Cycle Benchmarking
