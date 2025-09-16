@@ -195,6 +195,10 @@ multi-level-methodologies:
   - text: MNR
     page-id: MNR
     url: /content/multi-level-benchmark/methodology/MNR
+  - text: Volumetric Benchmark
+    page-id: VB
+    url: /content/multi-level-benchmark/methodology/volumetric-benchmark
+  
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
