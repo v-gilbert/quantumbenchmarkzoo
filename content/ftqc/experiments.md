@@ -22,8 +22,8 @@ In general, a large set of logical operations can be efficiently implemented usi
 
 The following table summarizes experimental implementations of QECC conducted on real quantum hardware. Part of the presented data is adapted from the comparative study by R. Larose {% cite larose2024brief %}.
 
+<!-- {% cite larose2024brief %} - Avoid issue with references in table -->
 {% include tables/qecc-table.html %}
-
 <script type="text/javascript">
     $(document).ready(function() {
       $('.qecc-table').DataTable(
