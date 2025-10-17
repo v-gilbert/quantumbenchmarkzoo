@@ -15,7 +15,8 @@ description: >
 **SP**: Scientific paper (checked if a scientific paper explain the results)  
 **#Circ**: number of circuits used for the evaluation  
 
-For clarity the Quantum Volume is expressed in a logarithmic basis.
+For clarity the Quantum Volume is expressed in a logarithmic basis.  
+_<span class="caution">The reader should consider with caution the results that are not supported with a scientific paper (SP column without a check).</span>_
 
 <!-- Avoid issue with citations -->
 <!-- {% cite cross2019validating %} -->
