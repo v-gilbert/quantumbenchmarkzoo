@@ -4,7 +4,7 @@ description: >
   The qubit phase decoherence, including pure dephasing, is characterized by T2: protocol, assumptions, limitations, and tutorials for quantum computers.
 ---
 
-# Phase decoherence time $$T_2$$
+# Phase decoherence time $$T2$$
 
 {% assign t1 = site.qubit-characterization | where: "page-id", "T1" | first %}
 
