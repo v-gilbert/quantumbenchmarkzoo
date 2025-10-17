@@ -1,7 +1,7 @@
 ---
 title: Phase decoherence time T2
 description: >
- 
+  The qubit phase decoherence, including pure dephasing, is characterized by T2: protocol, assumptions, limitations, and tutorials for quantum computers.
 ---
 
 # Phase decoherence time $$T_2$$
