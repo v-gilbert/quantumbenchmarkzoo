@@ -42,10 +42,10 @@ nav:
       url: /content/figure-of-merit/application-fom
       available: true
   Component-level:
-    - text: Qubit coherence
-      page-id: qubit-coherence
-      url: /content/component-level-benchmark/qubit-coherence
-      available: false
+    - text: Qubit characterization
+      page-id: qubit-characterization
+      url: /content/component-level-benchmark/qubit-characterization
+      available: true
   System-level:
     - text: Randomized benchmarking
       page-id: randomized-benchmarks
@@ -108,6 +108,16 @@ nav:
       page-id: benchmarking-initiatives
       url: /content/business-info/other-benchmarking-initiative
       available: true
+
+# Component level protocols
+qubit-characterization:
+  - text: Energy relaxation time T1
+    page-id: T1
+    url: /content/component-level-benchmark/qubit-characterization/energy-relaxation-time-T1
+  - text: Phase decoherence time T2
+    page-id: T2
+    url: /content/component-level-benchmark/qubit-characterization/phase-decoherence-time-T2
+  
 
 # Randomized protocols
 randomized-benchmarking-protocols:
