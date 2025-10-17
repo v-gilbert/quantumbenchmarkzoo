@@ -17,6 +17,8 @@ description: >
 **EM**: Error mitigation  
 **SP**: Scientific paper (checked if a scientific paper explain the results)  
 
+_<span class="caution">The reader should consider with caution the results that are not supported with a scientific paper (SP column without a check) and results subject to COI.</span>_
+
 <!-- Avoid issue with citations -->
 <!-- {% cite algorithmicQubitsPerf %} -->
 {% include tables/aq-table.html %}

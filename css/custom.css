@@ -62,3 +62,7 @@ mark{
 textarea{
     height: 250px;
 }
+
+.caution{
+    color: #C42600;
+}
