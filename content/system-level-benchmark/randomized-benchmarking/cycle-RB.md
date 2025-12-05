@@ -37,10 +37,15 @@ As in the <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">IRB</a
 
 - This protocol assumes that the noise model is Markovian, meaning that the noise of a gate does not depend on the sequence of previous gates (history-independent).
 - The protocol presented on this page is only valid for benchmarking Clifford gates. CB can be used to benchmark non-Clifford gates, but requires substantial changes as discussed in {% cite erhard2019characterizing %}.
+- It is possible to benchmark the $$T$$ gate by twirling over the dihedral group of order 8: $$D_8 \cong \langle X, \sqrt{Z}\rangle$$ on the qubits that have $$T$$ gates, instead of twirling over the Pauli group <a href="https://arxiv.org/abs/1512.01098" target="_blank">(Reference)</a>
 
 ## Limitations
 
 - As explained in {% cite Hashim2024 %}, the fidelity extracted with the CB protocol does not constitute the true <a href="{{ fidelities.url | prepend: site.baseurl }}#entanglement-fidelity" target="_blank">process fidelity</a> in general but rather a lower bound on the process fidelity. The tightness of this bound depends on the number of samples, which should scale at least as $$\min(20, 4^n -1)$$ where $$n$$ denotes the number of qubits.
+
+## Variations of Cycle Benchmarking
+
+- There are other CB-like protocols, such as character cycle benchmarking (CCB), in which one may choose any arbitrary G and $$l$$-values rather than restricting to Clifford cycles satisfying $$G^l=I$$, and character average benchmarking (CAB) \cite{zhang_scalable_2023}, which reduces resource requirements by averaging the $4^{n}$ Pauli eigenvalues into $2^n$ terms by partially depolarizing the noise via local Clifford twirling <a href="https://arxiv.org/abs/2203.10320" target="_blank">(Reference)</a>.
 
 ## Implementation
 
