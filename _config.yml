@@ -191,6 +191,9 @@ other-system-level-protocols:
   - text: clops
     page-id: clops
     url: /content/system-level-benchmark/others/clops
+  - text: Clifford volume
+    page-id: clifford-volume
+    url: /content/system-level-benchmark/others/clifford-volume
   - text: Quantum linpack
     page-id: quantum-linpack
     url: /content/system-level-benchmark/others/quantum-linpack
