@@ -59,18 +59,18 @@ The following steps define how to generate quantum volume circuits:
 - Generate a model circuit composed of $$n$$ layers. Each layer comprises a random permutation (random relabelling) of qubits $$\pi$$ and a random unitary sampled from $$SU(4)$$. The permutation step is challenging for quantum chips with limited interconnections because it requires many swapping gates. The $$SU(4)$$ gates can be decomposed into three CNOT gates and seven single-qubit rotation gates {% cite vatan2004optimal %}.
 
 <div class="center">
-  <img src="/img/system-level-benchmark/others/QV.jpg" class="img-medium" alt="Quantum circuit for the quantum volume test"/>
+  <img src="/img/system-level-benchmark/others/QV.png" class="img-medium" alt="Quantum circuit for the quantum volume test"/>
 </div>
 
 This circuit is then used as input for the sampling task associated with the Heavy Output Generation (HOG) problem. If the quantum computer samples the right distribution (simulated classically), it validates the corresponding quantum volume score of $$2^n$$. The confidence interval for this evaluation is set to two-sigma ($$97.73 \%$$).
 
 ## Assumptions
-* The circuit compiler may use all the possible tricks to improve the mapping of the quantum circuit, which can lead to possibly high extra-processing time. In {% cite baldwin2022re %}, the authors show that the compilation has a strong impact on small quantum volumes ($$< 10$$) as it can reduce the number of 2-qubit gates.
-* The quantum computer should honestly attempt to solve the HOG problem and not choose an implementation far from the initial model of the circuit (i.e., the approximation error should be limited).
+- The circuit compiler may use all the possible tricks to improve the mapping of the quantum circuit, which can lead to possibly high extra-processing time. In {% cite baldwin2022re %}, the authors show that the compilation has a strong impact on small quantum volumes ($$< 10$$) as it can reduce the number of 2-qubit gates.
+- The quantum computer should honestly attempt to solve the HOG problem and not choose an implementation far from the initial model of the circuit (i.e., the approximation error should be limited).
 
 ## Limitations
 - Quantum volume assesses only a limited subset of best-quality qubits within a quantum processor and does not provide a comprehensive measure of the overall fidelity or performance of quantum operations across the entire chip.
-- Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
+- Previous experiments {% cite pelofske2022quantum %} have shown that the Quantum Volume measured by quantum chip manufacturers is often hard to reproduce due to advanced and proprietary optimization settings (compilation optimization and approximation of quantum gates) used to boost the performance of the quantum computer for passing this test.
 
 ## Protocol Variations
 
@@ -81,9 +81,9 @@ In {% cite bistron2025benchmarking %}, the authors extend the quantum volume pro
 ## Implementations
 
 Several implementations of the Quantum Volume are available on GitHub:
-* The implementation of IBM using Qiskit is available <a href="https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.QuantumVolume" target="_blank">here</a>.
-* A tutorial implementation from the QCMet software repository {% cite lall2025review %} is available <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">here</a>.
-* Another tutorial implementation from Pennylane is available <a href="https://pennylane.ai/qml/demos/quantum_volume" target="_blank">here</a>.
+- The implementation of IBM using Qiskit is available <a href="https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.QuantumVolume" target="_blank">here</a>.
+- A tutorial implementation from the QCMet software repository {% cite lall2025review %} is available <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">here</a>.
+- Another tutorial implementation from Pennylane is available <a href="https://pennylane.ai/qml/demos/quantum_volume" target="_blank">here</a>.
 
 # References
 {% bibliography --cited %}
