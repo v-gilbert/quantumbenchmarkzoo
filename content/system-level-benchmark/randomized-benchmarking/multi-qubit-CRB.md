@@ -2,6 +2,7 @@
 title: Multi-qubit Clifford Randomized Benchmarking
 description: >
   Multi-qubit Clifford Randomized Benchmarking (Standard Clifford Randomized Benchmarking): Assess system fidelity via n-qubit Clifford group sequences.
+navbar-page-id: randomized-benchmarks
 ---
 
 # Multi-qubit Clifford Randomized Benchmarking (CRB)

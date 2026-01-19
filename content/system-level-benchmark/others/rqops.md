@@ -2,6 +2,7 @@
 title: rQOPS
 description: >
   Reliable Quantum Operations Per Second (rQOPS): Microsoft's benchmark for measuring the logical clock rate of fault-tolerant quantum computers.
+navbar-page-id: system-level-others
 ---
 
 # Reliable Quantum Operations Per Second (rQOPS)

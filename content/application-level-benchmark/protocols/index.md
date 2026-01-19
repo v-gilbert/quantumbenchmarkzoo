@@ -2,6 +2,7 @@
 title: Application-level Protocols
 description: >
   Application benchmarking protocols
+navbar-page-id: application-benchmarks-protocols
 ---
 
 # Application Benchmarking Protocols

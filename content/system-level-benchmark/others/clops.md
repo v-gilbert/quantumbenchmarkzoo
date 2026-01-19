@@ -2,6 +2,7 @@
 title: CLOPS
 description: >
   Circuit Layer Operation per Second (CLOPS) measures quantum processor performance by counting the number of quantum volume circuits executed per second.
+navbar-page-id: system-level-others
 ---
 {% assign modified = page.path | max_last_modified: "tables/clops-table.html" %}
 {% assign eplg = site.randomized-benchmarking-protocols | where: "page-id", "eplg" | first %}

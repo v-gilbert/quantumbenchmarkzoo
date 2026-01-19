@@ -2,6 +2,7 @@
 title: Acknowledgments
 description: >
   Acknowledgments: Meet the contributors & collaborators behind QuantumBenchmarkZoo, including the Zookeeper and team members who drive its development.
+navbar-page-id: acknowledgments 
 ---
 # Acknowledgments
 

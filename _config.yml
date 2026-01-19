@@ -10,6 +10,11 @@ git:
   repository_url: https://github.com/v-gilbert/quantumbenchmarkzoo
 
 # Navigation
+# List of properties:
+#   test: text of the navigation
+#   page-id: unique id for each page (should be used in each page to refer the navbar-page-id property which defines with item is set in bold)
+#   url: location of the page
+#   available: defines if the page is available or not
 nav:
   Zoo:
     - text: Presentation
@@ -56,12 +61,12 @@ nav:
       url: /content/system-level-benchmark/supremacy/
       available: true
     - text: Others
-      page-id: others
+      page-id: system-level-others
       url: /content/system-level-benchmark/others/
       available: true
   Application-level:
     - text: Protocols
-      page-id: application-benchmarks
+      page-id: application-benchmarks-protocols
       url: /content/application-level-benchmark/protocols/
       available: true
     - text: Aggregated scores
@@ -69,7 +74,7 @@ nav:
       url: /content/application-level-benchmark/aggregated-scores
       available: true
     - text: Frameworks
-      page-id: application-benchmarks
+      page-id: application-benchmarks-frameworks
       url: /content/application-level-benchmark/frameworks  
       available: false
   Multi-level:

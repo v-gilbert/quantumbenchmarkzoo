@@ -2,6 +2,7 @@
 title: System-level protocols
 description: >
   Protocols used for other system-level benchmarking experiments
+navbar-page-id: system-level-others
 ---
 
 # Other system-level benchmarking protocols

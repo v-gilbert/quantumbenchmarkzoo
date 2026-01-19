@@ -2,6 +2,7 @@
 title: Clifford Volume
 description: >
   Clifford Volume: benchmarking method assessing the ability of quantum computers to successfully realize a n-qubit clifford gate.
+navbar-page-id: system-level-others
 ---
 
 {% assign modified = page.path | max_last_modified: "tables/QV-table.html" %}

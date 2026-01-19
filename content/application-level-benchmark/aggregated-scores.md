@@ -2,6 +2,7 @@
 title: Aggregated Scores
 description: >
   MYRIAD-Q (BACQ) and QuAS (Quantum Application Score): methodologies for aggregating quantum benchmarking scores into a single performance metric.
+navbar-page-id: aggregated-scores
 ---
 
 # Aggregated scores

@@ -2,6 +2,7 @@
 title: EPLG
 description: >
   Error Per Layered Gate (EPLG): IBM's benchmarking protocol to assess the error rate per disjoint layers of two-qubit gates in multi-qubit quantum computers.
+navbar-page-id: randomized-benchmarks
 ---
 
 {% assign DRB = site.randomized-benchmarking-protocols | where: "page-id", "DRB" | first %}

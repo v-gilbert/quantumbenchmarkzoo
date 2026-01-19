@@ -3,6 +3,7 @@ title: Roadmaps
 datatable: true
 description: >
   Detailed timelines and milestone-based roadmaps outlining the future development of quantum computing providers.
+navbar-page-id: roadmaps
 ---
 {% assign modified = page.path | max_last_modified: "tables/roadmap-multi-header-2-table.html" %}
 

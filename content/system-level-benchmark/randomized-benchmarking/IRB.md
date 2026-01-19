@@ -2,6 +2,7 @@
 title: Interleaved Randomized Benchmarking
 description: >
   Interleaved Randomized Benchmarking (IRB): a method that estimates the error rate of a specific gate by interleaving it with random Clifford gates.
+navbar-page-id: randomized-benchmarks
 ---
 
 {% assign multi-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "multi-qubit-CRB" | first %}

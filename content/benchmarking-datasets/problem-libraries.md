@@ -2,6 +2,7 @@
 title: Problem Libraries
 description: >
   Problem libraries
+navbar-page-id: problem-libraries
 ---
 
 # Problem libraries

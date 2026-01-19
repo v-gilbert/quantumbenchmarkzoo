@@ -2,6 +2,7 @@
 title: Mirror Randomized Benchmarking
 description: >
   Mirror Benchmarking: a scalable quantum randomized benchmarking protocol for assessing the fidelity of Clifford and universal gate sets using motion reversal.
+navbar-page-id: randomized-benchmarks
 ---
 
 # Mirror Randomized Benchmarking (MRB)

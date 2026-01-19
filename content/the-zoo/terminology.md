@@ -2,6 +2,7 @@
 title: Terminology
 description: >
   QuantumBenchmarkZoo Terminology: clear definitions of commonly used quantum computing terms.
+navbar-page-id: terminology
 ---
 # Terminology
 

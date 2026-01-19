@@ -2,6 +2,7 @@
 title: Benchmarking Initiatives
 description: >
   Explore global quantum benchmarking initiatives like DARPA’s QBI, QEI, QED-C, BenchQC, BACQ & others advancing utility-scale quantum computing.
+navbar-page-id: benchmarking-initiatives
 ---
 
 # Benchmarking Initiatives

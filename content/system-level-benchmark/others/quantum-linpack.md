@@ -2,6 +2,7 @@
 title: Quantum Linpack
 description: >
   Quantum linpack: a quantum computer benchmark based on solving Quantum Linear System Problems (QLSP) with Random Circuit Block-Encoded Matrices (RACBEM).
+navbar-page-id: system-level-others
 ---
 
 # Quantum LINPACK benchmark

@@ -2,6 +2,7 @@
 title: Presentation
 description: >
   QuantumBenchmarkZoo catalogues metrics, datasets, benchmark protocols, and guidelines to assess quantum computer performance.
+navbar-page-id: presentation 
 ---
 
 # Welcome to Quantum Benchmark Zoo !

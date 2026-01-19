@@ -2,6 +2,7 @@
 title: Binary Randomized Benchmarking
 description: >
   Binary Randomized Benchmarking: a quantum benchmarking method using Pauli eigenstates and random gate sequences, without motion reversal.
+navbar-page-id: randomized-benchmarks
 ---
 
 #  Binary Randomized Benchmarking (BRB)

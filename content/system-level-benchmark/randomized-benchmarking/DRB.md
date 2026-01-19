@@ -2,6 +2,7 @@
 title: Direct Randomized Benchmarking
 description: >
   Direct Randomized Benchmarking: an efficient method to benchmark the fidelity of the native gate set of the quantum computer.
+navbar-page-id: randomized-benchmarks
 ---
 
 {% assign multi-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "multi-qubit-CRB" | first %}

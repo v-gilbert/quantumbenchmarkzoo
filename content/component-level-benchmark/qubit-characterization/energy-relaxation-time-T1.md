@@ -2,6 +2,7 @@
 title: Energy relaxation time T1
 description: >
   The qubit spontaneous energy relaxation is characterized by T1 (e.g., amplitude damping): protocol, assumptions, limitations, tutorials for quantum computers.
+navbar-page-id: qubit-characterization
 ---
 
 # Energy relaxation time $$T1$$

@@ -2,6 +2,7 @@
 title: Quantum Datasets
 description: >
   Datasets for benchmarking quantum computer performance across various abstraction levels from the application level to the pulse level.
+navbar-page-id: quantum-datasets
 ---
 
 {% assign modified = page.path | max_last_modified: "tables/QV-table.html" %}
