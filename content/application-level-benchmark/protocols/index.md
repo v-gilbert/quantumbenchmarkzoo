@@ -30,6 +30,14 @@ In a nutshell, the Q-score protocol assesses the ability of quantum computers to
 
 In a nutshell, the Linear Ramp Quantum Approximate Optimization Algorithm (LR-QAOA) is a benchmark designed to evaluate quantum processors by circuit width (number of qubits) and depth (number of 2-qubit gates). It measures how long a quantum device can preserve a coherent signal before noise dominates by comparing its output to a random sampler.
 
+## Protocols based on quantum many-body problems
+
+{% assign mbqs = site.application-protocols | where: "page-id", "MBQS" | first %}
+- <a href="{{ mbqs.url | prepend: site.baseurl }}">Many-body quantum score (MBQS)</a> (2025)
+
+In a nutshell, the Many-body quantum score (MBQS) assesses a quantum computer's ability to reliably simulate quenched Hamiltonian dynamics. This protocol is defined for 1D configurations of the Ising model, enabling an efficient classical simulation used to verify the output of the quantum computer.
+
+
 ## Protocols based on learning sampling tasks
 
 {% assign qbas = site.application-protocols | where: "page-id", "qbas" | first %}

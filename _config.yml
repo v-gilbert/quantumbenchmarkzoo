@@ -169,6 +169,9 @@ application-protocols:
   - text: LR-QAOA protocol
     page-id: lr-qaoa-protocol
     url: /content/application-level-benchmark/protocols/lr-qaoa
+  - text: MBQS protocol
+    page-id: MBQS
+    url: /content/application-level-benchmark/protocols/many-body-quantum-score
   - text: algorithmic-qubit
     page-id: algorithmic-qubit
     url: /content/application-level-benchmark/protocols/algorithmic-qubit
