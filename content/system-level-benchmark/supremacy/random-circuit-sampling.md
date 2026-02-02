@@ -3,6 +3,7 @@ title: Random Circuit Sampling Supremacy
 datatable: true
 description: >
   Random circuit sampling (RCS): a quantum supremacy protocol based on random circuit generation with classically hard simulation of output bitstrings.
+navbar-page-id: supremacy-benchmarks
 ---
 
 # Cross-entropy Benchmarking (XEB)

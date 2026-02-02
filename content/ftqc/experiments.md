@@ -3,6 +3,7 @@ title: QECC Experiments
 datatable: true
 description: >
   Review Fault-Tolerant Quantum Computing (FTQC) experiments: hardware, error-correction protocols & performance results.
+navbar-page-id: qecc
 ---
 {% assign modified = page.path | max_last_modified: "tables/qecc-table.html" %}
 # Quantum Error Correction Code Experiments

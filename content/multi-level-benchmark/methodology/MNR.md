@@ -2,6 +2,7 @@
 title: Metric Noise Resources
 description: >
   Metric noise resources (MNR): a methodology optimizing resources in quantum computing systems by analyzing trade-offs between performance and resource costs.
+navbar-page-id: multi-level-methodologies
 ---
 
 {% assign bi = site.nav.Business-informations | where: "page-id", "benchmarking-initiatives" | first %}  

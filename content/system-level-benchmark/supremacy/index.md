@@ -3,6 +3,7 @@ title: Quantum Supremacy Protocols
 datatable: true
 description: >
   Protocols used for quantum supremacy experiments demonstrating quantum computers solving specific tasks faster than classical systems. 
+navbar-page-id: supremacy-benchmarks
 ---
 {% assign modified = page.path | max_last_modified: "tables/supremacy-table.html" %}
 

@@ -2,6 +2,7 @@
 title: Qubit Characterization
 description: >
   Qubit characterization methodologies
+navbar-page-id: qubit-characterization
 ---
 
 # Qubit characterization methodologies  

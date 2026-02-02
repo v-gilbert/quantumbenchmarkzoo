@@ -2,6 +2,7 @@
 title: Randomized Benchmarking Protocols
 description: >
   Explore various randomized benchmarking protocols techniques to evaluate quantum gate fidelity using random gate sequences and exponential decay fitting.
+navbar-page-id: randomized-benchmarks
 ---
 
 {% assign fidelities = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}

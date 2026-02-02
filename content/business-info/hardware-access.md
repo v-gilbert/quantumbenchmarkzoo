@@ -3,6 +3,7 @@ title: Hardware Access
 datatable: true
 description: >
   Compare pricing and access options for quantum hardware across providers, technologies, usage types across cloud, subscription & custom plans.
+navbar-page-id: hardware-access
 ---
 {% assign modified = page.path | max_last_modified: "tables/pricing-table.html" %}
 

@@ -2,6 +2,7 @@
 title: Fidelities and Errors
 description: >
   Catalogue of fidelities and errors metrics used for benchmarking quantum computers: state fidelity and quantum processes.
+navbar-page-id: fidelities-errors
 ---
 {% assign modified = page.path | max_last_modified: "tables/classical-probability-distribution-table.html,tables/quantum-states-fidelity-table.html,tables/quantum-processes-table.html" %}
 

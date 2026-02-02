@@ -3,6 +3,7 @@ title: qBAS
 datatable: true
 description: >
   qBAS evaluates quantum computers performance by training circuits to sample from the Bars and Stripes dataset, using the F1 score.
+navbar-page-id: application-benchmarks-protocols
 ---
 {% assign modified = page.path | max_last_modified: "tables/qbas-instance-table.html" %}
 

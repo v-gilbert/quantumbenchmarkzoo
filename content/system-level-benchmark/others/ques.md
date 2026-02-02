@@ -2,6 +2,7 @@
 title: QUES
 description: >
   Quantum Unitary Evolution Score (QUES): Hamiltonian simulations benchmark using minimal Quantum Singular Value Transformation (QSVT) circuits.
+navbar-page-id: system-level-others
 ---
 
 # Quantum Unitary Evolution Score (QUES)

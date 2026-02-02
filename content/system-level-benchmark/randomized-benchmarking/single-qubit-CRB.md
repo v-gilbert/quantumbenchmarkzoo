@@ -2,6 +2,7 @@
 title: Single-qubit Clifford Randomized Benchmarking
 description: >
   Single-qubit Clifford Randomized Benchmarking: a protocol for assessing single-qubit gate errors using Clifford group sequences and exponential decay fitting.
+navbar-page-id: randomized-benchmarks
 ---
 
 {% assign multi-qubit-CRB = site.randomized-benchmarking-protocols | where: "page-id", "multi-qubit-CRB" | first %}

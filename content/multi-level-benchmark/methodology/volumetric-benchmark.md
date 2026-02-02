@@ -2,6 +2,7 @@
 title: Volumetric Benchmark
 description: >
   Volumetric benchmarking generalizes the quantum volume by measuring a computer's ability to run quantum circuits based on the circuit's width and depth.
+navbar-page-id: multi-level-methodologies
 ---
 
 # Volumetric Benchmark
