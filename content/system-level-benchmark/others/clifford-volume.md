@@ -30,7 +30,7 @@ The following steps define how to generate a circuit used for assessing the CLV 
   <img src="/img/system-level-benchmark/others/clifford-volume.png" class="img-medium" alt="Quantum circuit for the clifford volume test"/>
 </div>
 
-The experiment is repeated many times for each $$n$$-qubit Clifford unitary, measuring different random Pauli operators. More specifically, for each Clifford gate, two sets of operators are created: one that contains generators associated with the Clifford unitary noted $$\left<S\right>$$ (with $$\left<S_i\right>=1$$ in ideal simulations) and one that includes operators that are outside the generator group $$\mathcal{D}$$ (with $$\left<D_i\right>=0$$ in ideal simulations). For each group, it is then checked that:
+The experiment is repeated many times for each $$n$$-qubit Clifford unitary, measuring different random Pauli operators. More specifically, for each Clifford gate, two sets of operators are created: one that contains generators associated with the Clifford unitary noted $$S$$ (with $$\left<S_i\right>=1$$ in ideal simulations) and one that includes operators that are outside the generator group $$\mathcal{D}$$ (with $$\left<D_i\right>=0$$ in ideal simulations). For each group, it is then checked that:
 
 $$\left< S_i \right> -2\sigma_{\mathcal{S}_i} \ge \frac{1}{e}$$
 
@@ -38,22 +38,22 @@ $$\left< D_i \right> +2\sigma_{\mathcal{D}_i} \le \frac{1}{2e}$$
 
 where $$\sigma_i$$ denotes the standard deviation of the expectation value of the operator $$\mathcal{S}_i$$ or $$\mathcal{D}_i$$. Another criterion is used to verify the behavior of the quantum computer in the average case for every Clifford gate (see eqn 7 and 8 in {% cite portik2025clifford %}). 
 
-A Clifford volume $$n$$ is validated if the criteria explained above are all correct. In the European Quantum Computing Benchmark suite {% cite zimboras2025eu %}, the same authors advise randomly generating $$4$$ different Clifford gates, with $$8$$ operators randomly picked: $$4$$ from the generator group $$\left<S\right>$$ and $$4$$ from outside of the generator group $$\left<D\right>$$. The number of shots per circuit is at least set to $$512$$.
+A Clifford volume $$n$$ is validated if the criteria explained above are all correct. In the European Quantum Computing Benchmark suite {% cite zimboras2025eu %}, the same authors advise randomly generating $$4$$ different Clifford gates, with $$8$$ operators randomly picked: $$4$$ from the generator group $$S$$ and $$4$$ from outside of the generator group $$D$$. The number of shots per circuit is at least set to $$512$$.
 
 ## Assumptions
-- The circuit compiler may use all the possible tricks to improve the mapping of the quantum circuit, which can lead to high extra-processing time.
-- The quantum computer should honestly attempt to implement the $$n$$-qubit Clifford gate and not choose an implementation far from the initial model of the circuit (i.e., the approximation error should be limited).
+- The circuit compiler may use all possible tricks to improve the mapping of the quantum circuit, which can lead to significant extra processing time.
+- The quantum computer should honestly attempt to implement the $$n$$-qubit Clifford gate and not choose an implementation far from the initial circuit model (i.e., the approximation error should be limited).
 - The output of the quantum circuit should not be post-processed to improve the results (i.e., error mitigation methods are prohibited).
 - The Clifford unitary and measurement operators should be randomly generated once without replacement.
 
 ## Limitations
 - The CLV assesses only a limited subset of best-quality qubits within a quantum processor and does not provide a comprehensive measure of the overall fidelity or performance of quantum operations across the entire chip.
-- Due to the optimized compilation step allowed in the protocol, results obtained by the manufacturer on their quantum chip may often be hard to reproduce due to advanced and proprietary optimization settings (same issue as for the quantum volume).
+- Due to the optimized compilation step allowed by the protocol, results obtained by the manufacturer on their quantum chip may often be hard to reproduce due to advanced and proprietary optimization settings (same issue as with the quantum volume).
 - The initial protocol recommends a very small number of distinct Clifford unitaries and measurement operators to validate a Clifford volume of size $$n$$. Due to this small number, this experiment might be easily spoofed and require trust (for example, if it's evaluated directly by manufacturers themselves).
 
 ## Implementations
 
-The implementation of the authors of the original papers is available <a href="https://gitlab.com/qcpi/eqcb" target="_blank">here</a>. This protocols has been included in the <a href="https://gitlab.com/qcpi/eqcb" target="_blank">European Quantum Computing Benchmark suite</a>
+The implementation of the authors of the original papers is available <a href="https://gitlab.com/qcpi/eqcb" target="_blank">here</a>. This protocols has been included in the <a href="https://gitlab.com/qcpi/eqcb" target="_blank">European Quantum Computing Benchmark suite</a>.
 
 # References
 {% bibliography --cited %}

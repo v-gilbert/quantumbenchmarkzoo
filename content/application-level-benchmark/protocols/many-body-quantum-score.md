@@ -6,7 +6,7 @@ description: >
 navbar-page-id: application-benchmarks-protocols
 ---
 
-# Many-body quantum score (MBQS)
+# Many-body Quantum Score (MBQS)
 
 ## Motivation
 
