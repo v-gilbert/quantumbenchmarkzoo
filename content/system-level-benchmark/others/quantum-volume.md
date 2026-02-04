@@ -86,5 +86,5 @@ Several implementations of the Quantum Volume are available on GitHub:
 - A tutorial implementation from the QCMet software repository {% cite lall2025review %} is available <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet" target="_blank">here</a>.
 - Another tutorial implementation from Pennylane is available <a href="https://pennylane.ai/qml/demos/quantum_volume" target="_blank">here</a>.
 
-# References
+## References
 {% bibliography --cited %}

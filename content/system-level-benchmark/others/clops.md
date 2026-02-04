@@ -72,5 +72,5 @@ An update concerning the measurement of CLOPS values has been proposed in {% cit
 An implementation of the $$\mathrm{CLOPS_v}$$ based on the quantum volume developed by IQM is available <a href="https://github.com/iqm-finland/iqm-benchmarks/tree/main" target="_blank">here</a>.  
 The $$\mathrm{CLOPS_h}$$ metric relies on the EPLG protocol. At the time of writing, an implementation of the complete $$\mathrm{CLOPS_h}$$ protocol was not found.
 
-# References
+## References
 {% bibliography --cited %}

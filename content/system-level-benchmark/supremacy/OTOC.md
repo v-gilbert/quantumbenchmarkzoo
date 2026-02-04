@@ -1,6 +1,8 @@
 ---
 title: Quantum echoes - Out-of-Time-order correlator (OTOC)
 description: >
+  Google quantum echoes, Out-of-Time-order correlator (OTOC): supremacy protocol detecting interference patterns created from a small quantum perturbation.
+navbar-page-id: supremacy-benchmarks
 ---
 
 # Quantum echoes - Out-of-time-order correlator (OTOC)

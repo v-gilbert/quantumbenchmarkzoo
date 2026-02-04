@@ -55,5 +55,5 @@ A Clifford volume $$n$$ is validated if the criteria explained above are all cor
 
 The implementation of the authors of the original papers is available <a href="https://gitlab.com/qcpi/eqcb" target="_blank">here</a>. This protocols has been included in the <a href="https://gitlab.com/qcpi/eqcb" target="_blank">European Quantum Computing Benchmark suite</a>.
 
-# References
+## References
 {% bibliography --cited %}

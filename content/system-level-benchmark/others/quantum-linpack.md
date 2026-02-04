@@ -46,6 +46,6 @@ $$ \epsilon = \frac{|p_{meas}- p_{exact}|}{p_{exact}} $$
 
 The source code for the generation of RACBEM is available <a href="https://github.com/qsppack/RACBEM" target="_blank">here</a>.
 
-# References
+## References
 
 {% bibliography --cited %}

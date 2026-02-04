@@ -78,5 +78,5 @@ where $$E$$ is the energy obtained by the quantum simulation of an instance-rela
 
 -->
 
-# References
+## References
 {% bibliography --cited %}

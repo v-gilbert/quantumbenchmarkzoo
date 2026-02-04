@@ -29,6 +29,6 @@ While the rQOPS metric provides a useful high-level indicator of performance, it
 
 There is currently no referenced implementation of this protocol.
 
-# References 
+## References 
 {% bibliography --cited %}
 

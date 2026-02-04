@@ -36,6 +36,6 @@ For a quantum circuit composed of $$n+1$$ qubits and $$l$$ layers, the QUES scor
 
 The implementation of this protocol is not publicly available. However, data and code are available upon request to the authors of {% cite Dong2022 %}.
 
-# References
+## References
 
 {% bibliography --cited %}

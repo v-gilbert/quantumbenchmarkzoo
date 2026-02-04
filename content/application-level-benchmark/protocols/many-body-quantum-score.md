@@ -2,7 +2,7 @@
 title: Many-body quantum score
 datatable: true
 description: >
-  Many-body quantum score
+  Many-body quantum score: benchmarking method assessing the entanglement rate and the ability of quantum computers to simulate quenched Hamiltonian dynamics.
 navbar-page-id: application-benchmarks-protocols
 ---
 
