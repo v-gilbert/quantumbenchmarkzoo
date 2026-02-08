@@ -15,3 +15,5 @@ _site/
 # tables
 tables/*.ods
 
+# Mac cache files
+.DS_Store
