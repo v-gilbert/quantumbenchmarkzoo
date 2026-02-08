@@ -21,17 +21,21 @@ nav:
       page-id: presentation
       url: /
       available: true
-    - text: Acknowledgments
-      page-id: acknowledgments
-      url: /content/the-zoo/acknowledgments
+    - text: Terminology
+      page-id: terminology
+      url: /content/the-zoo/terminology
+      available: true
+    - text: Latest updates
+      page-id: latest-updates
+      url: /content/the-zoo/latest-updates
       available: true
     - text: Contact us
       page-id: contact
       url: /content/the-zoo/contact
       available: true
-    - text: Terminology
-      page-id: terminology
-      url: /content/the-zoo/terminology
+    - text: Acknowledgments
+      page-id: acknowledgments
+      url: /content/the-zoo/acknowledgments
       available: true
   FOM:
     - text: Component-level FOM
