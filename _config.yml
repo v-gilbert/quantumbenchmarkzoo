@@ -56,6 +56,10 @@ nav:
       url: /content/component-level-benchmark/qubit-characterization
       available: true
   System-level:
+    - text: Tomography
+      page-id: tomography
+      url: /content/system-level-benchmark/tomography
+      available: true
     - text: Randomized benchmarking
       page-id: randomized-benchmarks
       url: /content/system-level-benchmark/randomized-benchmarking/
@@ -127,6 +131,11 @@ qubit-characterization:
     page-id: T2
     url: /content/component-level-benchmark/qubit-characterization/phase-decoherence-time-T2
   
+# Tomography protocols
+tomography:
+  - text: Quantum state tomography
+    page-id: state-tomography
+    url: /content/system-level-benchmark/tomography/quantum-state-tomography
 
 # Randomized protocols
 randomized-benchmarking-protocols:
