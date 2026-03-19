@@ -65,8 +65,8 @@ In principle, one could define a functional form $$\Delta_{\gamma,\beta}(N_q)$$ 
 
 ## Results
 
-This protocol has been used to benchmark 24 QPUs from 6 vendors in {% cite montanezbarrera2025 %} for three different kinds of topologies. The results can be found <a href="https://github.com/alejomonbar/LR-QAOA-QPU-Benchmarking" target="_blank">Here</a>.
-<!-- Ajouter fractional gates -->
+This protocol has been used to benchmark 24 QPUs from 6 vendors in {% cite montanezbarrera2025 %} for three different kinds of topologies. The results can be found <a href="https://github.com/alejomonbar/LR-QAOA-QPU-Benchmarking" target="_blank">here</a>.  
+An up-to-date and living version of the benchmarking results is available <a href="https://qpu-benchmarking.streamlit.app/" target="_blank">here</a>. The following sections present the results available in the article {% cite montanezbarrera2025 %}.
 
 ### 1D-Chain
 
