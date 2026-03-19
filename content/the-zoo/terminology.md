@@ -60,6 +60,10 @@ In {% cite ronnow2014defining %}, T. F. Ronnow et al. introduce a classification
 
 The term 'quantum supremacy' was introduced by J. Preskill in {% cite preskill2012quantum %}. It refers to the demonstration of a controllable quantum computer's ability to perform a computational task intractable for classical computers beyond a classical feasible regime.
 
+## Tomography
+
+Quantum state tomography aims to obtain a precise picture of a quantum state. It generally involves preparing the same quantum state multiple times and measuring it in different bases to reconstruct the density matrix corresponding to that state. Quantum state tomography has been further developed to characterize quantum operations (process tomography) and measurements (measurement tomography). Quantum state tomography generally requires an exponential amount of resources to precisely characterize a quantum state, making it hardly scalable for large systems. Other methods developed subsequently, which are less resource-intensive, have been designed to extract properties of quantum states with a polylogarithmic number of measurements. One can, for example, refer to shadow tomography and classical shadow protocols.
+
 <!-- Add definition on Random Special Unitary Group -->
 
 ## References
