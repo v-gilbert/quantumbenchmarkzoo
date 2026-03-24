@@ -6,6 +6,7 @@ navbar-page-id: tomography
 ---
 
 {% assign qst = site.tomography | where: "page-id", "state-tomography" | first %}
+{% assign fidelities = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
 
 # Quantum Process Tomography (QPT)
 
@@ -45,6 +46,12 @@ The procedure to compute a value of an intersection in the heatmap (for example 
 - Recombining all the expectation values. The expectation values of each evolved state are then recombined according to the eigenvalue of the input state, and rescaled with a factor depending on the number of different eigenstates considered as input (here $$1/4$$ because there are 4 different input eigenstates): 
 
 $$\mathcal{E}_{ZZI-IXX} = \frac{1}{4}\left( \left< \psi_\mathrm{evolved}(000) \lvert IXX \rvert \psi_\mathrm{evolved}(000) \right> + \left< \psi_\mathrm{evolved}(110) \lvert IXX \rvert \psi_\mathrm{evolved}(110) \right>  -\left< \psi_\mathrm{evolved}(010) \lvert IXX \rvert \psi_\mathrm{evolved}(010) \right> - \left< \psi_\mathrm{evolved}(100) \lvert IXX \rvert \psi_\mathrm{evolved}(100) \right> \right)$$
+
+When both the ideal $$\mathcal{E}_\mathrm{ideal}$$ and experimental $$\mathcal{E}_\mathrm{exp}$$ PTM are known, the <a href="{{ fidelities.url | prepend: site.baseurl }}#entanglement-fidelity" target="_blank">process fidelity</a> can be computed as:
+
+$$ F_e = \frac{1}{d^2} \mathrm{Tr} \left( \mathcal{E}_\mathrm{ideal}^\intercal  \mathcal{E}_\mathrm{exp} \right) $$
+
+with $$d=2^n$$ the number of dimensions.
 
 ## Assumptions
 

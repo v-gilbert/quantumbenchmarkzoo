@@ -8,6 +8,12 @@ navbar-page-id: latest-updates
 # Latest updates
 
 ## List of updates
+{% assign process-tomography = site.tomography | where: "page-id", "process-tomography" | first %}
+* 2026-03-24 <a href="{{ process-tomography.url | prepend: site.baseurl }}">Quantum Process Tomography (QPT)</a>:
+Creation of a new page of content on Quantum Process Tomography.
+{% assign state-tomography = site.tomography | where: "page-id", "state-tomography" | first %}
+* 2026-03-24 <a href="{{ state-tomography.url | prepend: site.baseurl }}">Quantum State Tomography (QST)</a>:
+Creation of a new page of content on Quantum State Tomography.
 {% assign mbqs = site.application-protocols | where: "page-id", "MBQS" | first %}
 * 2026-02-04 <a href="{{ mbqs.url | prepend: site.baseurl }}" target="_blank">Many-body Quantum Score</a>: Creation of a new page of content on the application-level benchmark Many-body Quantum Score.
 {% assign clv = site.other-system-level-protocols | where: "page-id", "clifford-volume" | first %}

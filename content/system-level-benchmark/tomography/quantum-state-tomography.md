@@ -17,11 +17,11 @@ As quantum computers are partially closed-systems, one needs to better character
 
 The QST protocol aims to reconstruct the density matrix of an unknown quantum state via a series of measurements. Exact tomography is not achievable in practice because the reconstruction relies on a finite number of measurements, leading to residual statistical error. To explain QST, let us take a system composed of a single qubit as an example. The state of the single qubit can be represented by a point on a Bloch sphere. The repeated measurements of the quantum state along the three orthogonal axes of the sphere (X, Y, and Z constitute the three non-commuting observables) permit the precise extraction of the density matrix of the system, which can in turn be used to predict the measurement outcome of such a system. Considering the three observables: 
 
-$$\sigma^x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \sigma^y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \sigma^z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
+$$X = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, Y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$$
 
 The density matrix representing the quantum state can be reconstructed as: 
 
-$$\rho = \frac{1}{2} \left( I + x \sigma^x + y \sigma^y + z \sigma^z \right)$$
+$$\rho = \frac{1}{2} \left( I + x X + y Y + z Z \right)$$
 
 For a single qubit, the Bloch vector $$\mathbf{r} = (x, y, z) \in \mathbb{R}^3$$ should satisfy $$\lVert \mathbf{r} \rVert^2 = x^2+y^2+z^2 \le 1 $$. Experimentally, the values $$x, y, z$$ are obtained by measuring the expectation value of the associated $$X, Y, Z$$ operators. Let $$P_{\{X, Y, Z\}}: {\{-1, +1\}} \rightarrow \mathbb{R}$$ be the probability of observing the states associated with each -1 and +1 eigenvalue of each observable, each component of the Bloch vector is retrieved with:  
 
