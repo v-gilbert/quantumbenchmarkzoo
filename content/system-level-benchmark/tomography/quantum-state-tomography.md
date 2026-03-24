@@ -1,9 +1,11 @@
 ---
 title: Quantum State Tomography
-description: >
-  
+description: > 
+  Quantum State Tomography (QST) defines a protocol for reconstructing the density matrix associated with a quantum state from a series of measurements.
 navbar-page-id: tomography
 ---
+
+{% assign qpt = site.tomography | where: "page-id", "process-tomography" | first %}
 
 # Quantum State Tomography (QST)
 
@@ -21,26 +23,26 @@ The density matrix representing the quantum state can be reconstructed as:
 
 $$\rho = \frac{1}{2} \left( I + x \sigma^x + y \sigma^y + z \sigma^z \right)$$
 
-For a single qubit, the Bloch vector $$\mathbf{r} = (x, y, z) \in \mathbb{R}^3$$ should satisfy $$\lVert \mathbf{r} \rVert^2 = x^2+y^2+z^2 \le 1 $$. Experimentally, the values $$x, y, z$$ are obtained by measuring the expectation value of the associated $$\sigma^x, \sigma^y, \sigma^z$$ operators. Let $$P_{\{x, y, z\}}: {\{-1, +1\}} \rightarrow \mathbb{R}$$ be the probability of observing the states associated with each -1 and +1 eigenvalue of each observable, each component of the Bloch vector is retrieved with:  
+For a single qubit, the Bloch vector $$\mathbf{r} = (x, y, z) \in \mathbb{R}^3$$ should satisfy $$\lVert \mathbf{r} \rVert^2 = x^2+y^2+z^2 \le 1 $$. Experimentally, the values $$x, y, z$$ are obtained by measuring the expectation value of the associated $$X, Y, Z$$ operators. Let $$P_{\{X, Y, Z\}}: {\{-1, +1\}} \rightarrow \mathbb{R}$$ be the probability of observing the states associated with each -1 and +1 eigenvalue of each observable, each component of the Bloch vector is retrieved with:  
 
-$$ \left< \sigma^x \right> = P_x(-1) + P_x(+1)$$ 
+$$ \left< X \right> = P_X(-1) + P_X(+1)$$ 
 
-$$ \left< \sigma^y \right> = P_y(-1) + P_y(+1)$$ 
+$$ \left< Y \right> = P_Y(-1) + P_Y(+1)$$ 
 
-$$ \left< \sigma^z \right> = P_z(-1) + P_z(+1)$$ 
+$$ \left< Z \right> = P_Z(-1) + P_Z(+1)$$ 
 
 which gives: 
 
-$$ \rho = \frac{1}{2} \begin{pmatrix} 1 + \left< \sigma^z \right> & \left< \sigma^x \right> - \left< \sigma^y \right>i \\ \left< \sigma^x \right> + \left< \sigma^y \right>i & 1- \left< \sigma^z \right> \end{pmatrix} $$  
+$$ \rho = \frac{1}{2} \begin{pmatrix} 1 + \left< Z \right> & \left< X \right> - \left< Y \right>i \\ \left< X \right> + \left< Y \right>i & 1- \left< Z \right> \end{pmatrix} $$  
 
 In general, the number of observables required to tomographically reconstruct a quantum state composed of $$n$$ qubits scales as $$O \left( 4^n \right)$$. For example, a 2-qubit state tomography requires estimating the 15 following expectation values:
 
-$$ \left( \left< \sigma^x \sigma^x \right>, \left< \sigma^x I \right>, \left< I \sigma^x \right>, \left< I \sigma^y \right>, \left< \sigma^y I \right>, \left< \sigma^y \sigma^y \right>, \left< I \sigma^z \right>, \left< \sigma^z I \right>, \left< \sigma^z \sigma^z \right>, \left< \sigma^x \sigma^y \right>, \\ \left< \sigma^y \sigma^x \right>, \left< \sigma^z \sigma^y \right>, \left< \sigma^y \sigma^z \right>, \left< \sigma^z \sigma^x \right>, \left< \sigma^x \sigma^z \right>\right)$$
+$$ \left( \left< XX \right>, \left< XI \right>, \left< IX \right>, \left< IY \right>, \left< YI \right>, \left< YY \right>, \left< IZ \right>, \left< ZI \right>, \left< ZZ \right>, \left< XY \right>, \left< YX \right>, \left< ZY \right>, \left< YZ \right>, \left< ZX \right>, \left< XZ \right>\right)$$
 
 Quantum state tomography becomes impractical beyond a few qubits because it requires estimating a number of observables that scale exponentially with the number of qubits, and many measurements are needed to evaluate the expectation value of each observable. The following figure is taken from {% cite Hashim2024 %} and represents the estimated density matrix $$\rho$$ of a two-qubit Bell-state:
 
 <div class="center">
-  <img src="/img/component-level-benchmark/Bell-state-Tomography.svg" class="img-small" alt="Quantum state tomography of a Bell state with reconstruction of the \rho matrix"/>
+  <img src="/img/system-level-benchmark/tomography/Bell-state-Tomography.svg" class="img-small" alt="Quantum state tomography of a Bell state with reconstruction of the \rho matrix"/>
 </div>
 
 This tomographic reconstruction can the be used to infer the fidelity of quantum operations required to prepare the quantum state (Quantum process tomography). 
@@ -51,13 +53,17 @@ The reader interested in a pedagogical introduction to quantum state tomography 
 The QST protocol assumes that every experimental run prepares the qubits in the same state, without correlation with the previous run. 
 The QST also assumes that the preparation and measurement of the quantum state is error-free (an assumption that is almost never respected {% cite merkel2013self %}).
 
+## Limitations
+
+Quantum state tomography is cosltly as the dimension of the density matrix $$\rho$$ scales exponentially with the size of the system. Hence, this method do not scale to large systems.
+
 ## Extensions
 
 Quantum state tomopgraphy has been extended to many other procotols:
-- Quantum process tomography: evaluates the accuracy of quantum operations.
+- <a href="{{ qpt.url | prepend: site.baseurl }}" target="_blank">Quantum process tomography</a>: evaluates the accuracy of quantum operations.
 - Gate set tomography: evaluates the accuracy of each quantum gate composing a gate set.
 
-## Implementation Examples
+## Implementation
 
 The <a href="https://research.physics.illinois.edu/QI/Photonics/tomography/">Kwiat Quantum Information Group</a> provides an open source implementation of protocols related to quantum state tomography <a href="https://github.com/KwiatLab/Quantum-Tomography" target="_blank">here</a>.
 

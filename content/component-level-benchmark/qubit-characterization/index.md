@@ -19,3 +19,4 @@ In a nutshell, $$T_1$$ quantifies the time scale at which the qubit passes from 
 - <a href="{{ t2.url | prepend: site.baseurl }}">$$T_2$$ phase decoherence time</a>
 
 In a nutshell, $$T_2$$ quantifies the time scale at which the qubit suffers from phase decoherence. Phase decoherence includes energy relaxation (characterized by $$T_1$$) and pure dephasing, corresponding to a knowledge loss about the phase of the qubit.
+

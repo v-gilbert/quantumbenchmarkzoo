@@ -47,6 +47,22 @@
     <script defer src="{{ "/js/docsearch-2.6.3.min.js" | prepend: site.baseurl }}"></script>
     <script defer src="{{ "/js/docsearch-config.js" | prepend: site.baseurl }}"></script>
     <script defer src="{{ "/js/contact.js" | prepend: site.baseurl }}"></script>
+   
+    <!-- Automated line breaking of mathematical expressions -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        "HTML-CSS": {
+          linebreaks: { automatic: true, width: "container" }
+        },
+        SVG: {
+          linebreaks: { automatic: true, width: "container" }
+        },
+        CommonHTML: {
+          linebreaks: { automatic: true, width: "container" }
+        }
+      });
+    </script>
+    <!-- Import of the Mathjax v 2.7.1  -->
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" type="text/javascript"></script>-->
   </head>

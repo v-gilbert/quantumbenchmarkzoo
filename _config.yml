@@ -29,13 +29,13 @@ nav:
       page-id: latest-updates
       url: /content/the-zoo/latest-updates
       available: true
-    - text: Contact us
-      page-id: contact
-      url: /content/the-zoo/contact
-      available: true
     - text: Acknowledgments
       page-id: acknowledgments
       url: /content/the-zoo/acknowledgments
+      available: true
+    - text: Contact us
+      page-id: contact
+      url: /content/the-zoo/contact
       available: true
   FOM:
     - text: Component-level FOM
@@ -136,6 +136,9 @@ tomography:
   - text: Quantum state tomography
     page-id: state-tomography
     url: /content/system-level-benchmark/tomography/quantum-state-tomography
+  - text: Quantum process tomography
+    page-id: process-tomography
+    url: /content/system-level-benchmark/tomography/quantum-process-tomography
 
 # Randomized protocols
 randomized-benchmarking-protocols:

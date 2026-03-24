@@ -83,3 +83,14 @@ textarea{
     color: #207abf;
     cursor: pointer;
 }
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+mjx-container[jax="SVG"][display="true"] svg {
+  max-width: 100%;
+  height: auto;
+}
