@@ -1,7 +1,7 @@
 ---
 title: Quantum Process Tomography
 description: >
-  
+  Quantum Process Tomography (QST) defines a protocol for reconstructing the transfer matrix associated with a quantum process from a series of state-preparation and measurement steps.
 navbar-page-id: tomography
 ---
 
