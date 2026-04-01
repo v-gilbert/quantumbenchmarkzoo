@@ -90,6 +90,10 @@ nav:
       page-id: multi-level-methodologies
       url: /content/multi-level-benchmark/methodology/
       available: true
+    - text: Frameworks
+      page-id: multi-level-frameworks
+      url: /content/multi-level-benchmark/frameworks/
+      available: true
   benchmarking-datasets:
     - text: Problem libraries
       page-id: problem-libraries
@@ -238,7 +242,14 @@ multi-level-methodologies:
   - text: Volumetric Benchmark
     page-id: VB
     url: /content/multi-level-benchmark/methodology/volumetric-benchmark
-  
+
+multi-level-frameworks:
+  - text: OpenQASM
+    page-id: OpenQASM
+    url: /content/multi-level-benchmark/frameworks/OpenQASM
+  - text: QUARK
+    page-id: QUARK
+    url: /content/multi-level-benchmark/frameworks/QUARK
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:

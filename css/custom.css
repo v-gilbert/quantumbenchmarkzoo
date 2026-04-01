@@ -12,6 +12,9 @@
 }
 
 @media (min-width: 769px){
+    .img-very-small{
+        width: 30%;
+    }
     .img-small{
         width: 50%;
     }
