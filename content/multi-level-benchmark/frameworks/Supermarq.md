@@ -34,7 +34,7 @@ These features, normalized to $$[0, 1]$$, produce a 6-dimensional space used to 
 
 Each benchmark is reported with a benchmark score that depends on the type of application/quantum routine being benchmarked, along with the instance's coverage. The authors then assess the Pearson correlation coefficient between the score and each feature used to define the coverage.
 
-## Benchmarks
+## Benchmark instances
 
 The framework includes both quantum subroutine and application-oriented benchmarks. 
 

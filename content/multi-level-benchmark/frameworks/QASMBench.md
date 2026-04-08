@@ -32,12 +32,11 @@ The QASMBench benchmark suite also introduces 6 figures of merit to better analy
 * **Entanglement variance**: defines variance in the number of two-qubit gates applied per qubit, where high variance means that groups of qubits are more connected than others.
 
 The 6 different metrics are computed for each instance. The final benchmark score is based on the Hellinger fidelity evaluated from the ideal emulation of the quantum circuit and the actual experimental run on the quantum computer.
-## Benchmark library
+## Benchmark instances
 
 ### Small-scale instances (reproduction of the table)
 
 The following table reproduce table 3. from {% cite li2023qasmbench %} with description of small-scale instances:
-
 
 ### Medium-scale instances (reproduction of the table)
 

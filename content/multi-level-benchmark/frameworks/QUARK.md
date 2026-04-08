@@ -25,7 +25,7 @@ The core architecture is precisely described in {% cite kiwit2023application %} 
   <img src="/img/multi-level-benchmark/framework/QUARK-module-architecture.png" class="img-large" alt="Representation of the module architecture of the QUARK framework"/>
 </div>
 
-## Applications being benchmarks
+## Benchmark instances
 
 The framework has primarily been developed for benchmarking optimization problems and subsequently extended to quantum machine learning tasks.
 
