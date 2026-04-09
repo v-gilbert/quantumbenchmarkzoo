@@ -1,8 +1,9 @@
 ---
 title: QASMBench
 description: >
-
-navbar-page-id: multi-level-methodologies
+    QASMBench is a benchmark suite targetting low-level and cross-platform benchmarking by providing a serie of small-scale quantum algorithms implemented in OpenQASM
+datatable: true
+navbar-page-id: benchmark-suites
 ---
 
 {% assign fidelity = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
@@ -32,19 +33,24 @@ The QASMBench benchmark suite also introduces 6 figures of merit to better analy
 * **Entanglement variance**: defines variance in the number of two-qubit gates applied per qubit, where high variance means that groups of qubits are more connected than others.
 
 The 6 different metrics are computed for each instance. The final benchmark score is based on the Hellinger fidelity evaluated from the ideal emulation of the quantum circuit and the actual experimental run on the quantum computer.
+
 ## Benchmark instances
 
-### Small-scale instances (reproduction of the table)
+The following table integrates table 3., 4. and 5. from {% cite li2023qasmbench %} with description of small-scale instances:
 
-The following table reproduce table 3. from {% cite li2023qasmbench %} with description of small-scale instances:
-
-### Medium-scale instances (reproduction of the table)
-
-The following table reproduce table 4. from {% cite li2023qasmbench %} with description of medium-scale instances:
-
-### Large-scale benchmark (reproduction of the table)
-
-The following table reproduce table 5. from {% cite li2023qasmbench %} with description of large-scale instances:
+{% include tables/benchmark-suite-QASMBench-instances-table.html %}
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.benchmark-suite-QASMBench-instances-table').DataTable(
+        {
+          "pageLength": 10,
+          "drawCallback": function(settings){ 
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          }
+        } 
+      );
+    });
+</script>
 
 ## Devices being benchmarked
 

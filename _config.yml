@@ -94,14 +94,18 @@ nav:
       page-id: multi-level-frameworks
       url: /content/multi-level-benchmark/frameworks/
       available: true
-  benchmarking-datasets:
-    - text: Problem libraries
-      page-id: problem-libraries
-      url: /content/benchmarking-datasets/problem-libraries
+  tools:
+    - text: Benchmark suites
+      page-id: benchmark-suites
+      url: /content/benchmarking-tools/benchmark-suites
       available: true
     - text: Quantum datasets
       page-id: quantum-datasets
-      url: /content/benchmarking-datasets/quantum-datasets
+      url: /content/benchmarking-tools/quantum-datasets
+      available: true
+    - text: Problem libraries
+      page-id: problem-libraries
+      url: /content/benchmarking-tools/problem-libraries
       available: true
   Ftqc:
     - text: QECC Experiments
@@ -243,13 +247,19 @@ multi-level-methodologies:
     page-id: VB
     url: /content/multi-level-benchmark/methodology/volumetric-benchmark
 
-multi-level-frameworks:
-  - text: OpenQASM
-    page-id: OpenQASM
-    url: /content/multi-level-benchmark/frameworks/OpenQASM
+benchmarking-suites:
+  - text: QASMBench
+    page-id: QASMBench
+    url: /content/benchmarking-tools/benchmark-suites/QASMBench
   - text: QUARK
     page-id: QUARK
-    url: /content/multi-level-benchmark/frameworks/QUARK
+    url: /content/benchmarking-tools/benchmark-suites/QUARK
+  - text: QED-C
+    page-id: QED-C
+    url: /content/benchmarking-tools/benchmark-suites/QED-C
+  - text: Supermarq
+    page-id: Supermarq
+    url: /content/benchmarking-tools/benchmark-suites/Supermarq
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:

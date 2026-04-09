@@ -1,8 +1,8 @@
 ---
 title: Supermarq
 description: >
-  
-navbar-page-id: multi-level-methodologies
+  Supermarq is an application-oriented benchmark for assessing the performance of quantum computer and evaluating the coverage of the benchmarking instance set.
+navbar-page-id: benchmark-suites
 ---
 
 {% assign fidelity = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}

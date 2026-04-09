@@ -1,8 +1,8 @@
 ---
 title: QUARK
 description: >
-  QUARK is a quantum application benchmarking framework for evaluating the performance of quantum computers. It currently benchmarks optimization and machine learning applications.
-navbar-page-id: multi-level-methodologies
+  QUARK is a quantum application benchmarking framework for evaluating quantum computers on specific industrial use cases in optimization and machine learning.
+navbar-page-id: benchmark-suites
 ---
 
 {% assign initiatives = site.nav.Business-informations | where: "page-id", "benchmarking-initiatives" | first %}
