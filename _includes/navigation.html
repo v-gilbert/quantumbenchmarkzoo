@@ -67,7 +67,7 @@
     </ul>
     <div class="navigation__category dropdown-btn">Tools <i class="fa fa-caret-down"></i></div>
     <ul class="navigation__link-list dropdown-container">
-      {% for link in site.nav.tools %}
+      {% for link in site.nav.Tools %}
         <li class="navigation__link-list-item{% if page.navbar-page-id == link.page-id %} navigation__link-list-item--active{% endif %}{% unless link.available %} navigation__link-list-item--unavailable{% endunless %}">
           <a class="navigation__link-list-link{% if page.navbar-page-id == link.page-id %} navigation__link-list-link--active{% endif %}" href="{{ link.url | prepend: site.baseurl }}">
             {{ link.text }}

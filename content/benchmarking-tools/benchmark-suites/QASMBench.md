@@ -20,7 +20,7 @@ The motivation for this benchmark suite is to ease quantum software-hardware co-
 ## Architecture
 
 The QASMBench benchmark suite implements a set of quantum algorithms and subroutines in the OpenQASM assembly language to assess the performance of a quantum computer. The benchmark instances are organized in three categories:
-* **Small-scale** instances: consist of instances with 2-5 qubits, allowing intensive benchmarking of quantum computers using <a href="{{ tomography.url | prepend: site.baseurl }}" target="_blank">tomography</a>.
+* **Small-scale** instances: consist of instances with 2-5 qubits, allowing intensive benchmarking of quantum computers using <a href="{{ tomography.url | prepend: site.baseurl }}">tomography</a>.
 * **Medium-scale** instances: consists of instances from 6-15 qubits.
 * **Large-scale** instances: contain benchmark instances with more than 15 qubits for testing large-scale quantum computers.
 
@@ -62,7 +62,7 @@ The framework permits connections to different types of quantum computers:
 
 ## Limitation
 
-The QASMBench benchmark suite focuses on low-level benchmarks and hence on small quantum systems. Because it relies on the computation of the  <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity" target="_blank">Hellinger fidelity</a>, it is not suitable for generalization to large instances. Other figures of merit than the Hellinger fidelity should be used for large-scale quantum circuits. 
+The QASMBench benchmark suite focuses on low-level benchmarks and hence on small quantum systems. Because it relies on the computation of the  <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity">Hellinger fidelity</a>, it is not suitable for generalization to large instances. Other figures of merit than the Hellinger fidelity should be used for large-scale quantum circuits. 
 
 The figures of merit defined in the benchmark suite are computed according to the OpenQASM standard gate set. It might not be representative of real circuits run on real physical quantum computers.
 

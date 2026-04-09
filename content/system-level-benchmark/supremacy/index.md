@@ -46,9 +46,9 @@ This summary is an adaptation of the table provided by R. Larose in Table 1 of {
 
 ## Protocols
 
-{% assign rcs = site.supremacy-protocols | where: "page-id", "random-circuit-sampling" | first %}
-- <a href="{{ rcs.url | prepend: site.baseurl }}">Random Circuit Sampling (RCS)</a> (2019)  
-In a nutshell, Random Circuit Sampling consists of sampling the bitstring output distribution from a randomly generated quantum circuit. The distribution is usually supposed to have some more probable bitstring than others. The distribution used to create the quantum circuit is chosen to make the sampling task difficult for classical computers (computational time scales exponentially with the number of qubits). Importantly, the objective of RCS is not to reconstruct the entire output distribution. Instead, the protocol evaluates the likelihood of the quantum device correctly sampling from the intended distribution.
+{% assign xeb = site.supremacy-protocols | where: "page-id", "cross-entropy-benchmarking" | first %}
+- <a href="{{ xeb.url | prepend: site.baseurl }}">Cross-entropy benchmarking</a> (2019)  
+In a nutshell, Cross-entropy benchmarking is an instantiation of the random circuit sampling (RCS) protocol, which consists of sampling the bitstring output distribution from a randomly generated quantum circuit. The distribution is usually supposed to have some more probable bitstrings than others. In (RCS), the distribution used to create the quantum circuit is chosen to make the sampling task difficult for classical computers (computational time scales exponentially with the number of qubits). Importantly, the objective of RCS is not to reconstruct the entire output distribution. Instead, the protocol evaluates the likelihood of the quantum device correctly sampling from the intended distribution.
 
 {% assign otoc = site.supremacy-protocols | where: "page-id", "otoc" | first %}
 - <a href="{{ otoc.url | prepend: site.baseurl }}">Quantum Echoes - Out-of-time-order correlator</a> (2025)  

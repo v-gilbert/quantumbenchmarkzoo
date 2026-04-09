@@ -94,7 +94,7 @@ nav:
       page-id: multi-level-frameworks
       url: /content/multi-level-benchmark/frameworks/
       available: true
-  tools:
+  Tools:
     - text: Benchmark suites
       page-id: benchmark-suites
       url: /content/benchmarking-tools/benchmark-suites
@@ -205,9 +205,9 @@ application-protocols:
     
 # Supremacy protocols
 supremacy-protocols:
-  - text: Random circuit sampling
-    page-id: random-circuit-sampling
-    url: /content/system-level-benchmark/supremacy/random-circuit-sampling
+  - text: Cross-entropy benchmarking
+    page-id: cross-entropy-benchmarking
+    url: /content/system-level-benchmark/supremacy/cross-entropy-benchmarking
   - text: Out-of-time-order correlator (OTOC)
     page-id: otoc
     url: /content/system-level-benchmark/supremacy/OTOC

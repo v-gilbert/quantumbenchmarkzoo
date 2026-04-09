@@ -7,10 +7,13 @@ navbar-page-id: benchmark-suites
 ---
 
 {% assign modified = page.path | max_last_modified: "tables/benchmark-suite-QED-C-instances.html" %}
+{% assign vb = site.multi-level-methodologies | where: "page-id", "VB" | first %}
+{% assign fidelity = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
+{% assign quantum-datasets = site.nav.Tools | where: "page-id", "quantum-datasets" | first %}
 
 # QED-C benchmark suite
 
-The QED-C benchmark suite {% cite lubinski2023application %} was introduced in 2021. The development of this benchmark suite is supported by the <a href="https://quantumconsortium.org/">Quantum Economic Development Consortium</a> (QED-C), USA. The initial development included both quantum companies (IonQ, D-Wave Systems, Quantinuum, Rigetti, Quantum Circuit Inc) and research institutions such as the Sandia National Laboratories, Princeton University and Colorado School of Mines.
+The QED-C benchmark suite {% cite lubinski2023application %} was introduced in 2021. The development of this benchmark suite is supported by the <a href="https://quantumconsortium.org/">Quantum Economic Development Consortium</a> (QED-C), USA. The initial development included both quantum companies such as IonQ, D-Wave Systems, Quantinuum, Rigetti, Quantum Circuit Inc and research institutions such as the Sandia National Laboratories, Princeton University and Colorado School of Mines.
 
 ## Motivation
 
@@ -18,7 +21,7 @@ The motivation for this benchmark suite is to create a set of quantum circuits f
 
 ## Architecture
 
-The benchmark suite is initially built upon the <a>Volumetric Benchmark methodology</a> {% cite BlumeKohout2020 %}, aiming at representing the performance of a quantum computer at running a quantum circuit with respect to its width and depth in a 2-dimensional map. The benchmark suite is composed of four main components:
+The benchmark suite is initially built upon the <a href="{{ vb.url | prepend: site.baseurl }}">Volumetric Benchmark methodology</a> {% cite BlumeKohout2020 %}, aiming at representing the performance of a quantum computer at running a quantum circuit with respect to its width and depth in a 2-dimensional map. The benchmark suite is composed of four main components:
 * A set of algorithms $$\mathbb{A}$$ used for the benchmark. 
 * For each algorithm and a specified size $$n$$, there is a recipe which turns the algorithm into a quantum circuit (in a hardware-agnostic gate set). It forms a circuit set $$\mathbb{C}_n$$ for each size $$n$$.
 * A procedure to randomly select the circuit from the circuit set.
@@ -38,7 +41,7 @@ The architecture of the QED-C benchmark suite was updated in 2025 to improve its
 
 ### Fidelity
 
-The authors use a normalized fidelity derived from the <a>classical fidelity</a> to measure the success of running the quantum circuit. The classical fidelity between two distributions $$p$$ and $$\tilde{p}$$ over a bitstring $$x$$ of $$n$$ bits is expressed as: 
+The authors use a normalized fidelity derived from the <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity">classical fidelity</a> to measure the success of running the quantum circuit. The classical fidelity between two distributions $$p$$ and $$\tilde{p}$$ over a bitstring $$x$$ of $$n$$ bits is expressed as: 
 
 $$ F(p, \tilde{p}) = \left( \sum_{x \in \{0, 1\}^n} \sqrt{p(x)\tilde{p}(x)}\right)^2 $$
 
@@ -103,7 +106,7 @@ The QED-C benchmark suite was further extended in {% cite lubinski2024quantum %}
 
 A **Quantum Reinforcement learning** application is added to the benchmark suite in {% cite patel2025platform %} to illustrate updates to the QED-C benchmark architecture.
 
-**Hamiltonian simulation** benchmarking problems were incorporated into the suite with the work of A. Chatterjee et al. {% cite chatterjee2025comprehensive %}, where five problems from the <a>HamLib</a> data collection are integrated in the QED-C benchmark suite. The authors conduct benchmarking studies on Trotterized quantum evolutions and use the normalized fidelity to assess the quantum computer's performance across a range of benchmarking scenarios. These analyses examine the effects of both Trotterization error and hardware-induced noise on the performance of the quantum computer. In addition, Hamiltonian simulation is assessed using mirror benchmarking techniques.
+**Hamiltonian simulation** benchmarking problems were incorporated into the suite with the work of A. Chatterjee et al. {% cite chatterjee2025comprehensive %}, where five problems from the <a href="{{ quantum-datasets.url | prepend: site.baseurl }}#hamlib-dataset">HamLib</a> data collection are integrated in the QED-C benchmark suite. The authors conduct benchmarking studies on Trotterized quantum evolutions and use the normalized fidelity to assess the quantum computer's performance across a range of benchmarking scenarios. These analyses examine the effects of both Trotterization error and hardware-induced noise on the performance of the quantum computer. In addition, Hamiltonian simulation is assessed using mirror benchmarking techniques.
 
 S. Niu et al. {% cite niu2025practical %} use the QED-C framework to establish new methods for efficiently computing the observables associated with quantum simulation problems.
 

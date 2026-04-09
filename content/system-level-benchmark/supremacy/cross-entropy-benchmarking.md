@@ -1,14 +1,14 @@
 ---
-title: Random Circuit Sampling Supremacy
+title: Cross-entropy benchmarking (XEB)
 datatable: true
 description: >
-  Random circuit sampling (RCS): a quantum supremacy protocol based on random circuit generation with classically hard simulation of output bitstrings.
+  Cross-entropy benchmarking: a quantum supremacy protocol based on random circuit generation with classically hard simulation of output bitstrings.
 navbar-page-id: supremacy-benchmarks
 ---
 
 # Cross-entropy Benchmarking (XEB)
 
-## XEB Protocol
+## Protocol
 
 The Cross-entropy benchmarking protocol was introduced in 2017 by S. Boixo et al. {% cite Boixo2018 %}. This protocol was used in the Google experiment {% cite Arute2019 %}, constituting the first attempt to achieve quantum computational supremacy. The protocol is based on a random circuit sampling task considered hard for classical computers. 
 

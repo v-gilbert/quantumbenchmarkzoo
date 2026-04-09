@@ -29,7 +29,7 @@ The Quantum Economic Development Consortium (QED-C) was created with the support
 
 ### Unitary Fund Metriq (2022)
 
-<a href="https://metriq.info/About" target="_blank">Metriq</a> is a free collaborative platform aiming to gather benchmarking results issued from scientific papers and news. It is supported by the <a href="https://unitary.foundation" target="_blank">Unitary Fund</a >, a foundation that provides microgrants to help the development of the quantum technology ecosystem.
+<a href="https://metriq.info/About" target="_blank">Metriq</a> is a free, collaborative platform that aims to integrate benchmarking definitions, dataset collections, and visualizations into a single unified workflow {% cite cosentino2026metriq %}. It is supported by the <a href="https://unitary.foundation" target="_blank">Unitary Fund</a >, a foundation that provides microgrants to help the development of the quantum technology ecosystem.
 
 <div id="darpa-qbi"></div>
 

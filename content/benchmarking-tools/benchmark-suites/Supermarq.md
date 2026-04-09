@@ -7,6 +7,7 @@ navbar-page-id: benchmark-suites
 
 {% assign fidelity = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
 {% assign irb = site.randomized-benchmarking-protocols| where: "page-id", "IRB" | first %}
+{% assign xeb = site.supremacy-protocols | where: "page-id", "cross-entropy-benchmarking" | first %}
 
 # SupermarQ: a hardware-agnostic quantum benchmark
 
@@ -41,9 +42,9 @@ The framework includes both quantum subroutine and application-oriented benchmar
 ### Quantum sub-routines
 
 The benchmark suite involves the test of a series of quantum computing sub-routines:
-* **GHZ state generation**: assesses the system's ability to produce multipartite entangled states, with the <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity" target="_blank">Hellinger fidelity</a> serving as the benchmark.
+* **GHZ state generation**: assesses the system's ability to produce multipartite entangled states, with the <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity">Hellinger fidelity</a> serving as the benchmark.
 * **Mermin-Bell benchmark**: builds on GHZ states to validate the device's quantum behavior, using the expectation value of the Mermin operator to compute the benchmark score.
-* **Error correction**: evaluates error-correction routines such as bit flip and phase flip repetition codes, using the <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity" target="_blank">Hellinger fidelity<a> as the benchmark score.
+* **Error correction**: evaluates error-correction routines such as bit flip and phase flip repetition codes, using the <a href="{{ fidelity.url | prepend: site.baseurl }}#hellinger-fidelity">Hellinger fidelity</a> as the benchmark score.
 
 ### Application benchmark
 
@@ -54,7 +55,7 @@ The benchmark suite also involves tests on a series of algorithms used for appli
 
 ### Extensions
 
-The SupermarQ benchmark suite has been extended to include other system-level benchmarks such as <a>Cross-entropy benchmarking</a>, <a href="{{ irb.url | prepend: site.baseurl }}" target="_blank">Interleaved Randomized Benchmarking</a>, Symmetric Stabilizer Benchmarking {% cite tsai2025benchmarking %} and SU(2) benchmarking.
+The SupermarQ benchmark suite has been extended to include other system-level benchmarks such as <a href="{{ xeb.url | prepend: site.baseurl }}">Cross-entropy benchmarking</a> (XEB), <a href="{{ irb.url | prepend: site.baseurl }}">Interleaved Randomized Benchmarking</a> (IRB), Symmetric Stabilizer Benchmarking {% cite tsai2025benchmarking %} and SU(2) benchmarking.
 
 ## Devices being benchmarked
 
