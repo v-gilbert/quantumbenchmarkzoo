@@ -8,6 +8,21 @@ navbar-page-id: latest-updates
 # Latest updates
 
 ## List of updates
+{% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
+* 2026-04-09 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>:
+Update of hardware price access and modalities.
+{% assign quark = site.benchmarking-suites | where: "page-id", "QUARK" | first %}
+* 2026-04-09 <a href="{{ quark.url | prepend: site.baseurl }}">QUARK</a>:
+Creation of a new page of content on QUARK benchmark suite.
+{% assign supermarq = site.benchmarking-suites | where: "page-id", "Supermarq" | first %}
+* 2026-04-09 <a href="{{ supermarq.url | prepend: site.baseurl }}">Supermarq</a>:
+Creation of a new page of content on Supermarq benchmark suite.
+{% assign qed-c = site.benchmarking-suites | where: "page-id", "QED-C" | first %}
+* 2026-04-09 <a href="{{ qed-c.url | prepend: site.baseurl }}">QED-C</a>:
+Creation of a new page of content on QED-C benchmark suite.
+{% assign qasmbench = site.benchmarking-suites | where: "page-id", "QASMBench" | first %}
+* 2026-04-09 <a href="{{ qasmbench.url | prepend: site.baseurl }}">QASMBench</a>:
+Creation of a new page of content on QASMBench benchmark suite.
 {% assign process-tomography = site.tomography | where: "page-id", "process-tomography" | first %}
 * 2026-03-24 <a href="{{ process-tomography.url | prepend: site.baseurl }}">Quantum Process Tomography (QPT)</a>:
 Creation of a new page of content on Quantum Process Tomography.

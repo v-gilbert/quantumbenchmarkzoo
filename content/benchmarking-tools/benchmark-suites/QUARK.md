@@ -69,8 +69,7 @@ Simulators:
 
 ## Implementation
 
-The source code of the QUARK framework is available <a href="https://github.com/QUARK-framework/QUARK" target="_blank">here</a>.  
-Last update of the source code: 30/07/2025
+The <a href="https://github.com/QUARK-framework/QUARK" target="_blank">source code of the QUARK framework</a> is open source and was last updated on 30/07/2025.
 
 ## References
 
