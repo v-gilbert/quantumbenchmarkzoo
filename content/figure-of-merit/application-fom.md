@@ -35,7 +35,7 @@ $$ TT \epsilon = t_a \times R_\epsilon $$
 <!-- Ajouter les déclinaisons des différents TTS avec calculs ou non annealing run. -->
 
 <div id="speedup-ratio"></div>
-## Speedup ratio
+### Speedup ratio
 
 The authors of {% cite ronnow2014defining %} introduce the notion of speedup ratio. Let $$C(N)$$ (resp. $$Q(N)$$) be the time used by a classical (resp. quantum) device to find the optimal or approximate solution to a problem of size $$N$$. The speedup ratio is defined as:
 
@@ -43,7 +43,15 @@ $$ S(N) = \frac{C(N)}{Q(N)} $$
 
 $$C(N)$$ (resp. $$Q(N)$$) can be estimated using $$TTS$$ or $$TT\epsilon$$ figure of merit.
 
+## Chemistry
 
+### Accuracy ratio
+
+The accuracy ratio is a figure of merit introduced in {% cite lubinski2024quantum %} which computes the ratio of the computed energy from the samples of the quantum computer $$E_\mathrm{sample}$$ to the energy computed using Full Configuration Interaction (FCI) $$E_\mathrm{FCI}$$. This ratio is then rescaled relative to an energy generated from a random uniform distribution $$E_\mathrm{random}$$. The accuracy ratio is defined as:
+
+$$ AR = 1 - \frac{\lvert E_\mathrm{sample} - E_\mathrm{FCI} \rvert}{\lvert E_\mathrm{random} - E_\mathrm{FCI} \rvert}$$
+
+Even if the accuracy ratio is 1, the result sampled by the quantum computer might not be of chemical accuracy, since the FCI does not provide the ground-truth energy. A method can have a very good $$AR$$ value without being within chemical accuracy.
 
 <!--
 
