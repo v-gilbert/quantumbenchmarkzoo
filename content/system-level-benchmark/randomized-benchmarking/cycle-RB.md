@@ -43,6 +43,10 @@ As in the <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">IRB</a
 
 - As explained in {% cite Hashim2024 %}, the fidelity extracted with the CB protocol does not constitute the true <a href="{{ fidelities.url | prepend: site.baseurl }}#entanglement-fidelity" target="_blank">process fidelity</a> in general but rather a lower bound on the process fidelity. The tightness of this bound depends on the number of samples, which should scale at least as $$\min(20, 4^n -1)$$ where $$n$$ denotes the number of qubits.
 
+## Extensions to Cycle Benchmarking
+
+- There are other CB-like protocols, such as Character Cycle Benchmarking (CCB), in which one may choose a broader class of target gates G and $$l$$-values rather than restricting to Clifford cycles satisfying $$G^l=I$$, and Character Average Benchmarking (CAB) \cite{zhang2022scalable}, which reduces resource requirements by averaging the $4^{n}$ Pauli eigenvalues into $2^n$ terms by partially depolarizing the noise via local Clifford twirling.
+
 ## Implementation
 
 A tutorial for implementing the CB protocol is available in the <a href="https://gitlab.npl.co.uk/qc-metrics-and-benchmarks/qcmet/-/tree/main/tutorials/gate_execution_quality_metrics/cycle_benchmarking_composite_process_fidelity" target="_blank">QCMet software repository</a>.  
