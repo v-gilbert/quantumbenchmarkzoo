@@ -15,7 +15,7 @@ Verifiability argument: This experiment is verifiable as it can be done again on
 -->
 ## Protocol
 
-The protocol $$\text{OTOC}^{(2)}$$ was proposed by the Google team in 2025 in {% cite Abanin2025observation %} and summarized in a two-page paper in {% cite king2025simplified %}. The main idea of this protocol is to prepare a single-qubit $$q_\mathrm{m}$$ in an eigenstate of a Pauli operator used as the final observable. For example, if the final observable is $$Z$$, the qubit could be initialized in $$\ket{0}$$, the $$+1$$ eigenstate of $$Z$$. The quantum chip then evolves according to a randomly picked unitary $$U$$ (forward evolution) composed of $$t$$ cycles. The entanglement of the qubits on the quantum computer grows as $$t$$ grows. Then a small perturbation $$B$$ is triggered on a distant qubit $$q_b$$ from $$q_m$$ (For example, this can be a bit flip $$X$$). The unitary is then run backward, with the $$U^\dagger$$ unitary followed by the measuring operator $$M$$. For the $$\text{OTOC}^{(2)}$$, this protocol is repeated twice:
+The experimental protocol $$\text{OTOC}^{(2)}$$ was proposed by the Google team in 2025 in {% cite Abanin2025observation %} and summarized in a two-page paper in {% cite king2025simplified %}. The main idea of this protocol is to prepare a single-qubit $$q_\mathrm{m}$$ in an eigenstate of a Pauli operator used as the final observable. For example, if the final observable is $$Z$$, the qubit could be initialized in $$\ket{0}$$, the $$+1$$ eigenstate of $$Z$$. The quantum chip then evolves according to a randomly picked unitary $$U$$ (forward evolution) composed of $$t$$ cycles. The entanglement of the qubits on the quantum computer grows as $$t$$ grows. Then a small perturbation $$B$$ is triggered on a distant qubit $$q_b$$ from $$q_m$$ (For example, this can be a bit flip $$X$$). The unitary is then run backward, with the $$U^\dagger$$ unitary followed by the measuring operator $$M$$. For the $$\text{OTOC}^{(2)}$$, this protocol is repeated twice:
 
 $$\text{forward} \rightarrow \text{perturbation} \rightarrow \text{backward} \rightarrow \text{forward} \rightarrow \text{perturbation} \rightarrow \text{backward}$$
 
@@ -30,6 +30,10 @@ The evaluation of the expectation value $$C^{(4)}$$ of each location of $$q_\mat
 ## Results
 
 The supremacy claim in {% cite Abanin2025observation %} has been realised using 65 qubits with a number of cycles $$t=23$$. Instead of a single qubit $$q_\mathrm{b}$$, three qubits are selected in which $$X$$ perturbations are introduced. The final quantity computed in $$C^{(4)}_\mathrm{diag}$$, a quantity more complex than $$C^{(4)}$$ (see end of part \textit{Large-loop interference in OTOC} for details in {% cite Abanin2025observation %}). The quantum experiment was performed with 50 different random circuits U and simulated on a quantum computer in approximately 4 days. This experiment has been estimated to require more than 100 years on a classical computer (with a quantum speedup of approximately 13,000).
+
+## Extension
+
+In {% cite Goksu260405038 %}, G. Can Toga et al. extend the OTOC experiment to analog quantum computers using QuEra Aquila, a neutral-atom-based quantum processor. This extension is based on a protocol proposed by B. Vermersch et al. {% cite vermersch2019probing %} to extract the OTOC value using an approximation based on a randomized measurement protocol.
 
 ## Implementations
 
