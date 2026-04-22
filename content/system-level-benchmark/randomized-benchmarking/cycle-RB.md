@@ -28,7 +28,7 @@ The previous circuit permits the extraction of the error associated with the int
   <img src="/img/system-level-benchmark/randomized/cb-2.png" class="img-medium" alt="Quantum circuit associated with the cycle benchmarking protocol for the identity"/>
 </div>
 
-It then consists of using the same approximation as in <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">IRB</a> to estimate the fidelity of the gate $$G$$:
+It then consists of using the same approximation as in <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">IRB</a> to estimate the error rate of the gate $$G$$:
 
 $$r_\mathrm{G} \approx r_\mathrm{cbi} - r_\mathrm{cbg}.$$
 
@@ -45,7 +45,7 @@ As in the <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">IRB</a
 
 ## Extensions to Cycle Benchmarking
 
-- There are other CB-like protocols, such as Character Cycle Benchmarking (CCB), in which one may choose a broader class of target gates G and $$l$$-values rather than restricting to Clifford cycles satisfying $$G^l=I$$, and Character Average Benchmarking (CAB) \cite{zhang2022scalable}, which reduces resource requirements by averaging the $4^{n}$ Pauli eigenvalues into $2^n$ terms by partially depolarizing the noise via local Clifford twirling.
+- There are other CB-like protocols, such as Character Cycle Benchmarking (CCB), in which one may choose a broader class of target gates G and $$l$$-values rather than restricting to Clifford cycles satisfying $$G^l=I$$, and Character Average Benchmarking (CAB) {% cite zhang2022scalable %}, which reduces resource requirements by averaging the $$4^{n}$$ Pauli eigenvalues into $$2^n$$ terms by partially depolarizing the noise via local Clifford twirling.
 
 ## Implementation
 
