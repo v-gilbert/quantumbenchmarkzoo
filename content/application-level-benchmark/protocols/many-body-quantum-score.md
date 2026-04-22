@@ -17,7 +17,7 @@ Quantum many-body problems are believed to be particularly adapted to quantum co
 The MBQS protocol was proposed in 2026 by H. Erbin et al. {% cite Erbin2026ManybodyQS %} and evaluates the ability of a quantum computer to simulate the Hamiltonian dynamics of a 1D Ising chain or ring. The main idea is to evaluate the correlations between different qubits (sites) constituting the chain at a specific time $$t^*$$. In one-dimensional systems, the time $$t^*$$ corresponds to a correlation peak and depends on the ring size $$L$$. In the paper, this value is computed via Pulser and QuTiP, but it can also be efficiently approximated with a formula. In the picture, three antipodal correlation peaks are displayed: one corresponding to the ring length $$L=3$$ (blue), one to $$L=5$$ (red), and one to $$L=9$$ (green). As the size of the ring increases, $$t^*$$ increases, and the peak magnitude decreases (see the diagram in the picture). The correlation values obtained for each length $$L$$ are then compared to the ideal values derived theoretically for the Ising model in polynomial time $$O(L^3)$$ (for rings composed of $$L$$ qubits, the antipodal site corresponds to $$\ell = \lfloor L/2 \rfloor$$). In this way, the protocol tests the spreading of correlations across different system sizes and uses this behavior as a proxy for entanglement growth.
 
 <div class="center">
-  <img src="/img/application-level-benchmark/MBQS-presentation.png" class="img-large" alt=""/>
+  <img src="/img/application-level-benchmark/MBQS-presentation.png" class="img-large" alt="Correlation peaks of three antipodal sites for ring length L=3, L=5, and L=9"/>
 </div>
 
 Steps of the protocol:
@@ -49,7 +49,7 @@ This protocol can be extended to gate-based quantum computers using Trotter appr
 The following figure is reproduced from the article {% cite Erbin2026ManybodyQS %} and plots a volumetric representation of the final score for different threshold values $$\epsilon$$ and different lengths $$L$$. The evaluation is conducted on a Pasqal device with error mitigation (left), a noisy emulator (middle) and an ideal noiseless emulator (right). The ideal emulation shows that any length $$L$$ from 3 to 12 can be validated with a threshold $$\epsilon = 0.2$$ (right plot). The noise of Pasqal device makes the threshold $$\epsilon = 0.2$$ inaccessible beyond $$L=5$$. The readout error mitigation method improves the results produced by the Pasqal machine compared to a noisy emulations without error mitigation. 
 
 <div class="center">
-  <img src="/img/application-level-benchmark/MBQS-volumetric-plot.png" class="img-large" alt=""/>
+  <img src="/img/application-level-benchmark/MBQS-volumetric-plot.png" class="img-large" alt="Volumetric representation of the Many-body quantum score on Pasqal Ruby and simulators"/>
 </div>
 
 ## Implementations
