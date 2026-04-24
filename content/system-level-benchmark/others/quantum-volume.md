@@ -19,21 +19,42 @@ navbar-page-id: system-level-others
 For clarity the Quantum Volume is expressed in a logarithmic basis.  
 _<span class="caution">The reader should consider with caution the results that are not supported with a scientific paper (SP column without a check).</span>_
 
+### Chart
+
+The following chart compiles the currently available quantum volume results. Red shading denotes trapped-ion technology, blue and purple shading denote superconducting technologies, and yellow shading denotes NV-center technology. The marker shape indicates the protocol used to compute the quantum volume: circles correspond to {% cite cross2019validating %}, while rectangles correspond to the variant introduced in {% cite baldwin2022re %}. Data displayed in the chart is available below the table.
+
+<canvas id="qvChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{ "/js/table-charts/quantum-volume-chart.js" | prepend: site.baseurl }}"></script>
+
+### Data
 <!-- Avoid issue with citations -->
 <!-- {% cite cross2019validating %} -->
 {% include tables/QV-table.html %}
 <script type="text/javascript">
-    $(document).ready(function() {
-      $('.QV-table').DataTable(
-        {
-          "pageLength": 10,
-          "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
-          }
-        } 
-      );
+  
+
+  $(document).ready(function() {
+    const table = $('.QV-table').DataTable(
+      {
+        "pageLength": 10,
+        "drawCallback": function(settings){ 
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+        }
+      } 
+    );
+
+    const chart = createTableChart(table);
+
+    table.on('draw', function () {
+      updateTableChart(chart, table);
     });
+
+    updateTableChart(chart, table);
+  });
 </script>
+
+
 
 ## Motivation
 
