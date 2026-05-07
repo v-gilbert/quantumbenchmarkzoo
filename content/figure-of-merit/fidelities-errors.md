@@ -12,7 +12,7 @@ navbar-page-id: fidelities-errors
 
 Quantum states and processes cannot be observed directly, but measurement outcomes (i.e., bitstrings distribution) can be used as a proxy to get information about these properties. Repeating the preparation and measurement of the same quantum state results in a probability associated with each bitstring that can be observed. Quantum processes act on states, which can then be measured to extract information about these processes. 
 
-The outcome of an actual implementation can be described with a probability distribution $$\mathbf{p}$$. This distribution can be compared to the ideal target probability distribution $$\mathbf{\widetilde{p}}$$ describing the outcome of a perfect quantum processor without noisy operations (denoted with $$\sim$$ character). Classical figures of merit comparing probability distributions can be used to evaluate how similar or different the two distributions are. Among these FoMs, we outline those that are considered as metrics.
+The outcome of an actual implementation can be described with a probability distribution $$\mathbf{\widetilde{p}}$$ (denoted with $$\sim$$ character). This distribution can be compared to the ideal target probability distribution $$\mathbf{p}$$ describing the outcome of a perfect quantum processor without noisy operations. Classical figures of merit comparing probability distributions can be used to evaluate how similar or different the two distributions are. Among these FoMs, we outline those that are considered as metrics.
 
 To be considered a **metric** (in the mathematical sense), a FoM $$D(\mathbf{p}, \mathbf{q})$$ evaluated on distributions $$\mathbf{p}$$ and $$\mathbf{q}$$ must:
 - be **positive**: $$D(\textbf{p}, \textbf{q}) \geq 0$$
@@ -44,7 +44,7 @@ The next table summarizes the different FoMs that can be evaluated from the meas
 
 ## FoM for quantum states
 
-The matrix density operator $$ \rho=\sum_i p_i \ket{\psi_i} \bra{\psi_i} $$ is used to model uncertainty about the knowledge of a quantum state. Each state $$\ket{\psi_i}$$ is a pure state associated with the probability $$p_i$$. We continue using the same notation where $$\widetilde{\rho}$$ (resp. $$\rho$$) represents the ideal target (resp. actual implemented) density operator. 
+The matrix density operator $$ \rho=\sum_i p_i \ket{\psi_i} \bra{\psi_i} $$ is used to model uncertainty about the knowledge of a quantum state. Each state $$\ket{\psi_i}$$ is a pure state associated with the probability $$p_i$$. We continue using the same notation where $$\rho$$ (resp. $$\widetilde{\rho}$$) represents the ideal target (resp. actual implemented) density operator. 
 
 Assessing the distinguishability between quantum states strongly depends on the measures being done on the quantum states. For this reason, the measurement (Positive Operator-valued Measure) maximizing the distinguishability between the two quantum states $$\rho$$ and $$\widetilde{\rho}$$ is always chosen. In this way, results obtained from these measurements are used to build FoMs that assess an upper bound on the error rate of a measurement done on the quantum state. These FoMs can be used to evaluate the performance of state preparations.
 
@@ -81,7 +81,7 @@ The evolution of the quantum state can be seen as a joint evolution of the state
 
 The map $$\rho \rightarrow M(\rho)$$ represents a quantum operation if it is a Complete Positive Trace Preserving (CPTP) map. CP means that $$M(\rho)$$ must be positive semi-definite (i.e., no output with a negative probability). TP means that each measurement outcome probability adds up to 1. The reader may refer to {% cite Hashim2024 %} for a pedagogical introduction and discussion on CPTP.
 
-Benchmarking quantum processes involves comparing ideal implementations of the map $$\widetilde{M}$$ to the actual implementation $$M$$. In general, these maps are directly called quantum gates. 
+Benchmarking quantum processes involves comparing ideal implementations of the map $$M$$ to the actual implementation $$\widetilde{M}$$. In general, these maps are directly called quantum gates. 
 
 {% include tables/quantum-processes-table.html %}
 <script type="text/javascript">
