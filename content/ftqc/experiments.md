@@ -31,7 +31,7 @@ The following table summarizes experimental implementations of QECC conducted on
         {
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

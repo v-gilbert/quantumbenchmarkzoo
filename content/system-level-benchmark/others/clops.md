@@ -25,7 +25,7 @@ The CLOPS protocol {% cite cross2019validating %} assesses the execution speed a
         {
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

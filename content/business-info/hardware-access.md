@@ -33,7 +33,7 @@ The hardware are divided in three categories:
           "ordering": false,
           columnDefs: [{ width: '20%', targets: 0 }],
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );
@@ -51,7 +51,7 @@ The hardware are divided in three categories:
           "ordering": false,
           columnDefs: [{ width: '20%', targets: 0 }],
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );
@@ -69,7 +69,7 @@ The hardware are divided in three categories:
           "ordering": false,
           columnDefs: [{ width: '20%', targets: 0 }],
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

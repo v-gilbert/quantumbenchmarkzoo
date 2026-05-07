@@ -42,7 +42,7 @@ The following table summarize the challenges and refutations done concerning thi
         {
           "pageLength": 100,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );
@@ -115,7 +115,7 @@ The list of instances evaluated is presented in the following table:
           "pageLength": 100,
           "ordering": false,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

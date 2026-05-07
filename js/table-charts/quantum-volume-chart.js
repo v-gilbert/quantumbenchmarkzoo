@@ -53,8 +53,9 @@ function decimalYearToYYYYMM(value) {
 
 function getPointStyle(protocol) {
     const text = String(protocol);
+    
     if (text.includes('extended protocol')) {
-      return 'rectangle';
+      return 'rect';
     }
     else {
       return 'circle';
@@ -94,7 +95,8 @@ function createTableChart(table) {
 
                 return ia - ib;
               }
-            }
+            },
+            usePointStyle: true,
           },
           tooltip: {
             callbacks: {
@@ -142,7 +144,6 @@ function updateTableChart(chart, table) {
       chart.data.datasets = [];
       for (const company in pointsByCompany) {
         const points = pointsByCompany[company];
-        console.log(company)
         chart.data.datasets.push({
           label: company,
           data: points,

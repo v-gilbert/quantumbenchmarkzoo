@@ -39,7 +39,7 @@ The following chart compiles the currently available quantum volume results. Red
       {
         "pageLength": 10,
         "drawCallback": function(settings){ 
-          MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+          MathJax.typesetPromise();
         }
       } 
     );

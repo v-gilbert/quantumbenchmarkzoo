@@ -76,7 +76,7 @@ The following table lists the instances implemented in the <a href="https://gith
         {
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

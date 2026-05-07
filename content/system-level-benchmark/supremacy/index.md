@@ -37,7 +37,7 @@ This summary is an adaptation of the table provided by R. Larose in Table 1 of {
         {
           "pageLength": 100,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

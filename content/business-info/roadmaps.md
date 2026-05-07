@@ -28,7 +28,7 @@ The following table presents the roadmap publicly published by each manufacturer
           "bAutoWidth": true,
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

@@ -43,7 +43,7 @@ The second step consists of estimating the qBAS-score with the optimized $$\vec{
           "pageLength": 10,
           "ordering": false,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

@@ -29,7 +29,7 @@ _<span class="caution">The reader should consider with caution the results that 
         {
           "pageLength": 100,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

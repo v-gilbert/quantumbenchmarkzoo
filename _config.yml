@@ -81,18 +81,10 @@ nav:
       page-id: aggregated-scores
       url: /content/application-level-benchmark/aggregated-scores
       available: true
-    - text: Frameworks
-      page-id: application-benchmarks-frameworks
-      url: /content/application-level-benchmark/frameworks  
-      available: false
   Multi-level:
     - text: Methodologies
       page-id: multi-level-methodologies
       url: /content/multi-level-benchmark/methodology/
-      available: true
-    - text: Frameworks
-      page-id: multi-level-frameworks
-      url: /content/multi-level-benchmark/frameworks/
       available: true
   Tools:
     - text: Benchmark suites

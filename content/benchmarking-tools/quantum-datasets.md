@@ -29,7 +29,7 @@ The following table relates each dataset to the abstraction level it benchmarks.
         {
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

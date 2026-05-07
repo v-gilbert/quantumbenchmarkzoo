@@ -118,7 +118,7 @@ The table below summarizes the results of different QPUs; it uses the maximum ap
         {
           "pageLength": 10,
           "drawCallback": function(settings){
-           MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            MathJax.typesetPromise();
           }  
         }  
       );  

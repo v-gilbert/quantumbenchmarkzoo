@@ -35,7 +35,7 @@ navbar-page-id: application-benchmarks-protocols
         {
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

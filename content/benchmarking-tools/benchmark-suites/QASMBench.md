@@ -45,7 +45,7 @@ The following table integrates table 3., 4. and 5. from {% cite li2023qasmbench 
         {
           "pageLength": 10,
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+             MathJax.typesetPromise(); 
           }
         } 
       );

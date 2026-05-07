@@ -33,7 +33,7 @@ The next table summarizes the different FoMs that can be evaluated from the meas
           "ordering": false,
           columnDefs: [{ width: '20%', targets: 0 }],
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+            MathJax.typesetPromise();
           }
         } 
       );
@@ -59,7 +59,7 @@ In the following table, the trace operator $$\Tr$$ on a matrix $$A$$ is defined 
           "ordering": false,
           columnDefs: [{ width: '20%', targets: 0 }],
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+            MathJax.typesetPromise(); 
           }
         } 
       );
@@ -92,7 +92,7 @@ Benchmarking quantum processes involves comparing ideal implementations of the m
           "ordering": false,
           columnDefs: [{ width: '20%', targets: 0 }],
           "drawCallback": function(settings){ 
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub]); 
+            MathJax.typesetPromise();
           }
         } 
       );
