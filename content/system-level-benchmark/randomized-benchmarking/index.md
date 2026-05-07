@@ -76,6 +76,7 @@ The initial protocol of RB was proposed by J. Emerson {% cite emerson2005scalabl
   - <a href="{{ IRB.url | prepend: site.baseurl }}" target="_blank">Interleaved Randomized Benchmarking (IRB)</a>
   - <a href="{{ CB.url | prepend: site.baseurl }}" target="_blank">Cycle Benchmarking (CB)</a>
 - Other protocols based on Randomized Benchmarking
+  - <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">Cross Entropy Benchmarking</a>
   - <a href="{{ eplg.url | prepend: site.baseurl }}" target="_blank">Error Per Layered Gate (EPLG)</a>
 
 <!-- To add in a next version: <a href="{{ correlated-RB.url | prepend: site.baseurl }}" target="_blank">Correlated Randomized Benchmarking</a>-->

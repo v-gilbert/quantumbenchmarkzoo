@@ -6,6 +6,8 @@ description: >
 navbar-page-id: supremacy-benchmarks
 ---
 
+{% assign fidelity = site.nav.FOM | where: "page-id", "fidelities-errors" | first %}
+
 # Cross-Entropy Benchmarking (XEB)
 
 Benchmarks based on the evaluation of the cross-entropy difference were introduced in 2016 by S. Boixo et al. {% cite Boixo2018 %}. Linear XEB became famous with the Google experiment conducted in 2019 {% cite Arute2019 %}, constituting the first claim to achieve quantum computational supremacy. XEB is based on a random circuit sampling task considered hard for classical computers. 
@@ -16,7 +18,7 @@ The XEB protocol was initially developed to demonstrate that quantum devices wit
 
 ## Protocol
 
-For a given random quantum circuit, it is possible—albeit computationally intensive—to calculate the ideal output probability distribution $$p(x_i)$$ of each bitstring $$x_i$$ using a classical computer. The classical resources needed for the computation scale exponentially with the number of qubits $$n$$. For random circuits (for example, circuits generated from the Haar measure), the distribution of the ideal output probability across bitstrings follows an exponentially decaying distribution called the Porter-Thomas law. Following this law, some bitstrings might have higher sampling probabilities than others (e.g. a bitstring might occur with probability $$\frac{8}{2^n}$$, others with probability $$\frac{7}{2^n}$$, others with probability $$\frac{6}{2^n}$$ etc...). The number of bitstrings with probability $$\frac{t}{2^n}$$ decreases like $$e^{-t}$$. If the classical or quantum device fails to sample the output state accurately, the output is supposed to be uncorrelated with the ideal probability distribution. The central idea behind the XEB protocol is to test whether the quantum processor can generate output bitstrings that exhibit statistically significant correlations with the ideal distribution. In {% cite Boixo2018 %}, the idea is to measure the output quality of a quantum algorithm implementing a random unitary $$U$$ by computing the <a>cross-entropy</a> between the sampling output of the quantum computer $$\widetilde{p}(x)$$ and the ideal output distribution $$p(x)$$:
+For a given random quantum circuit, it is possible—albeit computationally intensive—to calculate the ideal output probability distribution $$p(x_i)$$ of each bitstring $$x_i$$ using a classical computer. The classical resources needed for the computation scale exponentially with the number of qubits $$n$$. For random circuits (for example, circuits generated from the Haar measure), the distribution of the ideal output probability across bitstrings follows an exponentially decaying distribution called the Porter-Thomas law. Following this law, some bitstrings might have higher sampling probabilities than others (e.g. a bitstring might occur with probability $$\frac{8}{2^n}$$, others with probability $$\frac{7}{2^n}$$, others with probability $$\frac{6}{2^n}$$ etc...). The number of bitstrings with probability $$\frac{t}{2^n}$$ decreases like $$e^{-t}$$. If the classical or quantum device fails to sample the output state accurately, the output is supposed to be uncorrelated with the ideal probability distribution. The central idea behind the XEB protocol is to test whether the quantum processor can generate output bitstrings that exhibit statistically significant correlations with the ideal distribution. In {% cite Boixo2018 %}, the idea is to measure the output quality of a quantum algorithm implementing a random unitary $$U$$ by computing the <a href="{{ fidelity.url | prepend: site.baseurl }}#cross-entropy">cross-entropy</a> between the sampling output of the quantum computer $$\widetilde{p}(x)$$ and the ideal output distribution $$p(x)$$:
 
 $$ H(\widetilde{p},p) = - \sum_{x \in \{0,1\}^n} \widetilde{p}(x) \log(p(x))$$
 
@@ -30,7 +32,7 @@ $$ 1 \ge \mathbb{E}_U [\Delta H (\widetilde{p})] > C $$
 
 ## Experiments and results
 
-Cross-entropy benchmarking was used in Google's 2019 demonstration of quantum supremacy {% cite Arute2019 %}. In this experiment, F. Arute et al. use the <a>linear cross-entropy fidelity</a> to assess the sampling performance of the quantum computer defined as: 
+Cross-entropy benchmarking was used in Google's 2019 demonstration of quantum supremacy {% cite Arute2019 %}. In this experiment, F. Arute et al. use the <a href="{{ fidelity.url | prepend: site.baseurl }}#linear-cross-entropy">linear cross-entropy fidelity</a> to assess the sampling performance of the quantum computer defined as: 
 
 $$ H_\mathrm{lin}(\widetilde{p},p) = 2^n \left( \sum_{x \in \{0, 1\}^n} \widetilde{p}(x) p(x) \right) - 1$$
 
