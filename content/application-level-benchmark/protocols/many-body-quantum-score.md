@@ -54,7 +54,7 @@ The following figure is reproduced from the article {% cite Erbin2026ManybodyQS 
 
 ## Implementations
 
-There is currently no publicly available implementation of the MBQS protocol.
+The <a href="https://github.com/HaroldErbin/mbqs" target="_blank">implementation of the MBQS protocol</a> is provided by the authors on Github.
 
 ## References
 {% bibliography --cited %}
