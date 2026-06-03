@@ -14,3 +14,5 @@ _site/
 
 # tables
 tables/*.ods
+
+.DS_Store
