@@ -252,6 +252,9 @@ benchmarking-suites:
   - text: Supermarq
     page-id: Supermarq
     url: /content/benchmarking-tools/benchmark-suites/Supermarq
+  - text: AppQSim
+    page-id: AppQSim
+    url: /content/benchmarking-tools/benchmark-suites/AppQSim
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
