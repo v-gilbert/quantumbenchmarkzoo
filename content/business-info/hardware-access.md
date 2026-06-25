@@ -9,10 +9,11 @@ navbar-page-id: hardware-access
 
 # Hardware pricing and access
 
-The hardware are divided in three categories:
-- [Universal gate-based quantum computers](#universal-qc)
-- [Photonic quantum computers](#photonic-qc) (which can mix universal and non-universal models)
-- [Analog quantum computers](#analog-qc) (which are not universal)
+The following sections detail hardware access policy:
+- [Free access](#free-access-qc)
+- [Universal gate-based quantum computers](#universal-qc) (Paid access)
+- [Photonic quantum computers](#photonic-qc) (Paid access) which can mix universal and non-universal models
+- [Analog quantum computers](#analog-qc) (Paid access) which are not universal
 
 **List of acronyms:**  
 **EM**: error mitigation  
