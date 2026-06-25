@@ -8,13 +8,19 @@ navbar-page-id: latest-updates
 # Latest updates
 
 ## List of updates
+{% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
+* 2026-04-09 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>:
+Update of hardware price access and modalities.
+{% assign appqsim = site.benchmarking-suites | where: "page-id", "AppQSim" | first %}
+* 2026-06-15 <a href="{{ qv.url | prepend: site.baseurl }}">AppQSim</a>:
+Creation of a new page of content on AppQSim benchmark suite.
+{% assign xeb = site.supremacy-protocols | where: "page-id", "cross-entropy-benchmarking" | first %}
 {% assign qv = site.other-system-level-protocols | where: "page-id", "quantum-volume" | first %}
 * 2026-05-07 <a href="{{ qv.url | prepend: site.baseurl }}">Quantum Volume (QV)</a>:
 Update of the content of the page with a plot for QV experiments
 {% assign xeb = site.supremacy-protocols | where: "page-id", "cross-entropy-benchmarking" | first %}
 * 2026-05-07 <a href="{{ xeb.url | prepend: site.baseurl }}">Cross entropy benchmarking</a>:
 Update of the content of the page with more details
-{% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
 * 2026-04-09 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>:
 Update of hardware price access and modalities.
 {% assign quark = site.benchmarking-suites | where: "page-id", "QUARK" | first %}
