@@ -5,7 +5,7 @@ description: >
   Compare pricing and access options for quantum hardware across providers, technologies, usage types across cloud, subscription & custom plans.
 navbar-page-id: hardware-access
 ---
-{% assign modified = page.path | max_last_modified: "tables/pricing-free-access-plan-table.html,tables/pricing-universal-QC-table.html,tables/pricing-photonic-QC-table.html,tables/pricing-analog-QC-table.html" %}
+{% assign modified = page.path | max_last_modified: "tables/pricing-free-access-plan-table.html,tables/pricing-universal-QC-table.html,tables/pricing-photonic-QC-table.html,tables/pricing-analog-QC-table.html,chart-data/free-hardware-access-data.ods,js/table-charts/free-access-qc-chart.js" %}
 
 # Hardware pricing and access
 
@@ -23,7 +23,14 @@ The following sections detail hardware access policy:
 **HQC**: H-system Quantum credits (specific to Quantinuum systems, <a href="https://learn.microsoft.com/en-us/azure/quantum/pricing?tabs=tabid-paygo%2Ctabid-paygoPasqal%2Ctabid-H2#quantinuum">click here for details</a>)  
 **eHQC**: emulator H-system Quantum credits (specific to Quantinuum systems, <a href="https://learn.microsoft.com/en-us/azure/quantum/pricing?tabs=tabid-paygo%2Ctabid-paygoPasqal%2Ctabid-H2#quantinuum">click here for details</a>)  
 
-## <a name="free-access-qc"></a>Free Access
+## <a name="free-access-qc"></a>Quantum computers with free access plans
+
+<!-- Insert chart here -->
+<div class="col-md-8 mx-auto">
+    <canvas id="freeAccessQcChart" aria-label="Quantum computers with a free access plan by technology, company, and chip"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script src="{{ "/js/table-charts/free-access-qc-chart.js" | prepend: site.baseurl }}"></script>
 
 {% include tables/pricing-free-access-plan-table.html %}
 <script type="text/javascript">
