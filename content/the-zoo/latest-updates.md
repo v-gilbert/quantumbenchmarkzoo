@@ -9,6 +9,8 @@ navbar-page-id: latest-updates
 
 ## List of updates
 {% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
+* 2026-08-14 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access with free access and charts</a>:
+{% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
 * 2026-04-09 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>:
 Update of hardware price access and modalities.
 {% assign appqsim = site.benchmarking-suites | where: "page-id", "AppQSim" | first %}
