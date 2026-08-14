@@ -60,6 +60,33 @@ Each KPI can be weighted according to the user's choice, and offsets can be adde
 As mentioned by the authors, the QuAS score defines a methodology and not a precise setting of KPIs and weights associated with each KPI. Hence, comparing two QuAS scores from different studies cannot be done.  
 Each QuAS KPI has to be formulated as a single number to be included in the framework, making it naturally well-suited for single-objective optimization problems. Multi-objective optimization problems can also be included in this framework if there is an ordered relation between the different objectives, making the final solutions comparable. This method is not adapted for problems for which solutions cannot be directly compared.
 
+<div id="metriq-score"></div>
+
+## Metriq Score (2026)
+
+The Metriq Score (MS) {% cite cosentino2026metriq %} was introduced by A. Cosentino et al. in 2026 and aims to define a linear way to aggregate scores of heterogeneous benchmarking results.
+
+### Motivation
+
+- avoid opaque nonlinear interactions between scores.
+- advocate transparency because all the weights are explicitely stated.
+
+### Protocol
+
+The Metriq Score consists in aggregating scores from different benchmarks in a linear way. Consider a set of benchmarking protocols $${BenchA, BenchB, ...}$$. Each benchmark protocol is run on a set of instances having different number of qubits (called width in the protocol). For example the protocol BenchA may have been run on 3 instances involving $$ n_i \in {10, 10, 30} $$ qubits. The protocol BenchA outputs a score for each instance, let's take for example: $$ v_i \in {50, 55, 65} $$. The first step consits in computing a single value for BenchA, where the results are averaged proportionnaly to the width of the instance (larger widths ):
+
+$$ $$
+
+This value is then compared with the result obtained by a reference computer (either quantum or classical) and 
+
+computing a width aggregated score, consisting of weighting each score $$ v_i $$ proportionnaly to its width $$ w_i $$, considering that larger width 
+
+### Limitations
+
+- Score is set to 0 for devices that cannot run the corresponding benchmark 
+- Metriq score do not propagate uncertainty but left for future work
+
+
 
 <!-- 
 Optimal and heuristic solution must be comparable using a single KPI 

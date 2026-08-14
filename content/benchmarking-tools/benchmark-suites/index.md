@@ -12,11 +12,13 @@ navbar-page-id: benchmark-suites
 {% assign supermarq = site.benchmarking-suites | where: "page-id", "Supermarq" | first %}
 {% assign quark = site.benchmarking-suites | where: "page-id", "QUARK" | first %}
 {% assign appqsim = site.benchmarking-suites | where: "page-id", "AppQSim" | first %}
+{% assign metriq = site.benchmarking-suites | where: "page-id", "Metriq" | first %}
 
-## List of application-oriented benchmark suites
+## List of benchmark suites
 
 - <a href="{{ qasmbench.url | prepend: site.baseurl }}">QASMBench benchmark suite</a> (2020): Define a set of instances and figures of merit to characterize input instances. It focuses on evaluation of quantum circuits.
 - <a href="{{ qed-c.url | prepend: site.baseurl }}">QED-C benchmark suite</a> (2021): Define a set of instances and visualization of performance profiles. It includes evaluations both on quantum circuits and analog quantum computers.
 - <a href="{{ supermarq.url | prepend: site.baseurl }}">Supermarq benchmark suite</a> (2022): Define a set of instances and figures of merit to evaluate the coverage of input instance sets. It focuses on evaluation of quantum circuits.
 - <a href="{{ quark.url | prepend: site.baseurl }}">QUARK benchmark suite</a> (2022): Define a set of instances of specific industrial use-cases. It focuses on evaluation of quantum circuits.
 - <a href="{{ appqsim.url | prepend: site.baseurl }}">AppQSim benchmark suite</a> (2025): A benchmark suite designed to evaluate the performance of quantum computers on Hamiltonian simulation problems.
+- <a href="{{ metriq.url | prepend: site.baseurl }}">Metriq benchmark suite</a> (2026): A collaborative benchmark suite designed to evaluate the performance of quantum computers at system and application level.
