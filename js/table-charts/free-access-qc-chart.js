@@ -11,7 +11,7 @@
     { label: ["Trapped", "ions"], value: 3, color: "#d9080d" },
     { label: ["Neutral", "atoms"], value: 3, color: "#6aad4f" },
     { label: "Photonic", value: 3, color: "#ffc20f" },
-    { label: "Superconducting", value: 11, color: "#3f7fd5" }
+    { label: "Superconducting", value: 15, color: "#3f7fd5" }
   ];
 
   const companyData = [
@@ -20,6 +20,7 @@
     { label: "Pasqal", value: 2, parent: "Neutral-atoms", color: "#6aad4f" },
     { label: "QuEra", value: 1, parent: "Neutral-atoms", color: "#bddcaf" },
     { label: "Quandela", value: 3, parent: "Photonic", color: "#f4c82d" },
+    { label: "Logical Qubit", value: 4, parent: "Superconducting", color: "#1669d5" },
     { label: "IQM", value: 3, parent: "Superconducting", color: "#3f7fd5" },
     { label: "Rigetti", value: 1, parent: "Superconducting", color: "#6da2e9" },
     { label: "IBM", value: 3, parent: "Superconducting", color: "#a8c4ee" },
@@ -37,6 +38,10 @@
     { label: "Ascella", value: 1, parent: "Quandela", color: "#f4c82d" },
     { label: "Altair", value: 1, parent: "Quandela", color: "#ffdc68" },
     { label: "Belenos", value: 1, parent: "Quandela", color: "#ffeaa5" },
+    { label: "QZO1", value: 1, parent: "Superconducting", color: "#0a61d2" },
+    { label: "QZO2", value: 1, parent: "Superconducting", color: "#1669d5" },
+    { label: "MQ02", value: 1, parent: "Superconducting", color: "#216fd4" },
+    { label: "AGate", value: 1, parent: "Superconducting", color: "#3477cf" },
     { label: "Garnet", value: 1, parent: "IQM", color: "#4f88dd" },
     { label: "Sirius", value: 1, parent: "IQM", color: "#5b93e8" },
     { label: "Emerald", value: 1, parent: "IQM", color: "#6597e3" },

@@ -10,7 +10,7 @@ navbar-page-id: hardware-access
 # Hardware pricing and access
 
 The following sections detail hardware access policy:
-- [Free access](#free-access-qc)
+- [Quantum computers with a free access plan](#free-access-qc)
 - [Universal gate-based quantum computers](#universal-qc) (Paid access)
 - [Photonic quantum computers](#photonic-qc) (Paid access) which can mix universal and non-universal models
 - [Analog quantum computers](#analog-qc) (Paid access) which are not universal
@@ -23,7 +23,7 @@ The following sections detail hardware access policy:
 **HQC**: H-system Quantum credits (specific to Quantinuum systems, <a href="https://learn.microsoft.com/en-us/azure/quantum/pricing?tabs=tabid-paygo%2Ctabid-paygoPasqal%2Ctabid-H2#quantinuum">click here for details</a>)  
 **eHQC**: emulator H-system Quantum credits (specific to Quantinuum systems, <a href="https://learn.microsoft.com/en-us/azure/quantum/pricing?tabs=tabid-paygo%2Ctabid-paygoPasqal%2Ctabid-H2#quantinuum">click here for details</a>)  
 
-## <a name="free-access-qc"></a>Quantum computers with free access plans
+## <a name="free-access-qc"></a>Quantum computers with a free access plan
 
 <!-- Insert chart here -->
 <div class="col-md-8 mx-auto">

@@ -255,6 +255,9 @@ benchmarking-suites:
   - text: AppQSim
     page-id: AppQSim
     url: /content/benchmarking-tools/benchmark-suites/AppQSim
+  - text: Metriq
+    page-id: Metriq
+    url: /content/benchmarking-tools/benchmark-suites/Metriq
 
 # Fault-tolerant error correcting codes implementations
 # Fault-tolerant Implementation:
