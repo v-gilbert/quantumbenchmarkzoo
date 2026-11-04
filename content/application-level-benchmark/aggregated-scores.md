@@ -64,37 +64,32 @@ Each QuAS KPI has to be formulated as a single number to be included in the fram
 
 ## Metriq Score (2026)
 
-The Metriq Score (MS) {% cite cosentino2026metriq %} was introduced by A. Cosentino et al. in 2026 and aims to define a linear way to aggregate scores of heterogeneous benchmarking results.
+The Metriq Score (MS) {% cite cosentino2026metriq %} is a composite score introduced along with the Metriq benchmark suite in 2026 by A. Cosentino et al. at the <a href="https://unitary.foundation" target="_blank">Unitary Foundation</a>. This score combines normalized results from system-level and application-level benchmarking methods.
 
 ### Motivation
 
-- avoid opaque nonlinear interactions between scores.
-- advocate transparency because all the weights are explicitely stated.
+Individual quantum benchmarks characterize different aspects of performance, making it difficult to compare devices with a single figure of merit. The Metriq Score defines a methodology for merging and aggregating results from different benchmarking protocols into a single scalar score.
 
 ### Protocol
 
-The Metriq Score consists in aggregating scores from different benchmarks in a linear way. Consider a set of benchmarking protocols $${BenchA, BenchB, ...}$$. Each benchmark protocol is run on a set of instances having different number of qubits (called width in the protocol). For example the protocol BenchA may have been run on 3 instances involving $$ n_i \in {10, 10, 30} $$ qubits. The protocol BenchA outputs a score for each instance, let's take for example: $$ v_i \in {50, 55, 65} $$. The first step consits in computing a single value for BenchA, where the results are averaged proportionnaly to the width of the instance (larger widths ):
+The Metriq Score is a composite indicator that aggregates the results of multiple heterogeneous quantum-computing benchmarking protocols into a single scalar score. The aggregation is performed in three stages. First, results obtained at different problem or circuit sizes are combined into a single value for each benchmark. Second, each benchmark-level result is normalized against a reference device, which is assigned a score of 100. A normalized score above 100 indicates better performance than the reference device, while a score below 100 indicates worse performance. Finally, the normalized benchmark scores are combined through a weighted average, with benchmarks probing larger effective circuit widths receiving greater weight. In the published version, the authors adopt a scale-aware weighting scheme, in which each benchmark is weighted according to the circuit width being tested, so that benchmarks probing larger circuits contribute more strongly to the final score. Missing benchmark results contribute a score of zero.
 
-$$ $$
+The resulting score is a weighted aggregation of normalized benchmark outcomes. The choice of reference device and benchmark weights must be stated explicitly to ensure transparency, as both influence the resulting comparison between devices.
 
-This value is then compared with the result obtained by a reference computer (either quantum or classical) and 
+### Assumptions and requirements
 
-computing a width aggregated score, consisting of weighting each score $$ v_i $$ proportionnaly to its width $$ w_i $$, considering that larger width 
+- **Baseline transparency**: The choice of reference device and its benchmark results must be explicitly documented to ensure transparent and interpretable comparisons.
+- **Weighting scheme transparency**: The weighting scheme used to aggregate benchmark scores must be explicitly documented to clarify how each benchmark contributes to the final score.
+- **Consistent execution policy**: Benchmark execution conditions, including compilation, optimization, and error mitigation policies, must be comparable across devices, with any differences explicitly documented.
 
 ### Limitations
 
-- Score is set to 0 for devices that cannot run the corresponding benchmark 
-- Metriq score do not propagate uncertainty but left for future work
+- **Bias toward larger quantum computers**: The current implementation of the Metriq Score assigns greater weight to results obtained on circuits with more qubits. This rule favors larger quantum computers with lower-quality qubits over smaller, higher-quality systems.
+- **Benchmark overlap**: Different benchmarking protocols may evaluate overlapping hardware capabilities. Correlations between their results can lead to certain performance characteristics being implicitly overrepresented in the final score.
+- **Baseline sensitivity**: Changing the reference device rescales each benchmark subscore by a potentially different factor. Consequently, the relative influence of benchmarks on the composite score can change, potentially altering device rankings even when the underlying benchmarking results remain unchanged.
+- **Uncertainty propagation**: The Metriq Score aggregates point estimates without propagating their statistical uncertainties. The authors identify uncertainty propagation as a direction for future work.
+- **Limited score comparability**: Metriq Scores computed using different benchmark configurations, weights, or reference devices are not directly comparable.
 
-
-
-<!-- 
-Optimal and heuristic solution must be comparable using a single KPI 
-The optimal solution to the problem should be easily comparable to the solution 
-Metrics composed of sparable multiple values can be split in different KPIs and modelled under the QuAS framework. The framework currently cannot evaluate the 
-However, problems involving the optimization of multiple objectives without a clear single-number final metric can't be currently evaluated by this framework.
--->
-<!--The QuAS framework is only adapted to assess the performance of quantum computers on problems in which solutions can be expressed with a single number. This method is not adapted to multi-objective optimization problems.-->
 
 ## References
 {% bibliography --cited %}
