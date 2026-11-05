@@ -11,7 +11,7 @@ navbar-page-id: qubit-characterization
 
 ## Motivation
 
-A qubit may suffer from phase decoherence due to energy relaxation (already characterized by <a href="{{ t1.url | prepend: site.baseurl }}" target="_blank">measuring $$T_1$$</a>) and pure dephasing, which leads to a loss of information concerning the precise phase of the qubit. The effect of this type of noise can be represented on the Bloch sphere by shrinking the state vector to the center of the sphere (representing a decay toward a mixed state). This information loss is characterized by: $$T_\mathrm{2R}$$ (usually denoted $$T_2^*$$), measured with the Ramsey experiment, and $$T_\mathrm{2H}$$, measured with Hahn echo experiment. Both experiments yield a different $$T_2$$ value. The presence of pure dephasing is observed when $$T_2 > 2 T_1$$. 
+A qubit may suffer from phase decoherence due to energy relaxation (already characterized by <a href="{{ t1.url | prepend: site.baseurl }}" target="_blank">measuring $$T_1$$</a>) and pure dephasing, which leads to a loss of information concerning the precise phase of the qubit. The effect of this type of noise can be represented on the Bloch sphere by shrinking the state vector to the center of the sphere (representing a decay toward a mixed state). This information loss is characterized by: $$T_\mathrm{2R}$$ (usually denoted $$T_2^*$$), measured with the Ramsey experiment, and $$T_\mathrm{2H}$$, measured with Hahn echo experiment. Both experiments yield a different $$T_2$$ value. The presence of pure dephasing is observed when $$T_2 < 2 T_1$$. 
 
 ## Protocol for measuring $$T_\mathrm{2R}$$
 
