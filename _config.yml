@@ -37,6 +37,10 @@ nav:
       page-id: contact
       url: /content/the-zoo/contact
       available: true
+    - text: Cite us
+      page-id: citation
+      url: /content/the-zoo/citation
+      available: true
   FOM:
     - text: Component-level FOM
       page-id: component-level-fom

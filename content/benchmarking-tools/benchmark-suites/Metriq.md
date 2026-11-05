@@ -6,6 +6,8 @@ datatable: true
 navbar-page-id: benchmark-suites
 ---
 
+{% assign metriq-score = site.aggregated-scores | where: "page-id", "Metriq-score" | first %}
+
 # Metriq benchmark suite
 
 The Metriq Benchmark Suite {% cite cosentino2026metriq %} was introduced in March 2026 by the <a href="https://unitary.foundation" target="_blank">Unitary Foundation</a>, USA, as part of the Metriq platform. The initiative is also supported by the <a href="https://unitary.foundation/posts/2024_benchmark_committee/" target="_blank">Open Quantum Benchmark Committee (OQBC)</a>, established in 2024 to facilitate development and adoption of quantum benchmarks.
@@ -71,7 +73,7 @@ The Metriq Benchmark Suite has several limitations, some of which are explicitly
 
 - **Incomplete cross-platform comparability**: The authors explicitly identify inconsistencies in the availability and reporting of device and job metadata across hardware providers. In particular, CLOPS requires reliable QPU execution-time information, which is not exposed by all providers. 
 
-- **Metriq score limitation**: The aggregation of benchmark results introduces additional limitations, discussed in the dedicated <a>Metriq Score page</a>.
+- **Metriq score limitation**: The aggregation of benchmark results introduces additional limitations, discussed in the dedicated <a href="{{ metriq-score.url | prepend: site.baseurl }}">Metriq Score page</a>.
 
 ## Implementation
 

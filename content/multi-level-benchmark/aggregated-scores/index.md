@@ -5,7 +5,9 @@ description: >
 navbar-page-id: aggregated-scores
 ---
 
-## Aggregated scores
+# Aggregated scores
+
+## List of quantum-specific methodologies
 
 {% assign myriadq = site.aggregated-scores | where: "page-id", "Myriad-Q" | first %}
 - <a href="{{ myriadq.url | prepend: site.baseurl }}">Myriad-Q</a> (2024) {% cite barbaresco2024bacq %}: In a nutshell, the MYRIAD-Q methodology aggregates multiple quantum computing performance metrics into a single score based on decision-maker preferences. It uses Multi-Criteria Decision Analysis (MCDA) to normalize individual metrics according to subjective utility functions and combine them using a Choquet integral, which accounts for interactions between criteria. The resulting score reflects the decision-maker's priorities.
