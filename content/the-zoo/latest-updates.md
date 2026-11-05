@@ -8,9 +8,10 @@ navbar-page-id: latest-updates
 # Latest updates
 
 ## List of updates
-{% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
-* 2026-11-05 <a href="{{ hw-access.url | prepend: site.baseurl }}">Metriq score</a>: Free access list updated with a chart.
-* 2026-11-05 <a href="{{ hw-access.url | prepend: site.baseurl }}">Metriq benchmark suite</a>: Free access list updated with a chart.
+{% assign metriq-score = site.aggregated-scores | where: "page-id", "Metriq-score" | first %}
+* 2026-11-05 <a href="{{ metriq-score.url | prepend: site.baseurl }}">Metriq score</a>: Description of the Metriq Score.
+{% assign metriq = site.benchmarking-suites | where: "page-id", "Metriq" | first %}
+* 2026-11-05 <a href="{{ metriq.url | prepend: site.baseurl }}">Metriq benchmark suite</a>: Description of the Metriq benchmark suite.
 {% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
 * 2026-08-14 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>: Free access list updated with a chart.
 {% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
