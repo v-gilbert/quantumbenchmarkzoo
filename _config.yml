@@ -77,14 +77,14 @@ nav:
       page-id: application-benchmarks-protocols
       url: /content/application-level-benchmark/protocols/
       available: true
-    - text: Aggregated scores
-      page-id: aggregated-scores
-      url: /content/application-level-benchmark/aggregated-scores
-      available: true
   Multi-level:
     - text: Methodologies
       page-id: multi-level-methodologies
       url: /content/multi-level-benchmark/methodology/
+      available: true
+    - text: Aggregated scores
+      page-id: aggregated-scores
+      url: /content/multi-level-benchmark/aggregated-scores
       available: true
   Tools:
     - text: Benchmark suites
@@ -238,6 +238,18 @@ multi-level-methodologies:
   - text: Volumetric Benchmark
     page-id: VB
     url: /content/multi-level-benchmark/methodology/volumetric-benchmark
+
+aggregated-scores:
+  - text: Myriad-Q 
+    page-id: Myriad-Q
+    url: /content/multi-level-benchmark/aggregated-scores/Myriad-Q
+  - text: Metriq-score
+    page-id: Metriq-score
+    url: /content/multi-level-benchmark/aggregated-scores/Metriq-score
+  - text: QuAS
+    page-id: QuAS
+    url: /content/multi-level-benchmark/aggregated-scores/QuAS
+
 
 benchmarking-suites:
   - text: QASMBench

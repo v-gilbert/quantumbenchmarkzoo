@@ -9,7 +9,10 @@ navbar-page-id: latest-updates
 
 ## List of updates
 {% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
-* 2026-08-14 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access with free access and charts</a>:
+* 2026-11-05 <a href="{{ hw-access.url | prepend: site.baseurl }}">Metriq score</a>: Free access list updated with a chart.
+* 2026-11-05 <a href="{{ hw-access.url | prepend: site.baseurl }}">Metriq benchmark suite</a>: Free access list updated with a chart.
+{% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
+* 2026-08-14 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>: Free access list updated with a chart.
 {% assign hw-access = site.nav.Business-informations | where: "page-id", "hardware-access" | first %}
 * 2026-04-09 <a href="{{ hw-access.url | prepend: site.baseurl }}">Hardware access</a>:
 Update of hardware price access and modalities.
